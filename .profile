@@ -17,6 +17,3 @@ export GNUPGHOME=$XDG_DATA_HOME/gnupg
 export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
 
 jdm
-[ "$(pstree | grep rio | sed "s/\s*//g;s/|//g;s/-//g;s/\`//g")" = "rio" ] && export SHELL=$PLAN9/bin/rc
-#[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx
-#[ "$(tty)" = "/dev/tty2" ] && ! pgrep -x Xorg >/dev/null && export SHELL=$PLAN9/bin/rc && exec startx /usr/lib/plan9/bin/rio
