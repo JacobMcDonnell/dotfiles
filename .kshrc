@@ -63,4 +63,4 @@ CUR_RIGHT="\033[1C"
 SOD="\033[1;1f"
 
 
-PS1=$(printf "${GREEN}%s${NORM}@%s:[${GREEN}%s${NORM}]:$ " '$USER' '$HOSTNAME' '$(_collapsed_pwd)')
+PS1=$(printf "${GREEN}%s${NORM}@%s:[${GREEN}%s${NORM}]:$ " '$USER' '$(hostname)' '$(_collapsed_pwd)')

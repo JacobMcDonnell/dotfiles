@@ -1,0 +1,13 @@
+2020/04/04-00:35:45.363 1f0d Recovering log #11
+2020/04/04-00:35:45.364 1f0d Level-0 table #13: started
+2020/04/04-00:35:45.367 1f0d Level-0 table #13: 3816 bytes OK
+2020/04/04-00:35:45.375 1f0d Delete type=3 #9
+2020/04/04-00:35:45.376 1f0d Delete type=0 #11
+2020/04/04-00:35:45.376 160d Compacting 4@0 + 0@1 files
+2020/04/04-00:35:45.381 160d Generated table #15@0: 7 keys, 2019 bytes
+2020/04/04-00:35:45.381 160d Compacted 4@0 + 0@1 files => 2019 bytes
+2020/04/04-00:35:45.386 160d compacted to: files[ 0 1 0 0 0 0 0 ]
+2020/04/04-00:35:45.387 160d Delete type=2 #13
+2020/04/04-00:35:45.387 160d Delete type=2 #10
+2020/04/04-00:35:45.387 160d Delete type=2 #8
+2020/04/04-00:35:45.387 160d Delete type=2 #5

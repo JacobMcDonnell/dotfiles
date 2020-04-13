@@ -1,0 +1,6 @@
+#!/bin/sh
+time="$(printf "10m\\n15m\\n20m\\n25m\\n30m\\n35m\\n40m\\n45m\\n50m\\n55m\\n60m" | dmenu -i -p "$1" -nb darkred -sb red -sf white -nf gray )"
+while :; do
+	sleep "$time"
+	[ "$(printf "Ok\\nStop" | dmenu -i -p "Take a Break" -nb darkred -sb red -sf white -nf gray )" = "Stop" ] && killall takeABreak
+done

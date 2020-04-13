@@ -1,0 +1,28 @@
+2020/02/26-17:33:20.547 2180 Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
+2020/02/26-17:33:20.548 2180 Recovering log #237
+2020/02/26-17:33:20.573 2180 Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000237.log 
+2020/02/26-17:36:23.005 247d Level-0 table #241: started
+2020/02/26-17:36:23.050 247d Level-0 table #241: 2656764 bytes OK
+2020/02/26-17:36:23.054 247d Delete type=0 #237
+2020/02/26-17:36:23.055 247d Compacting 4@0 + 5@1 files
+2020/02/26-17:36:23.129 247d Generated table #242@0: 16 keys, 2413151 bytes
+2020/02/26-17:36:23.197 247d Generated table #243@0: 11 keys, 2634116 bytes
+2020/02/26-17:36:23.244 247d Generated table #244@0: 4 keys, 2346211 bytes
+2020/02/26-17:36:23.277 247d Generated table #245@0: 11 keys, 1308571 bytes
+2020/02/26-17:36:23.277 247d Compacted 4@0 + 5@1 files => 8702049 bytes
+2020/02/26-17:36:23.280 247d compacted to: files[ 0 4 3 0 0 0 0 ]
+2020/02/26-17:36:23.280 247d Delete type=2 #228
+2020/02/26-17:36:23.280 247d Delete type=2 #241
+2020/02/26-17:36:23.280 247d Delete type=2 #238
+2020/02/26-17:36:23.280 247d Delete type=2 #217
+2020/02/26-17:36:23.280 247d Delete type=2 #231
+2020/02/26-17:36:23.280 247d Delete type=2 #234
+2020/02/26-17:36:23.280 247d Delete type=2 #236
+2020/02/26-17:36:23.280 247d Delete type=2 #229
+2020/02/26-17:36:23.280 247d Delete type=2 #230
+2020/02/26-17:38:23.744 247d Level-0 table #247: started
+2020/02/26-17:38:23.778 247d Level-0 table #247: 1654890 bytes OK
+2020/02/26-17:38:23.781 247d Delete type=0 #240
+2020/02/26-17:53:24.914 247d Level-0 table #249: started
+2020/02/26-17:53:24.947 247d Level-0 table #249: 1748712 bytes OK
+2020/02/26-17:53:24.950 247d Delete type=0 #246
