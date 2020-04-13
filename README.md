@@ -10,6 +10,7 @@ These dotfiles are used by my auto ricing script [JARS](https://gitlab.com/Jacob
 	- Korn Shell
 
 	- zsh with oh my zsh
+
 	- xorg
 
 	- BSPWM
