@@ -1,0 +1,58 @@
+Nov 16 20:50:35.000 [notice] Tor 0.3.5.8 opening new log file.
+Nov 16 20:50:35.898 [notice] Tor 0.3.5.8 running on Linux with Libevent 2.1.9-beta, OpenSSL 1.0.2q, Zlib 1.2.11, Liblzma N/A, and Libzstd N/A.
+Nov 16 20:50:35.899 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Nov 16 20:50:35.899 [notice] Configuration file "/nonexistent" not present, using reasonable defaults.
+Nov 16 20:50:35.909 [notice] Opening Socks listener on 127.0.0.1:9350
+Nov 16 20:50:35.909 [notice] Opened Socks listener on 127.0.0.1:9350
+Nov 16 20:50:35.909 [notice] Opening Control listener on 127.0.0.1:0
+Nov 16 20:50:35.909 [notice] Control listener listening on port 45877.
+Nov 16 20:50:35.909 [notice] Opened Control listener on 127.0.0.1:0
+Nov 16 20:50:35.000 [notice] Bootstrapped 0%: Starting
+Nov 16 20:50:36.000 [notice] Starting with guard context "default"
+Nov 16 20:50:36.000 [notice] Application request when we haven't used client functionality lately. Optimistically trying directory fetches again.
+Nov 16 20:50:36.000 [notice] Bootstrapped 5%: Connecting to directory server
+Nov 16 20:50:37.000 [notice] Bootstrapped 10%: Finishing handshake with directory server
+Nov 16 20:50:37.000 [notice] Bootstrapped 15%: Establishing an encrypted directory connection
+Nov 16 20:50:37.000 [notice] Bootstrapped 20%: Asking for networkstatus consensus
+Nov 16 20:50:37.000 [notice] Bootstrapped 25%: Loading networkstatus consensus
+Nov 16 20:50:38.000 [notice] Bootstrapped 45%: Asking for relay descriptors
+Nov 16 20:50:38.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 1466/5947, and can only build 1% of likely paths. (We have 28% of guards bw, 26% of midpoint bw, and 19% of exit bw = 1% of path bw.)
+Nov 16 20:50:39.000 [notice] Bootstrapped 50%: Loading relay descriptors
+Nov 16 20:50:40.000 [notice] Bootstrapped 56%: Loading relay descriptors
+Nov 16 20:50:40.000 [notice] Bootstrapped 64%: Loading relay descriptors
+Nov 16 20:50:40.000 [notice] Bootstrapped 70%: Loading relay descriptors
+Nov 16 20:50:40.000 [notice] Bootstrapped 78%: Loading relay descriptors
+Nov 16 20:50:41.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Nov 16 20:50:42.000 [notice] Bootstrapped 85%: Finishing handshake with first hop
+Nov 16 20:50:42.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
+Nov 16 20:50:42.000 [notice] Bootstrapped 100%: Done
+Nov 16 20:50:43.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:50:47.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:50:56.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:51:20.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:51:36.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:52:06.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:52:33.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:53:10.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:54:47.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:56:18.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 20:57:44.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 21:03:26.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 21:06:55.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 21:13:28.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 21:23:39.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 21:33:51.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 21:43:52.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 21:53:53.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 22:03:54.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 22:13:55.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 22:23:57.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 22:33:59.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 22:44:00.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 22:54:02.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 23:04:03.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 23:14:05.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 23:24:06.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 23:34:07.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 23:44:09.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.
+Nov 16 23:54:11.000 [notice] Have tried resolving or connecting to address '[scrubbed]' at 3 different places. Giving up.

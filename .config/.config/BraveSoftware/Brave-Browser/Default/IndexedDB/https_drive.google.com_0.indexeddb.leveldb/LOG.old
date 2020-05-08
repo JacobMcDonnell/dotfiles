@@ -1,0 +1,70 @@
+2020/04/28-12:42:19.950 4756 Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/04/28-12:43:37.702 49cb Level-0 table #5: started
+2020/04/28-12:43:37.713 4758 Current memtable full; waiting...
+2020/04/28-12:43:37.722 49cb Level-0 table #5: 4205309 bytes OK
+2020/04/28-12:43:37.726 49cb Delete type=0 #3
+2020/04/28-12:43:37.728 49cb Level-0 table #7: started
+2020/04/28-12:43:37.745 4758 Current memtable full; waiting...
+2020/04/28-12:43:37.749 49cb Level-0 table #7: 4295114 bytes OK
+2020/04/28-12:43:37.762 49cb Delete type=0 #4
+2020/04/28-12:43:37.764 49cb Level-0 table #9: started
+2020/04/28-12:43:37.789 49cb Level-0 table #9: 4208951 bytes OK
+2020/04/28-12:43:37.793 49cb Delete type=0 #6
+2020/04/28-12:43:39.501 49cb Level-0 table #11: started
+2020/04/28-12:43:39.523 49cb Level-0 table #11: 4229472 bytes OK
+2020/04/28-12:43:39.527 49cb Delete type=0 #8
+2020/04/28-12:43:39.544 49cb Level-0 table #13: started
+2020/04/28-12:43:39.566 49cb Level-0 table #13: 4323874 bytes OK
+2020/04/28-12:43:39.567 4758 Current memtable full; waiting...
+2020/04/28-12:43:39.569 49cb Delete type=0 #10
+2020/04/28-12:43:39.570 49cb Level-0 table #15: started
+2020/04/28-12:43:39.590 49cb Level-0 table #15: 4296180 bytes OK
+2020/04/28-12:43:39.591 4758 Current memtable full; waiting...
+2020/04/28-12:43:39.594 49cb Delete type=0 #12
+2020/04/28-12:43:39.594 49cb Compacting 4@0 + 1@1 files
+2020/04/28-12:43:39.595 49cb Level-0 table #18: started
+2020/04/28-12:43:39.610 4758 Current memtable full; waiting...
+2020/04/28-12:43:39.612 49cb Level-0 table #18: 4225458 bytes OK
+2020/04/28-12:43:39.616 49cb Delete type=0 #14
+2020/04/28-12:43:39.618 49cb Level-0 table #20: started
+2020/04/28-12:43:39.642 49cb Level-0 table #20: 4206573 bytes OK
+2020/04/28-12:43:39.646 49cb Delete type=0 #16
+2020/04/28-12:43:39.665 49cb Generated table #17@0: 330 keys, 2153105 bytes
+2020/04/28-12:43:39.680 49cb Generated table #21@0: 48 keys, 2162901 bytes
+2020/04/28-12:43:39.696 49cb Generated table #22@0: 44 keys, 2224724 bytes
+2020/04/28-12:43:39.710 49cb Generated table #23@0: 16 keys, 2135256 bytes
+2020/04/28-12:43:39.727 49cb Generated table #24@0: 16 keys, 2164927 bytes
+2020/04/28-12:43:39.743 49cb Generated table #25@0: 16 keys, 2125159 bytes
+2020/04/28-12:43:39.757 49cb Generated table #26@0: 17 keys, 2231719 bytes
+2020/04/28-12:43:39.772 49cb Generated table #27@0: 16 keys, 2103923 bytes
+2020/04/28-12:43:39.777 49cb Generated table #28@0: 97 keys, 445733 bytes
+2020/04/28-12:43:39.777 49cb Compacted 4@0 + 1@1 files => 17747447 bytes
+2020/04/28-12:43:39.780 49cb compacted to: files[ 2 9 1 0 0 0 0 ]
+2020/04/28-12:43:39.780 49cb Delete type=2 #13
+2020/04/28-12:43:39.780 49cb Delete type=2 #7
+2020/04/28-12:43:39.780 49cb Delete type=2 #15
+2020/04/28-12:43:39.780 49cb Delete type=2 #11
+2020/04/28-12:43:39.780 49cb Delete type=2 #9
+2020/04/28-12:43:39.785 49cb Expanding@1 1+1 (2153105+4205309 bytes) to 9+1 (17747447+4205309 bytes)
+2020/04/28-12:43:39.785 49cb Compacting 9@1 + 1@2 files
+2020/04/28-12:43:39.801 49cb Generated table #29@1: 51 keys, 2149062 bytes
+2020/04/28-12:43:39.815 49cb Generated table #30@1: 48 keys, 2162901 bytes
+2020/04/28-12:43:39.832 49cb Generated table #31@1: 91 keys, 2211794 bytes
+2020/04/28-12:43:39.848 49cb Generated table #32@1: 16 keys, 2131896 bytes
+2020/04/28-12:43:39.862 49cb Generated table #33@1: 16 keys, 2164939 bytes
+2020/04/28-12:43:39.877 49cb Generated table #34@1: 16 keys, 2127933 bytes
+2020/04/28-12:43:39.891 49cb Generated table #35@1: 16 keys, 2102821 bytes
+2020/04/28-12:43:39.905 49cb Generated table #36@1: 16 keys, 2102043 bytes
+2020/04/28-12:43:39.912 49cb Generated table #37@1: 105 keys, 712083 bytes
+2020/04/28-12:43:39.912 49cb Compacted 9@1 + 1@2 files => 17865472 bytes
+2020/04/28-12:43:39.915 49cb compacted to: files[ 2 0 9 0 0 0 0 ]
+2020/04/28-12:43:39.916 49cb Delete type=2 #28
+2020/04/28-12:43:39.916 49cb Delete type=2 #23
+2020/04/28-12:43:39.916 49cb Delete type=2 #17
+2020/04/28-12:43:39.916 49cb Delete type=2 #21
+2020/04/28-12:43:39.916 49cb Delete type=2 #5
+2020/04/28-12:43:39.916 49cb Delete type=2 #25
+2020/04/28-12:43:39.916 49cb Delete type=2 #27
+2020/04/28-12:43:39.916 49cb Delete type=2 #22
+2020/04/28-12:43:39.916 49cb Delete type=2 #24
+2020/04/28-12:43:39.916 49cb Delete type=2 #26

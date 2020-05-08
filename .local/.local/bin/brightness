@@ -1,0 +1,5 @@
+#!/bin/sh
+brightnessFile=/sys/class/backlight/amdgpu_bl0/brightness
+brightness=$(< $brightnessFile)
+[ $1 = "-inc" ] && [ $brightness -lt 255 ] && brightness=$((brightness + 50)) && echo -n $brightness > $brightnessFile
+[ $1 = "-dec" ] && [ $brightness -gt 5 ] && brightness=$((brightness - 50)) && echo -n $brightness > $brightnessFile

@@ -1,0 +1,21 @@
+#!/bin/sh
+
+declare -i count=1
+while [ "$count" -le "$(ls -A $HOME | wc -w)" ]
+do
+	name[$count]=$(ls -A $HOME | sed "${count}q;d")
+        forDialog[$count]="${count} $(ls -A $HOME| sed "${count}q;d") off "
+        count=$((count+1))
+done
+set -A files $(dialog --title "Dotfiles in the Home directory" --checklist "Select dotfiles:" 0 0 0 ${forDialog[*]} 3>&1 1>&2 2>&3 3>&-)
+cd $HOME/Documents/Projects/gitlab/dotfiles
+count=1
+while [ "$count" -le "${#files[@]}" ]
+do
+	cp -r $HOME/${name[${files[$count]}]} ${name[${files[$count]}]}
+	git add ${name[${files[$count]}]}
+        count=$((count+1))
+done
+COMMITMSG=$(dialog --title "Commit Message" --inputbox "Message" 0 0 3>&1 1>&2 2>&3 3>&-)
+git commit -m "$COMMITMSG"
+git push

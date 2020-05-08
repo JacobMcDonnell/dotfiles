@@ -1,0 +1,6 @@
+#!/bin/sh
+while :; do
+	killall polybar ;
+	polybar -r -q default ;
+	sleep 1m
+done

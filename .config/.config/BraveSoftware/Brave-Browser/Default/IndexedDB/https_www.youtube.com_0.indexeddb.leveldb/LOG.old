@@ -1,0 +1,7 @@
+2020/05/05-21:46:19.425 15ef Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/05-21:46:19.426 15ef Recovering log #3
+2020/05/05-21:46:19.430 15ef Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2020/05/05-21:48:17.050 13f3 Level-0 table #5: started
+2020/05/05-21:48:17.054 13f3 Level-0 table #5: 22363 bytes OK
+2020/05/05-21:48:17.057 13f3 Delete type=0 #3
+2020/05/05-21:48:17.058 13f3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
