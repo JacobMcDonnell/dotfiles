@@ -1,15 +1,6 @@
-2020/04/11-17:28:08.919 334b Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Extension State/MANIFEST-000001
-2020/04/11-17:28:08.919 334b Recovering log #16
-2020/04/11-17:28:08.923 334b Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Extension State/000016.log 
-2020/04/12-00:01:47.514 44b1 Level-0 table #20: started
-2020/04/12-00:01:47.531 44b1 Level-0 table #20: 1998909 bytes OK
-2020/04/12-00:01:47.537 44b1 Delete type=0 #16
-2020/04/12-00:01:47.538 44b1 Compacting 4@0 + 1@1 files
-2020/04/12-00:01:47.577 44b1 Generated table #21@0: 5 keys, 17819 bytes
-2020/04/12-00:01:47.577 44b1 Compacted 4@0 + 1@1 files => 17819 bytes
-2020/04/12-00:01:47.580 44b1 compacted to: files[ 0 1 1 0 0 0 0 ]
-2020/04/12-00:01:47.581 44b1 Delete type=2 #14
-2020/04/12-00:01:47.581 44b1 Delete type=2 #17
-2020/04/12-00:01:47.581 44b1 Delete type=2 #8
-2020/04/12-00:01:47.581 44b1 Delete type=2 #11
-2020/04/12-00:01:47.581 44b1 Delete type=2 #20
+2020/05/08-09:29:19.120 881 Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Extension State/MANIFEST-000001
+2020/05/08-09:29:19.121 881 Recovering log #36
+2020/05/08-09:29:19.130 881 Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Extension State/000036.log 
+2020/05/08-09:49:47.272 4ffb Level-0 table #40: started
+2020/05/08-09:49:47.294 4ffb Level-0 table #40: 2376579 bytes OK
+2020/05/08-09:49:47.298 4ffb Delete type=0 #36

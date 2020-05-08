@@ -1,3 +1,15 @@
-2020/04/11-22:38:43.914 309c Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/04/11-22:38:43.914 309c Recovering log #3
-2020/04/11-22:38:43.915 309c Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2020/05/08-09:42:11.856 20a3 Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/08-09:42:11.856 20a3 Recovering log #4
+2020/05/08-09:42:11.856 20a3 Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000004.log 
+2020/05/08-10:48:42.743 965 Level-0 table #8: started
+2020/05/08-10:48:42.745 965 Level-0 table #8: 2612 bytes OK
+2020/05/08-10:48:42.748 965 Delete type=0 #4
+2020/05/08-10:48:42.748 965 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/08-10:48:42.748 965 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 1710 : 1
+2020/05/08-10:48:42.748 965 Compacting 1@1 + 1@2 files
+2020/05/08-10:48:42.752 965 Generated table #9@1: 46 keys, 1837 bytes
+2020/05/08-10:48:42.752 965 Compacted 1@1 + 1@2 files => 1837 bytes
+2020/05/08-10:48:42.754 965 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/05/08-10:48:42.754 965 Delete type=2 #8
+2020/05/08-10:48:42.754 965 Delete type=2 #5
+2020/05/08-10:48:42.755 965 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 1710 : 1 .. (end); will stop at (end)

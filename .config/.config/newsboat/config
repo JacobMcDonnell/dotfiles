@@ -1,8 +1,0 @@
-browser brave
-macro , open-in-browser
-macro v set browser "setsid nohup mpv"; open-in-browser ; set browser brave
-macro u set browser "urlview"; open-in-browser ; set browser brave
-macro w set browser "w3m"; open-in-browser ; set browser brave
-macro y set browser "tsp youtube-dl -o '~/Videos/youtubeDownloads/%(title)s.%(ext)s' --restrict-filenames"; open-in-browser ; set browser "$BROWSER %u"
-macro s set browser "surf"; open-in-browser ; set browser brave
-

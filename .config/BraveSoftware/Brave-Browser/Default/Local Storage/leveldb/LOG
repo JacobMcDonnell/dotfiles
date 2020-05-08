@@ -1,9 +1,24 @@
-2020/04/11-17:28:08.219 334c Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2020/04/11-17:28:08.219 334c Recovering log #330
-2020/04/11-17:28:08.219 334c Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000330.log 
-2020/04/11-22:40:59.695 3526 Level-0 table #335: started
-2020/04/11-22:40:59.700 3526 Level-0 table #335: 27698 bytes OK
-2020/04/11-22:40:59.703 3526 Delete type=0 #330
-2020/04/12-00:28:14.110 3526 Level-0 table #337: started
-2020/04/12-00:28:14.114 3526 Level-0 table #337: 60979 bytes OK
-2020/04/12-00:28:14.117 3526 Delete type=0 #334
+2020/05/08-09:29:17.481 832 Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2020/05/08-09:29:17.482 832 Recovering log #441
+2020/05/08-09:29:17.483 832 Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000441.log 
+2020/05/08-09:30:18.360 c94 Level-0 table #445: started
+2020/05/08-09:30:18.372 c94 Level-0 table #445: 408762 bytes OK
+2020/05/08-09:30:18.375 c94 Delete type=0 #441
+2020/05/08-11:06:07.958 c94 Level-0 table #447: started
+2020/05/08-11:06:07.961 c94 Level-0 table #447: 18176 bytes OK
+2020/05/08-11:06:07.964 c94 Delete type=0 #444
+2020/05/08-12:23:51.701 c94 Level-0 table #449: started
+2020/05/08-12:23:51.704 c94 Level-0 table #449: 24554 bytes OK
+2020/05/08-12:23:51.707 c94 Delete type=0 #446
+2020/05/08-12:23:51.707 c94 Compacting 4@0 + 1@1 files
+2020/05/08-12:23:51.738 c94 Generated table #450@0: 497 keys, 1302403 bytes
+2020/05/08-12:23:51.738 c94 Compacted 4@0 + 1@1 files => 1302403 bytes
+2020/05/08-12:23:51.741 c94 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/05/08-12:23:51.741 c94 Delete type=2 #447
+2020/05/08-12:23:51.741 c94 Delete type=2 #449
+2020/05/08-12:23:51.741 c94 Delete type=2 #440
+2020/05/08-12:23:51.741 c94 Delete type=2 #445
+2020/05/08-12:23:51.741 c94 Delete type=2 #442
+2020/05/08-12:37:13.428 c94 Level-0 table #452: started
+2020/05/08-12:37:13.440 c94 Level-0 table #452: 415814 bytes OK
+2020/05/08-12:37:13.443 c94 Delete type=0 #448

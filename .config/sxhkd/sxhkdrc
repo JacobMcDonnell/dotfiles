@@ -23,11 +23,11 @@ XF86AudioRaiseVolume
 
 # Lower Brightness
 XF86MonBrightnessDown
-	light -U 10
+	brightness -dec
 
 # Raise Brightness
 XF86MonBrightnessUp
-	light -A 10
+	brightness -inc
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -167,6 +167,10 @@ super + alt + f
 # launch vim
 super + alt + v
 	$TERMINAL -e vim
+
+# launch Syncterm
+super + alt + s
+	syncterm
 
 # DMENU SCRIPTS (Alt+Ctrl+Key)
 
