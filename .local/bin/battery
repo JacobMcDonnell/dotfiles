@@ -1,8 +1,12 @@
 #!/bin/sh
+case $BLOCK_BUTTON in
+	3) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
 for battery in /sys/class/power_supply/BAT?
 do
 	capacity=$(cat "$battery"/capacity) || exit
 	status=$(cat "$battery"/status)
-	[ "$status" = "Discharging" ] && [ "$capacity" -le 15 ] && warn "Low Battery!"
-	printf "%s %s\n" "$(echo "$status" | sed "s/,//;s/Discharging/D:/;s/Not charging/F:/;s/Charging/C:/;s/Unknown/U:/g")" "$(echo "$capacity" | sed -e 's/$/%/')"
+	[ "$status" = "Discharging" ] && [ "$capacity" -le 15 ] && notify-send -u critical "Low Battery!"
+	printf "%s %s\n" "$(echo "$status" | sed "s/,//;s/Discharging/🔋/;s/Not charging/⛔/;s/Full/✅/;s/Charging/🔌/;s/Unknown/❓/g")" "$(echo "$capacity" | sed -e 's/$/%/')"
 done

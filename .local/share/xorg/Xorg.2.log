@@ -1,518 +1,413 @@
-[    17.457] _XSERVTransmkdir: Owner of /tmp/.X11-unix should be set to root
-[    17.458] (WW) Failed to open protocol names file lib/xorg/protocol.txt
-[    17.459] 
+[   403.396] (WW) Failed to open protocol names file lib/xorg/protocol.txt
+[   403.398] 
 X.Org X Server 1.20.8
 X Protocol Version 11, Revision 0
-[    17.460] Build Operating System: Linux Artix Linux
-[    17.461] Current Operating System: Linux artix 5.6.10-artix1-1 #1 SMP PREEMPT Sat, 02 May 2020 23:52:16 +0000 x86_64
-[    17.461] Kernel command line: BOOT_IMAGE=/vmlinuz-linux root=UUID=dc230910-b6d8-454a-91f3-f0c555e6a921 rw loglevel=3 quiet acpi_backlight=vendor
-[    17.462] Build Date: 05 May 2020  11:15:38AM
-[    17.463]  
-[    17.464] Current version of pixman: 0.40.0
-[    17.465] 	Before reporting problems, check http://wiki.x.org
+[   403.405] Build Operating System: Linux Artix Linux
+[   403.408] Current Operating System: Linux artix 5.6.14-artix1-1 #1 SMP PREEMPT Thu, 21 May 2020 14:13:45 +0000 x86_64
+[   403.408] Kernel command line: BOOT_IMAGE=/vmlinuz-linux root=UUID=dc230910-b6d8-454a-91f3-f0c555e6a921 rw loglevel=3 quiet acpi_backlight=vendor
+[   403.413] Build Date: 05 May 2020  11:15:38AM
+[   403.414]  
+[   403.416] Current version of pixman: 0.40.0
+[   403.420] 	Before reporting problems, check http://wiki.x.org
 	to make sure that you have the latest version.
-[    17.465] Markers: (--) probed, (**) from config file, (==) default setting,
+[   403.420] Markers: (--) probed, (**) from config file, (==) default setting,
 	(++) from command line, (!!) notice, (II) informational,
 	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-[    17.469] (==) Log file: "/home/jacob/.local/share/xorg/Xorg.2.log", Time: Sun May 10 19:58:38 2020
-[    17.472] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
-[    17.473] (==) No Layout section.  Using the first Screen section.
-[    17.473] (==) No screen section available. Using defaults.
-[    17.473] (**) |-->Screen "Default Screen Section" (0)
-[    17.473] (**) |   |-->Monitor "<default monitor>"
-[    17.473] (==) No monitor specified for screen "Default Screen Section".
+[   403.428] (==) Log file: "/home/jacob/.local/share/xorg/Xorg.2.log", Time: Mon Jun  8 08:00:11 2020
+[   403.429] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   403.430] (==) No Layout section.  Using the first Screen section.
+[   403.430] (==) No screen section available. Using defaults.
+[   403.430] (**) |-->Screen "Default Screen Section" (0)
+[   403.430] (**) |   |-->Monitor "<default monitor>"
+[   403.430] (==) No monitor specified for screen "Default Screen Section".
 	Using a default monitor configuration.
-[    17.473] (==) Automatically adding devices
-[    17.473] (==) Automatically enabling devices
-[    17.473] (==) Automatically adding GPU devices
-[    17.473] (==) Automatically binding GPU devices
-[    17.473] (==) Max clients allowed: 256, resource mask: 0x1fffff
-[    17.476] (WW) `fonts.dir' not found (or not valid) in "/usr/share/fonts/misc".
-[    17.476] 	Entry deleted from font path.
-[    17.476] 	(Run 'mkfontdir' on "/usr/share/fonts/misc").
-[    17.477] (WW) The directory "/usr/share/fonts/OTF" does not exist.
-[    17.477] 	Entry deleted from font path.
-[    17.477] (WW) The directory "/usr/share/fonts/Type1" does not exist.
-[    17.477] 	Entry deleted from font path.
-[    17.479] (==) FontPath set to:
+[   403.430] (==) Automatically adding devices
+[   403.430] (==) Automatically enabling devices
+[   403.430] (==) Automatically adding GPU devices
+[   403.430] (==) Automatically binding GPU devices
+[   403.430] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   403.430] (WW) The directory "/usr/share/fonts/OTF" does not exist.
+[   403.430] 	Entry deleted from font path.
+[   403.430] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[   403.430] 	Entry deleted from font path.
+[   403.430] (==) FontPath set to:
+	/usr/share/fonts/misc,
 	/usr/share/fonts/TTF,
 	/usr/share/fonts/100dpi,
 	/usr/share/fonts/75dpi
-[    17.479] (==) ModulePath set to "/usr/lib/xorg/modules"
-[    17.479] (II) The server relies on udev to provide the list of input devices.
+[   403.430] (==) ModulePath set to "/usr/lib/xorg/modules"
+[   403.430] (II) The server relies on udev to provide the list of input devices.
 	If no devices become available, reconfigure udev or disable AutoAddDevices.
-[    17.479] (II) Module ABI versions:
-[    17.479] 	X.Org ANSI C Emulation: 0.4
-[    17.479] 	X.Org Video Driver: 24.1
-[    17.479] 	X.Org XInput driver : 24.1
-[    17.479] 	X.Org Server Extension : 10.0
-[    17.479] (++) using VT number 1
+[   403.430] (II) Module ABI versions:
+[   403.430] 	X.Org ANSI C Emulation: 0.4
+[   403.430] 	X.Org Video Driver: 24.1
+[   403.430] 	X.Org XInput driver : 24.1
+[   403.430] 	X.Org Server Extension : 10.0
+[   403.431] (++) using VT number 1
 
-[    17.481] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
-[    17.481] (II) xfree86: Adding drm device (/dev/dri/card0)
-[    17.482] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 10 paused 0
-[    17.485] (--) PCI:*(3@0:0:0) 1002:15dd:103c:8497 rev 196, Mem @ 0xe0000000/268435456, 0xf0000000/2097152, 0xfcd00000/524288, I/O @ 0x0000e000/256
-[    17.485] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
-[    17.485] (II) LoadModule: "glx"
-[    17.488] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
-[    17.496] (II) Module glx: vendor="X.Org Foundation"
-[    17.496] 	compiled for 1.20.8, module version = 1.0.0
-[    17.496] 	ABI class: X.Org Server Extension, version 10.0
-[    17.496] (==) Matched ati as autoconfigured driver 0
-[    17.496] (==) Matched modesetting as autoconfigured driver 1
-[    17.496] (==) Matched fbdev as autoconfigured driver 2
-[    17.496] (==) Matched vesa as autoconfigured driver 3
-[    17.496] (==) Assigned the driver to the xf86ConfigLayout
-[    17.496] (II) LoadModule: "ati"
-[    17.497] (WW) Warning, couldn't open module ati
-[    17.497] (EE) Failed to load module "ati" (module does not exist, 0)
-[    17.497] (II) LoadModule: "modesetting"
-[    17.497] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
-[    17.499] (II) Module modesetting: vendor="X.Org Foundation"
-[    17.499] 	compiled for 1.20.8, module version = 1.20.8
-[    17.499] 	Module class: X.Org Video Driver
-[    17.499] 	ABI class: X.Org Video Driver, version 24.1
-[    17.499] (II) LoadModule: "fbdev"
-[    17.499] (WW) Warning, couldn't open module fbdev
-[    17.499] (EE) Failed to load module "fbdev" (module does not exist, 0)
-[    17.499] (II) LoadModule: "vesa"
-[    17.499] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
-[    17.499] (II) Module vesa: vendor="X.Org Foundation"
-[    17.499] 	compiled for 1.20.8, module version = 2.4.0
-[    17.499] 	Module class: X.Org Video Driver
-[    17.499] 	ABI class: X.Org Video Driver, version 24.1
-[    17.499] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
-[    17.500] (II) VESA: driver for VESA chipsets: vesa
-[    17.500] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
-[    17.500] (II) modeset(0): using drv /dev/dri/card0
-[    17.500] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
-[    17.500] (II) modeset(0): Creating default Display subsection in Screen section
+[   403.432] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[   403.432] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   403.433] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 10 paused 0
+[   403.435] (--) PCI:*(3@0:0:0) 1002:15dd:103c:8497 rev 196, Mem @ 0xe0000000/268435456, 0xf0000000/2097152, 0xfcd00000/524288, I/O @ 0x0000e000/256
+[   403.435] (WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+[   403.435] (II) LoadModule: "glx"
+[   403.435] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[   403.436] (II) Module glx: vendor="X.Org Foundation"
+[   403.436] 	compiled for 1.20.8, module version = 1.0.0
+[   403.436] 	ABI class: X.Org Server Extension, version 10.0
+[   403.436] (==) Matched ati as autoconfigured driver 0
+[   403.436] (==) Matched modesetting as autoconfigured driver 1
+[   403.436] (==) Matched fbdev as autoconfigured driver 2
+[   403.436] (==) Matched vesa as autoconfigured driver 3
+[   403.436] (==) Assigned the driver to the xf86ConfigLayout
+[   403.436] (II) LoadModule: "ati"
+[   403.436] (WW) Warning, couldn't open module ati
+[   403.436] (EE) Failed to load module "ati" (module does not exist, 0)
+[   403.436] (II) LoadModule: "modesetting"
+[   403.436] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[   403.437] (II) Module modesetting: vendor="X.Org Foundation"
+[   403.437] 	compiled for 1.20.8, module version = 1.20.8
+[   403.437] 	Module class: X.Org Video Driver
+[   403.437] 	ABI class: X.Org Video Driver, version 24.1
+[   403.437] (II) LoadModule: "fbdev"
+[   403.437] (WW) Warning, couldn't open module fbdev
+[   403.437] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[   403.437] (II) LoadModule: "vesa"
+[   403.437] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[   403.437] (II) Module vesa: vendor="X.Org Foundation"
+[   403.437] 	compiled for 1.20.8, module version = 2.4.0
+[   403.437] 	Module class: X.Org Video Driver
+[   403.437] 	ABI class: X.Org Video Driver, version 24.1
+[   403.437] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[   403.437] (II) VESA: driver for VESA chipsets: vesa
+[   403.437] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[   403.437] (II) modeset(0): using drv /dev/dri/card0
+[   403.437] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[   403.437] (II) modeset(0): Creating default Display subsection in Screen section
 	"Default Screen Section" for depth/fbbpp 24/32
-[    17.500] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
-[    17.500] (==) modeset(0): RGB weight 888
-[    17.500] (==) modeset(0): Default visual is TrueColor
-[    17.500] (II) Loading sub module "glamoregl"
-[    17.500] (II) LoadModule: "glamoregl"
-[    17.500] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
-[    17.507] (II) Module glamoregl: vendor="X.Org Foundation"
-[    17.507] 	compiled for 1.20.8, module version = 1.0.1
-[    17.507] 	ABI class: X.Org ANSI C Emulation, version 0.4
-[    17.758] (II) modeset(0): glamor X acceleration enabled on AMD RAVEN (DRM 3.36.0, 5.6.10-artix1-1, LLVM 10.0.0)
-[    17.758] (II) modeset(0): glamor initialized
-[    17.758] (II) modeset(0): Output eDP-1 has no monitor section
-[    17.758] (II) modeset(0): Output HDMI-1 has no monitor section
-[    17.758] (II) modeset(0): Output DP-1 has no monitor section
-[    17.759] (II) modeset(0): EDID for output eDP-1
-[    17.759] (II) modeset(0): Manufacturer: AUO  Model: 22ed  Serial#: 0
-[    17.759] (II) modeset(0): Year: 2016  Week: 0
-[    17.759] (II) modeset(0): EDID Version: 1.4
-[    17.759] (II) modeset(0): Digital Display Input
-[    17.759] (II) modeset(0): 6 bits per channel
-[    17.759] (II) modeset(0): Digital interface is DisplayPort
-[    17.759] (II) modeset(0): Max Image Size [cm]: horiz.: 34  vert.: 19
-[    17.759] (II) modeset(0): Gamma: 2.20
-[    17.759] (II) modeset(0): No DPMS capabilities specified
-[    17.759] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:2:2
-[    17.759] (II) modeset(0): First detailed timing is preferred mode
-[    17.759] (II) modeset(0): Preferred mode is native pixel format and refresh rate
-[    17.759] (II) modeset(0): Display is continuous-frequency
-[    17.759] (II) modeset(0): redX: 0.575 redY: 0.346   greenX: 0.347 greenY: 0.572
-[    17.759] (II) modeset(0): blueX: 0.158 blueY: 0.117   whiteX: 0.313 whiteY: 0.329
-[    17.759] (II) modeset(0): Manufacturer's mask: 0
-[    17.759] (II) modeset(0): Supported detailed timing:
-[    17.759] (II) modeset(0): clock: 141.0 MHz   Image Size:  344 x 193 mm
-[    17.759] (II) modeset(0): h_active: 1920  h_sync: 2028  h_sync_end 2076 h_blank_end 2086 h_border: 0
-[    17.759] (II) modeset(0): v_active: 1080  v_sync: 1090  v_sync_end 1100 v_blanking: 1126 v_border: 0
-[    17.759] (II) modeset(0): Supported detailed timing:
-[    17.759] (II) modeset(0): clock: 94.0 MHz   Image Size:  344 x 193 mm
-[    17.759] (II) modeset(0): h_active: 1920  h_sync: 2028  h_sync_end 2076 h_blank_end 2086 h_border: 0
-[    17.759] (II) modeset(0): v_active: 1080  v_sync: 1090  v_sync_end 1100 v_blanking: 1126 v_border: 0
-[    17.759] (II) modeset(0): Unknown vendor-specific block 2
-[    17.759] (II) modeset(0): EDID (in hex):
-[    17.759] (II) modeset(0): 	00ffffffffffff0006afed2200000000
-[    17.759] (II) modeset(0): 	001a010495221378116e859358589228
-[    17.759] (II) modeset(0): 	1e505400000001010101010101010101
-[    17.759] (II) modeset(0): 	010101010101143780a670382e406c30
-[    17.759] (II) modeset(0): 	aa0058c110000018b82480a670382e40
-[    17.759] (II) modeset(0): 	6c30aa0058c110000018000000000000
-[    17.759] (II) modeset(0): 	00000000000000000000000000000002
-[    17.759] (II) modeset(0): 	001048ff0f3c6e0f16286e2020200034
-[    17.759] (II) modeset(0): Printing probed modes for output eDP-1
-[    17.759] (II) modeset(0): Modeline "1920x1080"x60.0  141.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (67.6 kHz eP)
-[    17.759] (II) modeset(0): Modeline "1920x1080"x40.0   94.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (45.1 kHz e)
-[    17.759] (II) modeset(0): Modeline "1680x1050"x60.0  141.00  1680 2028 2076 2086  1050 1090 1100 1126 -hsync -vsync (67.6 kHz e)
-[    17.759] (II) modeset(0): Modeline "1280x1024"x60.0  141.00  1280 2028 2076 2086  1024 1090 1100 1126 -hsync -vsync (67.6 kHz e)
-[    17.759] (II) modeset(0): Modeline "1440x900"x60.0  141.00  1440 2028 2076 2086  900 1090 1100 1126 -hsync -vsync (67.6 kHz e)
-[    17.760] (II) modeset(0): Modeline "1280x800"x60.0  141.00  1280 2028 2076 2086  800 1090 1100 1126 -hsync -vsync (67.6 kHz e)
-[    17.760] (II) modeset(0): Modeline "1280x720"x60.0  141.00  1280 2028 2076 2086  720 1090 1100 1126 -hsync -vsync (67.6 kHz e)
-[    17.760] (II) modeset(0): Modeline "1024x768"x60.0  141.00  1024 2028 2076 2086  768 1090 1100 1126 -hsync -vsync (67.6 kHz e)
-[    17.760] (II) modeset(0): Modeline "800x600"x60.0  141.00  800 2028 2076 2086  600 1090 1100 1126 -hsync -vsync (67.6 kHz e)
-[    17.760] (II) modeset(0): Modeline "640x480"x60.0  141.00  640 2028 2076 2086  480 1090 1100 1126 -hsync -vsync (67.6 kHz e)
-[    17.760] (II) modeset(0): EDID for output HDMI-1
-[    17.760] (II) modeset(0): EDID for output DP-1
-[    17.760] (II) modeset(0): Output eDP-1 connected
-[    17.760] (II) modeset(0): Output HDMI-1 disconnected
-[    17.760] (II) modeset(0): Output DP-1 disconnected
-[    17.760] (II) modeset(0): Using exact sizes for initial modes
-[    17.760] (II) modeset(0): Output eDP-1 using initial mode 1920x1080 +0+0
-[    17.760] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
-[    17.760] (==) modeset(0): DPI set to (96, 96)
-[    17.760] (II) Loading sub module "fb"
-[    17.760] (II) LoadModule: "fb"
-[    17.760] (II) Loading /usr/lib/xorg/modules/libfb.so
-[    17.761] (II) Module fb: vendor="X.Org Foundation"
-[    17.761] 	compiled for 1.20.8, module version = 1.0.0
-[    17.761] 	ABI class: X.Org ANSI C Emulation, version 0.4
-[    17.761] (II) UnloadModule: "vesa"
-[    17.761] (II) Unloading vesa
-[    17.917] (==) modeset(0): Backing store enabled
-[    17.917] (==) modeset(0): Silken mouse disabled
-[    17.918] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
-[    17.919] (==) modeset(0): DPMS enabled
-[    17.919] (II) modeset(0): [DRI2] Setup complete
-[    17.919] (II) modeset(0): [DRI2]   DRI driver: radeonsi
-[    17.919] (II) modeset(0): [DRI2]   VDPAU driver: radeonsi
-[    17.919] (II) Initializing extension Generic Event Extension
-[    17.919] (II) Initializing extension SHAPE
-[    17.919] (II) Initializing extension MIT-SHM
-[    17.919] (II) Initializing extension XInputExtension
-[    17.919] (II) Initializing extension XTEST
-[    17.919] (II) Initializing extension BIG-REQUESTS
-[    17.919] (II) Initializing extension SYNC
-[    17.919] (II) Initializing extension XKEYBOARD
-[    17.919] (II) Initializing extension XC-MISC
-[    17.919] (II) Initializing extension SECURITY
-[    17.919] (II) Initializing extension XFIXES
-[    17.919] (II) Initializing extension RENDER
-[    17.919] (II) Initializing extension RANDR
-[    17.919] (II) Initializing extension COMPOSITE
-[    17.919] (II) Initializing extension DAMAGE
-[    17.919] (II) Initializing extension MIT-SCREEN-SAVER
-[    17.919] (II) Initializing extension DOUBLE-BUFFER
-[    17.919] (II) Initializing extension RECORD
-[    17.919] (II) Initializing extension DPMS
-[    17.919] (II) Initializing extension Present
-[    17.919] (II) Initializing extension DRI3
-[    17.919] (II) Initializing extension X-Resource
-[    17.919] (II) Initializing extension XVideo
-[    17.919] (II) Initializing extension XVideo-MotionCompensation
-[    17.919] (II) Initializing extension GLX
-[    17.925] (II) AIGLX: Loaded and initialized radeonsi
-[    17.925] (II) GLX: Initialized DRI2 GL provider for screen 0
-[    17.925] (II) Initializing extension XFree86-VidModeExtension
-[    17.925] (II) Initializing extension XFree86-DGA
-[    17.925] (II) Initializing extension XFree86-DRI
-[    17.925] (II) Initializing extension DRI2
-[    17.931] (II) modeset(0): Damage tracking initialized
-[    17.931] (II) modeset(0): Setting screen physical size to 508 x 285
-[    18.029] (II) config/udev: Adding input device Power Button (/dev/input/event2)
-[    18.029] (**) Power Button: Applying InputClass "libinput keyboard catchall"
-[    18.029] (II) LoadModule: "libinput"
-[    18.029] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
-[    18.033] (II) Module libinput: vendor="X.Org Foundation"
-[    18.033] 	compiled for 1.20.7, module version = 0.29.0
-[    18.033] 	Module class: X.Org XInput Driver
-[    18.033] 	ABI class: X.Org XInput driver, version 24.1
-[    18.033] (II) Using input driver 'libinput' for 'Power Button'
-[    18.034] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 18 paused 0
-[    18.034] (**) Power Button: always reports core events
-[    18.034] (**) Option "Device" "/dev/input/event2"
-[    18.034] (**) Option "_source" "server/udev"
-[    18.039] (II) event2  - Power Button: is tagged by udev as: Keyboard
-[    18.039] (II) event2  - Power Button: device is a keyboard
-[    18.039] (II) event2  - Power Button: device removed
-[    18.040] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
-[    18.040] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
-[    18.040] (II) event2  - Power Button: is tagged by udev as: Keyboard
-[    18.040] (II) event2  - Power Button: device is a keyboard
-[    18.041] (II) config/udev: Adding input device Video Bus (/dev/input/event3)
-[    18.041] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
-[    18.041] (II) Using input driver 'libinput' for 'Video Bus'
-[    18.042] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 21 paused 0
-[    18.042] (**) Video Bus: always reports core events
-[    18.042] (**) Option "Device" "/dev/input/event3"
-[    18.042] (**) Option "_source" "server/udev"
-[    18.043] (II) event3  - Video Bus: is tagged by udev as: Keyboard
-[    18.043] (II) event3  - Video Bus: device is a keyboard
-[    18.043] (II) event3  - Video Bus: device removed
-[    18.043] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:14/LNXVIDEO:02/input/input3/event3"
-[    18.043] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
-[    18.043] (II) event3  - Video Bus: is tagged by udev as: Keyboard
-[    18.043] (II) event3  - Video Bus: device is a keyboard
-[    18.044] (II) config/udev: Adding input device Power Button (/dev/input/event0)
-[    18.044] (**) Power Button: Applying InputClass "libinput keyboard catchall"
-[    18.044] (II) Using input driver 'libinput' for 'Power Button'
-[    18.044] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 22 paused 0
-[    18.044] (**) Power Button: always reports core events
-[    18.045] (**) Option "Device" "/dev/input/event0"
-[    18.045] (**) Option "_source" "server/udev"
-[    18.045] (II) event0  - Power Button: is tagged by udev as: Keyboard
-[    18.045] (II) event0  - Power Button: device is a keyboard
-[    18.045] (II) event0  - Power Button: device removed
-[    18.045] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
-[    18.045] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
-[    18.046] (II) event0  - Power Button: is tagged by udev as: Keyboard
-[    18.046] (II) event0  - Power Button: device is a keyboard
-[    18.047] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
-[    18.047] (II) No input driver specified, ignoring this device.
-[    18.047] (II) This device may have been added with another device file.
-[    18.047] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event7)
-[    18.047] (II) No input driver specified, ignoring this device.
-[    18.047] (II) This device may have been added with another device file.
-[    18.047] (II) config/udev: Adding input device HP Wide Vision FHD Camera: HP W (/dev/input/event8)
-[    18.047] (**) HP Wide Vision FHD Camera: HP W: Applying InputClass "libinput keyboard catchall"
-[    18.047] (II) Using input driver 'libinput' for 'HP Wide Vision FHD Camera: HP W'
-[    18.048] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 23 paused 0
-[    18.048] (**) HP Wide Vision FHD Camera: HP W: always reports core events
-[    18.048] (**) Option "Device" "/dev/input/event8"
-[    18.048] (**) Option "_source" "server/udev"
-[    18.049] (II) event8  - HP Wide Vision FHD Camera: HP W: is tagged by udev as: Keyboard
-[    18.049] (II) event8  - HP Wide Vision FHD Camera: HP W: device is a keyboard
-[    18.049] (II) event8  - HP Wide Vision FHD Camera: HP W: device removed
-[    18.050] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-1/3-1:1.0/input/input10/event8"
-[    18.050] (II) XINPUT: Adding extended input device "HP Wide Vision FHD Camera: HP W" (type: KEYBOARD, id 9)
-[    18.051] (II) event8  - HP Wide Vision FHD Camera: HP W: is tagged by udev as: Keyboard
-[    18.051] (II) event8  - HP Wide Vision FHD Camera: HP W: device is a keyboard
-[    18.051] (II) config/udev: Adding input device HP Wide Vision FHD Camera: HP I (/dev/input/event9)
-[    18.051] (**) HP Wide Vision FHD Camera: HP I: Applying InputClass "libinput keyboard catchall"
-[    18.051] (II) Using input driver 'libinput' for 'HP Wide Vision FHD Camera: HP I'
-[    18.052] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 24 paused 0
-[    18.052] (**) HP Wide Vision FHD Camera: HP I: always reports core events
-[    18.052] (**) Option "Device" "/dev/input/event9"
-[    18.052] (**) Option "_source" "server/udev"
-[    18.053] (II) event9  - HP Wide Vision FHD Camera: HP I: is tagged by udev as: Keyboard
-[    18.053] (II) event9  - HP Wide Vision FHD Camera: HP I: device is a keyboard
-[    18.053] (II) event9  - HP Wide Vision FHD Camera: HP I: device removed
-[    18.053] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-1/3-1:1.2/input/input11/event9"
-[    18.053] (II) XINPUT: Adding extended input device "HP Wide Vision FHD Camera: HP I" (type: KEYBOARD, id 10)
-[    18.055] (II) event9  - HP Wide Vision FHD Camera: HP I: is tagged by udev as: Keyboard
-[    18.055] (II) event9  - HP Wide Vision FHD Camera: HP I: device is a keyboard
-[    18.055] (II) config/udev: Adding input device HD-Audio Generic Mic (/dev/input/event10)
-[    18.055] (II) No input driver specified, ignoring this device.
-[    18.055] (II) This device may have been added with another device file.
-[    18.055] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event11)
-[    18.055] (II) No input driver specified, ignoring this device.
-[    18.055] (II) This device may have been added with another device file.
-[    18.056] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 (/dev/input/event12)
-[    18.056] (**) ELAN0732:00 04F3:2650: Applying InputClass "libinput touchscreen catchall"
-[    18.056] (II) Using input driver 'libinput' for 'ELAN0732:00 04F3:2650'
-[    18.057] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 25 paused 0
-[    18.057] (**) ELAN0732:00 04F3:2650: always reports core events
-[    18.057] (**) Option "Device" "/dev/input/event12"
-[    18.057] (**) Option "_source" "server/udev"
-[    18.058] (II) event12 - ELAN0732:00 04F3:2650: is tagged by udev as: Touchscreen
-[    18.058] (II) event12 - ELAN0732:00 04F3:2650: device is a touch device
-[    18.058] (II) event12 - ELAN0732:00 04F3:2650: device removed
-[    18.058] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN0732:00/0018:04F3:2650.0001/input/input21/event12"
-[    18.058] (II) XINPUT: Adding extended input device "ELAN0732:00 04F3:2650" (type: TOUCHSCREEN, id 11)
-[    18.058] (**) Option "AccelerationScheme" "none"
-[    18.058] (**) ELAN0732:00 04F3:2650: (accel) selected scheme none/0
-[    18.058] (**) ELAN0732:00 04F3:2650: (accel) acceleration factor: 2.000
-[    18.058] (**) ELAN0732:00 04F3:2650: (accel) acceleration threshold: 4
-[    18.059] (II) event12 - ELAN0732:00 04F3:2650: is tagged by udev as: Touchscreen
-[    18.059] (II) event12 - ELAN0732:00 04F3:2650: device is a touch device
-[    18.059] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 (/dev/input/mouse0)
-[    18.059] (II) No input driver specified, ignoring this device.
-[    18.059] (II) This device may have been added with another device file.
-[    18.060] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 UNKNOWN (/dev/input/event13)
-[    18.060] (II) No input driver specified, ignoring this device.
-[    18.060] (II) This device may have been added with another device file.
-[    18.060] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 UNKNOWN (/dev/input/event14)
-[    18.060] (II) No input driver specified, ignoring this device.
-[    18.060] (II) This device may have been added with another device file.
-[    18.060] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 (/dev/input/event15)
-[    18.060] (**) ELAN0732:00 04F3:2650: Applying InputClass "libinput tablet catchall"
-[    18.060] (II) Using input driver 'libinput' for 'ELAN0732:00 04F3:2650'
-[    18.061] (II) systemd-logind: got fd for /dev/input/event15 13:79 fd 26 paused 0
-[    18.061] (**) ELAN0732:00 04F3:2650: always reports core events
-[    18.061] (**) Option "Device" "/dev/input/event15"
-[    18.061] (**) Option "_source" "server/udev"
-[    18.062] (II) event15 - ELAN0732:00 04F3:2650: is tagged by udev as: Tablet
-[    18.109] (II) event15 - ELAN0732:00 04F3:2650: tablet 'ELAN0732:00 04F3:2650' unknown to libwacom
-[    18.109] (II) event15 - ELAN0732:00 04F3:2650: device is a tablet
-[    18.109] (II) event15 - ELAN0732:00 04F3:2650: device removed
-[    18.109] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN0732:00/0018:04F3:2650.0001/input/input24/event15"
-[    18.109] (II) XINPUT: Adding extended input device "ELAN0732:00 04F3:2650" (type: TABLET, id 12)
-[    18.110] (II) event15 - ELAN0732:00 04F3:2650: is tagged by udev as: Tablet
-[    18.110] (II) event15 - ELAN0732:00 04F3:2650: tablet 'ELAN0732:00 04F3:2650' unknown to libwacom
-[    18.110] (II) event15 - ELAN0732:00 04F3:2650: device is a tablet
-[    18.110] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 (/dev/input/mouse1)
-[    18.110] (II) No input driver specified, ignoring this device.
-[    18.110] (II) This device may have been added with another device file.
-[    18.111] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
-[    18.111] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
-[    18.111] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
-[    18.112] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 28 paused 0
-[    18.112] (**) AT Translated Set 2 keyboard: always reports core events
-[    18.112] (**) Option "Device" "/dev/input/event4"
-[    18.112] (**) Option "_source" "server/udev"
-[    18.112] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
-[    18.112] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
-[    18.113] (II) event4  - AT Translated Set 2 keyboard: device removed
-[    18.113] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
-[    18.113] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 13)
-[    18.113] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
-[    18.114] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
-[    18.114] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/event17)
-[    18.114] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "libinput touchpad catchall"
-[    18.114] (II) Using input driver 'libinput' for 'SynPS/2 Synaptics TouchPad'
-[    18.115] (II) systemd-logind: got fd for /dev/input/event17 13:81 fd 29 paused 0
-[    18.115] (**) SynPS/2 Synaptics TouchPad: always reports core events
-[    18.115] (**) Option "Device" "/dev/input/event17"
-[    18.115] (**) Option "_source" "server/udev"
-[    18.116] (II) event17 - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
-[    18.116] (II) event17 - SynPS/2 Synaptics TouchPad: no resolution or size hints, assuming a size of 69x50mm
-[    18.117] (II) event17 - SynPS/2 Synaptics TouchPad: device is a touchpad
-[    18.117] (II) event17 - SynPS/2 Synaptics TouchPad: device removed
-[    18.117] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input8/event17"
-[    18.117] (II) XINPUT: Adding extended input device "SynPS/2 Synaptics TouchPad" (type: TOUCHPAD, id 14)
-[    18.118] (**) Option "AccelerationScheme" "none"
-[    18.118] (**) SynPS/2 Synaptics TouchPad: (accel) selected scheme none/0
-[    18.118] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration factor: 2.000
-[    18.118] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration threshold: 4
-[    18.119] (II) event17 - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
-[    18.120] (II) event17 - SynPS/2 Synaptics TouchPad: no resolution or size hints, assuming a size of 69x50mm
-[    18.120] (II) event17 - SynPS/2 Synaptics TouchPad: device is a touchpad
-[    18.121] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/mouse2)
-[    18.121] (II) No input driver specified, ignoring this device.
-[    18.121] (II) This device may have been added with another device file.
-[    18.121] (II) config/udev: Adding input device PC Speaker (/dev/input/event6)
-[    18.121] (II) No input driver specified, ignoring this device.
-[    18.121] (II) This device may have been added with another device file.
-[    18.122] (II) config/udev: Adding input device HP WMI hotkeys (/dev/input/event16)
-[    18.122] (**) HP WMI hotkeys: Applying InputClass "libinput keyboard catchall"
-[    18.122] (II) Using input driver 'libinput' for 'HP WMI hotkeys'
-[    18.123] (II) systemd-logind: got fd for /dev/input/event16 13:80 fd 30 paused 0
-[    18.123] (**) HP WMI hotkeys: always reports core events
-[    18.123] (**) Option "Device" "/dev/input/event16"
-[    18.123] (**) Option "_source" "server/udev"
-[    18.123] (II) event16 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
-[    18.123] (II) event16 - HP WMI hotkeys: device is a keyboard
-[    18.123] (II) event16 - HP WMI hotkeys: device is a switch device
-[    18.124] (II) event16 - HP WMI hotkeys: device removed
-[    18.124] (**) Option "config_info" "udev:/sys/devices/virtual/input/input20/event16"
-[    18.124] (II) XINPUT: Adding extended input device "HP WMI hotkeys" (type: KEYBOARD, id 15)
-[    18.124] (II) event16 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
-[    18.124] (II) event16 - HP WMI hotkeys: device is a keyboard
-[    18.125] (II) event16 - HP WMI hotkeys: device is a switch device
-[    18.125] (II) config/udev: Adding input device HP Wireless hotkeys (/dev/input/event5)
-[    18.125] (**) HP Wireless hotkeys: Applying InputClass "libinput keyboard catchall"
-[    18.125] (II) Using input driver 'libinput' for 'HP Wireless hotkeys'
-[    18.126] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 31 paused 0
-[    18.126] (**) HP Wireless hotkeys: always reports core events
-[    18.126] (**) Option "Device" "/dev/input/event5"
-[    18.126] (**) Option "_source" "server/udev"
-[    18.127] (II) event5  - HP Wireless hotkeys: is tagged by udev as: Keyboard
-[    18.127] (II) event5  - HP Wireless hotkeys: device is a keyboard
-[    18.127] (II) event5  - HP Wireless hotkeys: device removed
-[    18.127] (**) Option "config_info" "udev:/sys/devices/virtual/input/input6/event5"
-[    18.127] (II) XINPUT: Adding extended input device "HP Wireless hotkeys" (type: KEYBOARD, id 16)
-[    18.128] (II) event5  - HP Wireless hotkeys: is tagged by udev as: Keyboard
-[    18.128] (II) event5  - HP Wireless hotkeys: device is a keyboard
-[    18.178] (II) modeset(0): EDID vendor "AUO", prod id 8941
-[    18.178] (II) modeset(0): Printing DDC gathered Modelines:
-[    18.178] (II) modeset(0): Modeline "1920x1080"x0.0  141.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (67.6 kHz eP)
-[    18.178] (II) modeset(0): Modeline "1920x1080"x0.0   94.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (45.1 kHz e)
-[    18.207] (II) modeset(0): Disabling kernel dirty updates, not required.
-[    18.222] (II) modeset(0): EDID vendor "AUO", prod id 8941
-[    18.222] (II) modeset(0): Printing DDC gathered Modelines:
-[    18.222] (II) modeset(0): Modeline "1920x1080"x0.0  141.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (67.6 kHz eP)
-[    18.222] (II) modeset(0): Modeline "1920x1080"x0.0   94.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (45.1 kHz e)
-[    18.225] (II) modeset(0): EDID vendor "AUO", prod id 8941
-[    18.225] (II) modeset(0): Printing DDC gathered Modelines:
-[    18.225] (II) modeset(0): Modeline "1920x1080"x0.0  141.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (67.6 kHz eP)
-[    18.225] (II) modeset(0): Modeline "1920x1080"x0.0   94.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (45.1 kHz e)
-[    18.255] (II) modeset(0): EDID vendor "AUO", prod id 8941
-[    18.255] (II) modeset(0): Printing DDC gathered Modelines:
-[    18.255] (II) modeset(0): Modeline "1920x1080"x0.0  141.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (67.6 kHz eP)
-[    18.255] (II) modeset(0): Modeline "1920x1080"x0.0   94.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (45.1 kHz e)
-[    19.239] (II) modeset(0): EDID vendor "AUO", prod id 8941
-[    19.239] (II) modeset(0): Printing DDC gathered Modelines:
-[    19.239] (II) modeset(0): Modeline "1920x1080"x0.0  141.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (67.6 kHz eP)
-[    19.239] (II) modeset(0): Modeline "1920x1080"x0.0   94.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (45.1 kHz e)
-[    19.381] (II) modeset(0): EDID vendor "AUO", prod id 8941
-[    19.381] (II) modeset(0): Printing DDC gathered Modelines:
-[    19.381] (II) modeset(0): Modeline "1920x1080"x0.0  141.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (67.6 kHz eP)
-[    19.381] (II) modeset(0): Modeline "1920x1080"x0.0   94.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (45.1 kHz e)
-[    22.079] (II) config/udev: Adding input device Logitech Wireless Mouse MX Master (/dev/input/mouse3)
-[    22.079] (II) No input driver specified, ignoring this device.
-[    22.079] (II) This device may have been added with another device file.
-[    22.142] (II) config/udev: Adding input device Logitech Wireless Mouse MX Master (/dev/input/event18)
-[    22.142] (**) Logitech Wireless Mouse MX Master: Applying InputClass "libinput pointer catchall"
-[    22.142] (**) Logitech Wireless Mouse MX Master: Applying InputClass "libinput keyboard catchall"
-[    22.142] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse MX Master'
-[    22.143] (II) systemd-logind: got fd for /dev/input/event18 13:82 fd 41 paused 0
-[    22.143] (**) Logitech Wireless Mouse MX Master: always reports core events
-[    22.143] (**) Option "Device" "/dev/input/event18"
-[    22.143] (**) Option "_source" "server/udev"
-[    22.144] (II) event18 - Logitech Wireless Mouse MX Master: is tagged by udev as: Keyboard Mouse
-[    22.144] (II) event18 - Logitech Wireless Mouse MX Master: device is a pointer
-[    22.144] (II) event18 - Logitech Wireless Mouse MX Master: device is a keyboard
-[    22.144] (II) event18 - Logitech Wireless Mouse MX Master: device removed
-[    22.144] (II) libinput: Logitech Wireless Mouse MX Master: needs a virtual subdevice
-[    22.144] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:046D:B012.0002/input/input30/event18"
-[    22.144] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse MX Master" (type: MOUSE, id 17)
-[    22.144] (**) Option "AccelerationScheme" "none"
-[    22.144] (**) Logitech Wireless Mouse MX Master: (accel) selected scheme none/0
-[    22.144] (**) Logitech Wireless Mouse MX Master: (accel) acceleration factor: 2.000
-[    22.144] (**) Logitech Wireless Mouse MX Master: (accel) acceleration threshold: 4
-[    22.145] (II) event18 - Logitech Wireless Mouse MX Master: is tagged by udev as: Keyboard Mouse
-[    22.145] (II) event18 - Logitech Wireless Mouse MX Master: device is a pointer
-[    22.145] (II) event18 - Logitech Wireless Mouse MX Master: device is a keyboard
-[    22.146] (**) Logitech Wireless Mouse MX Master: Applying InputClass "libinput pointer catchall"
-[    22.146] (**) Logitech Wireless Mouse MX Master: Applying InputClass "libinput keyboard catchall"
-[    22.146] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse MX Master'
-[    22.146] (II) systemd-logind: returning pre-existing fd for /dev/input/event18 13:82
-[    22.146] (**) Logitech Wireless Mouse MX Master: always reports core events
-[    22.146] (**) Option "Device" "/dev/input/event18"
-[    22.146] (**) Option "_source" "_driver/libinput"
-[    22.146] (II) libinput: Logitech Wireless Mouse MX Master: is a virtual subdevice
-[    22.146] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:046D:B012.0002/input/input30/event18"
-[    22.146] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse MX Master" (type: KEYBOARD, id 18)
-[    51.138] (II) config/udev: removing device Logitech Wireless Mouse MX Master
-[    51.138] (**) Option "fd" "41"
-[    51.141] (II) UnloadModule: "libinput"
-[    51.141] (II) systemd-logind: not releasing fd for 13:82, still in use
-[    51.141] (II) config/udev: removing device Logitech Wireless Mouse MX Master
-[    51.141] (**) Option "fd" "41"
-[    51.141] (II) event18 - Logitech Wireless Mouse MX Master: device removed
-[    51.142] (II) UnloadModule: "libinput"
-[    51.142] (II) systemd-logind: releasing fd for 13:82
-[    62.240] (II) config/udev: Adding input device Logitech Wireless Mouse MX Master (/dev/input/mouse3)
-[    62.240] (II) No input driver specified, ignoring this device.
-[    62.240] (II) This device may have been added with another device file.
-[    62.280] (II) config/udev: Adding input device Logitech Wireless Mouse MX Master (/dev/input/event18)
-[    62.281] (**) Logitech Wireless Mouse MX Master: Applying InputClass "libinput pointer catchall"
-[    62.281] (**) Logitech Wireless Mouse MX Master: Applying InputClass "libinput keyboard catchall"
-[    62.281] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse MX Master'
-[    62.284] (II) systemd-logind: got fd for /dev/input/event18 13:82 fd 48 paused 0
-[    62.284] (**) Logitech Wireless Mouse MX Master: always reports core events
-[    62.284] (**) Option "Device" "/dev/input/event18"
-[    62.284] (**) Option "_source" "server/udev"
-[    62.285] (II) event18 - Logitech Wireless Mouse MX Master: is tagged by udev as: Keyboard Mouse
-[    62.285] (II) event18 - Logitech Wireless Mouse MX Master: device is a pointer
-[    62.285] (II) event18 - Logitech Wireless Mouse MX Master: device is a keyboard
-[    62.285] (II) event18 - Logitech Wireless Mouse MX Master: device removed
-[    62.285] (II) libinput: Logitech Wireless Mouse MX Master: needs a virtual subdevice
-[    62.285] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:046D:B012.0003/input/input31/event18"
-[    62.285] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse MX Master" (type: MOUSE, id 17)
-[    62.286] (**) Option "AccelerationScheme" "none"
-[    62.286] (**) Logitech Wireless Mouse MX Master: (accel) selected scheme none/0
-[    62.287] (**) Logitech Wireless Mouse MX Master: (accel) acceleration factor: 2.000
-[    62.287] (**) Logitech Wireless Mouse MX Master: (accel) acceleration threshold: 4
-[    62.287] (II) event18 - Logitech Wireless Mouse MX Master: is tagged by udev as: Keyboard Mouse
-[    62.288] (II) event18 - Logitech Wireless Mouse MX Master: device is a pointer
-[    62.288] (II) event18 - Logitech Wireless Mouse MX Master: device is a keyboard
-[    62.288] (**) Logitech Wireless Mouse MX Master: Applying InputClass "libinput pointer catchall"
-[    62.288] (**) Logitech Wireless Mouse MX Master: Applying InputClass "libinput keyboard catchall"
-[    62.288] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse MX Master'
-[    62.288] (II) systemd-logind: returning pre-existing fd for /dev/input/event18 13:82
-[    62.288] (**) Logitech Wireless Mouse MX Master: always reports core events
-[    62.289] (**) Option "Device" "/dev/input/event18"
-[    62.289] (**) Option "_source" "_driver/libinput"
-[    62.289] (II) libinput: Logitech Wireless Mouse MX Master: is a virtual subdevice
-[    62.289] (**) Option "config_info" "udev:/sys/devices/virtual/misc/uhid/0005:046D:B012.0003/input/input31/event18"
-[    62.289] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse MX Master" (type: KEYBOARD, id 18)
-[    88.329] (EE) client bug: timer event18 debounce: scheduled expiry is in the past (-3ms), your system is too slow
-[    88.329] (EE) client bug: timer event18 debounce short: scheduled expiry is in the past (-16ms), your system is too slow
-[   241.498] (EE) client bug: timer event18 debounce short: scheduled expiry is in the past (-10ms), your system is too slow
+[   403.437] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[   403.437] (==) modeset(0): RGB weight 888
+[   403.437] (==) modeset(0): Default visual is TrueColor
+[   403.437] (II) Loading sub module "glamoregl"
+[   403.437] (II) LoadModule: "glamoregl"
+[   403.437] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[   403.439] (II) Module glamoregl: vendor="X.Org Foundation"
+[   403.439] 	compiled for 1.20.8, module version = 1.0.1
+[   403.439] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   403.493] (II) modeset(0): glamor X acceleration enabled on AMD RAVEN (DRM 3.36.0, 5.6.14-artix1-1, LLVM 10.0.0)
+[   403.493] (II) modeset(0): glamor initialized
+[   403.494] (II) modeset(0): Output eDP-1 has no monitor section
+[   403.494] (II) modeset(0): Output HDMI-1 has no monitor section
+[   403.494] (II) modeset(0): Output DP-1 has no monitor section
+[   403.494] (II) modeset(0): EDID for output eDP-1
+[   403.494] (II) modeset(0): Manufacturer: AUO  Model: 22ed  Serial#: 0
+[   403.494] (II) modeset(0): Year: 2016  Week: 0
+[   403.494] (II) modeset(0): EDID Version: 1.4
+[   403.494] (II) modeset(0): Digital Display Input
+[   403.494] (II) modeset(0): 6 bits per channel
+[   403.494] (II) modeset(0): Digital interface is DisplayPort
+[   403.494] (II) modeset(0): Max Image Size [cm]: horiz.: 34  vert.: 19
+[   403.494] (II) modeset(0): Gamma: 2.20
+[   403.494] (II) modeset(0): No DPMS capabilities specified
+[   403.494] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:2:2
+[   403.494] (II) modeset(0): First detailed timing is preferred mode
+[   403.494] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[   403.494] (II) modeset(0): Display is continuous-frequency
+[   403.494] (II) modeset(0): redX: 0.575 redY: 0.346   greenX: 0.347 greenY: 0.572
+[   403.494] (II) modeset(0): blueX: 0.158 blueY: 0.117   whiteX: 0.313 whiteY: 0.329
+[   403.494] (II) modeset(0): Manufacturer's mask: 0
+[   403.494] (II) modeset(0): Supported detailed timing:
+[   403.494] (II) modeset(0): clock: 141.0 MHz   Image Size:  344 x 193 mm
+[   403.494] (II) modeset(0): h_active: 1920  h_sync: 2028  h_sync_end 2076 h_blank_end 2086 h_border: 0
+[   403.494] (II) modeset(0): v_active: 1080  v_sync: 1090  v_sync_end 1100 v_blanking: 1126 v_border: 0
+[   403.494] (II) modeset(0): Supported detailed timing:
+[   403.494] (II) modeset(0): clock: 94.0 MHz   Image Size:  344 x 193 mm
+[   403.494] (II) modeset(0): h_active: 1920  h_sync: 2028  h_sync_end 2076 h_blank_end 2086 h_border: 0
+[   403.494] (II) modeset(0): v_active: 1080  v_sync: 1090  v_sync_end 1100 v_blanking: 1126 v_border: 0
+[   403.494] (II) modeset(0): Unknown vendor-specific block 2
+[   403.494] (II) modeset(0): EDID (in hex):
+[   403.494] (II) modeset(0): 	00ffffffffffff0006afed2200000000
+[   403.494] (II) modeset(0): 	001a010495221378116e859358589228
+[   403.494] (II) modeset(0): 	1e505400000001010101010101010101
+[   403.494] (II) modeset(0): 	010101010101143780a670382e406c30
+[   403.494] (II) modeset(0): 	aa0058c110000018b82480a670382e40
+[   403.494] (II) modeset(0): 	6c30aa0058c110000018000000000000
+[   403.494] (II) modeset(0): 	00000000000000000000000000000002
+[   403.494] (II) modeset(0): 	001048ff0f3c6e0f16286e2020200034
+[   403.494] (II) modeset(0): Printing probed modes for output eDP-1
+[   403.494] (II) modeset(0): Modeline "1920x1080"x60.0  141.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (67.6 kHz eP)
+[   403.494] (II) modeset(0): Modeline "1920x1080"x40.0   94.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (45.1 kHz e)
+[   403.494] (II) modeset(0): Modeline "1680x1050"x60.0  141.00  1680 2028 2076 2086  1050 1090 1100 1126 -hsync -vsync (67.6 kHz e)
+[   403.494] (II) modeset(0): Modeline "1280x1024"x60.0  141.00  1280 2028 2076 2086  1024 1090 1100 1126 -hsync -vsync (67.6 kHz e)
+[   403.494] (II) modeset(0): Modeline "1440x900"x60.0  141.00  1440 2028 2076 2086  900 1090 1100 1126 -hsync -vsync (67.6 kHz e)
+[   403.494] (II) modeset(0): Modeline "1280x800"x60.0  141.00  1280 2028 2076 2086  800 1090 1100 1126 -hsync -vsync (67.6 kHz e)
+[   403.494] (II) modeset(0): Modeline "1280x720"x60.0  141.00  1280 2028 2076 2086  720 1090 1100 1126 -hsync -vsync (67.6 kHz e)
+[   403.494] (II) modeset(0): Modeline "1024x768"x60.0  141.00  1024 2028 2076 2086  768 1090 1100 1126 -hsync -vsync (67.6 kHz e)
+[   403.494] (II) modeset(0): Modeline "800x600"x60.0  141.00  800 2028 2076 2086  600 1090 1100 1126 -hsync -vsync (67.6 kHz e)
+[   403.494] (II) modeset(0): Modeline "640x480"x60.0  141.00  640 2028 2076 2086  480 1090 1100 1126 -hsync -vsync (67.6 kHz e)
+[   403.494] (II) modeset(0): EDID for output HDMI-1
+[   403.494] (II) modeset(0): EDID for output DP-1
+[   403.494] (II) modeset(0): Output eDP-1 connected
+[   403.494] (II) modeset(0): Output HDMI-1 disconnected
+[   403.494] (II) modeset(0): Output DP-1 disconnected
+[   403.494] (II) modeset(0): Using exact sizes for initial modes
+[   403.494] (II) modeset(0): Output eDP-1 using initial mode 1920x1080 +0+0
+[   403.494] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[   403.494] (==) modeset(0): DPI set to (96, 96)
+[   403.494] (II) Loading sub module "fb"
+[   403.494] (II) LoadModule: "fb"
+[   403.494] (II) Loading /usr/lib/xorg/modules/libfb.so
+[   403.494] (II) Module fb: vendor="X.Org Foundation"
+[   403.494] 	compiled for 1.20.8, module version = 1.0.0
+[   403.494] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   403.494] (II) UnloadModule: "vesa"
+[   403.494] (II) Unloading vesa
+[   403.534] (==) modeset(0): Backing store enabled
+[   403.534] (==) modeset(0): Silken mouse disabled
+[   403.534] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[   403.535] (==) modeset(0): DPMS enabled
+[   403.535] (II) modeset(0): [DRI2] Setup complete
+[   403.535] (II) modeset(0): [DRI2]   DRI driver: radeonsi
+[   403.535] (II) modeset(0): [DRI2]   VDPAU driver: radeonsi
+[   403.535] (II) Initializing extension Generic Event Extension
+[   403.535] (II) Initializing extension SHAPE
+[   403.535] (II) Initializing extension MIT-SHM
+[   403.535] (II) Initializing extension XInputExtension
+[   403.535] (II) Initializing extension XTEST
+[   403.535] (II) Initializing extension BIG-REQUESTS
+[   403.535] (II) Initializing extension SYNC
+[   403.535] (II) Initializing extension XKEYBOARD
+[   403.535] (II) Initializing extension XC-MISC
+[   403.535] (II) Initializing extension SECURITY
+[   403.535] (II) Initializing extension XFIXES
+[   403.535] (II) Initializing extension RENDER
+[   403.535] (II) Initializing extension RANDR
+[   403.535] (II) Initializing extension COMPOSITE
+[   403.535] (II) Initializing extension DAMAGE
+[   403.535] (II) Initializing extension MIT-SCREEN-SAVER
+[   403.535] (II) Initializing extension DOUBLE-BUFFER
+[   403.535] (II) Initializing extension RECORD
+[   403.535] (II) Initializing extension DPMS
+[   403.535] (II) Initializing extension Present
+[   403.535] (II) Initializing extension DRI3
+[   403.535] (II) Initializing extension X-Resource
+[   403.535] (II) Initializing extension XVideo
+[   403.535] (II) Initializing extension XVideo-MotionCompensation
+[   403.535] (II) Initializing extension GLX
+[   403.540] (II) AIGLX: Loaded and initialized radeonsi
+[   403.540] (II) GLX: Initialized DRI2 GL provider for screen 0
+[   403.540] (II) Initializing extension XFree86-VidModeExtension
+[   403.540] (II) Initializing extension XFree86-DGA
+[   403.540] (II) Initializing extension XFree86-DRI
+[   403.540] (II) Initializing extension DRI2
+[   403.541] (II) modeset(0): Damage tracking initialized
+[   403.541] (II) modeset(0): Setting screen physical size to 508 x 285
+[   403.607] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[   403.607] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   403.607] (II) LoadModule: "libinput"
+[   403.607] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[   403.608] (II) Module libinput: vendor="X.Org Foundation"
+[   403.608] 	compiled for 1.20.8, module version = 0.30.0
+[   403.608] 	Module class: X.Org XInput Driver
+[   403.608] 	ABI class: X.Org XInput driver, version 24.1
+[   403.608] (II) Using input driver 'libinput' for 'Power Button'
+[   403.609] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 18 paused 0
+[   403.609] (**) Power Button: always reports core events
+[   403.609] (**) Option "Device" "/dev/input/event2"
+[   403.609] (**) Option "_source" "server/udev"
+[   403.610] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[   403.610] (II) event2  - Power Button: device is a keyboard
+[   403.610] (II) event2  - Power Button: device removed
+[   403.610] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[   403.610] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   403.610] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[   403.610] (II) event2  - Power Button: device is a keyboard
+[   403.611] (II) config/udev: Adding input device Video Bus (/dev/input/event3)
+[   403.611] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[   403.611] (II) Using input driver 'libinput' for 'Video Bus'
+[   403.611] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 21 paused 0
+[   403.611] (**) Video Bus: always reports core events
+[   403.611] (**) Option "Device" "/dev/input/event3"
+[   403.611] (**) Option "_source" "server/udev"
+[   403.612] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[   403.612] (II) event3  - Video Bus: device is a keyboard
+[   403.612] (II) event3  - Video Bus: device removed
+[   403.612] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:14/LNXVIDEO:02/input/input3/event3"
+[   403.612] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[   403.612] (II) event3  - Video Bus: is tagged by udev as: Keyboard
+[   403.612] (II) event3  - Video Bus: device is a keyboard
+[   403.613] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[   403.613] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   403.613] (II) Using input driver 'libinput' for 'Power Button'
+[   403.613] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 22 paused 0
+[   403.613] (**) Power Button: always reports core events
+[   403.613] (**) Option "Device" "/dev/input/event0"
+[   403.613] (**) Option "_source" "server/udev"
+[   403.614] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   403.614] (II) event0  - Power Button: device is a keyboard
+[   403.614] (II) event0  - Power Button: device removed
+[   403.614] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[   403.614] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[   403.614] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   403.614] (II) event0  - Power Button: device is a keyboard
+[   403.614] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[   403.614] (II) No input driver specified, ignoring this device.
+[   403.614] (II) This device may have been added with another device file.
+[   403.615] (II) config/udev: Adding input device HD-Audio Generic HDMI/DP,pcm=3 (/dev/input/event9)
+[   403.615] (II) No input driver specified, ignoring this device.
+[   403.615] (II) This device may have been added with another device file.
+[   403.615] (II) config/udev: Adding input device HP Wide Vision FHD Camera: HP W (/dev/input/event7)
+[   403.615] (**) HP Wide Vision FHD Camera: HP W: Applying InputClass "libinput keyboard catchall"
+[   403.615] (II) Using input driver 'libinput' for 'HP Wide Vision FHD Camera: HP W'
+[   403.615] (II) systemd-logind: got fd for /dev/input/event7 13:71 fd 23 paused 0
+[   403.615] (**) HP Wide Vision FHD Camera: HP W: always reports core events
+[   403.615] (**) Option "Device" "/dev/input/event7"
+[   403.615] (**) Option "_source" "server/udev"
+[   403.616] (II) event7  - HP Wide Vision FHD Camera: HP W: is tagged by udev as: Keyboard
+[   403.616] (II) event7  - HP Wide Vision FHD Camera: HP W: device is a keyboard
+[   403.616] (II) event7  - HP Wide Vision FHD Camera: HP W: device removed
+[   403.616] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-1/3-1:1.0/input/input9/event7"
+[   403.616] (II) XINPUT: Adding extended input device "HP Wide Vision FHD Camera: HP W" (type: KEYBOARD, id 9)
+[   403.617] (II) event7  - HP Wide Vision FHD Camera: HP W: is tagged by udev as: Keyboard
+[   403.617] (II) event7  - HP Wide Vision FHD Camera: HP W: device is a keyboard
+[   403.617] (II) config/udev: Adding input device HP Wide Vision FHD Camera: HP I (/dev/input/event8)
+[   403.617] (**) HP Wide Vision FHD Camera: HP I: Applying InputClass "libinput keyboard catchall"
+[   403.617] (II) Using input driver 'libinput' for 'HP Wide Vision FHD Camera: HP I'
+[   403.618] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 24 paused 0
+[   403.618] (**) HP Wide Vision FHD Camera: HP I: always reports core events
+[   403.618] (**) Option "Device" "/dev/input/event8"
+[   403.618] (**) Option "_source" "server/udev"
+[   403.618] (II) event8  - HP Wide Vision FHD Camera: HP I: is tagged by udev as: Keyboard
+[   403.618] (II) event8  - HP Wide Vision FHD Camera: HP I: device is a keyboard
+[   403.618] (II) event8  - HP Wide Vision FHD Camera: HP I: device removed
+[   403.618] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:08.1/0000:03:00.4/usb3/3-1/3-1:1.2/input/input10/event8"
+[   403.618] (II) XINPUT: Adding extended input device "HP Wide Vision FHD Camera: HP I" (type: KEYBOARD, id 10)
+[   403.619] (II) event8  - HP Wide Vision FHD Camera: HP I: is tagged by udev as: Keyboard
+[   403.619] (II) event8  - HP Wide Vision FHD Camera: HP I: device is a keyboard
+[   403.619] (II) config/udev: Adding input device HD-Audio Generic Mic (/dev/input/event10)
+[   403.619] (II) No input driver specified, ignoring this device.
+[   403.619] (II) This device may have been added with another device file.
+[   403.619] (II) config/udev: Adding input device HD-Audio Generic Headphone (/dev/input/event11)
+[   403.619] (II) No input driver specified, ignoring this device.
+[   403.619] (II) This device may have been added with another device file.
+[   403.619] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 (/dev/input/event13)
+[   403.619] (**) ELAN0732:00 04F3:2650: Applying InputClass "libinput touchscreen catchall"
+[   403.620] (II) Using input driver 'libinput' for 'ELAN0732:00 04F3:2650'
+[   403.620] (II) systemd-logind: got fd for /dev/input/event13 13:77 fd 25 paused 0
+[   403.620] (**) ELAN0732:00 04F3:2650: always reports core events
+[   403.620] (**) Option "Device" "/dev/input/event13"
+[   403.620] (**) Option "_source" "server/udev"
+[   403.621] (II) event13 - ELAN0732:00 04F3:2650: is tagged by udev as: Touchscreen
+[   403.621] (II) event13 - ELAN0732:00 04F3:2650: device is a touch device
+[   403.621] (II) event13 - ELAN0732:00 04F3:2650: device removed
+[   403.621] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN0732:00/0018:04F3:2650.0001/input/input21/event13"
+[   403.621] (II) XINPUT: Adding extended input device "ELAN0732:00 04F3:2650" (type: TOUCHSCREEN, id 11)
+[   403.621] (**) Option "AccelerationScheme" "none"
+[   403.621] (**) ELAN0732:00 04F3:2650: (accel) selected scheme none/0
+[   403.621] (**) ELAN0732:00 04F3:2650: (accel) acceleration factor: 2.000
+[   403.621] (**) ELAN0732:00 04F3:2650: (accel) acceleration threshold: 4
+[   403.621] (II) event13 - ELAN0732:00 04F3:2650: is tagged by udev as: Touchscreen
+[   403.621] (II) event13 - ELAN0732:00 04F3:2650: device is a touch device
+[   403.622] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 (/dev/input/mouse0)
+[   403.622] (II) No input driver specified, ignoring this device.
+[   403.622] (II) This device may have been added with another device file.
+[   403.622] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 UNKNOWN (/dev/input/event14)
+[   403.622] (II) No input driver specified, ignoring this device.
+[   403.622] (II) This device may have been added with another device file.
+[   403.622] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 UNKNOWN (/dev/input/event15)
+[   403.622] (II) No input driver specified, ignoring this device.
+[   403.622] (II) This device may have been added with another device file.
+[   403.622] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 (/dev/input/event16)
+[   403.622] (**) ELAN0732:00 04F3:2650: Applying InputClass "libinput tablet catchall"
+[   403.622] (II) Using input driver 'libinput' for 'ELAN0732:00 04F3:2650'
+[   403.623] (II) systemd-logind: got fd for /dev/input/event16 13:80 fd 26 paused 0
+[   403.623] (**) ELAN0732:00 04F3:2650: always reports core events
+[   403.623] (**) Option "Device" "/dev/input/event16"
+[   403.623] (**) Option "_source" "server/udev"
+[   403.623] (II) event16 - ELAN0732:00 04F3:2650: is tagged by udev as: Tablet
+[   403.631] (II) event16 - ELAN0732:00 04F3:2650: tablet 'ELAN0732:00 04F3:2650' unknown to libwacom
+[   403.631] (II) event16 - ELAN0732:00 04F3:2650: device is a tablet
+[   403.631] (II) event16 - ELAN0732:00 04F3:2650: device removed
+[   403.631] (**) Option "config_info" "udev:/sys/devices/platform/AMDI0010:00/i2c-0/i2c-ELAN0732:00/0018:04F3:2650.0001/input/input24/event16"
+[   403.631] (II) XINPUT: Adding extended input device "ELAN0732:00 04F3:2650" (type: TABLET, id 12)
+[   403.632] (II) event16 - ELAN0732:00 04F3:2650: is tagged by udev as: Tablet
+[   403.632] (II) event16 - ELAN0732:00 04F3:2650: tablet 'ELAN0732:00 04F3:2650' unknown to libwacom
+[   403.632] (II) event16 - ELAN0732:00 04F3:2650: device is a tablet
+[   403.632] (II) config/udev: Adding input device ELAN0732:00 04F3:2650 (/dev/input/mouse1)
+[   403.632] (II) No input driver specified, ignoring this device.
+[   403.632] (II) This device may have been added with another device file.
+[   403.632] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[   403.632] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[   403.632] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[   403.633] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 28 paused 0
+[   403.633] (**) AT Translated Set 2 keyboard: always reports core events
+[   403.633] (**) Option "Device" "/dev/input/event4"
+[   403.633] (**) Option "_source" "server/udev"
+[   403.633] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   403.633] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[   403.633] (II) event4  - AT Translated Set 2 keyboard: device removed
+[   403.633] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[   403.633] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 13)
+[   403.634] (II) event4  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[   403.634] (II) event4  - AT Translated Set 2 keyboard: device is a keyboard
+[   403.635] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/event17)
+[   403.635] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "libinput touchpad catchall"
+[   403.635] (II) Using input driver 'libinput' for 'SynPS/2 Synaptics TouchPad'
+[   403.635] (II) systemd-logind: got fd for /dev/input/event17 13:81 fd 29 paused 0
+[   403.635] (**) SynPS/2 Synaptics TouchPad: always reports core events
+[   403.635] (**) Option "Device" "/dev/input/event17"
+[   403.635] (**) Option "_source" "server/udev"
+[   403.635] (II) event17 - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[   403.636] (II) event17 - SynPS/2 Synaptics TouchPad: no resolution or size hints, assuming a size of 69x50mm
+[   403.636] (II) event17 - SynPS/2 Synaptics TouchPad: device is a touchpad
+[   403.636] (II) event17 - SynPS/2 Synaptics TouchPad: device removed
+[   403.636] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input8/event17"
+[   403.636] (II) XINPUT: Adding extended input device "SynPS/2 Synaptics TouchPad" (type: TOUCHPAD, id 14)
+[   403.637] (**) Option "AccelerationScheme" "none"
+[   403.637] (**) SynPS/2 Synaptics TouchPad: (accel) selected scheme none/0
+[   403.637] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration factor: 2.000
+[   403.637] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration threshold: 4
+[   403.637] (II) event17 - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[   403.637] (II) event17 - SynPS/2 Synaptics TouchPad: no resolution or size hints, assuming a size of 69x50mm
+[   403.638] (II) event17 - SynPS/2 Synaptics TouchPad: device is a touchpad
+[   403.638] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/mouse2)
+[   403.638] (II) No input driver specified, ignoring this device.
+[   403.638] (II) This device may have been added with another device file.
+[   403.638] (II) config/udev: Adding input device PC Speaker (/dev/input/event6)
+[   403.638] (II) No input driver specified, ignoring this device.
+[   403.638] (II) This device may have been added with another device file.
+[   403.638] (II) config/udev: Adding input device HP WMI hotkeys (/dev/input/event12)
+[   403.638] (**) HP WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[   403.638] (II) Using input driver 'libinput' for 'HP WMI hotkeys'
+[   403.639] (II) systemd-logind: got fd for /dev/input/event12 13:76 fd 30 paused 0
+[   403.639] (**) HP WMI hotkeys: always reports core events
+[   403.639] (**) Option "Device" "/dev/input/event12"
+[   403.639] (**) Option "_source" "server/udev"
+[   403.639] (II) event12 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[   403.639] (II) event12 - HP WMI hotkeys: device is a keyboard
+[   403.639] (II) event12 - HP WMI hotkeys: device is a switch device
+[   403.640] (II) event12 - HP WMI hotkeys: device removed
+[   403.640] (**) Option "config_info" "udev:/sys/devices/virtual/input/input20/event12"
+[   403.640] (II) XINPUT: Adding extended input device "HP WMI hotkeys" (type: KEYBOARD, id 15)
+[   403.640] (II) event12 - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[   403.640] (II) event12 - HP WMI hotkeys: device is a keyboard
+[   403.640] (II) event12 - HP WMI hotkeys: device is a switch device
+[   403.640] (II) config/udev: Adding input device HP Wireless hotkeys (/dev/input/event5)
+[   403.640] (**) HP Wireless hotkeys: Applying InputClass "libinput keyboard catchall"
+[   403.640] (II) Using input driver 'libinput' for 'HP Wireless hotkeys'
+[   403.641] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 31 paused 0
+[   403.641] (**) HP Wireless hotkeys: always reports core events
+[   403.641] (**) Option "Device" "/dev/input/event5"
+[   403.641] (**) Option "_source" "server/udev"
+[   403.641] (II) event5  - HP Wireless hotkeys: is tagged by udev as: Keyboard
+[   403.641] (II) event5  - HP Wireless hotkeys: device is a keyboard
+[   403.641] (II) event5  - HP Wireless hotkeys: device removed
+[   403.641] (**) Option "config_info" "udev:/sys/devices/virtual/input/input6/event5"
+[   403.641] (II) XINPUT: Adding extended input device "HP Wireless hotkeys" (type: KEYBOARD, id 16)
+[   403.641] (II) event5  - HP Wireless hotkeys: is tagged by udev as: Keyboard
+[   403.642] (II) event5  - HP Wireless hotkeys: device is a keyboard
+[   403.691] (II) modeset(0): Disabling kernel dirty updates, not required.
+[   406.567] (II) modeset(0): EDID vendor "AUO", prod id 8941
+[   406.567] (II) modeset(0): Printing DDC gathered Modelines:
+[   406.567] (II) modeset(0): Modeline "1920x1080"x0.0  141.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (67.6 kHz eP)
+[   406.567] (II) modeset(0): Modeline "1920x1080"x0.0   94.00  1920 2028 2076 2086  1080 1090 1100 1126 -hsync -vsync (45.1 kHz e)

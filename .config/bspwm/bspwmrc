@@ -1,10 +1,7 @@
 #! /bin/sh
 #### AUTOSTART ####
 sxhkd &
-compton &
-setWall ~/Pictures/Wallpapers -p &
 reloadPolybar &
-xrdb .Xdefaults &
 #### MONITORS ####
 mainmonitor="$(bspc query --monitors --names | grep -v LVDS | head -n 1)"
 if ! echo "$mainmonitor" | grep LVDS >/dev/null 2>&1; then

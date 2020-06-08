@@ -97,3 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias la="ls -A"
+alias calc="calc && rm ~/.calc_history"
+alias gnuplot="gnuplot && rm ~/.gnuplot_history"
+compinit -d $XDG_CACHE_HOME/zsh/zcompdump-artix-5.8
+
+export HISTFILE="$XDG_DATA_HOME"/zsh/history

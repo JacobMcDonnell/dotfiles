@@ -2,5 +2,5 @@
 
 [ -f "$1" ] && cp "$1" ~/.config/wall.png
 [ -d "$1" ] && cp  "$(find "$1" -name "*.jpg" -o -name "*.png" -o -name "*.jpeg" -type f | shuf -n 1)" ~/.config/wall.png
-[ "$2"=="-p" ] && wal -c && wal -i ~/.config/wall.png
+[ "$2"=="-p" ] && wal -c && wal -i ~/.config/wall.png && pidof dwm >/dev/null && xdotool key super+F5
 xwallpaper --zoom ~/.config/wall.png

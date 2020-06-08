@@ -11,60 +11,152 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<volume\>
+~Msle0~/\<needresize\>
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1589156927,,"wq"
-:w
-|2,0,1589156871,,"w"
 :q
-|2,0,1589156674,,"q"
+|2,0,1591628316,,"q"
+:Q
+|2,0,1591628160,,"Q"
+:wq
+|2,0,1591627989,,"wq"
+:w
+|2,0,1591624235,,"w"
+:earlier 10
+|2,0,1591619501,,"earlier 10"
+:q!
+|2,0,1591619483,,"q!"
+:earlier 1h
+|2,0,1591619476,,"earlier 1h"
+:earlier 10m
+|2,0,1591113810,,"earlier 10m"
+:WQ
+|2,0,1591103085,,"WQ"
+:Wq
+|2,0,1590412626,,"Wq"
+:'
+|2,0,1590355496,,"'"
+:wq!
+|2,0,1590324112,,"wq!"
 :dl
-|2,0,1589155679,,"dl"
+|2,0,1590255955,,"dl"
+:'<,'>dl
+|2,0,1590233435,,"'<,'>dl"
 :sl
 |2,0,1588948587,,"sl"
-:q!
-|2,0,1588945289,,"q!"
 :rw
 |2,0,1588817072,,"rw"
 :nl
 |2,0,1586806585,,"nl"
 :ml
 |2,0,1586806581,,"ml"
-:wq!
-|2,0,1586736035,,"wq!"
 :s
 |2,0,1585532027,,"s"
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1589156927,,"\\s\\+$"
-? \<volume\>
-|2,1,1588964665,,"\\<volume\\>"
-? \<super\>
-|2,1,1588392712,,"\\<super\\>"
-? \<elif\>
-|2,1,1586666595,,"\\<elif\\>"
-? \<programss\>
-|2,1,1586660889,,"\\<programss\\>"
-? \<coronastats\>
-|2,1,1586571194,,"\\<coronastats\\>"
-? \<wlan\>
-|2,1,1586571180,,"\\<wlan\\>"
-? \<clear\>
-|2,1,1586496690,,"\\<clear\\>"
-? \<select\>
-|2,1,1586494024,,"\\<select\\>"
-? \<jdm\>
-|2,1,1586494204,,"\\<jdm\\>"
-? \<battery\>
-|2,1,1585535724,,"\\<battery\\>"
-? \<nitrogen\>
-|2,1,1585437488,,"\\<nitrogen\\>"
+|2,1,1591627989,,"\\s\\+$"
+? \<needresize\>
+|2,1,1591627761,,"\\<needresize\\>"
+?/needresize
+|2,1,1591627537,47,"needresize"
+? \<dwm\>
+|2,1,1591627442,,"\\<dwm\\>"
+?/dwm.c
+|2,1,1591627436,47,"dwm.c"
+?/c->needresize
+|2,1,1591627404,47,"c->needresize"
+?/need
+|2,1,1591627394,47,"need"
+?/static void zoom
+|2,1,1591626893,47,"static void zoom"
+?/XRDB
+|2,1,1591624131,47,"XRDB"
+? \<XRDB_LOAD_COLOR\>
+|2,1,1591623971,,"\\<XRDB_LOAD_COLOR\\>"
+?/sigchld
+|2,1,1591617758,47,"sigchld"
+?/iscol
+|2,1,1591616917,47,"iscol"
+?/MODKEY
+|2,1,1591616846,47,"MODKEY"
+?/modkey
+|2,1,1591616842,47,"modkey"
+?/static pid_t getparentprocess
+|2,1,1591614674,47,"static pid_t getparentprocess"
+? \<compinit\>
+|2,1,1591140653,,"\\<compinit\\>"
+?/compinit
+|2,1,1591140632,47,"compinit"
+? @$
+|2,1,1591132427,,"@$"
+? \<net\>
+|2,1,1591099471,,"\\<net\\>"
+?/net
+|2,1,1591099466,47,"net"
+?/internet
+|2,1,1591099463,47,"internet"
+? \<globe\>
+|2,1,1591099457,,"\\<globe\\>"
+?/globe
+|2,1,1591099430,47,"globe"
+?/qemu
+|2,1,1590940497,47,"qemu"
+? \<run\>
+|2,1,1590940467,,"\\<run\\>"
+?/run
+|2,1,1590940406,47,"run"
+? \<MODKEY\>
+|2,1,1590857633,,"\\<MODKEY\\>"
+?/binut
+|2,1,1590769189,47,"binut"
+?/make all
+|2,1,1590769181,47,"make all"
+?/config
+|2,1,1590524515,47,"config"
+? \<EXIT_SUCCESS\>
+|2,1,1590409221,,"\\<EXIT_SUCCESS\\>"
+?/CMDLENGTH
+|2,1,1590409062,47,"CMDLENGTH"
+?/exportstring
+|2,1,1590409023,47,"exportstring"
+?/buttonhandler
+|2,1,1590408831,47,"buttonhandler"
+?/BLOCK_BU
+|2,1,1590408812,47,"BLOCK_BU"
+?/statuscmd
+|2,1,1590406968,47,"statuscmd"
+?/buttonpress
+|2,1,1590406630,47,"buttonpress"
+?/stext
+|2,1,1590406596,47,"stext"
+?/spawn
+|2,1,1590406390,47,"spawn"
+?/spanw(const
+|2,1,1590406346,47,"spanw(const"
+??lastbutton
+|2,1,1590406151,63,"lastbutton"
+?/lastbutton
+|2,1,1590406144,47,"lastbutton"
+??statuscmdn
+|2,1,1590406127,63,"statuscmdn"
+?/rawstext
+|2,1,1590406096,47,"rawstext"
+?/status
+|2,1,1590404583,47,"status"
+? \<ClkStatusText\>
+|2,1,1590404304,,"\\<ClkStatusText\\>"
+?/*statuscmds[]
+|2,1,1590404286,47,"*statuscmds[]"
+?/XFillRectangle
+|2,1,1590403458,47,"XFillRectangle"
+?/XFillRectangle(dpy, systray->win, drw->gc, 0, 0, w, bh);
+|2,1,1590403394,47,"XFillRectangle(dpy, systray->win, drw->gc, 0, 0, w, bh);"
+??updatesystray
+|2,1,1590403301,63,"updatesystray"
 
 # Expression History (newest to oldest):
 
@@ -74,413 +166,1567 @@ $
 
 # Registers:
 ""0	CHAR	0
-	cp -TR $HOME/${name[${files[$count]}]} ${name[${files[$count]}]}
+	{ "st",      NULL,     NULL,           0,         0,          1,          -1,        -1 },
 	
-|3,1,0,0,2,0,1589156915,"cp -TR $HOME/${name[${files[$count]}]} ${name[${files[$count]}]}",""
-"1	LINE	0
-	neofetch
-|3,0,1,1,1,0,1589155679,"neofetch"
+|3,1,0,0,2,0,1591627970,"{ \"st\",      NULL,     NULL,           0,         0,          1,          -1,        -1 },",""
+"1	CHAR	0
+	/* class      instance    title       tags mask     isfloating   monitor */
+		{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+		{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	
+|3,0,1,0,4,0,1591627036,"/* class      instance    title       tags mask     isfloating   monitor */","	{ \"Gimp\",     NULL,       NULL,       0,            1,           -1 },","	{ \"Firefox\",  NULL,       NULL,       1 << 8,       0,           -1 },",""
 "2	LINE	0
-	
-|3,0,2,1,1,0,1589124574,""
-"3	CHAR	0
-	
-	# edit common config files
-	alt + ctrl + e
-	   /home/dt/.dmenu/dmenu-edit-configs.sh
-	
-	# common system montoring programs
-	alt + ctrl + m
-	   /home/dt/.dmenu/dmenu-sysmon.sh
-	
-	# stock trading programs
-	alt + ctrl + t
-	   /home/dt/.dmenu/dmenu-trading.sh
-|3,0,3,0,12,0,1589124571,"","# edit common config files","alt + ctrl + e","   /home/dt/.dmenu/dmenu-edit-configs.sh","","# common system montoring programs","alt + ctrl + m","   /home/dt/.dmenu/dmenu-sysmon.sh","","# stock trading programs","alt + ctrl + t","   /home/dt/.dmenu/dmenu-trading.sh"
-"4	LINE	0
-	
-|3,0,4,1,1,0,1589060494,""
+		int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, needresize;
+|3,0,2,1,1,0,1591626818,"	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, needresize;"
+"3	LINE	0
+		
+|3,0,3,1,1,0,1591616924,"	"
+"4	CHAR	0
+	FcBool iscol;
+		if(FcPatternGetBool(xfont->pattern, FC_COLOR, 0, &iscol) == FcResultMatch && iscol) {
+			XftFontClose(drw->dpy, xfont);
+			return NULL;
+		}
+|3,0,4,0,5,0,1591616923,"FcBool iscol;","	if(FcPatternGetBool(xfont->pattern, FC_COLOR, 0, &iscol) == FcResultMatch && iscol) {","		XftFontClose(drw->dpy, xfont);","		return NULL;","	}"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1589042019,""
-"6	CHAR	0
-	hello:hello.asm
-		nasm $(ASMFLAGS) hello.asm
-	
-|3,0,6,0,3,0,1589042017,"hello:hello.asm","	nasm $(ASMFLAGS) hello.asm",""
+	LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} -lXrender
+|3,0,5,1,1,0,1591614838,"LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS} -lXrender"
+"6	LINE	0
+	static int scanner;
+|3,0,6,1,1,0,1591614706,"static int scanner;"
 "7	LINE	0
-	ls -A
-|3,0,7,1,1,0,1588951773,"ls -A"
+	static pid_t winpid(Window w);
+|3,0,7,1,1,0,1591614697,"static pid_t winpid(Window w);"
 "8	LINE	0
-	sleep 1m
-|3,0,8,1,1,0,1588951770,"sleep 1m"
+	static Client *swallowingclient(Window w);
+|3,0,8,1,1,0,1591614696,"static Client *swallowingclient(Window w);"
 "9	LINE	0
-	cd $HOME/Documents/Projects/gitlab/dotfiles
-|3,0,9,1,1,0,1588951592,"cd $HOME/Documents/Projects/gitlab/dotfiles"
+	static Client *swallowingclient(Window w);
+|3,0,9,1,1,0,1591614696,"static Client *swallowingclient(Window w);"
 "-	CHAR	0
-	"
-|3,0,36,0,1,0,1589156853,"\""
+	#
+|3,0,36,0,1,0,1591617560,"#"
 
 # File marks:
-'0  17  5  ~/.local/bin/dotfiles-config
-|4,48,17,5,1589156927,"~/.local/bin/dotfiles-config"
-'1  1  0  ~/.local/bin/setWall
-|4,49,1,0,1589156674,"~/.local/bin/setWall"
-'2  4  0  ~/.local/bin/setWall
-|4,50,4,0,1589156125,"~/.local/bin/setWall"
-'3  4  0  ~/.local/bin/setWall
-|4,51,4,0,1589156125,"~/.local/bin/setWall"
-'4  15  0  ~/.local/bin/dotfiles-config
-|4,52,15,0,1589156122,"~/.local/bin/dotfiles-config"
-'5  15  0  ~/.local/bin/dotfiles-config
-|4,53,15,0,1589156122,"~/.local/bin/dotfiles-config"
-'6  1  0  ~/.local/bin/ufetch-artix
-|4,54,1,0,1589155910,"~/.local/bin/ufetch-artix"
-'7  681  0  ~/.local/bin/ufetch
-|4,55,681,0,1589155873,"~/.local/bin/ufetch"
-'8  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,56,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
-'9  88  0  ~/.config/sxhkd/sxhkdrc
-|4,57,88,0,1589124586,"~/.config/sxhkd/sxhkdrc"
+'0  1  0  ~/.config/lf/lfrc
+|4,48,1,0,1591628316,"~/.config/lf/lfrc"
+'1  1  0  ~/.config/l
+|4,49,1,0,1591628161,"~/.config/l"
+'2  38  12  ~/Documents/Projects/gitlab/dwm/config.h
+|4,50,38,12,1591627989,"~/Documents/Projects/gitlab/dwm/config.h"
+'3  1  25  ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+|4,51,1,25,1591627912,"~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG"
+'4  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,52,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+'5  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,53,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+'6  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,54,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+'7  191  1  ~/Documents/Projects/gitlab/dwm/dwm-swallow-20200522-7accbcf.diff
+|4,55,191,1,1591627530,"~/Documents/Projects/gitlab/dwm/dwm-swallow-20200522-7accbcf.diff"
+'8  9  96  ~/Documents/Projects/gitlab/dwm/config.h
+|4,56,9,96,1591627127,"~/Documents/Projects/gitlab/dwm/config.h"
+'9  9  96  ~/Documents/Projects/gitlab/dwm/config.h
+|4,57,9,96,1591627127,"~/Documents/Projects/gitlab/dwm/config.h"
 
 # Jumplist (newest first):
--'  17  5  ~/.local/bin/dotfiles-config
-|4,39,17,5,1589156927,"~/.local/bin/dotfiles-config"
--'  1  0  ~/.local/bin/setWall
-|4,39,1,0,1589156674,"~/.local/bin/setWall"
--'  1  0  ~/.local/bin/dotfiles-config
-|4,39,1,0,1589156210,"~/.local/bin/dotfiles-config"
--'  4  0  ~/.local/bin/setWall
-|4,39,4,0,1589156125,"~/.local/bin/setWall"
--'  4  0  ~/.local/bin/setWall
-|4,39,4,0,1589156125,"~/.local/bin/setWall"
--'  4  0  ~/.local/bin/setWall
-|4,39,4,0,1589156125,"~/.local/bin/setWall"
--'  15  0  ~/.local/bin/dotfiles-config
-|4,39,15,0,1589156122,"~/.local/bin/dotfiles-config"
--'  16  5  ~/.local/bin/dotfiles-config
-|4,39,16,5,1589156122,"~/.local/bin/dotfiles-config"
--'  15  0  ~/.local/bin/dotfiles-config
-|4,39,15,0,1589156122,"~/.local/bin/dotfiles-config"
--'  16  5  ~/.local/bin/dotfiles-config
-|4,39,16,5,1589156122,"~/.local/bin/dotfiles-config"
--'  15  0  ~/.local/bin/dotfiles-config
-|4,39,15,0,1589156122,"~/.local/bin/dotfiles-config"
--'  16  5  ~/.local/bin/dotfiles-config
-|4,39,16,5,1589156122,"~/.local/bin/dotfiles-config"
--'  1  0  ~/.local/bin/setWall
-|4,39,1,0,1589155982,"~/.local/bin/setWall"
--'  1  0  ~/.local/bin/setWall
-|4,39,1,0,1589155982,"~/.local/bin/setWall"
--'  1  0  ~/.local/bin/dotfiles-config
-|4,39,1,0,1589155964,"~/.local/bin/dotfiles-config"
--'  1  0  ~/.local/bin/dotfiles-config
-|4,39,1,0,1589155964,"~/.local/bin/dotfiles-config"
--'  1  0  ~/.local/bin/ufetch-artix
-|4,39,1,0,1589155910,"~/.local/bin/ufetch-artix"
--'  1  0  ~/.local/bin/ufetch-artix
-|4,39,1,0,1589155910,"~/.local/bin/ufetch-artix"
--'  1  0  ~/.local/bin/ufetch-artix
-|4,39,1,0,1589155910,"~/.local/bin/ufetch-artix"
--'  1  0  ~/.local/bin/ufetch-artix
-|4,39,1,0,1589155910,"~/.local/bin/ufetch-artix"
--'  1  0  ~/.local/bin/ufetch-artix
-|4,39,1,0,1589155910,"~/.local/bin/ufetch-artix"
--'  1  0  ~/.local/bin/ufetch-artix
-|4,39,1,0,1589155910,"~/.local/bin/ufetch-artix"
--'  1  0  ~/.local/bin/ufetch-artix
-|4,39,1,0,1589155910,"~/.local/bin/ufetch-artix"
--'  1  0  ~/.local/bin/ufetch-artix
-|4,39,1,0,1589155910,"~/.local/bin/ufetch-artix"
--'  1  0  ~/.local/bin/ufetch-artix
-|4,39,1,0,1589155910,"~/.local/bin/ufetch-artix"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  681  0  ~/.local/bin/ufetch
-|4,39,681,0,1589155873,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  374  0  ~/.local/bin/ufetch
-|4,39,374,0,1589155870,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  1  0  ~/.local/bin/ufetch
-|4,39,1,0,1589155842,"~/.local/bin/ufetch"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
--'  26  0  ~/Documents/Projects/gitlab/jars/programs
-|4,39,26,0,1589155682,"~/Documents/Projects/gitlab/jars/programs"
+-'  1  0  ~/.config/lf/lfrc
+|4,39,1,0,1591628316,"~/.config/lf/lfrc"
+-'  1  0  ~/.config/l
+|4,39,1,0,1591628161,"~/.config/l"
+-'  1  0  ~/.config/l
+|4,39,1,0,1591628161,"~/.config/l"
+-'  38  12  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,38,12,1591627989,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  38  12  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,38,12,1591627989,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  38  12  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,38,12,1591627989,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  38  12  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,38,12,1591627989,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627959,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627959,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627959,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627959,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  25  ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+|4,39,1,25,1591627912,"~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG"
+-'  1  25  ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+|4,39,1,25,1591627912,"~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG"
+-'  1  25  ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+|4,39,1,25,1591627912,"~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG"
+-'  1  25  ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+|4,39,1,25,1591627912,"~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG"
+-'  1  25  ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+|4,39,1,25,1591627912,"~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG"
+-'  1  25  ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+|4,39,1,25,1591627912,"~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG"
+-'  1  25  ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+|4,39,1,25,1591627912,"~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG"
+-'  1  25  ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+|4,39,1,25,1591627912,"~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  37  74  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,37,74,1591627797,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627785,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627785,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627785,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627785,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627785,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627785,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627785,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  1  0  ~/Documents/Projects/gitlab/dwm/config.h
+|4,39,1,0,1591627785,"~/Documents/Projects/gitlab/dwm/config.h"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  737  7  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,737,7,1591627764,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
+-'  1912  8  ~/Documents/Projects/gitlab/dwm/dwm.c
+|4,39,1912,8,1591627761,"~/Documents/Projects/gitlab/dwm/dwm.c"
 
 # History of marks within files (newest to oldest):
 
-> ~/.local/bin/dotfiles-config
-	*	1589156926	0
-	"	17	5
-	^	17	6
-	.	17	5
-	+	10	241
-	+	10	136
-	+	7	0
-	+	6	0
-	+	8	0
-	+	9	8
-	+	10	8
-	+	6	34
-	+	8	34
-	+	4	8
-	+	3	10
+> ~/.config/lf/lfrc
+	*	1591628164	0
+	"	1	0
+	^	1	15
+	.	1	14
+	+	1	14
+
+> ~/.config/l
+	*	1591628160	0
+	"	1	0
+
+> ~/Documents/Projects/gitlab/dwm/config.h
+	*	1591627989	0
+	"	38	12
+	^	38	13
+	.	38	12
+	+	137	0
+	+	138	0
+	+	135	54
+	+	137	54
+	+	138	63
+	+	138	1
+	+	139	0
+	+	140	0
+	+	138	68
+	+	138	25
+	+	141	0
+	+	125	1
+	+	126	0
+	+	127	70
+	+	128	0
+	+	125	1
+	+	127	27
+	+	126	24
+	+	125	24
+	+	126	16
+	+	125	54
+	+	126	90
+	+	127	79
+	+	126	91
+	+	129	28
+	+	130	34
+	+	131	34
+	+	132	33
+	+	133	35
+	+	129	44
+	+	130	44
+	+	131	44
+	+	132	43
+	+	133	45
+	+	129	45
+	+	121	84
+	+	4	27
+	+	125	27
+	+	126	27
+	+	127	27
+	+	125	30
+	+	126	30
+	+	127	30
+	+	121	16
+	+	122	16
+	+	121	18
+	+	122	18
+	+	121	0
+	+	129	93
+	+	130	108
+	+	131	108
+	+	20	42
+	+	21	0
+	+	31	0
+	+	30	0
+	+	29	0
+	+	28	0
+	+	151	0
+	+	147	84
+	+	147	92
+	+	147	35
+	+	147	0
+	+	147	2
+	+	76	80
+	+	76	0
+	+	147	2
+	+	147	1
+	+	150	0
+	+	149	95
+	+	150	0
+	+	149	1
+	+	147	84
+	+	148	7
+	+	122	37
+	+	123	37
+	+	120	1
+	+	121	0
+	+	120	0
+	+	127	103
+	+	128	101
+	+	158	0
+	+	126	88
+	+	12	78
+	+	125	0
+	+	123	1
+	+	124	49
+	+	138	1
+	+	138	0
+	+	41	0
+	+	34	0
+	+	38	0
+	+	37	0
+	+	36	0
+	+	35	0
+	+	34	0
+	+	9	39
+	+	40	0
+	+	38	8
+	+	39	0
+	+	38	12
+
+> ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
+	*	1591627911	0
+	"	1	25
+	^	1	26
+	.	1	25
+	+	1	25
+
+> ~/Documents/Projects/gitlab/dwm/dwm.c
+	*	1591627761	0
+	"	737	7
+	^	1913	6
+	.	1916	3
+	+	1131	34
+	+	1132	35
+	+	1133	34
+	+	266	0
+	+	236	0
+	+	267	0
+	+	484	3
+	+	503	20
+	+	195	39
+	+	196	0
+	+	277	0
+	+	485	3
+	+	486	2
+	+	485	2
+	+	503	0
+	+	486	25
+	+	487	1
+	+	488	1
+	+	489	1
+	+	490	1
+	+	491	1
+	+	492	1
+	+	493	1
+	+	494	1
+	+	495	1
+	+	496	1
+	+	497	1
+	+	498	1
+	+	499	1
+	+	500	1
+	+	501	1
+	+	502	1
+	+	503	1
+	+	485	3
+	+	487	23
+	+	491	24
+	+	495	38
+	+	503	17
+	+	504	0
+	+	1893	0
+	+	1000	0
+	+	998	0
+	+	115	1
+	+	116	0
+	+	115	1
+	+	120	0
+	+	119	1
+	+	276	0
+	+	275	0
+	+	269	0
+	+	282	0
+	+	267	0
+	+	276	0
+	+	233	0
+	+	1158	52
+	+	1159	48
+	+	1160	48
+	+	1161	51
+	+	1159	48
+	+	1162	48
+	+	1158	25
+	+	1159	30
+	+	1160	30
+	+	1161	30
+	+	1162	25
+	+	1163	0
+	+	1158	0
+	+	1159	31
+	+	1160	30
+	+	1161	30
+	+	1162	30
+	+	1163	31
+	+	1161	31
+	+	1159	31
+	+	1161	31
+	+	1163	31
+	+	1159	31
+	+	1158	28
+	+	1159	28
+	+	1160	28
+	+	1161	28
+	+	1162	27
+	+	1163	28
+	+	1162	28
+	+	115	0
+	+	114	0
+	+	113	0
+	+	118	0
+	+	117	20
+	+	274	0
+	+	273	0
+	+	272	0
+	+	271	0
+	+	276	0
+	+	279	0
+	+	736	4
+	+	737	23
+	+	1911	3
+	+	1914	11
+	+	1916	3
+
+> ~/Documents/Projects/gitlab/dwm/dwm-swallow-20200522-7accbcf.diff
+	*	1591627529	0
+	"	191	1
+
+> ~/Documents/Projects/gitlab/dwm/dwm.c.rej
+	*	1591626797	0
+	"	32	0
+
+> ~/Documents/Projects/gitlab/config.h
+	*	1591618604	0
+	"	19	0
+
+> ~/.xinitrc
+	*	1591617562	0
+	"	3	0
+	^	3	11
+	.	3	0
+	+	1	0
+	+	3	0
+	+	3	31
+	+	1	24
+	+	3	27
+	+	1	24
+	+	3	24
+	+	1	8
+	+	3	26
+	+	3	0
+	+	3	14
+	+	3	0
+	+	3	8
+	+	3	0
+	+	3	34
+	+	3	0
+	+	3	8
+	+	3	4
+	+	3	37
+	+	3	0
+	+	3	16
+	+	3	0
+	+	3	19
+	+	3	0
+	+	4	59
+	+	3	24
+	+	3	26
+	+	4	0
+	+	3	25
+	+	4	5
+	+	3	5
+	+	3	17
+	+	4	0
+	+	3	19
+	+	3	0
+	+	4	0
+	+	3	26
+	+	4	45
+	+	3	0
+	+	4	45
+	+	3	26
+	+	4	27
+	+	3	26
+	+	4	0
+	+	3	0
+	+	4	26
+	+	3	71
 	+	4	21
-	+	8	42
-	+	9	56
-	+	14	10
-	+	14	122
+	+	5	28
+	+	4	22
+	+	3	0
+	+	5	29
+	+	6	0
+	+	7	0
+	+	6	23
+	+	5	30
+	+	3	57
+	+	3	42
+	+	3	13
+	+	3	0
+	+	4	0
+	+	3	0
+	+	2	53
+	+	2	67
+	+	2	0
+	+	3	0
+
+> ~/Documents/Projects/gitlab/dwm/config.def.h
+	*	1591617022	0
+	"	1	0
+	^	41	21
+	.	54	18
+	+	49	33
+	+	50	0
+	+	112	0
+	+	9	57
+	+	10	55
+	+	22	0
+	+	11	48
+	+	20	0
+	+	19	0
+	+	18	0
+	+	17	0
+	+	16	0
+	+	15	0
 	+	14	0
-	+	21	26
-	+	21	0
-	+	21	8
-	+	21	26
-	+	14	31
-	+	3	60
-	+	21	12
-	+	21	70
-	+	21	19
-	+	21	65
-	+	22	11
-	+	8	44
-	+	9	49
-	+	6	33
-	+	3	22
-	+	14	74
-	+	14	40
-	+	21	45
-	+	21	4
-	+	21	44
-	+	21	56
-	+	21	67
-	+	21	5
-	+	21	7
-	+	15	0
-	+	14	7
-	+	21	0
-	+	14	2
-	+	21	0
-	+	10	136
-	+	11	0
-	+	15	64
-	+	17	8
-	+	12	6
-	+	21	0
-	+	12	6
-	+	22	25
-	+	16	5
-	+	15	0
-	+	16	32
-	+	15	0
-	+	16	0
-	+	15	4
-	+	12	6
-	+	3	17
-	+	15	31
-	+	16	6
-	+	3	17
-	+	12	6
-	+	15	0
-	+	16	0
-	+	18	0
-	+	17	65
-	+	18	0
-	+	17	5
+	+	13	0
+	+	12	0
+	+	120	0
+	+	54	33
+	+	55	0
+	+	92	0
+	+	91	0
+	+	119	0
+	+	49	22
+	+	41	13
+	+	111	0
+	+	41	20
+	+	54	18
 
-> ~/.local/bin/setWall
-	*	1589156491	0
-	"	1	0
-	^	6	17
-	.	6	16
-	+	6	16
-
-> ~/.local/bin/ufetch-artix
-	*	1589155909	0
+> ~/Documents/Projects/gitlab/dwm/config..h
+	*	1591617018	0
 	"	1	0
 
-> ~/.local/bin/ufetch
-	*	1589155870	0
-	"	681	0
+> ~/Documents/Projects/gitlab/dwm/drw.c
+	*	1591616926	0
+	"	142	0
+	^	196	94
+	.	142	0
+	+	195	0
+	+	181	0
+	+	186	0
+	+	185	0
+	+	186	34
+	+	195	0
+	+	181	0
+	+	186	0
+	+	186	2
+	+	188	1
+	+	188	0
+	+	190	34
+	+	196	0
+	+	135	0
+	+	142	0
+
+> ~/Documents/Projects/gitlab/dwmblocks/.git/COMMIT_EDITMSG
+	*	1591615496	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> ~/Documents/Projects/gitlab/dwm/config.mk
+	*	1591614844	0
+	"	25	81
+	^	25	82
+	.	25	0
+	+	25	0
 
 > ~/Documents/Projects/gitlab/jars/programs
-	*	1589155681	0
-	"	26	0
-	^	35	6
-	.	26	0
-	+	31	6
+	*	1591312785	0
+	"	10	2
+	^	33	3
+	.	33	2
+	+	25	6
+	+	23	0
+	+	21	0
+	+	25	16
+	+	28	1
 	+	29	0
+	+	29	5
+	+	21	0
+	+	30	6
+	+	16	0
+	+	18	0
+	+	16	0
+	+	23	0
+	+	15	0
+	+	33	2
+
+> ~/.config/newsboat/urls
+	*	1591312506	0
+	"	20	53
+	^	20	54
+	.	20	53
+	+	20	53
+
+> ~/.profile
+	*	1591142097	0
+	"	24	0
+	^	24	45
+	.	24	0
+	+	20	0
+	+	19	36
+	+	25	0
+	+	20	39
+	+	22	0
+	+	20	31
+	+	19	31
+	+	23	0
+	+	19	0
+	+	8	19
+	+	24	0
+	+	26	2
+	+	27	0
+	+	24	0
+
+> ~/.config/oh-my-zsh/oh-my-zsh.sh
+	*	1591140773	0
+	"	61	46
+	^	61	43
+	.	61	46
+	+	69	2
+	+	61	46
+
+> ~/.zshrc
+	*	1591140361	0
+	"	105	43
+	^	105	44
+	.	104	0
+	+	100	15
+	+	102	47
+	+	102	48
+	+	103	54
+	+	105	43
+	+	103	56
+	+	103	51
+	+	104	0
+
+> /tmp/build-sdcv/cmake_install.cmake
+	*	1591139869	0
+	"	1	0
+
+> /tmp/build-sdcv/config.h
+	*	1591139817	0
+	"	5	32
+
+> ~/.config/wget/wgetrc
+	*	1591137201	0
+	"	1	27
+	^	1	28
+	.	1	0
+	+	1	0
+
+> ~/.fehbg
+	*	1591133210	0
+	"	1	0
+
+> ~/Documents/Projects/gitlab/st/st-urlhandler
+	*	1591132644	0
+	"	15	1
+	^	3	101
+	.	3	41
+	+	17	0
+	+	4	0
+	+	3	41
+
+> ~/.local/bin/battery
+	*	1591126350	0
+	"	10	82
+	^	10	83
+	.	10	82
+	+	11	14
+	+	10	63
+	+	11	100
+	+	5	0
+	+	4	3
+	+	6	0
+	+	10	82
+
+> ~/.local/bin/internet
+	*	1591126246	0
+	"	1	0
+	^	11	5
+	.	11	5
+	+	4	0
+	+	2	80
+	+	2	79
+	+	2	264
+	+	2	144
+	+	2	339
+	+	2	13
+	+	2	98
+	+	2	172
+	+	14	17
+	+	4	230
+	+	11	41
+	+	12	3
+	+	11	20
+	+	12	32
+	+	12	0
+	+	11	29
+	+	2	129
+	+	2	297
+	+	4	0
+	+	4	90
+	+	2	173
+	+	4	0
+	+	4	209
+	+	2	0
+	+	4	23
+	+	4	143
+	+	4	27
+	+	4	115
+	+	4	209
+	+	4	14
+	+	11	20
+	+	16	5
+	+	11	24
+	+	16	4
+	+	11	41
+	+	12	1
+	+	11	1
+	+	12	1
+	+	11	21
+	+	16	5
+	+	4	209
+	+	4	0
+	+	11	5
+	+	11	214
+	+	4	0
+	+	16	21
+	+	4	0
+	+	16	18
+	+	11	5
+	+	6	0
+	+	5	0
+	+	10	0
+	+	11	21
+	+	16	3
+	+	11	0
+	+	5	168
+	+	6	0
+	+	9	6
+	+	7	5
+	+	9	3
+	+	7	7
+	+	5	168
+	+	5	74
+	+	9	0
+	+	7	12
+	+	7	2
+	+	7	3
+	+	7	13
+	+	8	13
+	+	7	10
+	+	11	21
+	+	10	0
+	+	11	23
+	+	3	2
+	+	16	19
+	+	16	18
+	+	16	0
+	+	11	0
+	+	16	0
+	+	11	5
+
+> ~/test
+	*	1591125279	0
+	"	1	0
+	^	1	0
+	.	2	0
+	+	1	0
+	+	1	3
+	+	1	9
+	+	1	3
+	+	1	0
+	+	1	32
+	+	1	9
+	+	1	2
+	+	1	0
+	+	22	4
+	+	1	6
+	+	2	0
+	+	1	0
+	+	2	0
+
+> ~/tes
+	*	1591123807	0
+	"	1	0
+
+> ~/.local/bin/weather
+	*	1591113695	0
+	"	17	4
+	^	4	28
+	.	17	0
+	+	9	0
+	+	22	0
+	+	21	104
+	+	21	107
+	+	21	0
+	+	22	0
+	+	21	0
+	+	19	0
+	+	17	38
+	+	10	7
+	+	10	69
+	+	12	7
+	+	19	0
+	+	20	0
+	+	9	6
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	4
+	+	9	18
+	+	4	28
+	+	17	4
+	+	16	0
+	+	15	0
+	+	14	0
+	+	13	0
+	+	17	0
+
+> ~/.local/bin/getUnicode
+	*	1591113184	0
+	"	1	0
+	^	11	20
+	.	11	19
+	+	5	22
+	+	12	0
+	+	8	19
+	+	10	12
+	+	11	19
+
+> ~/.config/dunst/dunstrc
+	*	1591112880	0
+	"	24	4
+	^	151	13
+	.	53	0
+	+	151	0
+	+	53	0
+
+> ~/.local/bin/volume
+	*	1591104619	0
+	"	7	0
+	.	7	0
+	+	5	49
+	+	7	4
+	+	5	56
+	+	7	11
+	+	7	21
+	+	7	0
+	+	7	54
+	+	7	0
+
+> ~/Documents/Projects/gitlab/dwmblocks/config.h
+	*	1591104147	0
+	"	8	18
+	^	8	19
+	.	8	18
+	+	10	81
+	+	16	3
+	+	18	3
+	+	9	0
+	+	4	44
+	+	10	143
+	+	3	26
+	+	4	50
+	+	10	152
+	+	14	44
+	+	16	49
+	+	16	45
+	+	18	55
+	+	20	43
+	+	4	41
+	+	16	19
+	+	14	36
+	+	20	35
+	+	16	24
+	+	4	1
+	+	8	0
+	+	7	0
+	+	16	18
+	+	20	39
+	+	4	51
+	+	6	36
+	+	8	40
+	+	6	46
+	+	10	77
+	+	16	0
+	+	18	64
+	+	10	79
+	+	11	0
+	+	10	83
+	+	8	40
+	+	6	36
+	+	4	41
+	+	11	69
+	+	14	36
+	+	16	26
+	+	18	52
+	+	20	44
+	+	10	83
+	+	7	0
+	+	10	36
+	+	4	1
+	+	10	66
+	+	12	0
+	+	11	91
+	+	4	47
+	+	3	48
+	+	6	42
+	+	8	47
+	+	10	73
+	+	11	0
+	+	12	85
+	+	12	75
+	+	14	42
+	+	16	31
+	+	18	57
+	+	20	50
+	+	3	47
+	+	12	35
+	+	8	3
+	+	14	3
+	+	20	3
+	+	8	7
+	+	14	7
+	+	20	7
+	+	6	42
+	+	14	47
+	+	12	0
+	+	10	21
+	+	20	22
+	+	8	3
+	+	14	3
+	+	20	3
+	+	8	18
+
+> ~/Documents/Projects/gitlab/dmenu/.git/COMMIT_EDITMSG
+	*	1591103202	0
+	"	1	25
+	^	1	26
+	.	1	25
+	+	1	25
+
+> ~/Documents/Projects/aur/dmenu-jacob-git/.git/COMMIT_EDITMSG
+	*	1591103085	0
+	"	1	24
+	^	1	25
+	.	1	24
+	+	1	24
+
+> ~/Documents/Projects/aur/dmenu-jacob-git/PKGBUILD
+	*	1591103024	0
+	"	14	19
+	^	14	20
+	.	14	19
+	+	8	11
+	+	24	13
+	+	14	19
+
+> ~/Documents/Projects/aur/st-jacob-git/PKGBUILD
+	*	1591102992	0
+	"	1	0
+	^	21	0
+	.	16	55
+	+	10	72
+	+	24	55
+	+	25	0
+	+	24	0
+	+	25	1
+	+	8	12
+	+	10	0
+	+	8	12
+	+	14	19
+	+	16	55
+
+> ~/Documents/Projects/gitlab/dmenu/README.md
+	*	1591102966	0
+	"	49	0
+	^	49	96
+	.	27	64
+	+	14	0
+	+	1	43
+	+	14	0
+	+	12	0
+	+	5	14
+	+	7	18
+	+	9	12
+	+	11	15
+	+	16	49
+	+	17	7
+	+	21	111
+	+	23	0
 	+	26	0
-	+	31	16
-	+	34	1
-	+	35	0
-	+	35	5
-	+	26	0
+	+	24	0
+	+	27	2
+	+	41	0
+	+	40	24
+	+	39	25
+	+	38	23
+	+	37	24
+	+	36	25
+	+	44	0
+	+	42	0
+	+	45	17
+	+	45	0
+	+	47	0
+	+	49	162
+	+	27	64
+
+> ~/Documents/Projects/gitlab/st/.git/COMMIT_EDITMSG
+	*	1591102937	0
+	"	1	17
+	^	1	18
+	.	1	17
+	+	15	52
+	+	1	58
+	+	2	0
+	+	1	17
+
+> ~/Documents/Projects/gitlab/st/README.md
+	*	1591102913	0
+	"	85	0
+	^	85	0
+	.	57	64
+	+	41	111
+	+	57	2
+	+	59	17
+	+	81	77
+	+	59	2
+	+	81	91
+	+	85	171
+	+	59	0
+	+	57	64
+
+> ~/Documents/Projects/gitlab/dwm/config.
+	*	1591102542	0
+	"	1	0
+
+> ~/.local/share/unicode
+	*	1591102486	0
+	"	1	0
+	.	1	0
+	+	1653	13
+	+	1653	12
+	+	1653	3
+	+	1653	4
+	+	1653	0
+	+	10	0
+	+	1	0
+
+> ~/Documents/emoji
+	*	1591099482	0
+	"	923	10
+	.	1645	0
+	+	1645	0
+
+> ~/Documents/Projects/gitlab/dwmblocks/dwmblocks.c
+	*	1591098788	0
+	"	1	0
+	^	171	1
+	.	174	0
+	+	29	15
+	+	61	0
+	+	100	1
+	+	101	0
+	+	100	1
+	+	103	28
+	+	106	2
+	+	105	3
+	+	109	0
+	+	103	0
+	+	175	14
+	+	191	1
+	+	176	0
+	+	175	3
+	+	176	1
+	+	180	0
+	+	179	8
+	+	176	59
+	+	178	3
+	+	179	10
+	+	184	30
+	+	189	17
+	+	179	7
+	+	178	4
+	+	175	0
+	+	171	43
+	+	174	1
+	+	171	0
+	+	174	0
+
+> ~/Documents/Projects/gitlab/dmenu/drw.c
+	*	1591098668	0
+	"	135	0
+	.	135	0
+	+	136	0
+	+	135	0
+
+> ~/Documents/Projects/gitlab/jars/aur
+	*	1591009373	0
+	"	8	0
+	.	9	0
+	+	3	1
+	+	2	7
+	+	2	0
+	+	6	11
+	+	8	10
+	+	3	0
+	+	9	10
+	+	9	0
+
+> ~/Documents/Projects/aur/st-jacob-git/.git/COMMIT_EDITMSG
+	*	1591009117	0
+	"	1	31
+	^	1	32
+	.	1	31
+	+	2	0
+	+	1	31
+
+> ~/Documents/Projects/gitlab/st/config.h
+	*	1591006170	0
+	"	11	9
+	^	11	10
+	.	11	9
+	+	11	28
+	+	8	21
+	+	11	25
+	+	263	2
+	+	263	5
+	+	264	0
+	+	249	28
+	+	111	62
+	+	111	93
+	+	111	124
+	+	111	0
+	+	272	0
+	+	13	0
+	+	249	9
+	+	244	8
+	+	244	9
+	+	245	8
+	+	246	8
+	+	252	9
+	+	244	23
+	+	244	22
+	+	244	23
+	+	244	18
+	+	245	17
+	+	246	17
+	+	244	12
+	+	244	3
+	+	244	4
+	+	245	3
+	+	246	3
+	+	244	9
+	+	244	8
+	+	244	10
+	+	245	9
+	+	246	9
+	+	244	12
+	+	244	25
+	+	244	24
+	+	245	24
+	+	246	24
+	+	249	9
+	+	255	64
+	+	254	57
+	+	261	0
+	+	257	68
+	+	258	0
+	+	257	186
+	+	257	116
+	+	255	57
+	+	254	56
+	+	255	58
+	+	257	118
+	+	257	129
+	+	258	0
+	+	257	61
+	+	256	56
+	+	257	61
+	+	258	0
+	+	260	0
+	+	258	26
+	+	259	61
+	+	258	56
+	+	257	33
+	+	258	26
+	+	259	43
+	+	258	34
+	+	245	0
+	+	244	0
+	+	11	9
+
+> ~/Downloads/serenity/Build/CMakeFiles/run.dir/progress.make
+	*	1590940559	0
+	"	1	0
+
+> ~/Downloads/serenity/Build/CMakeFiles/run.dir/depend.make
+	*	1590940541	0
+	"	1	0
+
+> ~/Downloads/serenity/Build/CMakeFiles/run.dir/depend.internal
+	*	1590940535	0
+	"	1	0
+
+> ~/Downloads/serenity/Build/CMakeFiles/run.dir/DependInfo.cmake
+	*	1590940525	0
+	"	1	0
+
+> ~/Downloads/serenity/Build/CMakeFiles/run.dir/cmake_clean.cmake
+	*	1590940513	0
+	"	1	0
+
+> ~/Downloads/serenity/Build/CMakeFiles/run.dir/build.make
+	*	1590940497	0
+	"	1	0
+
+> ~/Downloads/serenity/Build/CMakeFiles/Makefile2
+	*	1590940474	0
+	"	2383	67
+
+> ~/Downloads/serenity/Build/Makefile
+	*	1590940384	0
+	"	217	33
+
+> ~/Documents/Projects/gitlab/st/st.1
+	*	1590929132	0
+	"	140	0
+	^	182	13
+	.	151	0
+	+	157	5
+	+	160	5
+	+	170	100
+	+	144	3
+	+	146	18
+	+	148	14
+	+	145	14
+	+	149	17
+	+	152	26
+	+	160	8
+	+	156	0
+	+	154	14
+	+	171	3
+	+	181	14
+	+	175	7
+	+	181	7
+	+	182	12
+	+	145	0
+	+	148	0
+	+	151	0
+
+> ~/Documents/Projects/aur/st-distrotube-git/PKGBUILD
+	*	1590927931	0
+	"	1	0
+
+> ~/.cache/yay/st-luke-git/PKGBUILD
+	*	1590926844	0
+	"	31	9
+
+> ~/.cache/yay/st-luke-git/src/st-luke/config.h
+	*	1590926751	0
+	"	254	42
+
+> ~/Downloads/serenity/Toolchain/error.txt
+	*	1590771129	0
+	"	1	0
+	^	1	0
+
+> ~/Downloads/serenity/Toolchain/BuildIt.sh
+	*	1590769211	0
+	"	224	15
+
+> ~/Downloads/serenity/Toolchain/Build/binutils/Makefile
+	*	1590769087	0
+	"	851	4
+
+> ~/dwmblocks.c
+	*	1590525778	0
+	"	117	0
+	^	116	0
+	.	117	0
+	+	16	0
+	+	82	0
+	+	117	0
+	+	116	0
+	+	114	0
+	+	113	0
+	+	112	0
+	+	111	0
+	+	110	0
+	+	109	0
+	+	108	0
+	+	107	0
+	+	106	0
+	+	105	0
+	+	104	0
+	+	103	0
+	+	102	0
+	+	117	0
+
+> ~/dwmblocks.c.rej
+	*	1590525639	0
+	"	1	0
+
+> ~/Downloads/winfile/GNUmakefile
+	*	1590523752	0
+	"	67	0
+
+> ~/.local/bin/dateAndTime
+	*	1590418561	0
+	"	1	0
+	^	4	28
+	.	4	27
+	+	9	3
+	+	7	3
+	+	10	0
+	+	2	0
+	+	3	0
+	+	4	37
+	+	6	36
+	+	4	27
+
+> ~/.config/calcurse/conf
+	*	1590418547	0
+	"	4	18
+	^	1	0
+	.	4	18
+	+	4	18
+
+> ~/.local/bin/config.h
+	*	1590417310	0
+	"	1	0
+
+> ~/.local/bin/dateScript
+	*	1590417280	0
+	"	5	0
+	^	5	0
+	.	10	38
+	+	3	0
+	+	3	208
+	+	3	0
+	+	10	38
+
+> ~/.local/bin/date
+	*	1590417178	0
+	"	3	0
+	^	3	0
+	.	2	0
+	+	2	0
+
+> ~/weather
+	*	1590412742	0
+	"	1	0
+
+> ~/Documents/Projects/gitlab/dwmblocks/dwmblocksLuke.c
+	*	1590410740	0
+	"	232	0
+	^	232	1
+	.	232	0
+	+	232	0
+
+> ~/Documents/Projects/gitlab/dwm/config.h.rej
+	*	1590406465	0
+	"	1	0
+
+> ~/Documents/Projects/gitlab/dwm/drw.h
+	*	1590403384	0
+	"	1	0
+	^	45	0
+	.	45	0
+	+	44	0
+	+	44	100
+	+	44	0
+	+	45	101
+	+	46	0
+	+	45	0
+
+> ~/Documents/Projects/gitlab/dwm/drw.c.rej
+	*	1590402828	0
+	"	1	0
+
+> ~/.local/bin/coronacounter
+	*	1590360907	0
+	"	1	0
+
+> ~/Documents/Projects/gitlab/dwmblocks/README.md
+	*	1590360746	0
+	"	9	64
+	^	9	65
+	.	10	0
+	+	4	0
+	+	8	65
+	+	2	0
+	+	4	0
+	+	6	0
+	+	8	0
+	+	9	67
+	+	1	85
+	+	10	0
+
+> ~/Documents/Projects/gitlab/dwmblocks/LICENSE
+	*	1590360575	0
+	"	4	29
+	^	4	30
+	.	4	29
+	+	4	29
+
+> ~/.config/polybar/config
+	*	1590357883	0
+	"	66	36
+	^	231	14
+	.	206	0
+	+	216	24
+	+	281	0
+	+	221	0
+	+	281	0
+	+	282	11
+	+	286	33
+	+	225	10
+	+	241	10
+	+	239	30
+	+	240	16
+	+	228	0
+	+	237	0
+	+	237	14
+	+	237	11
+	+	66	56
+	+	238	0
+	+	66	66
+	+	228	0
+	+	229	13
+	+	231	13
+	+	184	17
+	+	176	17
+	+	202	21
+	+	206	16
+	+	207	16
+	+	208	16
+	+	209	16
+	+	210	15
+	+	194	19
+	+	206	0
 
 > ~/.config/sxhkd/sxhkdrc
-	*	1589124585	0
-	"	88	0
-	^	30	1
-	.	180	0
-	+	39	0
+	*	1590355377	0
+	"	1	0
+	^	35	0
+	.	34	6
+	+	43	0
 	+	2	0
 	+	2	9
 	+	2	42
 	+	4	0
 	+	2	0
 	+	10	0
-	+	38	41
-	+	42	17
+	+	42	41
+	+	46	17
 	+	8	9
 	+	10	27
 	+	9	1
 	+	8	0
 	+	9	10
-	+	49	0
-	+	48	45
+	+	53	0
+	+	52	45
 	+	14	39
 	+	30	0
 	+	30	26
 	+	30	0
-	+	172	14
-	+	173	9
+	+	176	14
+	+	177	9
 	+	26	5
 	+	30	0
 	+	30	20
@@ -488,989 +1734,192 @@ $
 	+	30	1
 	+	18	11
 	+	19	0
-	+	180	0
+	+	184	0
+	+	34	6
 
-> ~/Downloads/dotfiles/.config/sxhkd/sxhkdrc
-	*	1589124485	0
-	"	188	17
+> ~/Documents/Projects/gitlab/dwmblocks/Makefile
+	*	1590350941	0
+	"	3	25
+	^	3	26
+	.	3	25
+	+	3	25
 
-> ~/Desktop/test.md
-	*	1589123830	0
-	"	1	13
-	^	1	14
-	.	1	13
-	+	1	13
-
-> ~/Downloads/serenity/Toolchain/Tarballs/binutils-2.33.1/depcomp
-	*	1589123064	0
-	"	127	48
-
-> ~/Documents/Projects/github/cmd-os/os.asm
-	*	1589060323	0
-	"	258	0
-
-> ~/Documents/Projects/github/cmd-os/Makefile
-	*	1589042040	0
-	"	6	1
-	^	6	62
-	.	6	56
-	+	39	0
-	+	6	2
-	+	8	0
-	+	1	14
-	+	37	10
-	+	37	22
-	+	5	52
-	+	7	0
-	+	6	62
-	+	1	14
-	+	37	0
-	+	5	47
-	+	6	56
-
-> ~/.config/polybar/config
-	*	1588964714	0
-	"	232	15
-	^	232	16
-	.	232	16
-	+	216	24
-	+	273	0
-	+	221	0
-	+	273	0
-	+	274	11
-	+	278	33
-	+	225	10
-	+	233	10
-	+	231	30
-	+	232	16
-
-> ~/Documents/Projects/gitlab/dotfiles/README.md
-	*	1588955581	0
-	"	38	150
-	^	38	151
-	.	38	108
-	+	2	0
-	+	5	98
-	+	8	0
-	+	6	0
-	+	33	1
-	+	11	0
-	+	13	0
-	+	15	0
-	+	17	0
-	+	19	0
-	+	21	0
-	+	23	0
-	+	25	0
-	+	27	0
-	+	29	0
-	+	31	0
-	+	33	0
-	+	34	11
-	+	36	65
-	+	5	0
-	+	38	108
-
-> ~/dotfiles-config
-	*	1588951060	0
-	"	1	0
-	^	21	4
-	.	21	4
-	+	3	0
-	+	13	1
-	+	20	0
-	+	21	0
-	+	13	0
-	+	20	0
-	+	21	0
-	+	3	0
-	+	4	34
-	+	6	26
-	+	7	48
-	+	19	43
-	+	20	14
-	+	1	1
-	+	19	64
-	+	13	0
-	+	20	0
-	+	21	0
-	+	10	90
-	+	13	110
-	+	20	0
-	+	13	78
-	+	18	8
-	+	20	4
-	+	21	4
-
-> ~/.local/bin/reloadPolybar
-	*	1588945286	0
-	"	3	16
-	^	3	17
-	.	3	17
-	+	3	17
-
-> ~/Documents/Projects/github/cmd-os/Readme
-	*	1588904581	0
-	"	5	0
-	^	5	0
-
-> ~/Documents/Projects/github/32-bit-os/grub.cfg
-	*	1588902370	0
-	"	2	0
-
-> ~/Documents/Projects/github/cmd-os/cpy.c
-	*	1588893150	0
-	"	65	1
-	^	66	1
-	.	21	0
-	+	66	0
-	+	21	0
-
-> ~/Documents/Projects/github/cmd-os/bootloader.asm
-	*	1588892719	0
-	"	79	0
-
-> ~/Documents/Projects/github/cmd-os/bootloader
-	*	1588892703	0
+> ~/config.h
+	*	1590327703	0
 	"	1	0
 
-> ~/Documents/Projects/bareBonesKernel/kernel.asm
-	*	1588891497	0
-	"	1	32
-	^	1	33
-	.	1	32
-	+	13	21
-	+	12	6
-	+	9	14
-	+	1	10
-	+	14	10
-	+	9	16
-	+	20	0
-	+	7	31
-	+	1	32
+> ~/.local/bin/setWall
+	*	1590324230	0
+	"	5	97
+	^	5	98
+	.	5	97
+	+	6	16
+	+	5	97
 
-> /boot/grub/grub.cfg
-	*	1588891434	0
-	"	1	0
-	^	149	16
-	.	149	15
-	+	151	0
-	+	148	18
-	+	150	24
-	+	149	15
-
-> /boot/grub/grub
-	*	1588890730	0
+> ~/.l
+	*	1590324212	0
 	"	1	0
 
-> ~/Documents/Projects/bareBonesKernel/link.ld
-	*	1588888902	0
-	"	5	4
-	^	5	5
-	.	8	0
-	+	8	0
-	+	3	8
-	+	8	0
-
-> ~/Documents/Projects/bareBonesKernel/kernel.c
-	*	1588888852	0
-	"	22	0
-	^	15	48
-	.	6	0
-	+	9	57
-	+	22	1
-	+	21	1
-	+	20	0
-	+	7	0
-	+	7	18
-	+	15	47
-	+	6	0
-
-> ~/.profile
-	*	1588818489	0
-	"	17	0
-	^	7	15
-	.	7	14
-	+	2	33
-	+	22	74
-	+	22	127
-	+	22	3
-	+	18	0
-	+	22	108
-	+	22	3
-	+	23	0
-	+	7	14
-	+	18	47
-	+	7	18
-	+	19	50
-	+	20	38
-	+	7	14
-
-> ~/Documents/Projects/IntroToAssembly/helloWorld/hello.asm
-	*	1588817103	0
-	"	18	14
-	^	18	15
-	.	18	14
-	+	2	16
-	+	13	10
-	+	12	11
-	+	10	10
-	+	9	11
-	+	8	11
-	+	7	13
-	+	6	13
-	+	4	10
-	+	7	11
-	+	17	2
-	+	18	14
-	+	7	11
-	+	17	2
-	+	18	14
-
-> ~/Documents/Projects/IntroToAssembly/hello.asm
-	*	1588816688	0
-	"	18	37
-	^	18	38
-	.	18	37
-	+	6	0
-	+	5	0
-	+	10	3
-	+	6	4
-	+	7	4
-	+	8	4
-	+	9	4
-	+	15	8
-	+	1	8
-	+	2	8
-	+	18	14
-	+	2	47
-	+	4	37
-	+	6	27
-	+	7	29
-	+	9	41
-	+	10	21
-	+	12	40
-	+	13	21
-	+	17	37
-	+	18	16
-	+	17	27
-	+	18	37
-
-> ~/.config/lf/lfrc
-	*	1588565991	0
-	"	1	6
-	^	1	7
-	.	1	6
-	+	1	6
-	a	1	0
-
-> ~/Pictures/Wallpapers/Germany_Evening_Mountains_Rivers_Stones_Scenery_517878_1920x1080.jpg
-	*	1588565533	0
+> ~/Documents/Projects/gitlab/dwm/.xinitrc
+	*	1590318864	0
 	"	1	0
+
+> ~/.local/share/xorg/Xorg.2.log
+	*	1590317607	0
+	"	502	0
 
 > ~/.config/bspwm/bspwmrc
-	*	1588541357	0
-	"	6	0
-	^	5	7
-	.	5	33
-	+	6	0
-	+	5	33
-
-> ~/main.java
-	*	1588540457	0
-	"	7	0
-	^	7	0
-	.	6	1
-	+	6	1
-
-> ~/Pictures/Wallpapers/mount-fuji-night-reflections-do-1920x1080.jpg
-	*	1588540222	0
-	"	1	6
-
-> /etc/runit/sv/brightBacklight/run
-	*	1588455212	0
-	"	1	0
-	^	2	57
-	.	2	57
-	+	2	57
-
-> ~/.local/bin/brightness
-	*	1588440839	0
-	"	5	86
-	^	5	87
-	.	5	86
-	+	4	78
-	+	4	44
-	+	5	0
-	+	4	18
-	+	5	86
-
-> ~/.local/bin/brightnessUp
-	*	1588440138	0
-	"	5	21
-	^	7	0
-	.	5	21
-	+	4	94
-	+	2	46
-	+	4	90
-	+	4	31
-	+	4	63
-	+	4	92
-	+	4	14
-	+	3	4
-	+	4	28
-	+	4	63
-	+	4	0
-	+	4	112
-	+	8	0
-	+	9	0
-	+	4	73
-	+	8	0
-	+	4	19
-	+	5	29
-	+	6	35
-	+	4	0
-	+	5	21
-
-> /tmp/vifm.cmdline_296377991_00
-	*	1588394996	0
-	"	1	0
-
-> ~/Pictures/Wallpapers/germany-wallpaper-1.jpg
-	*	1588394987	0
-	"	1	0
-
-> ~/.config/zathura/zathurarc
-	*	1588385021	0
-	"	1	0
-
-> ~/Pictures/Wallpapers/89234.jpg
-	*	1588356821	0
-	"	18	0
-
-> ~/.local/bin/weather
-	*	1587183298	0
-	"	1	0
-
-> /sys/devices/pci0000:00/0000:00:08.1/0000:03:00.0/backlight/amdgpu_bl0/brightness
-	*	1586808994	0
-	"	1	0
-
-> ~/.config/newsboat/config
-	*	1586807595	0
-	"	1	0
-	^	1	13
-	.	1	13
-	+	3	75
-	+	4	66
-	+	5	62
-	+	7	63
-	+	1	13
-
-> ~/.config/newsboat/urls
-	*	1586807475	0
-	"	19	45
-	^	19	46
-	.	19	45
-	+	15	0
-	+	17	0
-	+	16	9
-	+	2	0
-	+	17	39
-	+	18	0
-	+	17	66
-	+	19	45
-
-> ~/Documents/Projects/gitlab/jars/main
-	*	1586752566	0
-	"	58	0
-	^	58	1
-	.	58	0
-	+	45	1
-	+	46	0
-	+	45	100
-	+	45	99
-	+	46	0
-	+	57	33
-	+	58	0
-	+	58	63
-	+	58	92
-	+	58	0
-
-> ~/.local/bin/coronacounter
-	*	1586752155	0
-	"	1	0
-
-> ~/Documents/Projects/gitlab/jars/README.md
-	*	1586752027	0
-	"	1	0
-	.	9	0
-	+	1	35
-	+	2	0
-	+	1	6
-	+	3	207
-	+	2	0
-	+	1	8
-	+	3	36
-	+	4	0
-	+	7	1
-	+	5	19
-	+	7	66
-	+	8	0
-	+	9	0
-
-> ~/Documents/Projects/gitlab/dotfiles/.profile
-	*	1586749657	0
-	"	19	0
-	^	19	3
-	.	20	0
-	+	7	13
-	+	20	0
-
-> ~/Documents/Projects/gitlab/jars/.git/MERGE_MSG
-	*	1586735399	0
-	"	7	15
-	^	7	16
-	.	8	0
-	+	8	0
-
-> ~/Documents/Projects/gitlab/jars/aur
-	*	1586735274	0
-	"	5	1
-	^	5	2
-	.	5	1
-	+	5	1
-
-> ~/Documents/Projects/JARS/main
-	*	1586667023	0
-	"	58	0
-	.	4	0
-	+	12	11
-	+	8	29
-	+	7	20
-	+	10	44
-	+	11	28
-	+	10	17
-	+	11	59
-	+	13	4
-	+	15	0
-	+	14	93
-	+	15	15
-	+	7	0
-	+	14	13
-	+	18	0
-	+	15	1
-	+	15	8
-	+	15	7
-	+	15	42
-	+	17	3
-	+	18	17
-	+	19	4
-	+	18	22
-	+	17	0
-	+	15	43
-	+	15	8
-	+	19	1
-	+	20	0
-	+	19	19
-	+	18	2
-	+	16	0
-	+	15	51
-	+	18	22
-	+	15	51
-	+	18	100
-	+	20	12
-	+	18	98
-	+	20	8
-	+	18	57
-	+	16	0
-	+	22	0
-	+	20	0
-	+	24	127
-	+	28	1
-	+	20	5
-	+	28	1
-	+	31	5
-	+	32	5
-	+	35	15
-	+	39	5
-	+	29	31
-	+	27	7
-	+	4	12
-	+	37	33
-	+	35	98
-	+	32	55
-	+	31	40
-	+	49	118
-	+	50	29
-	+	54	1
-	+	54	39
-	+	54	37
-	+	54	6
-	+	54	2
-	+	54	0
-	+	54	15
-	+	58	0
-	+	4	0
-	+	3	165
-	+	14	77
-	+	35	77
-	+	14	70
-	+	3	78
-	+	54	0
-	+	55	38
-	+	54	0
-	+	21	8
-	+	25	8
-	+	42	8
-	+	46	8
-	+	51	8
-	+	56	8
-	+	4	2
-	+	4	0
-	+	4	3
-	+	4	175
-	+	4	206
-	+	4	205
-	+	4	0
-
-> ~/.local/bin/jdm
-	*	1586663770	0
-	"	12	0
-	^	11	50
-	.	12	0
-	+	11	0
-	+	6	13
-	+	8	15
-	+	11	165
-	+	6	5
-	+	11	212
-	+	10	1
-	+	11	180
-	+	10	32
-	+	3	17
-	+	10	20
-	+	11	4
-	+	11	101
-	+	3	17
-	+	11	169
-	+	11	87
-	+	11	183
-	+	11	87
-	+	11	165
-	+	11	170
-	+	11	181
-	+	11	194
-	+	11	173
-	+	11	169
-	+	11	190
-	+	11	170
-	+	11	190
-	+	1	18
-	+	11	169
-	+	11	92
-	+	1	19
-	+	1	67
-	+	11	169
-	+	1	45
-	+	11	173
-	+	3	0
-	+	11	19
-	+	11	87
-	+	11	45
-	+	11	182
-	+	11	87
-	+	11	197
-	+	5	6
-	+	6	9
-	+	2	17
-	+	5	11
-	+	6	59
-	+	7	18
-	+	10	67
-	+	11	0
-	+	10	69
-	+	5	58
-	+	2	17
-	+	10	8
-	+	10	89
-	+	9	24
-	+	11	0
-	+	10	79
-	+	11	50
-	+	10	100
-	+	10	19
-	+	10	21
-	+	10	102
-	+	10	5
-	+	11	0
-	+	11	39
-	+	10	87
-	+	10	5
-	+	11	0
-	+	10	5
-	+	11	55
-	+	11	92
-	+	11	108
-	+	2	82
-	+	3	110
-	+	5	107
-	+	6	61
-	+	5	65
-	+	3	48
-	+	2	20
-	+	3	53
-	+	5	66
-	+	6	117
-	+	9	49
-	+	10	131
-	+	11	86
-	+	11	188
-	+	11	87
-	+	12	0
-	+	11	70
-	+	12	0
-	+	11	87
-	+	11	43
-	+	12	0
-	+	11	29
-	+	12	0
-	+	11	119
-	+	12	0
-	+	11	49
-	+	12	0
-
-> ~/tmp
-	*	1586651383	0
-	"	17	1
-	^	17	2
-	.	17	0
-	+	17	0
-
-> ~/temp
-	*	1586651358	0
-	"	1	0
-
-> ~/Documents/installedProgramzz
-	*	1586648674	0
-	"	419	0
-
-> ~/Documents/Projects/JARS/programLists/aur
-	*	1586647418	0
-	"	4	6
-	^	4	7
-	.	5	0
-	+	5	0
-
-> ~/Documents/Projects/JARS/programLists/programs
-	*	1586646958	0
-	"	33	3
-	^	33	4
-	.	33	0
-	+	11	0
-	+	33	0
-
-> ~/Documents/Projects/JARS/programLists/systemPrograms
-	*	1586646156	0
-	"	19	6
-	^	19	7
-	.	19	6
-	+	19	6
-
-> ~/Documents/Projects/JARS/programLists/fonts
-	*	1586644984	0
-	"	4	12
-	^	4	13
-	.	4	12
-	+	4	12
-
-> ~/Documents/systemPrograms
-	*	1586640710	0
-	"	18	4
-	^	18	5
-	.	18	5
-	+	2	0
-	+	18	5
-
-> ~/Documents/system
-	*	1586639099	0
+	*	1590316900	0
 	"	1	0
 	^	1	0
-
-> ~/.xinitrc
-	*	1586573420	0
-	"	1	18
-	^	1	19
-	.	1	18
-	+	1	8
-	+	1	0
-	+	1	19
-	+	1	18
-
-> ~/.xprofile
-	*	1586572516	0
-	"	1	40
-	^	1	103
-	.	1	102
-	+	1	102
-
-> ~/jdm
-	*	1586496765	0
-	"	1	0
-
-> /etc/motd
-	*	1586494477	0
-	"	1	0
-
-> ~/.local/bin/.profile
-	*	1586494119	0
-	"	1	0
-
-> ~/jndm.c
-	*	1586491880	0
-	"	7	0
-	^	7	1
-	.	7	0
-	+	5	0
-	+	13	0
-	+	13	40
-	+	13	1
-	+	5	1
-	+	14	0
-	+	11	9
-	+	5	43
-	+	2	19
-	+	3	16
-	+	2	0
-	+	11	9
-	+	9	0
-	+	8	0
-	+	5	1
-	+	5	2
-	+	5	1
-	+	5	70
-	+	5	31
-	+	8	0
-	+	5	11
-	+	8	0
-	+	6	58
-	+	7	0
-
-> ~/jndm
-	*	1586489766	0
-	"	2	11
-	^	2	12
-	.	2	11
-	+	2	11
-
-> /usr/share/xsessions/plan9port.desktop
-	*	1586478125	0
-	"	3	0
-	.	2	9
-	+	2	9
-
-> ~/.kshrc
-	*	1586224910	0
-	"	66	0
-
-> ~/.kashrc
-	*	1586224897	0
-	"	1	0
-
-> fig/sxhkd/sxhkdrc
-	*	1586143345	0
-	"	1	0
-
-> /usr/lib/plan9/bin/9.rc
-	*	1586142698	0
-	"	1	0
-	^	9	0
-	.	8	3
-	+	8	3
-
-> /usr/lib/plan9/lib/acme.rc
-	*	1586141709	0
-	"	6	0
-	^	20	32
-	.	6	0
-	+	19	0
-	+	20	31
-	+	6	0
-
-> /usr/lib/plan9/bin/u.rc
-	*	1586140763	0
-	"	1	0
-
-> /etc/runit/sv/connmand/run
-	*	1586049215	0
-	"	2	15
-
-> ~/acme.dump
-	*	1586047550	0
-	"	1	0
-
-> ~/.local/scripts/takeABreak
-	*	1585621313	0
-	"	1	0
-	^	5	14
-	.	4	0
-	+	4	10
+	.	5	0
 	+	4	0
-	+	1	19
+	+	5	0
+
+> ~/.cache/yay/libxft-bgra/libXft-2.3.3/libXft-2.3.3/_build/sub/src/Makefile
+	*	1590275385	0
+	"	497	0
+
+> ~/.cache/yay/libxft-bgra/libXft-2.3.3/Makefile
+	*	1590275122	0
+	"	609	0
+	.	132	0
+	+	132	0
+
+> ~/.cache/yay/libxft-bgra/libXft-2.3.3/depcomp
+	*	1590274964	0
+	"	122	0
+
+> ~/.cache/yay/libxft-bgra/libXft-2.3.3/decomp
+	*	1590274941	0
+	"	1	0
+
+> ~/.cache/yay/libxft-bgra/libXft-2.3.3/src/xftcolor.c
+	*	1590274920	0
+	"	123	0
+
+> ~/.cache/yay/libxft-bgra/PKGBUILD
+	*	1590274649	0
+	"	51	3
+
+> ~/Documents/Projects/gitlab/slock/config.h
+	*	1590265264	0
+	"	1	0
+	^	3	35
+	.	3	34
 	+	2	33
-	+	2	6
-	+	2	87
-	+	2	62
-	+	4	12
-	+	2	51
-	+	2	0
-	+	4	14
-	+	5	0
-	+	4	0
+	+	3	34
+	+	22	36
+	+	2	33
+	+	3	34
+	+	2	33
+	+	3	34
 
-> ~/.local/scripts/break
-	*	1585537094	0
-	"	4	7
-	^	4	8
-	.	4	8
-	+	2	77
-	+	3	1
-	+	3	115
-	+	4	10
-	+	5	0
-	+	3	127
-	+	4	8
+> ~/Documents/Projects/aur/slock-jacob-git/PKGBUILD
+	*	1590265010	0
+	"	32	5
+	^	31	12
+	.	32	5
+	+	29	0
+	+	31	1
+	+	32	0
+	+	31	11
+	+	32	5
 
-> ~/.local/scripts/battery
-	*	1585536403	0
-	"	7	66
-	^	6	36
-	.	7	66
-	+	6	79
-	+	7	117
-	+	6	95
-	+	7	117
-	+	7	11
-	+	7	158
-	+	8	3
-	+	3	0
-	+	6	77
-	+	7	66
-	+	6	35
-	+	7	66
+> ~/Downloads/slock-1.4/config.def.h
+	*	1590264465	0
+	"	3	32
+	^	3	33
+	.	3	32
+	+	2	32
+	+	3	32
+	+	14	1
+	+	22	39
+	+	22	38
+	+	21	0
+	+	20	0
+	+	19	0
+	+	18	0
+	+	17	0
+	+	16	0
+	+	15	0
+	+	14	0
+	+	2	32
+	+	3	32
+	+	23	0
+	+	25	31
+	+	22	36
+	+	2	32
+	+	3	32
+	+	22	95
+	+	2	32
+	+	3	32
+	+	2	31
+	+	3	32
 
-> ~/.local/scripts/warn
-	*	1585535522	0
-	"	2	0
-	^	2	0
-	.	2	0
-	+	2	0
+> ~/Documents/Projects/gitlab/slock/PKGBUILD
+	*	1590264316	0
+	"	31	11
+	^	31	12
+	.	31	11
+	+	8	9
+	+	23	8
+	+	24	11
+	+	7	12
+	+	16	12
+	+	17	14
+	+	18	15
+	+	28	9
+	+	29	11
+	+	12	44
+	+	10	45
+	+	29	0
+	+	31	0
+	+	31	1
+	+	32	0
+	+	31	11
 
-> ~/.local/scripts/prompt
-	*	1585535376	0
-	"	2	8
-	^	2	9
-	.	2	0
-	+	1	56
-	+	1	48
-	+	1	18
-	+	1	32
-	+	1	71
-	+	1	68
-	+	1	69
-	+	1	71
-	+	1	48
-	+	1	63
-	+	1	54
-	+	1	9
-	+	2	0
+> ~/Documents/Projects/gitlab/slock/README.md
+	*	1590263529	0
+	"	22	233
+	^	22	234
+	.	22	233
+	+	9	15
+	+	19	0
+	+	9	0
+	+	1	61
+	+	5	14
+	+	7	12
+	+	12	49
+	+	18	111
+	+	13	8
+	+	15	0
+	+	9	15
+	+	10	0
+	+	14	10
+	+	16	3
+	+	18	0
+	+	16	3
+	+	18	4
+	+	22	233
 
-> ~/.local/scripts/dprompt
-	*	1585533926	0
-	"	8	98
-	^	8	99
-	.	8	0
-	+	8	0
-
-> ~/.local/scripts/rebootScript
-	*	1585498052	0
-	"	2	75
-	^	2	76
-	.	2	75
-	+	2	0
-	+	3	0
-	+	2	75
-
-> ~/.local/scripts/shutdownScript
-	*	1585497989	0
-	"	2	0
-	^	2	12
-	.	2	11
-	+	3	0
-	+	1	0
-	+	2	11
-
-> ~/.local/scripts/coronacounter
-	*	1585447736	0
-	"	1	0
+> ~/Documents/Projects/gitlab/slock/configure
+	*	1590263338	0
+	"	7	7
 	^	7	8
 	.	7	7
+	+	1	9
+	+	7	40
+	+	6	8
+	+	7	8
+	+	6	22
+	+	7	19
+	+	3	8
+	+	5	9
+	+	2	26
+	+	4	33
+	+	7	9
+	+	6	24
+	+	7	26
+	+	6	23
 	+	7	7
-
-> ~/.local/scripts/weather
-	*	1585447583	0
-	"	1	0
-
-> ~/.config/ranger/rc.conf
-	*	1585446007	0
-	"	1	22
-	^	1	23
-	.	1	0
-	+	1	0
-
-> ~/.local/scripts/c
-	*	1585442811	0
-	"	1	0
-
-> ~/.local/scripts/reloadPolybar
-	*	1585442317	0
-	"	1	0
-	.	4	23
-	+	4	23
-
-> ~/reloadPolybar
-	*	1585442181	0
-	"	1	0
-
-> ~/.local/scripts/setWall
-	*	1585441145	0
-	"	5	20
-	^	5	21
-	.	5	21
-	+	3	41
-	+	4	121
-	+	5	21
-
-> ~/.config/oh-my-zsh/themes/nox.zsh-theme
-	*	1585437194	0
-	"	1	0
-
-> ~/.zshrc
-	*	1585437168	0
-	"	99	0
-	.	13	0
-	+	13	0
-
-> ~/.zprofile
-	*	1585435717	0
-	"	16	0
-	^	16	0
-	.	16	0
-	+	16	0
-
-> ~/.config/vim/vimrc
-	*	1585072937	0
-	"	1	0
-	^	10	9
-	.	10	0
-	+	10	0

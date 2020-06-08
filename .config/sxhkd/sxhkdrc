@@ -15,7 +15,7 @@ XF86AudioLowerVolume
 
 # Mute
 XF86AudioMute
-	pamixer -t
+	pamixer -t ; killall reloadPolybar ; reloadPolybar
 
 # Raise Volume
 XF86AudioRaiseVolume
@@ -28,6 +28,10 @@ XF86MonBrightnessDown
 # Raise Brightness
 XF86MonBrightnessUp
 	brightness -inc
+
+# Run slock
+super + ctrl + shift + l
+	slock
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -177,15 +181,3 @@ super + alt + s
 # run program launcher
 alt + ctrl + Return
 	dmenu_run
-
-# edit common config files
-alt + ctrl + e
-   /home/dt/.dmenu/dmenu-edit-configs.sh
-
-# common system montoring programs
-alt + ctrl + m
-   /home/dt/.dmenu/dmenu-sysmon.sh
-
-# stock trading programs
-alt + ctrl + t
-   /home/dt/.dmenu/dmenu-trading.sh

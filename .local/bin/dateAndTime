@@ -1,0 +1,9 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+	1) "$TERMINAL" -e calcurse ;;
+	2) takeABreak ;;
+	3) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+echo "$(date +'%Y %b %d (%a) %I:%M%p')"

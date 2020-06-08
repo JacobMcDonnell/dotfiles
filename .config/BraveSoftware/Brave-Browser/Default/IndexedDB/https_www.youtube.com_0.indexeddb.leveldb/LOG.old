@@ -1,7 +1,15 @@
-2020/05/05-21:46:19.425 15ef Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/05/05-21:46:19.426 15ef Recovering log #3
-2020/05/05-21:46:19.430 15ef Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
-2020/05/05-21:48:17.050 13f3 Level-0 table #5: started
-2020/05/05-21:48:17.054 13f3 Level-0 table #5: 22363 bytes OK
-2020/05/05-21:48:17.057 13f3 Delete type=0 #3
-2020/05/05-21:48:17.058 13f3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/06/08-09:56:35.858 25ef Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/08-09:56:35.858 25ef Recovering log #69
+2020/06/08-09:56:35.858 25ef Reusing old log /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000069.log 
+2020/06/08-09:56:44.750 22f3 Level-0 table #74: started
+2020/06/08-09:56:44.752 22f3 Level-0 table #74: 2124 bytes OK
+2020/06/08-09:56:44.755 22f3 Delete type=0 #69
+2020/06/08-09:56:44.755 22f3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/06/08-09:56:44.755 22f3 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 2758 : 1
+2020/06/08-09:56:44.755 22f3 Compacting 1@1 + 1@2 files
+2020/06/08-09:56:44.758 22f3 Generated table #75@1: 46 keys, 1787 bytes
+2020/06/08-09:56:44.758 22f3 Compacted 1@1 + 1@2 files => 1787 bytes
+2020/06/08-09:56:44.763 22f3 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/06/08-09:56:44.763 22f3 Delete type=2 #74
+2020/06/08-09:56:44.763 22f3 Delete type=2 #71
+2020/06/08-09:56:44.763 22f3 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 2758 : 1 .. (end); will stop at (end)

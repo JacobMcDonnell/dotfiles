@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/jacob/Documents/Projects/gitlab/st'
+let g:netrw_dirhist_5='/home/jacob/Documents/Projects/aur/dmenu-jacob-git'
+let g:netrw_dirhist_4='/home/jacob/.cache/yay/st-luke-git'
+let g:netrw_dirhist_3='/home/jacob/Downloads/src'
+let g:netrw_dirhist_2='/home/jacob/Documents/Projects/aur/slock-jacob-git/src'
+let g:netrw_dirhist_1='/home/jacob/Documents/Projects/gitlab/st'
