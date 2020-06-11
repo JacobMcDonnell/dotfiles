@@ -1,5 +1,0 @@
-2020/05/21-14:53:03.035 6f8 Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.lenovo.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/05/21-14:55:50.720 800 Level-0 table #5: started
-2020/05/21-14:55:50.723 800 Level-0 table #5: 1798 bytes OK
-2020/05/21-14:55:50.726 800 Delete type=0 #3
-2020/05/21-14:55:50.726 800 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

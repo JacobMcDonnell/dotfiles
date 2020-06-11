@@ -1,5 +1,0 @@
-2020/05/08-10:22:11.659 26f Reusing MANIFEST /home/jacob/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_forum.gitlab.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/05/08-10:22:48.652 965 Level-0 table #5: started
-2020/05/08-10:22:48.656 965 Level-0 table #5: 68245 bytes OK
-2020/05/08-10:22:48.658 965 Delete type=0 #3
-2020/05/08-10:22:48.659 965 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
