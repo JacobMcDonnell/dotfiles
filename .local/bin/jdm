@@ -1,6 +1,6 @@
 #!/bin/sh
 declare -i count=1 # used as a reference throughout the script
-for desktop in /usr/share/xsessions/*.desktop  # looks at all the desktop files in /usr/share/xsessions
+for desktop in $XDG_DATA_HOME/xsessions/*.desktop  # looks at all the desktop files in /usr/share/xsessions
 do
 	name[$count]=$(grep "Name" $desktop | sed "s/Name=/$count /g") # grabs the name and adds it to an array
 	program[$count]=$(grep "Exec" $desktop | sed "s/Exec=//g") # grabs the path of the executable and adds it to an array

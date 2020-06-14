@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/jacob/.config/oh-my-zsh"
+export ZSH="$HOME/.config/oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -100,6 +100,13 @@ source $ZSH/oh-my-zsh.sh
 alias la="ls -A"
 alias calc="calc && rm ~/.calc_history"
 alias gnuplot="gnuplot && rm ~/.gnuplot_history"
+alias tty-clock="tty-clock -tc"
+alias cp="cp -v"
+alias rm="rm -v"
+alias mv="mv -v"
+alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings'
+alias minecraft-launcher="minecraft-launcher ; rm -r ~/GPUCache"
+alias steam='steam "@" ; rm -r ~/.steampath ~/.steampid'
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-artix-5.8
 
 export HISTFILE="$XDG_DATA_HOME"/zsh/history
