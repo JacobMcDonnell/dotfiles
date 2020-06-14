@@ -31,7 +31,7 @@ add(){
 	forDialog[$countForDia]="${countForDia} .local/bin/ off"
 	set -A files $(dialog --title "Dotfiles in the Home directory" --checklist "Select dotfiles:" 0 0 0 ${forDialog[*]} 3>&1 1>&2 2>&3 3>&-)
 	cd $DOTFILESDIR
-	count=1
+	count=0
 	while [ "$count" -le "${#files[@]}" ]
 	do
 	        [ -f ${name[${files[$count]}]} ] && cp $HOME/${name[${files[$count]}]} ${name[${files[$count]}]}
@@ -79,7 +79,7 @@ del(){
 	        count=$((count+1))
 	done
 	set -A files $(dialog --title "Dotfiles in the Dotfiles directory" --checklist "Select dotfiles:" 0 0 0 ${forDialog[*]} 3>&1 1>&2 2>&3 3>&-)
-	count=1
+	count=0
 	while [ "$count" -le "${#files[@]}" ]
 	do
 		git rm -r ${name[${files[$count]}]}
