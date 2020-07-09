@@ -24,6 +24,4 @@ export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export LESSHISTFILE="$XDG_CACHE_HOME"/lesshst
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 
-#Running Scripts
-$HOME/.local/bin/keys
 jdm
