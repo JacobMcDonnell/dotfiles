@@ -1,0 +1,14 @@
+#!/bin/sh
+alias \
+ 	la="ls -A --color" \
+	ls="ls -h --color" \
+	l="ls -lh --color" \
+	calc="calc && rm ~/.calc_history" \
+	gnuplot="gnuplot && rm ~/.gnuplot_history" \
+	tty-clock="tty-clock -tc" \
+	cp="cp -v" \
+	rm="rm -v" \
+	mv="mv -v" \
+	nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings' \
+	minecraft-launcher="minecraft-launcher ; rm -r ~/GPUCache" \
+	twin='twin ; rm $HOME/.TwinAuth'

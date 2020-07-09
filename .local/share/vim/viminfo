@@ -11,36 +11,61 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<configure\>
+~Msle0~/\<name\>
+
+# Last Substitute Search Pattern:
+~MSle0&alias
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1592093409,,"wq"
+|2,0,1594260133,,"wq"
 :q
-|2,0,1592092698,,"q"
+|2,0,1593185569,,"q"
 :w
-|2,0,1592051424,,"w"
+|2,0,1593185567,,"w"
+:filetype detect
+|2,0,1593083932,,"filetype detect"
+:filetypedectect
+|2,0,1593083925,,"filetypedectect"
+:'<,'>%s/</li>//gc
+|2,0,1592766551,,"'<,'>%s/</li>//gc"
+:zz
+|2,0,1592393326,,"zz"
+:WQ
+|2,0,1592343459,,"WQ"
+:ew
+|2,0,1592267095,,"ew"
+:earlier 10
+|2,0,1592241730,,"earlier 10"
+:earlier 1m
+|2,0,1592241595,,"earlier 1m"
+:q!
+|2,0,1592232357,,"q!"
+:%s/alias//g
+|2,0,1592176546,,"%s/alias//g"
+:%s/#//gc
+|2,0,1592176370,,"%s/#//gc"
+:%s/HOME/DOTFILESDIR/gc
+|2,0,1592158863,,"%s/HOME/DOTFILESDIR/gc"
+:s/HOME/DOTFILESDIR/gc
+|2,0,1592158837,,"s/HOME/DOTFILESDIR/gc"
+:s/$HOME/$DOTFILESDIR/gc
+|2,0,1592158819,,"s/$HOME/$DOTFILESDIR/gc"
+:Q
+|2,0,1592143483,,"Q"
 :qw
 |2,0,1591911738,,"qw"
-:q!
-|2,0,1591901425,,"q!"
 :wq!
 |2,0,1591889848,,"wq!"
 :earlier 1h
 |2,0,1591877931,,"earlier 1h"
 :w!
 |2,0,1591877863,,"w!"
-:Q
-|2,0,1591628160,,"Q"
-:earlier 10
-|2,0,1591619501,,"earlier 10"
 :earlier 10m
 |2,0,1591113810,,"earlier 10m"
-:WQ
-|2,0,1591103085,,"WQ"
 :Wq
 |2,0,1590412626,,"Wq"
 :'
@@ -62,9 +87,59 @@ $
 
 # Search String History (newest to oldest):
 ? \s\+$
-|2,1,1592093409,,"\\s\\+$"
+|2,1,1594260133,,"\\s\\+$"
+? \<name\>
+|2,1,1594254265,,"\\<name\\>"
 ? @$
-|2,1,1591996351,,"@$"
+|2,1,1594259058,,"@$"
+?/Phase 4
+|2,1,1593174472,47,"Phase 4"
+?/phase 4
+|2,1,1593174468,47,"phase 4"
+?/.SM
+|2,1,1593173757,47,".SM"
+?/Phase 3
+|2,1,1593173347,47,"Phase 3"
+? \<Supermans\>
+|2,1,1593103453,,"\\<Supermans\\>"
+?/btn
+|2,1,1592949094,47,"btn"
+?/bind
+|2,1,1592738504,47,"bind"
+?/sxiv
+|2,1,1592431151,47,"sxiv"
+?/.dwarffortress
+|2,1,1592340621,47,".dwarffortress"
+??\a
+|2,1,1592340507,63,"\\a"
+?/dwarffortress
+|2,1,1592340003,47,"dwarffortress"
+?///a
+|2,1,1592307843,47,"//a"
+?/themes
+|2,1,1592240473,47,"themes"
+? \<USER\>
+|2,1,1592239115,,"\\<USER\\>"
+?/theme
+|2,1,1592238212,47,"theme"
+?/promp
+|2,1,1592238207,47,"promp"
+? \<source\>
+|2,1,1592235966,,"\\<source\\>"
+? \<compinit\>
+|2,1,1592234582,,"\\<compinit\\>"
+?/compinit
+|2,1,1592234516,47,"compinit"
+? alias
+|2,1,1592176546,,"alias"
+? #
+|2,1,1592176370,,"#"
+? HOME
+|2,1,1592158863,,"HOME"
+? $HOME
+|2,1,1592158819,,"$HOME"
+? ")"
+|2,1,1592158671,,"\")\""
 ? \<configure\>
 |2,1,1591896701,,"\\<configure\\>"
 ? \<multilib\>
@@ -101,10 +176,6 @@ $
 |2,1,1591616842,47,"modkey"
 ?/static pid_t getparentprocess
 |2,1,1591614674,47,"static pid_t getparentprocess"
-? \<compinit\>
-|2,1,1591140653,,"\\<compinit\\>"
-?/compinit
-|2,1,1591140632,47,"compinit"
 ? \<net\>
 |2,1,1591099471,,"\\<net\\>"
 ?/net
@@ -115,52 +186,6 @@ $
 |2,1,1591099457,,"\\<globe\\>"
 ?/globe
 |2,1,1591099430,47,"globe"
-?/qemu
-|2,1,1590940497,47,"qemu"
-? \<run\>
-|2,1,1590940467,,"\\<run\\>"
-?/run
-|2,1,1590940406,47,"run"
-? \<MODKEY\>
-|2,1,1590857633,,"\\<MODKEY\\>"
-?/binut
-|2,1,1590769189,47,"binut"
-?/make all
-|2,1,1590769181,47,"make all"
-?/config
-|2,1,1590524515,47,"config"
-? \<EXIT_SUCCESS\>
-|2,1,1590409221,,"\\<EXIT_SUCCESS\\>"
-?/CMDLENGTH
-|2,1,1590409062,47,"CMDLENGTH"
-?/exportstring
-|2,1,1590409023,47,"exportstring"
-?/buttonhandler
-|2,1,1590408831,47,"buttonhandler"
-?/BLOCK_BU
-|2,1,1590408812,47,"BLOCK_BU"
-?/statuscmd
-|2,1,1590406968,47,"statuscmd"
-?/buttonpress
-|2,1,1590406630,47,"buttonpress"
-?/stext
-|2,1,1590406596,47,"stext"
-?/spawn
-|2,1,1590406390,47,"spawn"
-?/spanw(const
-|2,1,1590406346,47,"spanw(const"
-??lastbutton
-|2,1,1590406151,63,"lastbutton"
-?/lastbutton
-|2,1,1590406144,47,"lastbutton"
-??statuscmdn
-|2,1,1590406127,63,"statuscmdn"
-?/rawstext
-|2,1,1590406096,47,"rawstext"
-?/status
-|2,1,1590404583,47,"status"
-? \<ClkStatusText\>
-|2,1,1590404304,,"\\<ClkStatusText\\>"
 
 # Expression History (newest to oldest):
 
@@ -170,383 +195,273 @@ $
 
 # Registers:
 "0	CHAR	0
-	.local/share/$(ls -A $HOME/.local/share/ | sed "${count}q;d")
-|3,0,0,0,1,0,1592091769,".local/share/$(ls -A $HOME/.local/share/ | sed \"${count}q;d\")"
-""1	LINE	0
-		        cp -TRr $HOME/${name[${files[$count]}]} $DOTFILESDIR/${name[${files[$count]}]}
-|3,1,1,1,1,0,1592093381,"	        cp -TRr $HOME/${name[${files[$count]}]} $DOTFILESDIR/${name[${files[$count]}]}"
-"2	CHAR	0
-		cd $HOME
-		declare -i count=1
-		declare -i countForDia=1
-		while [ "$count" -le "$(ls -A $HOME | wc -w)" ]
-		do
-			name[$count]="$(ls -A $HOME | sed "${count}q;d")"
-		        forDialog[$count]="${count} $(ls -A $HOME | sed "${count}q;d") off "
-		        count=$((count+1))
-			countForDia=$((countForDia+1))
-		done
-		count=1
-		while [ "$count" -le "$(ls -A $HOME/.config/ | wc -w)" ]
-		do
-			name[$count]=".config/$(ls -A $HOME/.config/ | sed "${count}q;d")"
-		        forDialog[$count]="${count} .config/$(ls -A $HOME/.config/ | sed "${count}q;d") off "
-		        countForDia=$((countForDia+1))
-			count=$((count+1))
-		done
-		count=1
-		while [ "$count" -le "$(ls -A $HOME/.local/bin/ | wc -w)" ]
-		do
-			name[$count]=".local/bin/$(ls -A $HOME/.local/bin/ | sed "${count}q;d")"
-		        forDialog[$count]="${count} .loacl/bin/$(ls -A $HOME/.local/bin/ | sed "${count}q;d") off "
-		        countForDia=$((countForDia+1))
-			count=$((count+1))
-		done
-		count=1
-		while [ "$count" -le "$(ls -A $HOME/.local/share/ | wc -w)" ]
-		do
-			name[$count]=".local/share/$(ls -A $HOME/.local/share/ | sed "${count}q;d")"
-		        forDialog[$count]="${count} .local/share/$(ls -A $HOME/.local/share/ | sed "${count}q;d") off "
-		        countForDia=$((countForDia+1))
-			count=$((count+1))
-		done
-		set -A files $(dialog --title "Dotfiles in the Home directory" --checklist "Select dotfiles:" 0 0 0 ${forDialog[*]} 3>&1 1>&2 2>&3 3>&-)
-		cd $DOTFILESDIR
-		count=1
-		while [ "$count" -le "${#files[@]}" ]
-		do
-			cp -TR $HOME/${name[${files[$count]}]} .
-			git add ${name[${files[$count]}]}
-			count=$((count+1))
-		done
-		COMMITMSG=$(dialog --title "Commit Message" --inputbox "Message" 0 0 3>&1 1>&2 2>&3 3>&-)
-		git commit -m "$COMMITMSG"
-		git push
-	
-|3,0,2,0,47,0,1592092549,"	cd $HOME","	declare -i count=1","	declare -i countForDia=1","	while [ \"$count\" -le \"$(ls -A $HOME | wc -w)\" ]","	do","		name[$count]=\"$(ls -A $HOME | sed \"${count}q;d\")\"","	        forDialog[$count]=\"${count} $(ls -A $HOME | sed \"${count}q;d\") off \"","	        count=$((count+1))","		countForDia=$((countForDia+1))","	done","	count=1","	while [ \"$count\" -le \"$(ls -A $HOME/.config/ | wc -w)\" ]","	do",>74
-|<"		name[$count]=\".config/$(ls -A $HOME/.config/ | sed \"${count}q;d\")\"","	        forDialog[$count]=\"${count} .config/$(ls -A $HOME/.config/ | sed \"${count}q;d\") off \"","	        countForDia=$((countForDia+1))","		count=$((count+1))","	done","	count=1","	while [ \"$count\" -le \"$(ls -A $HOME/.local/bin/ | wc -w)\" ]","	do","		name[$count]=\".local/bin/$(ls -A $HOME/.local/bin/ | sed \"${count}q;d\")\"",>106
-|<"	        forDialog[$count]=\"${count} .loacl/bin/$(ls -A $HOME/.local/bin/ | sed \"${count}q;d\") off \"","	        countForDia=$((countForDia+1))","		count=$((count+1))","	done","	count=1","	while [ \"$count\" -le \"$(ls -A $HOME/.local/share/ | wc -w)\" ]","	do","		name[$count]=\".local/share/$(ls -A $HOME/.local/share/ | sed \"${count}q;d\")\"","	        forDialog[$count]=\"${count} .local/share/$(ls -A $HOME/.local/share/ | sed \"${count}q;d\") off \"",>41
-|<"	        countForDia=$((countForDia+1))","		count=$((count+1))","	done","	set -A files $(dialog --title \"Dotfiles in the Home directory\" --checklist \"Select dotfiles:\" 0 0 0 ${forDialog[*]} 3>&1 1>&2 2>&3 3>&-)","	cd $DOTFILESDIR","	count=1","	while [ \"$count\" -le \"${#files[@]}\" ]","	do","		cp -TR $HOME/${name[${files[$count]}]} .","		git add ${name[${files[$count]}]}","		count=$((count+1))","	done",>96
-|<"	COMMITMSG=$(dialog --title \"Commit Message\" --inputbox \"Message\" 0 0 3>&1 1>&2 2>&3 3>&-)","	git commit -m \"$COMMITMSG\"","	git push",""
+	#
+|3,0,0,0,1,0,1594259058,"#"
+"1	LINE	0
+	192.168.0.149 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBA6DEPuGsrh48QuWNlPa6IDj2/nJzYS3FesoFlbDcIbHspTTR4znjVCfiuptqoRaIj2HC/FMXUDgrofQoK8X0I=
+|3,0,1,1,1,0,1594252705,"192.168.0.149 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBA6DEPuGsrh48QuWNlPa6IDj2/nJzYS3FesoFlbDcIbHspTTR4znjVCfiuptqoRaIj2HC/FMXUDgrofQoK8X0I="
+"2	LINE	0
+	192.168.0.149 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMqtUptlYkVt1VkDuDUiITtB3Ro8icLBOhCf8r/Q5QkBdChwvaT3qcL7g3siWikPiuh2OqHYdh+mBmrEc5Ayw74=
+|3,0,2,1,1,0,1594248283,"192.168.0.149 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMqtUptlYkVt1VkDuDUiITtB3Ro8icLBOhCf8r/Q5QkBdChwvaT3qcL7g3siWikPiuh2OqHYdh+mBmrEc5Ayw74="
 "3	LINE	0
-		#[ "$(echo $file | grep ' ' )" = "$file" ] && countForDia=$((countForDia-1))
-|3,0,3,1,1,0,1592091827,"	#[ \"$(echo $file | grep ' ' )\" = \"$file\" ] && countForDia=$((countForDia-1))"
+	192.168.0.149 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBObwXqNDgonvk4U6zPD8LiOCfHr2VhUKVD2WLKHMyvIDTGZ9m+1cfe1rlvQ0ElNArCjqhiZqHZgXD/DERTYkQGs=
+|3,0,3,1,1,0,1594247138,"192.168.0.149 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBObwXqNDgonvk4U6zPD8LiOCfHr2VhUKVD2WLKHMyvIDTGZ9m+1cfe1rlvQ0ElNArCjqhiZqHZgXD/DERTYkQGs="
 "4	LINE	0
-		file=".local/share/$(ls -A $HOME/.local/share/ | sed "${count}q;d")"
-|3,0,4,1,1,0,1592091777,"	file=\".local/share/$(ls -A $HOME/.local/share/ | sed \"${count}q;d\")\""
+	.bp
+|3,0,4,1,1,0,1593174475,".bp"
 "5	LINE	0
-		forDialog[$countForDia]="${countForDia} .local/share/$(ls -A $HOME/.local/share/ | sed "${count}q;d") off "
-|3,0,5,1,1,0,1592091700,"	forDialog[$countForDia]=\"${countForDia} .local/share/$(ls -A $HOME/.local/share/ | sed \"${count}q;d\") off \""
-"6	CHAR	0
-	 ; echo $file
-	
-|3,0,6,0,2,0,1592091509," ; echo $file",""
-"7	CHAR	0
-	 ||
-		name[$countForDia]=".local/share/$( echo $file | awk -F' ' '{print $1"\\ "$2"/"}')" &&
-		forDialog[$countForDia]="${countForDia} .local/share/$(echo $
-	
-|3,0,7,0,4,0,1592080054," ||","	name[$countForDia]=\".local/share/$( echo $file | awk -F' ' '{print $1\"\\\\ \"$2\"/\"}')\" &&","	forDialog[$countForDia]=\"${countForDia} .local/share/$(echo $",""
-"8	CHAR	0
-	[ "$( echo $file | grep ' ' )" != "$file" ] &&
-	
-|3,0,8,0,2,0,1592080027,"[ \"$( echo $file | grep ' ' )\" != \"$file\" ] &&",""
+	.nr PS 8000
+|3,0,5,1,1,0,1593174449,".nr PS 8000"
+"6	LINE	0
+	.ps 8
+|3,0,6,1,1,0,1593174090,".ps 8"
+"7	LINE	0
+	.fam P
+|3,0,7,1,1,0,1593174064,".fam P"
+"8	LINE	0
+	.SM
+|3,0,8,1,1,0,1593173759,".SM"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1592079443,""
+	#.SM
+|3,0,9,1,1,0,1593173661,"#.SM"
 "w	CHAR	0
 	w
 |3,0,32,0,1,0,1591911795,"w"
-"-	CHAR	0
-	'
-|3,0,36,0,1,0,1592092415,"'"
+""-	CHAR	0
+	. #
+|3,1,36,0,1,0,1594260131,". #"
 
 # File marks:
-'0  37  45  ~/.local/bin/dotfiles-config
-|4,48,37,45,1592093409,"~/.local/bin/dotfiles-config"
-'1  37  70  ~/.local/bin/dotfiles-config
-|4,49,37,70,1592093165,"~/.local/bin/dotfiles-config"
-'2  73  0  ~/.local/bin/dotfiles-config
-|4,50,73,0,1592092698,"~/.local/bin/dotfiles-config"
-'3  73  0  ~/.local/bin/dotfiles-config
-|4,51,73,0,1592092698,"~/.local/bin/dotfiles-config"
-'4  72  0  ~/.local/bin/dotfiles-config
-|4,52,72,0,1592092698,"~/.local/bin/dotfiles-config"
-'5  72  0  ~/.local/bin/dotfiles-config
-|4,53,72,0,1592092698,"~/.local/bin/dotfiles-config"
-'6  57  0  ~/.local/bin/dotfiles-config
-|4,54,57,0,1592092638,"~/.local/bin/dotfiles-config"
-'7  57  0  ~/.local/bin/dotfiles-config
-|4,55,57,0,1592092638,"~/.local/bin/dotfiles-config"
-'8  57  0  ~/.local/bin/dotfiles-config
-|4,56,57,0,1592092638,"~/.local/bin/dotfiles-config"
-'9  57  0  ~/.local/bin/dotfiles-config
-|4,57,57,0,1592092638,"~/.local/bin/dotfiles-config"
+'0  38  84  ~/.local/bin/dotfiles-config
+|4,48,38,84,1594260133,"~/.local/bin/dotfiles-config"
+'1  38  85  ~/.local/bin/dotfiles-config
+|4,49,38,85,1594260105,"~/.local/bin/dotfiles-config"
+'2  1  0  ~/.profile
+|4,50,1,0,1594259721,"~/.profile"
+'3  30  1  ~/.local/bin/dotfiles-config
+|4,51,30,1,1594259279,"~/.local/bin/dotfiles-config"
+'4  30  1  ~/.local/bin/dotfiles-config
+|4,52,30,1,1594259279,"~/.local/bin/dotfiles-config"
+'5  30  1  ~/.local/bin/dotfiles-config
+|4,53,30,1,1594259279,"~/.local/bin/dotfiles-config"
+'6  30  1  ~/.local/bin/dotfiles-config
+|4,54,30,1,1594259279,"~/.local/bin/dotfiles-config"
+'7  1  0  ~/.local/share/xsessions/DWM.desktop
+|4,55,1,0,1594259276,"~/.local/share/xsessions/DWM.desktop"
+'8  8  0  ~/.local/share
+|4,56,8,0,1594259060,"~/.local/share"
+'9  37  9  ~/.local/bin/dotfiles-config
+|4,57,37,9,1594254187,"~/.local/bin/dotfiles-config"
 
 # Jumplist (newest first):
--'  37  45  ~/.local/bin/dotfiles-config
-|4,39,37,45,1592093409,"~/.local/bin/dotfiles-config"
+-'  38  84  ~/.local/bin/dotfiles-config
+|4,39,38,84,1594260133,"~/.local/bin/dotfiles-config"
 -'  1  0  ~/.local/bin/dotfiles-config
-|4,39,1,0,1592093374,"~/.local/bin/dotfiles-config"
--'  37  70  ~/.local/bin/dotfiles-config
-|4,39,37,70,1592093165,"~/.local/bin/dotfiles-config"
+|4,39,1,0,1594260119,"~/.local/bin/dotfiles-config"
+-'  38  85  ~/.local/bin/dotfiles-config
+|4,39,38,85,1594260105,"~/.local/bin/dotfiles-config"
 -'  1  0  ~/.local/bin/dotfiles-config
-|4,39,1,0,1592093020,"~/.local/bin/dotfiles-config"
--'  73  0  ~/.local/bin/dotfiles-config
-|4,39,73,0,1592092698,"~/.local/bin/dotfiles-config"
--'  72  0  ~/.local/bin/dotfiles-config
-|4,39,72,0,1592092698,"~/.local/bin/dotfiles-config"
--'  72  0  ~/.local/bin/dotfiles-config
-|4,39,72,0,1592092698,"~/.local/bin/dotfiles-config"
+|4,39,1,0,1594260037,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.profile
+|4,39,1,0,1594259721,"~/.profile"
+-'  1  0  ~/.profile
+|4,39,1,0,1594259721,"~/.profile"
+-'  1  0  ~/.profile
+|4,39,1,0,1594259721,"~/.profile"
+-'  1  0  ~/.profile
+|4,39,1,0,1594259721,"~/.profile"
+-'  30  1  ~/.local/bin/dotfiles-config
+|4,39,30,1,1594259279,"~/.local/bin/dotfiles-config"
+-'  30  1  ~/.local/bin/dotfiles-config
+|4,39,30,1,1594259279,"~/.local/bin/dotfiles-config"
+-'  30  1  ~/.local/bin/dotfiles-config
+|4,39,30,1,1594259279,"~/.local/bin/dotfiles-config"
+-'  30  1  ~/.local/bin/dotfiles-config
+|4,39,30,1,1594259279,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/share/xsessions/DWM.desktop
+|4,39,1,0,1594259276,"~/.local/share/xsessions/DWM.desktop"
+-'  1  0  ~/.local/share/xsessions/DWM.desktop
+|4,39,1,0,1594259276,"~/.local/share/xsessions/DWM.desktop"
+-'  1  0  ~/.local/share/xsessions/DWM.desktop
+|4,39,1,0,1594259276,"~/.local/share/xsessions/DWM.desktop"
+-'  1  0  ~/.local/share/xsessions/DWM.desktop
+|4,39,1,0,1594259276,"~/.local/share/xsessions/DWM.desktop"
+-'  1  0  ~/.local/share/xsessions/DWM.desktop
+|4,39,1,0,1594259276,"~/.local/share/xsessions/DWM.desktop"
+-'  1  0  ~/.local/share/xsessions/DWM.desktop
+|4,39,1,0,1594259276,"~/.local/share/xsessions/DWM.desktop"
+-'  1  0  ~/.local/share/xsessions/DWM.desktop
+|4,39,1,0,1594259276,"~/.local/share/xsessions/DWM.desktop"
+-'  1  0  ~/.local/share/xsessions/DWM.desktop
+|4,39,1,0,1594259276,"~/.local/share/xsessions/DWM.desktop"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  8  0  ~/.local/share
+|4,39,8,0,1594259060,"~/.local/share"
+-'  37  17  ~/.local/bin/dotfiles-config
+|4,39,37,17,1594254265,"~/.local/bin/dotfiles-config"
+-'  37  17  ~/.local/bin/dotfiles-config
+|4,39,37,17,1594254265,"~/.local/bin/dotfiles-config"
+-'  37  17  ~/.local/bin/dotfiles-config
+|4,39,37,17,1594254265,"~/.local/bin/dotfiles-config"
+-'  37  17  ~/.local/bin/dotfiles-config
+|4,39,37,17,1594254265,"~/.local/bin/dotfiles-config"
 -'  1  0  ~/.local/bin/dotfiles-config
-|4,39,1,0,1592092688,"~/.local/bin/dotfiles-config"
--'  57  0  ~/.local/bin/dotfiles-config
-|4,39,57,0,1592092638,"~/.local/bin/dotfiles-config"
--'  56  0  ~/.local/bin/dotfiles-config
-|4,39,56,0,1592092638,"~/.local/bin/dotfiles-config"
--'  56  0  ~/.local/bin/dotfiles-config
-|4,39,56,0,1592092638,"~/.local/bin/dotfiles-config"
--'  56  0  ~/.local/bin/dotfiles-config
-|4,39,56,0,1592092638,"~/.local/bin/dotfiles-config"
+|4,39,1,0,1594254194,"~/.local/bin/dotfiles-config"
 -'  1  0  ~/.local/bin/dotfiles-config
-|4,39,1,0,1592092541,"~/.local/bin/dotfiles-config"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  79  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,79,0,1592092523,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/dt.diff
-|4,39,1,0,1592092497,"~/Documents/projects/gitlab/dotfiles/dt.diff"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  25  117  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,25,117,1592092417,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
--'  1  0  ~/Documents/projects/gitlab/dotfiles/test
-|4,39,1,0,1592092404,"~/Documents/projects/gitlab/dotfiles/test"
+|4,39,1,0,1594254194,"~/.local/bin/dotfiles-config"
+-'  39  42  ~/.local/bin/dotfiles-config
+|4,39,39,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  37  9  ~/.local/bin/dotfiles-config
+|4,39,37,9,1594254187,"~/.local/bin/dotfiles-config"
+-'  39  42  ~/.local/bin/dotfiles-config
+|4,39,39,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  37  9  ~/.local/bin/dotfiles-config
+|4,39,37,9,1594254187,"~/.local/bin/dotfiles-config"
+-'  39  42  ~/.local/bin/dotfiles-config
+|4,39,39,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  37  9  ~/.local/bin/dotfiles-config
+|4,39,37,9,1594254187,"~/.local/bin/dotfiles-config"
+-'  39  42  ~/.local/bin/dotfiles-config
+|4,39,39,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  37  9  ~/.local/bin/dotfiles-config
+|4,39,37,9,1594254187,"~/.local/bin/dotfiles-config"
+-'  39  42  ~/.local/bin/dotfiles-config
+|4,39,39,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  37  9  ~/.local/bin/dotfiles-config
+|4,39,37,9,1594254187,"~/.local/bin/dotfiles-config"
+-'  39  42  ~/.local/bin/dotfiles-config
+|4,39,39,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  37  9  ~/.local/bin/dotfiles-config
+|4,39,37,9,1594254187,"~/.local/bin/dotfiles-config"
+-'  39  42  ~/.local/bin/dotfiles-config
+|4,39,39,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  37  9  ~/.local/bin/dotfiles-config
+|4,39,37,9,1594254187,"~/.local/bin/dotfiles-config"
+-'  39  42  ~/.local/bin/dotfiles-config
+|4,39,39,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  37  9  ~/.local/bin/dotfiles-config
+|4,39,37,9,1594254187,"~/.local/bin/dotfiles-config"
+-'  39  42  ~/.local/bin/dotfiles-config
+|4,39,39,42,1594254187,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254068,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254068,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254068,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254068,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254068,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254068,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254068,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254068,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254063,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254063,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254063,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254063,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254063,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254063,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254063,"~/.local/bin/dotfiles-config"
+-'  38  42  ~/.local/bin/dotfiles-config
+|4,39,38,42,1594254063,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254018,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254018,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254018,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254018,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254018,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254018,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254018,"~/.local/bin/dotfiles-config"
+-'  1  0  ~/.local/bin/dotfiles-config
+|4,39,1,0,1594254018,"~/.local/bin/dotfiles-config"
+-'  40  0  ~/.local/bin/dotfiles-config
+|4,39,40,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  40  0  ~/.local/bin/dotfiles-config
+|4,39,40,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  40  0  ~/.local/bin/dotfiles-config
+|4,39,40,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  40  0  ~/.local/bin/dotfiles-config
+|4,39,40,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  40  0  ~/.local/bin/dotfiles-config
+|4,39,40,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
+-'  39  0  ~/.local/bin/dotfiles-config
+|4,39,39,0,1594254006,"~/.local/bin/dotfiles-config"
 
 # History of marks within files (newest to oldest):
 
 > ~/.local/bin/dotfiles-config
-	*	1592093409	0
-	"	37	45
-	^	37	46
-	.	38	8
-	+	81	56
-	+	93	186
-	+	93	111
-	+	96	7
-	+	80	0
-	+	4	0
-	+	4	37
-	+	61	37
-	+	69	37
-	+	77	37
-	+	4	19
-	+	4	11
-	+	4	0
-	+	4	27
-	+	4	39
-	+	4	1
-	+	4	9
-	+	4	2
-	+	4	9
-	+	4	8
-	+	4	2
-	+	54	9
-	+	62	9
-	+	70	9
-	+	78	9
-	+	49	1
-	+	50	0
-	+	52	36
-	+	53	45
-	+	50	31
-	+	58	43
-	+	60	32
-	+	61	53
-	+	67	0
-	+	66	31
-	+	68	35
-	+	69	56
-	+	74	31
-	+	76	37
-	+	77	58
-	+	4	0
-	+	46	0
-	+	4	8
-	+	44	0
-	+	43	0
-	+	42	0
-	+	41	0
-	+	40	0
-	+	37	0
-	+	36	0
-	+	37	0
-	+	35	0
-	+	34	0
-	+	33	0
-	+	4	0
+	*	1594260131	0
+	"	38	84
+	^	38	86
+	.	38	84
 	+	5	0
 	+	6	0
 	+	7	0
@@ -580,17 +495,1141 @@ $
 	+	35	0
 	+	36	0
 	+	37	0
+	+	39	0
 	+	40	0
 	+	41	0
 	+	42	0
 	+	43	0
 	+	44	0
-	+	45	0
 	+	37	9
-	+	39	1
-	+	38	100
-	+	38	8
+	+	38	1
+	+	37	144
+	+	37	52
+	+	97	43
+	+	97	0
+	+	49	1
+	+	97	0
+	+	97	5
+	+	97	0
+	+	97	47
+	+	97	61
+	+	97	58
+	+	97	39
+	+	97	84
+	+	49	0
+	+	50	0
+	+	97	0
+	+	97	92
+	+	68	0
+	+	68	92
+	+	49	0
+	+	51	0
+	+	52	0
+	+	57	0
+	+	59	0
+	+	60	0
+	+	65	0
+	+	67	0
+	+	68	0
+	+	73	0
+	+	75	0
+	+	76	0
+	+	85	0
+	+	86	0
+	+	85	32
+	+	86	0
+	+	72	7
+	+	34	7
+	+	81	7
+	+	37	1
+	+	37	52
+	+	38	0
+	+	37	1
+	+	37	52
+	+	38	0
+	+	37	42
+	+	37	86
+	+	37	45
+	+	37	46
+	+	37	9
+	+	37	91
+	+	38	0
+	+	37	87
+	+	37	0
+	+	37	9
+	+	38	9
+	+	37	81
+	+	38	85
+	+	37	80
+	+	38	84
 	a	90	8
+
+> ~/.profile
+	*	1594259568	0
+	"	1	0
+	^	27	41
+	.	27	40
+	+	20	0
+	+	19	36
+	+	29	0
+	+	20	39
+	+	22	0
+	+	20	31
+	+	19	31
+	+	23	0
+	+	19	0
+	+	8	19
+	+	24	0
+	+	30	2
+	+	31	0
+	+	24	0
+	+	25	0
+	+	29	0
+	+	30	0
+	+	26	50
+	+	28	44
+	+	27	40
+
+> ~/.local/share/xsessions/DWM.desktop
+	*	1594259067	0
+	"	1	0
+	^	5	16
+	.	5	15
+	+	5	15
+
+> ~/.ssh/known_hosts
+	*	1594252705	0
+	"	3	0
+	.	4	0
+	+	4	0
+
+> ~/Documents/backup/backup2tb/hp/hp_encrypt.txt
+	*	1594040092	0
+	"	58	105
+	^	58	106
+	.	59	0
+	+	59	0
+
+> ~/Documents/projects/gitlab/jars/.git/COMMIT_EDITMSG
+	*	1593185889	0
+	"	1	43
+	^	1	44
+	.	1	43
+	+	2	0
+	+	1	43
+
+> ~/Documents/projects/gitlab/jars/programs
+	*	1593185567	0
+	"	47	14
+	^	47	15
+	.	47	14
+	+	34	4
+	+	38	12
+	+	40	13
+	+	41	7
+	+	43	3
+	+	18	0
+	+	44	3
+	+	46	15
+	+	47	14
+
+> ~/Documents/BD-BWW.ms
+	*	1593174545	0
+	"	182	25
+	^	182	26
+	.	182	25
+	+	244	12
+	+	246	10
+	+	248	15
+	+	250	16
+	+	252	20
+	+	232	19
+	+	228	12
+	+	226	15
+	+	224	14
+	+	222	34
+	+	220	14
+	+	216	19
+	+	214	34
+	+	212	20
+	+	210	16
+	+	208	11
+	+	200	17
+	+	198	15
+	+	196	14
+	+	194	34
+	+	192	19
+	+	190	27
+	+	188	25
+	+	186	23
+	+	184	18
+	+	178	12
+	+	176	13
+	+	174	25
+	+	172	27
+	+	170	7
+	+	168	24
+	+	166	15
+	+	162	14
+	+	160	21
+	+	156	32
+	+	152	23
+	+	148	20
+	+	146	16
+	+	144	20
+	+	140	14
+	+	138	15
+	+	132	19
+	+	130	15
+	+	128	30
+	+	124	19
+	+	122	31
+	+	120	31
+	+	111	11
+	+	109	12
+	+	107	23
+	+	105	15
+	+	103	25
+	+	101	24
+	+	97	18
+	+	95	25
+	+	93	16
+	+	91	30
+	+	89	21
+	+	87	10
+	+	83	17
+	+	81	21
+	+	79	27
+	+	77	18
+	+	75	11
+	+	71	11
+	+	69	16
+	+	67	24
+	+	65	25
+	+	63	19
+	+	61	22
+	+	54	11
+	+	52	19
+	+	50	24
+	+	48	11
+	+	46	17
+	+	42	9
+	+	40	18
+	+	38	14
+	+	36	14
+	+	34	10
+	+	30	19
+	+	28	14
+	+	26	10
+	+	24	14
+	+	22	9
+	+	14	8
+	+	12	10
+	+	10	15
+	+	8	9
+	+	56	0
+	+	55	3
+	+	112	2
+	+	201	2
+	+	2	0
+	+	1	0
+	+	183	0
+	+	1	0
+	+	3	0
+	+	201	0
+	+	182	25
+
+> ~/BD-BWW.ms
+	*	1593034358	0
+	"	1	0
+
+> ~/.local/bin/weather
+	*	1593024593	0
+	"	4	9
+	^	4	10
+	.	4	10
+	+	9	0
+	+	22	0
+	+	21	104
+	+	21	107
+	+	21	0
+	+	22	0
+	+	21	0
+	+	19	0
+	+	17	38
+	+	10	7
+	+	10	69
+	+	12	7
+	+	19	0
+	+	20	0
+	+	9	6
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	4
+	+	9	18
+	+	4	28
+	+	17	4
+	+	16	0
+	+	15	0
+	+	14	0
+	+	13	0
+	+	17	0
+	+	16	0
+	+	15	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	4	10
+
+> ~/Documents/projects/gitlab/JacobMcDonnell-github-io/.git/COMMIT_EDITMSG
+	*	1592949132	0
+	"	1	32
+	^	1	33
+	.	1	32
+	+	1	32
+
+> ~/Documents/projects/gitlab/JacobMcDonnell-github-io/CSS/PurpleAndWhite.css
+	*	1592949097	0
+	"	92	14
+	^	95	28
+	.	92	14
+	+	95	2
+	+	92	14
+
+> ~/Documents/projects/gitlab/JacobMcDonnell-github-io/CSS/PurpleAndDark.css
+	*	1592949086	0
+	"	95	14
+	^	98	2
+	.	95	14
+	+	98	1
+	+	95	14
+
+> ~/Documents/projects/gitlab/JacobMcDonnell-github-io/CSS/GreenAndDark.css
+	*	1592949074	0
+	"	99	14
+	^	101	2
+	.	99	14
+	+	102	0
+	+	100	28
+	+	101	2
+	+	99	14
+
+> ~/Documents/projects/gitlab/JacobMcDonnell-github-io/CSS/main.css
+	*	1592948041	0
+	"	96	14
+	^	100	2
+	.	96	14
+	+	131	0
+	+	130	23
+	+	107	25
+	+	108	14
+	+	130	0
+	+	100	1
+	+	96	14
+
+> ~/Documents/projects/gitlab/JacobMcDonnell-github-io/index.html
+	*	1592946592	0
+	"	23	77
+	.	23	0
+	+	23	0
+
+> ~/.xinitrc
+	*	1592854461	0
+	"	7	0
+	^	7	28
+	.	7	27
+	+	1	0
+	+	3	0
+	+	3	31
+	+	1	24
+	+	3	27
+	+	1	24
+	+	3	24
+	+	1	8
+	+	3	26
+	+	3	0
+	+	3	14
+	+	3	0
+	+	3	8
+	+	3	0
+	+	3	34
+	+	3	0
+	+	3	8
+	+	3	4
+	+	3	37
+	+	3	0
+	+	3	16
+	+	3	0
+	+	3	19
+	+	3	0
+	+	4	59
+	+	3	24
+	+	3	26
+	+	4	0
+	+	3	25
+	+	4	5
+	+	3	5
+	+	3	17
+	+	4	0
+	+	3	19
+	+	3	0
+	+	4	0
+	+	3	26
+	+	4	45
+	+	3	0
+	+	4	45
+	+	3	26
+	+	4	27
+	+	3	26
+	+	4	0
+	+	3	0
+	+	4	26
+	+	3	71
+	+	4	21
+	+	5	28
+	+	4	22
+	+	3	0
+	+	5	29
+	+	8	0
+	+	9	0
+	+	8	23
+	+	5	30
+	+	3	57
+	+	3	42
+	+	3	13
+	+	3	0
+	+	4	0
+	+	3	0
+	+	2	53
+	+	2	67
+	+	2	0
+	+	3	34
+	+	8	9
+	+	5	9
+	+	6	25
+	+	7	27
+
+> ~/.config/shells/zsh/.zshrc
+	*	1592854366	0
+	"	13	11
+	^	13	12
+	.	13	11
+	+	13	11
+
+> ~/.cache/kshHIST
+	*	1592854160	0
+	"	104	0
+
+> ~/.cache/zshHIST
+	*	1592854121	0
+	"	2	0
+
+> ~/Downloads/JacobMcDonnell-github-io/.git/COMMIT_EDITMSG
+	*	1592834314	0
+	"	1	0
+
+> ~/Downloads/JacobMcDonnell-github-io/CSS/main.css
+	*	1592834295	0
+	"	223	0
+	^	126	1
+	.	205	0
+	+	126	1
+	+	127	0
+	+	205	0
+
+> ~/Downloads/JacobMcDonnell-github-io/CSS/PurpleAndWhite.css
+	*	1592832801	0
+	"	221	0
+	^	123	41
+	.	203	0
+	+	124	0
+	+	94	21
+	+	90	12
+	+	94	21
+	+	102	23
+	+	111	27
+	+	112	0
+	+	118	12
+	+	123	40
+	+	203	0
+
+> ~/Downloads/JacobMcDonnell-github-io/index.html
+	*	1592831468	0
+	"	16	45
+	^	16	46
+	.	16	59
+	+	73	20
+	+	73	7
+	+	73	23
+	+	73	20
+	+	73	79
+	+	73	111
+	+	73	75
+	+	73	89
+	+	73	91
+	+	73	0
+	+	73	12
+	+	73	15
+	+	73	16
+	+	73	0
+	+	73	7
+	+	73	16
+	+	73	0
+	+	73	35
+	+	73	0
+	+	73	24
+	+	73	30
+	+	73	14
+	+	73	38
+	+	73	8
+	+	73	32
+	+	73	23
+	+	73	3
+	+	73	13
+	+	73	14
+	+	73	38
+	+	73	20
+	+	73	2
+	+	73	0
+	+	73	1
+	+	73	35
+	+	73	12
+	+	73	40
+	+	73	14
+	+	73	76
+	+	73	0
+	+	73	34
+	+	73	16
+	+	73	0
+	+	73	73
+	+	73	0
+	+	73	49
+	+	73	3
+	+	73	20
+	+	73	65
+	+	73	87
+	+	73	95
+	+	73	0
+	+	73	1
+	+	73	0
+	+	73	3
+	+	73	83
+	+	73	74
+	+	73	5
+	+	73	0
+	+	73	6
+	+	73	0
+	+	73	60
+	+	73	6
+	+	73	20
+	+	73	0
+	+	73	21
+	+	73	22
+	+	73	24
+	+	73	63
+	+	73	26
+	+	73	30
+	+	73	54
+	+	73	41
+	+	73	43
+	+	73	18
+	+	73	50
+	+	73	43
+	+	73	40
+	+	73	23
+	+	73	13
+	+	73	0
+	+	16	0
+	+	15	0
+	+	71	0
+	+	16	59
+
+> ~/Downloads/JacobMcDonnell-github-io/JS/cookies.js
+	*	1592831264	0
+	"	1	0
+
+> ~/Downloads/JacobMcDonnell-github-io/settings.html
+	*	1592831240	0
+	"	1	0
+	^	50	18
+	.	50	0
+	+	51	0
+	+	52	0
+	+	50	0
+
+> ~/Downloads/JacobMcDonnell-github-io/JS/main.js
+	*	1592829337	0
+	"	18	0
+	^	12	24
+	.	3	0
+	+	29	0
+	+	18	0
+	+	15	0
+	+	18	105
+	+	3	0
+
+> ~/Downloads/JacobMcDonnell-github-io/CSS/GreenAndDark.css
+	*	1592829202	0
+	"	229	0
+	^	107	1
+	.	211	0
+	+	132	0
+	+	131	0
+	+	125	0
+	+	115	0
+	+	111	0
+	+	108	0
+	+	211	0
+
+> ~/Downloads/JacobMcDonnell-github-io/CSS/PurpleAndDark.css
+	*	1592829165	0
+	"	102	0
+	^	102	1
+	.	104	0
+	+	198	1
+	+	209	2
+	+	215	1
+	+	226	2
+	+	207	0
+	+	129	61
+	+	210	60
+	+	129	61
+	+	210	62
+	+	130	0
+	+	129	61
+	+	129	0
+	+	128	0
+	+	127	0
+	+	121	0
+	+	111	0
+	+	107	0
+	+	104	0
+
+> ~/.kshrc
+	*	1592764580	0
+	"	14	12
+	^	14	13
+	.	14	12
+	+	8	0
+	+	8	14
+	+	8	40
+	+	8	12
+	+	8	0
+	+	8	17
+	+	8	15
+	+	8	0
+	+	8	1
+	+	8	0
+	+	8	84
+	+	8	0
+	+	2	8
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	2	0
+	+	8	18
+	+	8	13
+	+	8	0
+	+	8	73
+	+	2	8
+	+	8	0
+	+	9	0
+	+	13	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	11	19
+	+	12	17
+	+	13	20
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	13	0
+	+	15	0
+	+	16	0
+	+	16	33
+	+	13	1
+	+	16	33
+	+	13	0
+	+	14	12
+
+> ~/.zshrc
+	*	1592764552	0
+	"	14	9
+	^	14	13
+	.	14	9
+	+	9	24
+	+	10	63
+	+	6	19
+	+	7	0
+	+	15	62
+	+	6	0
+	+	9	0
+	+	10	63
+	+	15	0
+	+	15	110
+	+	10	63
+	+	15	2
+	+	10	69
+	+	15	5
+	+	10	63
+	+	15	0
+	+	10	63
+	+	15	2
+	+	15	100
+	+	15	0
+	+	15	111
+	+	6	0
+	+	6	11
+	+	10	63
+	+	15	0
+	+	10	63
+	+	10	89
+	+	15	123
+	+	10	20
+	+	10	63
+	+	15	0
+	+	15	7
+	+	15	131
+	+	15	7
+	+	15	98
+	+	15	109
+	+	15	0
+	+	15	101
+	+	15	4
+	+	15	103
+	+	15	5
+	+	15	54
+	+	15	0
+	+	15	26
+	+	15	89
+	+	15	0
+	+	15	95
+	+	10	0
+	+	15	18
+	+	15	1
+	+	15	0
+	+	10	0
+	+	2	0
+	+	6	0
+	+	5	0
+	+	6	7
+	+	5	0
+	+	15	102
+	+	15	98
+	+	15	2
+	+	15	98
+	+	15	11
+	+	6	0
+	+	8	48
+	+	7	54
+	+	15	20
+	+	15	0
+	+	15	28
+	+	15	0
+	+	15	3
+	+	15	83
+	+	15	0
+	+	15	1
+	+	15	101
+	+	15	0
+	+	15	100
+	+	15	0
+	+	11	0
+	+	15	21
+	+	15	0
+	+	15	32
+	+	15	0
+	+	16	0
+	+	16	101
+	+	15	0
+	+	11	0
+	+	11	25
+	+	5	0
+	+	16	105
+	+	17	0
+	+	16	70
+	+	6	0
+	+	5	0
+	+	6	0
+	+	5	0
+	+	3	23
+	+	12	33
+	+	11	0
+	+	12	32
+	+	14	9
+
+> ~/Downloads/index.html
+	*	1592748628	0
+	"	45	10
+	^	45	11
+	.	45	11
+	+	47	76
+	+	12	21
+	+	46	82
+	+	45	34
+	+	46	12
+	+	47	78
+	+	48	11
+	+	47	63
+	+	46	83
+	+	47	67
+	+	44	38
+	+	44	109
+	+	44	33
+	+	44	112
+	+	44	30
+	+	44	109
+	+	44	32
+	+	44	109
+	+	44	34
+	+	44	115
+	+	44	116
+	+	47	12
+	+	44	34
+	+	45	0
+	+	47	13
+	+	45	11
+
+> ~/Downloads/main.js
+	*	1592747839	0
+	"	1	0
+	^	2	20
+	.	1	20
+	+	4	0
+	+	3	104
+	+	1	20
+
+> ~/Documents/projects/gitlab/dwm/config.h
+	*	1592746193	0
+	"	101	44
+
+> ~/Documents/OOOO
+	*	1592746047	0
+	"	1	0
+
+> /tmp/ast.XXdNaCCk
+	*	1592746042	0
+	"	1	0
+
+> ~/.config/shells/variables
+	*	1592738478	0
+	"	1	0
+	.	1	0
+	+	1	36
+	+	1	8
+	+	1	0
+
+> ~/.config/shells/aliasrc
+	*	1592738423	0
+	"	7	1
+	^	14	23
+	.	14	22
+	+	3	22
+	+	4	21
+	+	5	0
+	+	14	22
+
+> ~/.zprofile
+	*	1592738199	0
+	"	2	0
+
+> ~/Downloads/df_linux/data/init/init.txt
+	*	1592397738	0
+	"	23	12
+	^	23	13
+	.	23	12
+	+	28	11
+	+	29	11
+	+	48	12
+	+	91	9
+	+	28	11
+	+	29	11
+	+	48	13
+	+	91	9
+	+	48	11
+	+	67	13
+	+	48	12
+	+	30	19
+	+	44	14
+	+	48	11
+	+	77	11
+	+	23	12
+
+> ~/Documents/projects/gitlab/dotfiles/.kshrc
+	*	1592393894	0
+	"	1	0
+
+> ~/.tcshrc
+	*	1592393326	0
+	"	10	1
+	^	10	2
+	.	10	2
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	105
+	+	1	4
+	+	1	112
+	+	1	54
+	+	1	0
+	+	1	28
+	+	1	30
+	+	2	0
+	+	16	4
+	+	16	123
+	+	9	0
+	+	10	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	16	0
+	+	15	28
+	+	16	25
+	+	15	25
+	+	9	4
+	+	10	0
+	+	16	24
+	+	10	2
+
+> ~/.local/bin/volume
+	*	1592345509	0
+	"	3	15
+	.	7	0
+	+	5	49
+	+	7	4
+	+	5	56
+	+	7	11
+	+	7	21
+	+	7	0
+	+	7	54
+	+	7	0
+
+> ~/Documents/projects/gitlab/jars/aur
+	*	1592343437	0
+	"	12	0
+	^	14	18
+	.	14	17
+	+	12	9
+	+	12	0
+	+	13	0
+	+	14	17
+
+> ~/Downloads/df_linux/Data
+	*	1592342609	0
+	"	1	0
+
+> /opt/dwarffortress/libs/Dwarf_Fortress
+	*	1592340621	0
+	"	1	0
+
+> ~/Downloads/df_linux/df
+	*	1592340236	0
+	"	2	6
+	^	2	7
+	.	2	7
+	+	2	23
+	+	6	21
+	+	2	7
+
+> ~/Downloads/df_linux/data/init/d_init.txt
+	*	1592340003	0
+	"	306	0
+
+> ~/Downloads/df_linux/data/index
+	*	1592339813	0
+	"	1	0
+
+> ~/.config/shells/cpwdrc
+	*	1592267880	0
+	"	1	0
+	.	1	0
+	+	10	1
+	+	11	0
+	+	2	0
+	+	1	0
+
+> ~/.config/shells/colorsrc
+	*	1592267874	0
+	"	1	8
+	^	1	9
+	.	1	8
+	+	45	7
+	+	1	27
+	+	3	0
+	+	1	8
+
+> ~/.z
+	*	1592267708	0
+	"	1	0
+
+> /tmp/ast.XXPqz6m0
+	*	1592267128	0
+	"	1	0
+
+> /tmp/ast.XXUuVfLa
+	*	1592267003	0
+	"	1	0
+
+> /tmp/ast.XXmjZuq8
+	*	1592266977	0
+	"	1	14
+
+> ~/a
+	*	1592262169	0
+	"	1	0
+	.	1	0
+	+	7	0
+	+	1	0
+
+> ~/.config/oh-my-zsh/oh-my-zsh.sh
+	*	1592240490	0
+	"	108	1
+	^	61	43
+	.	61	46
+	+	69	2
+	+	61	46
+
+> ~/.config/shells/zsh/themes/nox.zsh-theme
+	*	1592233332	0
+	"	58	103
+	^	58	104
+	.	58	100
+	+	2	0
+	+	1	0
+	+	2	0
+	+	58	100
+
+> ~/.config/shells/zsh/plugins/fzf-tab.zsh
+	*	1592232148	0
+	"	1	0
+
+> ~/.cache/zcompdump-artix-desktop-5.8
+	*	1592230638	0
+	"	1515	0
+
+> ~/fzf-tab/fzf-tab.zsh
+	*	1592230569	0
+	"	2	0
+
+> ~/.config/oh-my-zsh/lib/completion.zsh
+	*	1592229907	0
+	"	1	0
+
+> /tmp/calcurse-note.YdQH6n
+	*	1592178231	0
+	"	1	0
+
+> /tmp/calcurse-note.4GA3Yo
+	*	1592178223	0
+	"	1	0
+
+> /tmp/calcurse-note.T6nxSm
+	*	1592178217	0
+	"	2	33
+	^	2	34
+	.	2	33
+	+	2	33
+
+> ~/temp
+	*	1592178033	0
+	"	8	0
+	^	8	1
+	.	8	0
+	+	8	0
+
+> ~/aliasrc
+	*	1592177343	0
+	"	1	0
+	^	12	51
+	.	1	7
+	+	12	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	1	7
+	+	3	0
+	+	2	6
+	+	3	13
+	+	4	36
+	+	5	0
+	+	4	1
+	+	5	44
+	+	6	27
+	+	7	12
+	+	8	12
+	+	9	12
+	+	10	79
+	+	11	60
+	+	12	0
+	+	1	7
+
+> ~/alias
+	*	1592177229	0
+	"	1	0
+
+> ~/2.txt
+	*	1592175105	0
+	"	23	9
+	^	23	10
+	.	23	0
+	+	23	0
+
+> ~/.config/oh-my-zsh/plugins/zsh-autosuggestions/2
+	*	1592175082	0
+	"	3	12
+	.	3	11
+	+	3	11
+
+> ~/.config/oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+	*	1592172753	0
+	"	858	0
+
+> ~/.local/bin/keys
+	*	1592161920	0
+	"	7	0
+	^	7	0
+	.	9	33
+	+	9	33
+
+> ~/.p
+	*	1592161501	0
+	"	1	0
+
+> ~/profile
+	*	1592160914	0
+	"	1	0
+
+> ~/Documents/projects/gitlab/dotfiles/.local/bin/dotfiles-config
+	*	1592160802	0
+	"	7	0
+
+> /etc/default/grub
+	*	1592138773	0
+	"	4	13
+	.	4	13
+	+	4	13
 
 > ~/Documents/projects/gitlab/dotfiles/dt.diff
 	*	1592092522	0
@@ -705,10 +1744,6 @@ $
 	*	1592076983	0
 	"	68	0
 
-> ~/Documents/projects/gitlab/dotfiles/.local/bin/dotfiles-config
-	*	1592055606	0
-	"	1	0
-
 > ~/Downloads/firewallsetup/firewall-reload
 	*	1592049685	0
 	"	3	0
@@ -733,70 +1768,9 @@ $
 	+	49	1
 	+	50	1
 
-> ~/.zshrc
-	*	1591995645	0
-	"	109	51
-	^	109	56
-	.	109	19
-	+	100	15
-	+	102	47
-	+	102	48
-	+	110	54
-	+	112	43
-	+	110	56
-	+	110	51
-	+	111	0
-	+	5	17
-	+	110	0
-	+	103	30
-	+	106	15
-	+	107	20
-	+	108	63
-	+	109	19
-
 > ~/.steampath
 	*	1591994609	0
 	"	1	0
-
-> ~/.profile
-	*	1591994484	0
-	"	26	50
-	^	26	51
-	.	26	50
-	+	20	0
-	+	19	36
-	+	27	0
-	+	20	39
-	+	22	0
-	+	20	31
-	+	19	31
-	+	23	0
-	+	19	0
-	+	8	19
-	+	24	0
-	+	28	2
-	+	29	0
-	+	24	0
-	+	25	0
-	+	26	50
-
-> ~/Documents/projects/gitlab/jars/.git/COMMIT_EDITMSG
-	*	1591917080	0
-	"	1	12
-	^	1	13
-	.	1	12
-	+	2	0
-	+	1	12
-
-> ~/Documents/projects/gitlab/jars/programs
-	*	1591917059	0
-	"	42	7
-	^	42	8
-	.	42	7
-	+	35	4
-	+	39	12
-	+	41	13
-	+	42	7
 
 > ~/.steampid
 	*	1591909878	0
@@ -891,107 +1865,12 @@ $
 	*	1591889675	0
 	"	37	20
 
-> ~/.local/share/xsessions/DWM.desktop
-	*	1591879787	0
-	"	5	15
-	^	5	16
-	.	5	15
-	+	5	15
-
 > ~/.local/bin/jdm
 	*	1591879661	0
 	"	3	28
 	^	3	29
 	.	3	28
 	+	3	28
-
-> ~/.xinitrc
-	*	1591879578	0
-	"	6	25
-	^	6	26
-	.	6	25
-	+	1	0
-	+	3	0
-	+	3	31
-	+	1	24
-	+	3	27
-	+	1	24
-	+	3	24
-	+	1	8
-	+	3	26
-	+	3	0
-	+	3	14
-	+	3	0
-	+	3	8
-	+	3	0
-	+	3	34
-	+	3	0
-	+	3	8
-	+	3	4
-	+	3	37
-	+	3	0
-	+	3	16
-	+	3	0
-	+	3	19
-	+	3	0
-	+	4	59
-	+	3	24
-	+	3	26
-	+	4	0
-	+	3	25
-	+	4	5
-	+	3	5
-	+	3	17
-	+	4	0
-	+	3	19
-	+	3	0
-	+	4	0
-	+	3	26
-	+	4	45
-	+	3	0
-	+	4	45
-	+	3	26
-	+	4	27
-	+	3	26
-	+	4	0
-	+	3	0
-	+	4	26
-	+	3	71
-	+	4	21
-	+	5	28
-	+	4	22
-	+	3	0
-	+	5	29
-	+	7	0
-	+	8	0
-	+	7	23
-	+	5	30
-	+	3	57
-	+	3	42
-	+	3	13
-	+	3	0
-	+	4	0
-	+	3	0
-	+	2	53
-	+	2	67
-	+	2	0
-	+	3	34
-	+	7	9
-	+	5	9
-	+	6	25
-
-> ~/.local/bin/volume
-	*	1591879137	0
-	"	1	0
-	.	7	0
-	+	5	49
-	+	7	4
-	+	5	56
-	+	7	11
-	+	7	21
-	+	7	0
-	+	7	54
-	+	7	0
 
 > ~/.local/bin/internet
 	*	1591878050	0
@@ -1086,981 +1965,9 @@ $
 	*	1591878044	0
 	"	3	24
 
-> ~/.local/bin/weather
-	*	1591877948	0
-	"	17	0
-	^	17	0
-	.	17	0
-	+	9	0
-	+	22	0
-	+	21	104
-	+	21	107
-	+	21	0
-	+	22	0
-	+	21	0
-	+	19	0
-	+	17	38
-	+	10	7
-	+	10	69
-	+	12	7
-	+	19	0
-	+	20	0
-	+	9	6
-	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	4
-	+	9	18
-	+	4	28
-	+	17	4
-	+	16	0
-	+	15	0
-	+	14	0
-	+	13	0
-	+	17	0
-	+	16	0
-	+	15	0
-	+	14	0
-	+	13	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-
 > ~/.config/lf/lfrc
 	*	1591628164	0
 	"	1	0
 	^	1	15
 	.	1	14
 	+	1	14
-
-> ~/.config/l
-	*	1591628160	0
-	"	1	0
-
-> ~/Documents/Projects/gitlab/dwm/config.h
-	*	1591627989	0
-	"	38	12
-	^	38	13
-	.	38	12
-	+	137	0
-	+	138	0
-	+	135	54
-	+	137	54
-	+	138	63
-	+	138	1
-	+	139	0
-	+	140	0
-	+	138	68
-	+	138	25
-	+	141	0
-	+	125	1
-	+	126	0
-	+	127	70
-	+	128	0
-	+	125	1
-	+	127	27
-	+	126	24
-	+	125	24
-	+	126	16
-	+	125	54
-	+	126	90
-	+	127	79
-	+	126	91
-	+	129	28
-	+	130	34
-	+	131	34
-	+	132	33
-	+	133	35
-	+	129	44
-	+	130	44
-	+	131	44
-	+	132	43
-	+	133	45
-	+	129	45
-	+	121	84
-	+	4	27
-	+	125	27
-	+	126	27
-	+	127	27
-	+	125	30
-	+	126	30
-	+	127	30
-	+	121	16
-	+	122	16
-	+	121	18
-	+	122	18
-	+	121	0
-	+	129	93
-	+	130	108
-	+	131	108
-	+	20	42
-	+	21	0
-	+	31	0
-	+	30	0
-	+	29	0
-	+	28	0
-	+	151	0
-	+	147	84
-	+	147	92
-	+	147	35
-	+	147	0
-	+	147	2
-	+	76	80
-	+	76	0
-	+	147	2
-	+	147	1
-	+	150	0
-	+	149	95
-	+	150	0
-	+	149	1
-	+	147	84
-	+	148	7
-	+	122	37
-	+	123	37
-	+	120	1
-	+	121	0
-	+	120	0
-	+	127	103
-	+	128	101
-	+	158	0
-	+	126	88
-	+	12	78
-	+	125	0
-	+	123	1
-	+	124	49
-	+	138	1
-	+	138	0
-	+	41	0
-	+	34	0
-	+	38	0
-	+	37	0
-	+	36	0
-	+	35	0
-	+	34	0
-	+	9	39
-	+	40	0
-	+	38	8
-	+	39	0
-	+	38	12
-
-> ~/Documents/Projects/gitlab/dwm/.git/COMMIT_EDITMSG
-	*	1591627911	0
-	"	1	25
-	^	1	26
-	.	1	25
-	+	1	25
-
-> ~/Documents/Projects/gitlab/dwm/dwm.c
-	*	1591627761	0
-	"	737	7
-	^	1913	6
-	.	1916	3
-	+	1131	34
-	+	1132	35
-	+	1133	34
-	+	266	0
-	+	236	0
-	+	267	0
-	+	484	3
-	+	503	20
-	+	195	39
-	+	196	0
-	+	277	0
-	+	485	3
-	+	486	2
-	+	485	2
-	+	503	0
-	+	486	25
-	+	487	1
-	+	488	1
-	+	489	1
-	+	490	1
-	+	491	1
-	+	492	1
-	+	493	1
-	+	494	1
-	+	495	1
-	+	496	1
-	+	497	1
-	+	498	1
-	+	499	1
-	+	500	1
-	+	501	1
-	+	502	1
-	+	503	1
-	+	485	3
-	+	487	23
-	+	491	24
-	+	495	38
-	+	503	17
-	+	504	0
-	+	1893	0
-	+	1000	0
-	+	998	0
-	+	115	1
-	+	116	0
-	+	115	1
-	+	120	0
-	+	119	1
-	+	276	0
-	+	275	0
-	+	269	0
-	+	282	0
-	+	267	0
-	+	276	0
-	+	233	0
-	+	1158	52
-	+	1159	48
-	+	1160	48
-	+	1161	51
-	+	1159	48
-	+	1162	48
-	+	1158	25
-	+	1159	30
-	+	1160	30
-	+	1161	30
-	+	1162	25
-	+	1163	0
-	+	1158	0
-	+	1159	31
-	+	1160	30
-	+	1161	30
-	+	1162	30
-	+	1163	31
-	+	1161	31
-	+	1159	31
-	+	1161	31
-	+	1163	31
-	+	1159	31
-	+	1158	28
-	+	1159	28
-	+	1160	28
-	+	1161	28
-	+	1162	27
-	+	1163	28
-	+	1162	28
-	+	115	0
-	+	114	0
-	+	113	0
-	+	118	0
-	+	117	20
-	+	274	0
-	+	273	0
-	+	272	0
-	+	271	0
-	+	276	0
-	+	279	0
-	+	736	4
-	+	737	23
-	+	1911	3
-	+	1914	11
-	+	1916	3
-
-> ~/Documents/Projects/gitlab/dwm/dwm-swallow-20200522-7accbcf.diff
-	*	1591627529	0
-	"	191	1
-
-> ~/Documents/Projects/gitlab/dwm/dwm.c.rej
-	*	1591626797	0
-	"	32	0
-
-> ~/Documents/Projects/gitlab/config.h
-	*	1591618604	0
-	"	19	0
-
-> ~/Documents/Projects/gitlab/dwm/config.def.h
-	*	1591617022	0
-	"	1	0
-	^	41	21
-	.	54	18
-	+	49	33
-	+	50	0
-	+	112	0
-	+	9	57
-	+	10	55
-	+	22	0
-	+	11	48
-	+	20	0
-	+	19	0
-	+	18	0
-	+	17	0
-	+	16	0
-	+	15	0
-	+	14	0
-	+	13	0
-	+	12	0
-	+	120	0
-	+	54	33
-	+	55	0
-	+	92	0
-	+	91	0
-	+	119	0
-	+	49	22
-	+	41	13
-	+	111	0
-	+	41	20
-	+	54	18
-
-> ~/Documents/Projects/gitlab/dwm/config..h
-	*	1591617018	0
-	"	1	0
-
-> ~/Documents/Projects/gitlab/dwm/drw.c
-	*	1591616926	0
-	"	142	0
-	^	196	94
-	.	142	0
-	+	195	0
-	+	181	0
-	+	186	0
-	+	185	0
-	+	186	34
-	+	195	0
-	+	181	0
-	+	186	0
-	+	186	2
-	+	188	1
-	+	188	0
-	+	190	34
-	+	196	0
-	+	135	0
-	+	142	0
-
-> ~/Documents/Projects/gitlab/dwmblocks/.git/COMMIT_EDITMSG
-	*	1591615496	0
-	"	1	13
-	^	1	14
-	.	1	13
-	+	1	13
-
-> ~/Documents/Projects/gitlab/dwm/config.mk
-	*	1591614844	0
-	"	25	81
-	^	25	82
-	.	25	0
-	+	25	0
-
-> ~/Documents/Projects/gitlab/jars/programs
-	*	1591312785	0
-	"	10	2
-	^	33	3
-	.	33	2
-	+	25	6
-	+	23	0
-	+	21	0
-	+	25	16
-	+	28	1
-	+	29	0
-	+	29	5
-	+	21	0
-	+	30	6
-	+	16	0
-	+	18	0
-	+	16	0
-	+	23	0
-	+	15	0
-	+	33	2
-
-> ~/.config/newsboat/urls
-	*	1591312506	0
-	"	20	53
-	^	20	54
-	.	20	53
-	+	20	53
-
-> ~/.config/oh-my-zsh/oh-my-zsh.sh
-	*	1591140773	0
-	"	61	46
-	^	61	43
-	.	61	46
-	+	69	2
-	+	61	46
-
-> /tmp/build-sdcv/cmake_install.cmake
-	*	1591139869	0
-	"	1	0
-
-> /tmp/build-sdcv/config.h
-	*	1591139817	0
-	"	5	32
-
-> ~/.config/wget/wgetrc
-	*	1591137201	0
-	"	1	27
-	^	1	28
-	.	1	0
-	+	1	0
-
-> ~/.fehbg
-	*	1591133210	0
-	"	1	0
-
-> ~/Documents/Projects/gitlab/st/st-urlhandler
-	*	1591132644	0
-	"	15	1
-	^	3	101
-	.	3	41
-	+	17	0
-	+	4	0
-	+	3	41
-
-> ~/.local/bin/battery
-	*	1591126350	0
-	"	10	82
-	^	10	83
-	.	10	82
-	+	11	14
-	+	10	63
-	+	11	100
-	+	5	0
-	+	4	3
-	+	6	0
-	+	10	82
-
-> ~/test
-	*	1591125279	0
-	"	1	0
-	^	1	0
-	.	2	0
-	+	1	0
-	+	1	3
-	+	1	9
-	+	1	3
-	+	1	0
-	+	1	32
-	+	1	9
-	+	1	2
-	+	1	0
-	+	22	4
-	+	1	6
-	+	2	0
-	+	1	0
-	+	2	0
-
-> ~/tes
-	*	1591123807	0
-	"	1	0
-
-> ~/.local/bin/getUnicode
-	*	1591113184	0
-	"	1	0
-	^	11	20
-	.	11	19
-	+	5	22
-	+	12	0
-	+	8	19
-	+	10	12
-	+	11	19
-
-> ~/.config/dunst/dunstrc
-	*	1591112880	0
-	"	24	4
-	^	151	13
-	.	53	0
-	+	151	0
-	+	53	0
-
-> ~/Documents/Projects/gitlab/dwmblocks/config.h
-	*	1591104147	0
-	"	8	18
-	^	8	19
-	.	8	18
-	+	10	81
-	+	16	3
-	+	18	3
-	+	9	0
-	+	4	44
-	+	10	143
-	+	3	26
-	+	4	50
-	+	10	152
-	+	14	44
-	+	16	49
-	+	16	45
-	+	18	55
-	+	20	43
-	+	4	41
-	+	16	19
-	+	14	36
-	+	20	35
-	+	16	24
-	+	4	1
-	+	8	0
-	+	7	0
-	+	16	18
-	+	20	39
-	+	4	51
-	+	6	36
-	+	8	40
-	+	6	46
-	+	10	77
-	+	16	0
-	+	18	64
-	+	10	79
-	+	11	0
-	+	10	83
-	+	8	40
-	+	6	36
-	+	4	41
-	+	11	69
-	+	14	36
-	+	16	26
-	+	18	52
-	+	20	44
-	+	10	83
-	+	7	0
-	+	10	36
-	+	4	1
-	+	10	66
-	+	12	0
-	+	11	91
-	+	4	47
-	+	3	48
-	+	6	42
-	+	8	47
-	+	10	73
-	+	11	0
-	+	12	85
-	+	12	75
-	+	14	42
-	+	16	31
-	+	18	57
-	+	20	50
-	+	3	47
-	+	12	35
-	+	8	3
-	+	14	3
-	+	20	3
-	+	8	7
-	+	14	7
-	+	20	7
-	+	6	42
-	+	14	47
-	+	12	0
-	+	10	21
-	+	20	22
-	+	8	3
-	+	14	3
-	+	20	3
-	+	8	18
-
-> ~/Documents/Projects/gitlab/dmenu/.git/COMMIT_EDITMSG
-	*	1591103202	0
-	"	1	25
-	^	1	26
-	.	1	25
-	+	1	25
-
-> ~/Documents/Projects/aur/dmenu-jacob-git/.git/COMMIT_EDITMSG
-	*	1591103085	0
-	"	1	24
-	^	1	25
-	.	1	24
-	+	1	24
-
-> ~/Documents/Projects/aur/dmenu-jacob-git/PKGBUILD
-	*	1591103024	0
-	"	14	19
-	^	14	20
-	.	14	19
-	+	8	11
-	+	24	13
-	+	14	19
-
-> ~/Documents/Projects/aur/st-jacob-git/PKGBUILD
-	*	1591102992	0
-	"	1	0
-	^	21	0
-	.	16	55
-	+	10	72
-	+	24	55
-	+	25	0
-	+	24	0
-	+	25	1
-	+	8	12
-	+	10	0
-	+	8	12
-	+	14	19
-	+	16	55
-
-> ~/Documents/Projects/gitlab/dmenu/README.md
-	*	1591102966	0
-	"	49	0
-	^	49	96
-	.	27	64
-	+	14	0
-	+	1	43
-	+	14	0
-	+	12	0
-	+	5	14
-	+	7	18
-	+	9	12
-	+	11	15
-	+	16	49
-	+	17	7
-	+	21	111
-	+	23	0
-	+	26	0
-	+	24	0
-	+	27	2
-	+	41	0
-	+	40	24
-	+	39	25
-	+	38	23
-	+	37	24
-	+	36	25
-	+	44	0
-	+	42	0
-	+	45	17
-	+	45	0
-	+	47	0
-	+	49	162
-	+	27	64
-
-> ~/Documents/Projects/gitlab/st/.git/COMMIT_EDITMSG
-	*	1591102937	0
-	"	1	17
-	^	1	18
-	.	1	17
-	+	15	52
-	+	1	58
-	+	2	0
-	+	1	17
-
-> ~/Documents/Projects/gitlab/st/README.md
-	*	1591102913	0
-	"	85	0
-	^	85	0
-	.	57	64
-	+	41	111
-	+	57	2
-	+	59	17
-	+	81	77
-	+	59	2
-	+	81	91
-	+	85	171
-	+	59	0
-	+	57	64
-
-> ~/Documents/Projects/gitlab/dwm/config.
-	*	1591102542	0
-	"	1	0
-
-> ~/.local/share/unicode
-	*	1591102486	0
-	"	1	0
-	.	1	0
-	+	1653	13
-	+	1653	12
-	+	1653	3
-	+	1653	4
-	+	1653	0
-	+	10	0
-	+	1	0
-
-> ~/Documents/emoji
-	*	1591099482	0
-	"	923	10
-	.	1645	0
-	+	1645	0
-
-> ~/Documents/Projects/gitlab/dwmblocks/dwmblocks.c
-	*	1591098788	0
-	"	1	0
-	^	171	1
-	.	174	0
-	+	29	15
-	+	61	0
-	+	100	1
-	+	101	0
-	+	100	1
-	+	103	28
-	+	106	2
-	+	105	3
-	+	109	0
-	+	103	0
-	+	175	14
-	+	191	1
-	+	176	0
-	+	175	3
-	+	176	1
-	+	180	0
-	+	179	8
-	+	176	59
-	+	178	3
-	+	179	10
-	+	184	30
-	+	189	17
-	+	179	7
-	+	178	4
-	+	175	0
-	+	171	43
-	+	174	1
-	+	171	0
-	+	174	0
-
-> ~/Documents/Projects/gitlab/dmenu/drw.c
-	*	1591098668	0
-	"	135	0
-	.	135	0
-	+	136	0
-	+	135	0
-
-> ~/Documents/Projects/gitlab/jars/aur
-	*	1591009373	0
-	"	8	0
-	.	9	0
-	+	3	1
-	+	2	7
-	+	2	0
-	+	6	11
-	+	8	10
-	+	3	0
-	+	9	10
-	+	9	0
-
-> ~/Documents/Projects/aur/st-jacob-git/.git/COMMIT_EDITMSG
-	*	1591009117	0
-	"	1	31
-	^	1	32
-	.	1	31
-	+	2	0
-	+	1	31
-
-> ~/Documents/Projects/gitlab/st/config.h
-	*	1591006170	0
-	"	11	9
-	^	11	10
-	.	11	9
-	+	11	28
-	+	8	21
-	+	11	25
-	+	263	2
-	+	263	5
-	+	264	0
-	+	249	28
-	+	111	62
-	+	111	93
-	+	111	124
-	+	111	0
-	+	272	0
-	+	13	0
-	+	249	9
-	+	244	8
-	+	244	9
-	+	245	8
-	+	246	8
-	+	252	9
-	+	244	23
-	+	244	22
-	+	244	23
-	+	244	18
-	+	245	17
-	+	246	17
-	+	244	12
-	+	244	3
-	+	244	4
-	+	245	3
-	+	246	3
-	+	244	9
-	+	244	8
-	+	244	10
-	+	245	9
-	+	246	9
-	+	244	12
-	+	244	25
-	+	244	24
-	+	245	24
-	+	246	24
-	+	249	9
-	+	255	64
-	+	254	57
-	+	261	0
-	+	257	68
-	+	258	0
-	+	257	186
-	+	257	116
-	+	255	57
-	+	254	56
-	+	255	58
-	+	257	118
-	+	257	129
-	+	258	0
-	+	257	61
-	+	256	56
-	+	257	61
-	+	258	0
-	+	260	0
-	+	258	26
-	+	259	61
-	+	258	56
-	+	257	33
-	+	258	26
-	+	259	43
-	+	258	34
-	+	245	0
-	+	244	0
-	+	11	9
-
-> ~/Downloads/serenity/Build/CMakeFiles/run.dir/progress.make
-	*	1590940559	0
-	"	1	0
-
-> ~/Downloads/serenity/Build/CMakeFiles/run.dir/depend.make
-	*	1590940541	0
-	"	1	0
-
-> ~/Downloads/serenity/Build/CMakeFiles/run.dir/depend.internal
-	*	1590940535	0
-	"	1	0
-
-> ~/Downloads/serenity/Build/CMakeFiles/run.dir/DependInfo.cmake
-	*	1590940525	0
-	"	1	0
-
-> ~/Downloads/serenity/Build/CMakeFiles/run.dir/cmake_clean.cmake
-	*	1590940513	0
-	"	1	0
-
-> ~/Downloads/serenity/Build/CMakeFiles/run.dir/build.make
-	*	1590940497	0
-	"	1	0
-
-> ~/Downloads/serenity/Build/CMakeFiles/Makefile2
-	*	1590940474	0
-	"	2383	67
-
-> ~/Downloads/serenity/Build/Makefile
-	*	1590940384	0
-	"	217	33
-
-> ~/Documents/Projects/gitlab/st/st.1
-	*	1590929132	0
-	"	140	0
-	^	182	13
-	.	151	0
-	+	157	5
-	+	160	5
-	+	170	100
-	+	144	3
-	+	146	18
-	+	148	14
-	+	145	14
-	+	149	17
-	+	152	26
-	+	160	8
-	+	156	0
-	+	154	14
-	+	171	3
-	+	181	14
-	+	175	7
-	+	181	7
-	+	182	12
-	+	145	0
-	+	148	0
-	+	151	0
-
-> ~/Documents/Projects/aur/st-distrotube-git/PKGBUILD
-	*	1590927931	0
-	"	1	0
-
-> ~/.cache/yay/st-luke-git/PKGBUILD
-	*	1590926844	0
-	"	31	9
-
-> ~/.cache/yay/st-luke-git/src/st-luke/config.h
-	*	1590926751	0
-	"	254	42
-
-> ~/Downloads/serenity/Toolchain/error.txt
-	*	1590771129	0
-	"	1	0
-	^	1	0
-
-> ~/Downloads/serenity/Toolchain/BuildIt.sh
-	*	1590769211	0
-	"	224	15
-
-> ~/Downloads/serenity/Toolchain/Build/binutils/Makefile
-	*	1590769087	0
-	"	851	4
-
-> ~/dwmblocks.c
-	*	1590525778	0
-	"	117	0
-	^	116	0
-	.	117	0
-	+	16	0
-	+	82	0
-	+	117	0
-	+	116	0
-	+	114	0
-	+	113	0
-	+	112	0
-	+	111	0
-	+	110	0
-	+	109	0
-	+	108	0
-	+	107	0
-	+	106	0
-	+	105	0
-	+	104	0
-	+	103	0
-	+	102	0
-	+	117	0
-
-> ~/dwmblocks.c.rej
-	*	1590525639	0
-	"	1	0
-
-> ~/Downloads/winfile/GNUmakefile
-	*	1590523752	0
-	"	67	0
-
-> ~/.config/calcurse/conf
-	*	1590418547	0
-	"	4	18
-	^	1	0
-	.	4	18
-	+	4	18
-
-> ~/.local/bin/config.h
-	*	1590417310	0
-	"	1	0
-
-> ~/.local/bin/dateScript
-	*	1590417280	0
-	"	5	0
-	^	5	0
-	.	10	38
-	+	3	0
-	+	3	208
-	+	3	0
-	+	10	38
-
-> ~/.local/bin/date
-	*	1590417178	0
-	"	3	0
-	^	3	0
-	.	2	0
-	+	2	0
-
-> ~/weather
-	*	1590412742	0
-	"	1	0
-
-> ~/Documents/Projects/gitlab/dwmblocks/dwmblocksLuke.c
-	*	1590410740	0
-	"	232	0
-	^	232	1
-	.	232	0
-	+	232	0
-
-> ~/Documents/Projects/gitlab/dwm/config.h.rej
-	*	1590406465	0
-	"	1	0

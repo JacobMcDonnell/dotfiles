@@ -23,5 +23,8 @@ export TERMINFO_DIRS="$XDG_DATA_HOME"/terminfo:/usr/share/terminfo
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export LESSHISTFILE="$XDG_CACHE_HOME"/lesshst
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+export PULSE_COOKIE="$XDG_CONFIG_HOME"/pulse/cookie
+export ENV="$XDG_CONFIG_HOME"/shells/ksh/kshrc
+export ZDOTDIR="$XDG_CONFIG_HOME"/shells/zsh
 
 jdm
