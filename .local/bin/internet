@@ -7,10 +7,4 @@
 IP="${IP%/*}"
 IP="${IP##* }"
 
-case $BLOCK_BUTTON in
-	1)  notify-send $IP ;; #printf $IP | dmenu ;;
-	2) "$TERMINAL" -e connmanctl ;;
-	3) "$TERMINAL" -e "$EDITOR" "$0" ;;
-esac
-
 printf $CONNECTION

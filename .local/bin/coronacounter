@@ -4,7 +4,7 @@ getStats(){
 }
 [ "$(stat -c %y ~/.cache/coronastats 2>/dev/null | cut -d' ' -f1)" != "$(date '+%Y-%m-%d')" ] && getStats
 "$@"
-grep "US" ~/.cache/coronastats |
+grep "USA" ~/.cache/coronastats |
 	sed "s/\s*//g ; s/║//g ; s/│/;/g" |
 	sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2})?)?[mGK]//g" |
-	awk -F';' '{print $2 ": " $3" (" $9 ") Deaths " $5 " ("$7"%)"}'
+	awk -F';' '{print $2 ": 😷  " $3" (" $4 ") 💀  " $5 " ("$6")"}'
