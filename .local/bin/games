@@ -1,0 +1,3 @@
+#!/bin/sh
+
+game=$(printf "steam\nminecraft-launcher\neduke32\ngzdoom" | dmenu -i -l 4) ; $game

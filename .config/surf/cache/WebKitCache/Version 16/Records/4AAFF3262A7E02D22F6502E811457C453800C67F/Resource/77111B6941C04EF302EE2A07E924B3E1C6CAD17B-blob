@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+
+<link href="//www.googletagmanager.com" rel="dns-prefetch" />
+<link href="https://www.google-analytics.com" rel="preconnect" crossorigin />
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-108650-1" async></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-108650-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://www.cyberciti.biz/faq/wp-content/thesis/boxes/thesis-social-profiles/icons.css" rel="stylesheet" />
+<link href="https://www.cyberciti.biz/faq/wp-content/thesis/skins/focus/css.css" rel="stylesheet" />
+<title>How to check if port is in use on Linux or Unix - nixCraft</title>
+<link href="https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/" rel="canonical" />
+<link href="https://www.cyberciti.biz/faq/feed/" rel="alternate" type="application/rss+xml" title="nixCraft feed" />
+
+<meta name="description" content="Explains how to check the listening ports and applications with various Linux and Unix commands." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to check if port is in use on Linux or Unix - nixCraft" />
+<meta property="og:description" content="Explains how to check the listening ports and applications with various Linux and Unix commands." />
+<meta property="og:url" content="https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/" />
+<meta property="og:site_name" content="nixCraft" />
+<meta property="article:published_time" content="2016-11-10T18:48:57+00:00" />
+<meta property="article:modified_time" content="2019-08-11T14:43:50+00:00" />
+<meta property="og:image" content="https://www.cyberciti.biz/media/new/faq/2016/11/nmap-outputs.png" />
+<meta property="og:image:width" content="599" />
+<meta property="og:image:height" content="466" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@https://twitter.com/nixcraft" />
+<meta name="twitter:site" content="@nixcraft" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.cyberciti.biz/faq/#website","url":"https://www.cyberciti.biz/faq/","name":"nixCraft","description":"Linux and Unix tutorials for new and seasoned sysadmin","publisher":{"@id":"https://www.cyberciti.biz/faq/#/schema/person/10a0329482f8543fae00407f1446b761"},"potentialAction":[{"@type":"SearchAction","target":"https://www.cyberciti.biz/faq/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/#primaryimage","inLanguage":"en-US","url":"https://www.cyberciti.biz/media/new/faq/2016/11/lsof-outputs.png"},{"@type":"WebPage","@id":"https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/#webpage","url":"https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/","name":"How to check if port is in use on Linux or Unix - nixCraft","isPartOf":{"@id":"https://www.cyberciti.biz/faq/#website"},"primaryImageOfPage":{"@id":"https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/#primaryimage"},"datePublished":"2016-11-10T18:48:57+00:00","dateModified":"2019-08-11T14:43:50+00:00","description":"Explains how to check the listening ports and applications with various Linux and Unix commands.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/"]}]},{"@type":"Article","@id":"https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/#article","isPartOf":{"@id":"https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/#webpage"},"author":{"@id":"https://www.cyberciti.biz/faq/#/schema/person/10a0329482f8543fae00407f1446b761"},"headline":"How to check if port is in use on Linux or Unix","datePublished":"2016-11-10T18:48:57+00:00","dateModified":"2019-08-11T14:43:50+00:00","mainEntityOfPage":{"@id":"https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/#webpage"},"commentCount":7,"publisher":{"@id":"https://www.cyberciti.biz/faq/#/schema/person/10a0329482f8543fae00407f1446b761"},"image":{"@id":"https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/#primaryimage"},"keywords":"netstat,netstat command,nmap command","articleSection":"CentOS,Debian / Ubuntu,FreeBSD,Linux,RedHat and Friends,Suse,UNIX","inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/#respond"]}]},{"@type":["Person","Organization"],"@id":"https://www.cyberciti.biz/faq/#/schema/person/10a0329482f8543fae00407f1446b761","name":"Vivek Gite","logo":{"@id":"https://www.cyberciti.biz/faq/#personlogo"},"description":"The author is the creator of nixCraft and a seasoned sysadmin, DevOps engineer, and a trainer for the Linux operating system/Unix shell scripting. Get the latest tutorials on SysAdmin, Linux/Unix and open source topics via RSS/XML feed or weekly email newsletter.","sameAs":["http://www.cyberciti.biz/tips/about-us","https://twitter.com/https://twitter.com/nixcraft"]}]}</script>
+
+<link rel="alternate" type="application/rss+xml" title="nixCraft &raquo; How to check if port is in use on Linux or Unix Comments Feed" href="https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/feed/" />
+<link rel='stylesheet' id='wp-syntax-css-css' href='https://www.cyberciti.biz/faq/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.cyberciti.biz/faq/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<link rel="amphtml" href="https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/amp/"><link rel="icon" href="https://www.cyberciti.biz/media/new/faq/2018/11/new_icon_amp.png" sizes="32x32" />
+<link rel="icon" href="https://www.cyberciti.biz/media/new/faq/2018/11/new_icon_amp.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.cyberciti.biz/media/new/faq/2018/11/new_icon_amp.png" />
+<meta name="msapplication-TileImage" content="https://www.cyberciti.biz/media/new/faq/2018/11/new_icon_amp.png" />
+<link href="https://www.cyberciti.biz/faq/wp-content/themes/thesis/lib/images/favicon.ico" rel="shortcut icon" />
+</head>
+<body class="template-single mode-focus focus">
+<div id="header">
+<div class="container">
+<div id="site_title"><a href="https://www.cyberciti.biz/faq/">nixCraft</a></div>
+<div id="site_tagline">Linux and Unix tutorials for new and seasoned sysadmin</div>
+</div>
+</div>
+<nav id="nav">
+<div class="container">
+<ul id="menu-faq" class="menu"><li id="menu-item-145282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-145282"><a title="Back to FAQ home page" href="https://www.cyberciti.biz/faq/">Home</a></li>
+<li id="menu-item-145283" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145283"><a title="Linux Shell Scripting Tutorial Wiki" href="https://bash.cyberciti.biz/guide/Main_Page">Linux Shell Scripting Tutorial</a></li>
+<li id="menu-item-145281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145281"><a title="Rss Feed" href="https://www.cyberciti.biz/atom/atom.xml">RSS</a></li>
+<li id="menu-item-145817" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145817"><a title="Help support nixCraft via Donations" href="https://www.cyberciti.biz/tips/donate">Donate</a></li>
+<li id="menu-item-147031" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147031"><a title="Search this site" href="https://www.cyberciti.biz/search/">Search</a></li>
+</ul>
+</div>
+</nav>
+<div id="content">
+<div class="container columns">
+<div class="content grt">
+<article id="post-145734" class="post_box text top" itemscope itemtype="https://schema.org/BlogPosting">
+<link href="https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/" itemprop="mainEntityOfPage" />
+<div class="extend">
+<center>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7825705102693166" data-ad-slot="1433529302" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div>
+<div class="headline_area">
+<h1 class="headline" itemprop="headline">How to check if port is in use on Linux or Unix</h1>
+<div class="byline">
+<span class="post_author_intro">Author:</span> <span class="post_author" itemprop="author">Vivek Gite</span>
+<meta itemprop="datePublished" content="2016-11-10" />
+<meta itemprop="dateModified" content="2019-08-11" />
+<span class="post_date_intro">Last updated:</span> <span class="post_date date_modified" title="2019-08-11">August 11, 2019</span>
+<meta itemprop="interactionCount" content="UserComments:7" />
+<a class="num_comments_link" href="https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/#comments" rel="nofollow"><span class="num_comments">7</span> comments</a>
+</div>
+</div>
+<div class="post_content" itemprop="articleBody">
+<div style="float: right; margin-top: 0; margin-left: 5px;"><a title="See all GNU/Linux related FAQ" href="//www.cyberciti.biz/faq/category/linux/"><img src="https://www.cyberciti.biz/media/new/category/old/linux-logo.png" alt="" border="0" /></a></div><span class="drop_cap">H</span>ow do I determine if a port is in use under Linux or Unix-like system? How can I verify which ports are listening on Linux server? How do I check if port is in use on Linux operating system using the CLI?<br />
+<span id="more-145734"></span><br />
+It is important you verify which ports are listening on the server&#8217;s network interfaces. You need to pay attention to open ports to detect an intrusion. Apart from an intrusion, for troubleshooting purposes, it may be necessary to check if a port is already in use by a different application on your servers. For example, you may install Apache and Nginx server on the same system. So it is necessary to know if Apache or Nginx is using TCP port # 80/443. This quick tutorial provides steps to use the netstat, nmap and lsof command to check the ports in use and view the application that is utilizing the port.<center><p><div style="border: 1px solid #e9ecef; border-radius: 3px; padding: 3px; color: #828282; font-size:10px;">
+<small>ADVERTISEMENTS</small><br />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7825705102693166" data-ad-slot="7261197400" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></p></center></p>
+<h2>How to check if port is in use in</h2>
+<p>To check the listening ports and applications on Linux:</p>
+<ol>
+<li>Open a terminal application i.e. shell prompt.</li>
+<li>Run any one of the following command on Linux to see open ports:<br />
+<kbd>sudo lsof -i -P -n | grep LISTEN </kbd><br />
+<kbd>sudo netstat -tulpn | grep LISTEN</kbd><br />
+<kbd>sudo lsof -i:22 ## <span style='color: rgb(0, 153, 0);'>see a specific port such as 22</span> ##</kbd><br />
+<kbd>sudo nmap -sTU -O IP-address-Here</kbd></li>
+<li>For the latest version of Linux use the ss command. For example, <kbd>ss -tulw</kbd></li>
+</ol>
+<p>Let us see commands and its output in details.</p>
+<h2>Option #1: lsof command</h2>
+<p>The syntax is:<br />
+<code>$ sudo lsof -i -P -n<br />
+$ sudo lsof -i -P -n | grep LISTEN<br />
+$ doas lsof -i -P -n | grep LISTEN ### [OpenBSD] ###</code><br />
+Sample outputs:<br />
+<div id="attachment_145735" style="width: 609px" class="wp-caption aligncenter"><a href="https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/lsof-outputs/" rel="attachment wp-att-145735"><img aria-describedby="caption-attachment-145735" loading="lazy" src="https://www.cyberciti.biz/media/new/faq/2016/11/lsof-outputs.png" alt="Fig.01: Check the listening ports and applications with lsof command" width="599" height="52" class="size-full wp-image-145735" srcset="https://www.cyberciti.biz/media/new/faq/2016/11/lsof-outputs.png 599w, https://www.cyberciti.biz/media/new/faq/2016/11/lsof-outputs-300x26.png 300w" sizes="(max-width: 599px) 100vw, 599px" /></a><p id="caption-attachment-145735" class="wp-caption-text">Fig.01: Check the listening ports and applications with lsof command</p></div>
+Consider the last line from above outputs:</p>
+<pre>sshd    85379     root    3u  IPv4 0xffff80000039e000      0t0  TCP 10.86.128.138:22 (LISTEN)</pre>
+<ul>
+<li><kbd><strong>sshd</kbd></strong> is the name of the application.</li>
+<li><kbd><strong>10.86.128.138</kbd></strong> is the IP address to which sshd application bind to (LISTEN)</li>
+<li><kbd><strong>22</kbd></strong> is the TCP port that is being used (LISTEN)</li>
+<li><kbd><strong>85379</kbd></strong> is the process ID of the sshd process</li>
+</ul>
+<h2>Option #2: netstat command</h2>
+<p>You can check the listening ports and applications with netstat as follows.</p>
+<h3>Linux netstat syntax</h3>
+<p>Run netstat command along with <a href="https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/" title="See Linux/Unix grep command examples for more info">grep command</a> to filter out port in LISTEN state:<br />
+<code>$ netstat -tulpn | grep LISTEN</code><br />
+The netstat command deprecated for some time on Linux. Therefore, you need to use the ss command as follows:<br />
+<code>sudo ss -tulw<br />
+sudo ss -tulwn<br />
+</code><br />
+<img loading="lazy" src="https://www.cyberciti.biz/media/new/faq/2016/11/Linux-check-if-port-is-in-use-using-ss-command.png" alt="Linux check if port is in use using ss command" width="599" height="711" class="aligncenter size-full wp-image-148160" srcset="https://www.cyberciti.biz/media/new/faq/2016/11/Linux-check-if-port-is-in-use-using-ss-command.png 599w, https://www.cyberciti.biz/media/new/faq/2016/11/Linux-check-if-port-is-in-use-using-ss-command-253x300.png 253w" sizes="(max-width: 599px) 100vw, 599px" /><br />
+Where ss command options are as follows:</p>
+<ul>
+<li><kbd><strong>-t</kbd></strong> : Show only TCP sockets on Linux</li>
+<li><kbd><strong>-u</kbd></strong> : Display only UDP sockets on Linux</li>
+<li><kbd><strong>-l</kbd></strong> : Show listening sockets. For example, TCP port 22 is opened by SSHD server.</li>
+<li><kbd><strong>-p</kbd></strong> : List process name that opened sockets</li>
+<li><kbd><strong>-n</kbd></strong> : Don&#8217;t resolve service names i.e. don&#8217;t use DNS</li>
+</ul>
+<p class="note">Related: <a href="https://www.cyberciti.biz/faq/what-process-has-open-linux-port/">Linux Find Out Which Process Is Listening Upon a Port</a></p>
+<h3>FreeBSD/MacOS X netstat syntax</h3>
+<p><code>$ netstat -anp tcp | grep LISTEN<br />
+$ netstat -anp udp | grep LISTEN</code></p>
+<h3>OpenBSD netstat syntax</h3>
+<p><code>$ netstat -na -f inet | grep LISTEN<br />
+$ netstat -nat | grep LISTEN</code></p>
+<h2>Option #3: nmap command</h2>
+<p>The syntax is:<br />
+<code>$ sudo nmap -sT -O localhost<br />
+$ sudo nmap -sU -O 192.168.2.13 ##[ list open UDP ports ]##<br />
+$ sudo nmap -sT -O 192.168.2.13 ##[ list open TCP ports ]##</code><br />
+Sample outputs:<br />
+<div id="attachment_145736" style="width: 609px" class="wp-caption aligncenter"><a href="https://www.cyberciti.biz/media/new/faq/2016/11/nmap-outputs.png"><img aria-describedby="caption-attachment-145736" loading="lazy" src="https://www.cyberciti.biz/media/new/faq/2016/11/nmap-outputs.png" alt="Fig.02: Determines which ports are listening for TCP connections using nmap" width="599" height="466" class="size-full wp-image-145736" srcset="https://www.cyberciti.biz/media/new/faq/2016/11/nmap-outputs.png 599w, https://www.cyberciti.biz/media/new/faq/2016/11/nmap-outputs-300x233.png 300w" sizes="(max-width: 599px) 100vw, 599px" /></a><p id="caption-attachment-145736" class="wp-caption-text">Fig.02: Determines which ports are listening for TCP connections using nmap</p></div>
+You can combine TCP/UDP scan in a single command:<br />
+<code>$ sudo nmap -sTU -O 192.168.2.13</code></p>
+<h2>A note about Windows users</h2>
+<p>You can check port usage from Windows operating system using following command:<br />
+<code> netstat -bano | more<br />
+netstat -bano | grep LISTENING<br />
+netstat -bano | findstr /R /C:"[LISTEING]"<br />
+</code></p>
+<h2>Conclusion</h2>
+<p>This page explained command to determining if a port is in use on Linux or Unix-like server. For more information see the <a href="https://www.cyberciti.biz/networking/nmap-command-examples-tutorials/" title="See Linux/Unix nmap command examples for more info">nmap command</a> and lsof command page <a href="https://github.com/lsof-org/lsof" rel="noopener noreferrer" target="_blank">online here</a></p>
+<div class="box pop" style="font-size: 16px;">
+🐧 Get the latest tutorials on SysAdmin, Linux/Unix, Open Source/DevOps topics:
+<ul>
+<li><strong><a href="https://www.cyberciti.biz/atom/atom.xml">RSS feed</a></strong> or <strong><a href="https://newsletter.cyberciti.biz/subscription?f=1ojtmiv8892KQzyMsTF4YPr1pPSAhX2rq7Qfe5DiHMgXwKo892di4MTWyOdd976343rcNR6LhdG1f7k9H8929kMNMdWu3g">Weekly email newsletter</a></strong></li>
+<li>
+Share on
+<strong><a title="Share this tutorial/post on Twitter" rel="nofollow, noopener" target="_blank" href="https://twitter.com/intent/tweet?text=How+to+check+if+port+is+in+use+on+Linux+or+Unix&url=https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/&via=nixcraft">Twitter</a></strong>
+•
+<strong><a title="Share this tutorial/post on Facebook" rel="nofollow, noopener" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/">Facebook</a></strong>
+•
+7 comments... <a href="#respond" rel="nofollow">add one</a> <strong>&darr;</strong></li>
+</ul>
+</div>
+<div class="crp_related  "><span style="font-weight: bold;font-size: 20px;margin-bottom: 10px">UP NEXT</span><div class="wp_rp_wrap"><div class="wp_rp_content"><ul class="related_post"><li><a class="wp_rp_thumbnail" href="https://www.cyberciti.biz/faq/install-nmap-debian-ubuntu-server-desktop-system/"><img alt="57.jpg" src="https://www.cyberciti.biz/images/rp/13/57.jpg"></a><a href="https://www.cyberciti.biz/faq/install-nmap-debian-ubuntu-server-desktop-system/"><span class="crp_title">Debian / Ubuntu Linux: Install nmap command Software For Scanning Network</span></a></li><li><a class="wp_rp_thumbnail" href="https://www.cyberciti.biz/faq/how-to-install-composer-on-debian-ubuntu-linux-server/"><img alt="21.jpg" src="https://www.cyberciti.biz/images/rp/13/21.jpg"></a><a href="https://www.cyberciti.biz/faq/how-to-install-composer-on-debian-ubuntu-linux-server/"><span class="crp_title">How to install Composer on Debian / Ubuntu Linux</span></a></li><li><a class="wp_rp_thumbnail" href="https://www.cyberciti.biz/faq/how-to-check-open-ports-in-linux-using-the-cli/"><img alt="13.jpg" src="https://www.cyberciti.biz/images/rp/13/13.jpg"></a><a href="https://www.cyberciti.biz/faq/how-to-check-open-ports-in-linux-using-the-cli/"><span class="crp_title">How to check open ports in Linux using the CLI</span></a></li><li><a class="wp_rp_thumbnail" href="https://www.cyberciti.biz/faq/howto-install-nmap-on-centos-rhel-redhat-enterprise-linux/"><img alt="35.jpg" src="https://www.cyberciti.biz/images/rp/13/35.jpg"></a><a href="https://www.cyberciti.biz/faq/howto-install-nmap-on-centos-rhel-redhat-enterprise-linux/"><span class="crp_title">CentOS / RHEL: Install nmap Network Security Scanner</span></a></li><li><a class="wp_rp_thumbnail" href="https://www.cyberciti.biz/faq/linux-configuring-ip-traffic-accounting/"><img alt="45.jpg" src="https://www.cyberciti.biz/images/rp/13/45.jpg"></a><a href="https://www.cyberciti.biz/faq/linux-configuring-ip-traffic-accounting/"><span class="crp_title">Linux Network IP Accounting</span></a></li><li><a class="wp_rp_thumbnail" href="https://www.cyberciti.biz/faq/how-to-install-and-use-nginx-on-centos-8/"><img alt="55.jpg" src="https://www.cyberciti.biz/images/rp/13/55.jpg"></a><a href="https://www.cyberciti.biz/faq/how-to-install-and-use-nginx-on-centos-8/"><span class="crp_title">How to install and use Nginx on CentOS 8</span></a></li><li><a class="wp_rp_thumbnail" href="https://www.cyberciti.biz/faq/how-do-i-find-out-what-ports-are-listeningopen-on-my-linuxfreebsd-server/"><img alt="13.jpg" src="https://www.cyberciti.biz/images/rp/13/13.jpg"></a><a href="https://www.cyberciti.biz/faq/how-do-i-find-out-what-ports-are-listeningopen-on-my-linuxfreebsd-server/"><span class="crp_title">Find Out What Ports Are Listening / Open On My Linux & FreeBSD Server</span></a></li></ul></div></div><div class="crp_clear"></div></div><style>
+table.nixcraftcmdtabls {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+table.nixcraftcmdtabls td, table.nixcraftcmdtabls th {
+  padding: 5px;
+  font-size: 90%;
+}
+table.nixcraftcmdtabls tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.nixcraftcmdtabls thead {
+  background: #1D3557;
+  background: -moz-linear-gradient(top, #556781 0%, #334967 66%, #1D3557 100%);
+  background: -webkit-linear-gradient(top, #556781 0%, #334967 66%, #1D3557 100%);
+  background: linear-gradient(to bottom, #556781 0%, #334967 66%, #1D3557 100%);
+}
+table.nixcraftcmdtabls thead th {
+  font-weight: bold;
+  color: #A8DADC;
+  text-align: center;
+}
+</style><table class="nixcraftcmdtabls"><thead><tr><th style="width: 20%">Category</th><th style="width: 80%">List of Unix and Linux commands</th></tr></thead><tbody><tr><td style="text-align:right; width:20%"><abbr title="FS (File Management) command category">File Management</abbr></td><td style="text-align:left; width:80%"><a title='cat command examples and syntax' href='https://www.cyberciti.biz/faq/linux-unix-appleosx-bsd-cat-command-examples/ '>cat</a></td></tr><tr><td style="text-align:right; width:20%"><abbr title="FW (Firewall) command category">Firewall</abbr></td><td style="text-align:left; width:80%"><a title='Awall firewall on Alpine Linux examples and syntax' href='https://www.cyberciti.biz/faq/how-to-set-up-a-firewall-with-awall-on-alpine-linux/ '>Alpine Awall</a> <span style="color: #828282;">&#8226;</span> <a title='firewalld on CentOS 8 examples and syntax' href='https://www.cyberciti.biz/faq/how-to-set-up-a-firewall-using-firewalld-on-centos-8/ '>CentOS 8</a> <span style="color: #828282;">&#8226;</span> <a title='firewalld on OpenSUSE Linux examples and syntax' href='https://www.cyberciti.biz/faq/set-up-a-firewall-using-firewalld-on-opensuse-linux/ '>OpenSUSE</a> <span style="color: #828282;">&#8226;</span> <a title='firewalld on RHEL (Red Hat Enterprise Linux) 8 examples and syntax' href='https://www.cyberciti.biz/faq/configure-set-up-a-firewall-using-firewalld-on-rhel-8/ '>RHEL 8 </a> <span style="color: #828282;">&#8226;</span> <a title='ufw on Ubuntu 16.04 LTS examples and syntax' href='https://www.cyberciti.biz/faq/howto-configure-setup-firewall-with-ufw-on-ubuntu-linux/ '>Ubuntu 16.04</a> <span style="color: #828282;">&#8226;</span> <a title='ufw on Ubuntu 18.04 LTS examples and syntax' href='https://www.cyberciti.biz/faq/how-to-setup-a-ufw-firewall-on-ubuntu-18-04-lts-server/ '>Ubuntu 18.04</a> <span style="color: #828282;">&#8226;</span> <a title='ufw on Ubuntu 20.04 LTS examples and syntax' href='https://www.cyberciti.biz/faq/how-to-configure-firewall-with-ufw-on-ubuntu-20-04-lts/ '>Ubuntu 20.04</a></td></tr><tr><td style="text-align:right; width:20%"><abbr title="NU (Network Utilities) command category">Network Utilities</abbr></td><td style="text-align:left; width:80%"><a title='dig command examples and syntax' href='https://www.cyberciti.biz/faq/linux-unix-dig-command-examples-usage-syntax/ '>dig</a> <span style="color: #828282;">&#8226;</span> <a title='host command examples and syntax' href='https://www.cyberciti.biz/faq/linux-unix-host-command-examples-usage-syntax/ '>host</a> <span style="color: #828282;">&#8226;</span> <a title='ip command in Linux examples and syntax' href='https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/ '>ip</a> <span style="color: #828282;">&#8226;</span> <a title='See Linux/Unix nmap command examples for more info examples and syntax' href='https://www.cyberciti.biz/security/nmap-command-examples-tutorials/ '>nmap</a></td></tr><tr><td style="text-align:right; width:20%"><abbr title="OVPN (OpenVPN) command category">OpenVPN</abbr></td><td style="text-align:left; width:80%"><a title='CentOS 7 Set Up OpenVPN Server In 5 Minutes examples and syntax' href='https://www.cyberciti.biz/faq/centos-7-0-set-up-openvpn-server-in-5-minutes/ '>CentOS 7</a> <span style="color: #828282;">&#8226;</span> <a title='CentOS 8 OpenVPN server in 5 mintues examples and syntax' href='https://www.cyberciti.biz/faq/centos-8-set-up-openvpn-server-in-5-minutes/ '>CentOS 8</a> <span style="color: #828282;">&#8226;</span> <a title='Debian 10 Set Up OpenVPN Server In 5 Minutes examples and syntax' href='https://www.cyberciti.biz/faq/debian-10-set-up-openvpn-server-in-5-minutes/ '>Debian 10</a> <span style="color: #828282;">&#8226;</span> <a title='OpenVPN server on Debian 9/8 examples and syntax' href='https://www.cyberciti.biz/faq/install-configure-openvpn-server-on-debian-9-linux/ '>Debian 8/9</a> <span style="color: #828282;">&#8226;</span> <a title='Ubuntu 18.04 LTS Set Up OpenVPN Server In 5 Minutes examples and syntax' href='https://www.cyberciti.biz/faq/ubuntu-18-04-lts-set-up-openvpn-server-in-5-minutes/ '>Ubuntu 18.04</a> <span style="color: #828282;">&#8226;</span> <a title='Ubuntu 20.04 LTS OpenVPN server in 5 mintues examples and syntax' href='https://www.cyberciti.biz/faq/ubuntu-20-04-lts-set-up-openvpn-server-in-5-minutes/ '>Ubuntu 20.04</a></td></tr><tr><td style="text-align:right; width:20%"><abbr title="PM (Package Manager) command category">Package Manager</abbr></td><td style="text-align:left; width:80%"><a title='apk command in Apline Linux examples and syntax' href='https://www.cyberciti.biz/faq/10-alpine-linux-apk-command-examples/ '>apk</a> <span style="color: #828282;">&#8226;</span> <a title='apt command in Debian/Ubuntu Linux examples and syntax' href='https://www.cyberciti.biz/faq/ubuntu-lts-debian-linux-apt-command-examples/ '>apt</a></td></tr><tr><td style="text-align:right; width:20%"><abbr title="PRM (Processes Management) command category">Processes Management</abbr></td><td style="text-align:left; width:80%"><a title='bg command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-bg-command-examples-usage-syntax/ '>bg</a> <span style="color: #828282;">&#8226;</span> <a title='chroot command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-chroot-command-examples-usage-syntax/ '>chroot</a> <span style="color: #828282;">&#8226;</span> <a title='cron and crontab command examples and syntax' href='https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/ '>cron</a> <span style="color: #828282;">&#8226;</span> <a title='disown command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-disown-command-examples-usage-syntax/ '>disown</a> <span style="color: #828282;">&#8226;</span> <a title='fg command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-fg-command-examples-usage-syntax/ '>fg</a> <span style="color: #828282;">&#8226;</span> <a title='jobs command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-jobs-command-examples-usage-syntax/ '>jobs</a> <span style="color: #828282;">&#8226;</span> <a title='killall command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-killall-command-examples-usage-syntax/ '>killall</a> <span style="color: #828282;">&#8226;</span> <a title='kill command examples and syntax' href='https://www.cyberciti.biz/faq/unix-kill-command-examples/ '>kill</a> <span style="color: #828282;">&#8226;</span> <a title='pidof command examples and syntax' href='https://www.cyberciti.biz/faq/linux-pidof-command-examples-find-pid-of-program/ '>pidof</a> <span style="color: #828282;">&#8226;</span> <a title='See Linux/Unix pstree command examples for more info examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-pstree-command-examples-shows-running-processestree/pstree command '>pstree</a> <span style="color: #828282;">&#8226;</span> <a title='pwdx command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-pwdx-command-examples-usage-syntax/ '>pwdx</a> <span style="color: #828282;">&#8226;</span> <a title='time command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/ '>time</a></td></tr><tr><td style="text-align:right; width:20%"><abbr title="SER (Searching) command category">Searching</abbr></td><td style="text-align:left; width:80%"><a title='grep command examples and syntax' href='https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/ '>grep</a> <span style="color: #828282;">&#8226;</span> <a title='whereis command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-whereis-command-examples-to-locate-binary/ '>whereis</a> <span style="color: #828282;">&#8226;</span> <a title='which command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-which-command-examples-syntax-to-locate-programs/ '>which</a></td></tr><tr><td style="text-align:right; width:20%"><abbr title="UI (User Information) command category">User Information</abbr></td><td style="text-align:left; width:80%"><a title='groups command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-groups-command-examples-syntax-usage/ '>groups</a> <span style="color: #828282;">&#8226;</span> <a title='id command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-id-command-examples-usage-syntax/ '>id</a> <span style="color: #828282;">&#8226;</span> <a title='lastcomm command examples and syntax' href='https://www.cyberciti.biz/faq/linux-unix-lastcomm-command-examples-usage-syntax/ '>lastcomm</a> <span style="color: #828282;">&#8226;</span> <a title='last command examples and syntax' href='https://www.cyberciti.biz/faq/linux-unix-last-command-examples/ '>last</a> <span style="color: #828282;">&#8226;</span> <a title='lid/libuser-lid command examples and syntax' href='https://www.cyberciti.biz/faq/linux-lid-command-examples-syntax-usage/ '>lid/libuser-lid</a> <span style="color: #828282;">&#8226;</span> <a title='longname command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-logname-command-examples-syntax-usage/ '>logname</a> <span style="color: #828282;">&#8226;</span> <a title='members command examples and syntax' href='https://www.cyberciti.biz/faq/linux-members-command-examples-usage-syntax/ '>members</a> <span style="color: #828282;">&#8226;</span> <a title='users command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-users-command-examples-syntax-usage/ '>users</a> <span style="color: #828282;">&#8226;</span> <a title='whoami command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-whoami-command-examples-syntax-usage/ '>whoami</a> <span style="color: #828282;">&#8226;</span> <a title='who command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-w-command-examples-syntax-usage-2/ '>who</a> <span style="color: #828282;">&#8226;</span> <a title='w command examples and syntax' href='https://www.cyberciti.biz/faq/unix-linux-w-command-examples-syntax-usage-2/ '>w</a></td></tr><tr><td style="text-align:right; width:20%"><abbr title="WG (WireGuard VPN) command category">WireGuard VPN</abbr></td><td style="text-align:left; width:80%"><a title='Alpine Linux set up WireGuard VPN server examples and syntax' href='https://www.cyberciti.biz/faq/how-to-set-up-wireguard-vpn-server-on-alpine-linux/ '>Alpine</a> <span style="color: #828282;">&#8226;</span> <a title='CentOS 8 set up WireGuard VPN server examples and syntax' href='https://www.cyberciti.biz/faq/centos-8-set-up-wireguard-vpn-server/ '>CentOS 8</a> <span style="color: #828282;">&#8226;</span> <a title='Debian 10 set up WireGuard VPN server examples and syntax' href='https://www.cyberciti.biz/faq/debian-10-set-up-wireguard-vpn-server/ '>Debian 10</a> <span style="color: #828282;">&#8226;</span> <a title='WireGuard Firewall Rules in Linux examples and syntax' href='https://www.cyberciti.biz/faq/how-to-set-up-wireguard-firewall-rules-in-linux/ '>Firewall</a> <span style="color: #828282;">&#8226;</span> <a title='Ubuntu 20.04 set up WireGuard VPN server examples and syntax' href='https://www.cyberciti.biz/faq/ubuntu-20-04-set-up-wireguard-vpn-server/ '>Ubuntu 20.04</a></td></tr></tbody></table><br />
+<div class="pop extend" style="padding: 3px; color: #828282; font-size:10px;">
+<center>
+<small>ADVERTISEMENTS</small><br />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7825705102693166" data-ad-slot="7258354015" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div>
+</div>
+</article>
+<div id="comments" class="text">
+<div class="comments_intro"><span class="num_comments">7</span> comments&#8230; <a href="#respond" rel="nofollow">add one</a></div>
+<ul class="comment_list">
+<li class="comment even thread-even depth-1" id="comment-910703">
+<div class="comment_header">
+<span class="comment_author">KEM</span>
+<span class="comment_date">Nov 10, 2016 @ 18:57</span>
+</div>
+<div class="comment_text" id="comment-body-910703">
+<p>For Windows users, grep doesnt exist, so that will not work</p>
+</div>
+<div class="comment_footer">
+<a rel='nofollow' class='comment-reply-link' href='#comment-910703' data-commentid="910703" data-postid="145734" data-belowelement="comment-body-910703" data-respondelement="respond" data-replyto="Reply to KEM" aria-label='Reply to KEM'>Reply</a>
+<a class="comment_permalink" href="#comment-910703" title="permalink to this comment" rel="nofollow">Link</a>
+</div>
+<ul class="children">
+<li class="comment odd alt depth-2" id="comment-910704">
+<div class="comment_header">
+<span class="comment_author">Masoud</span>
+<span class="comment_date">Nov 10, 2016 @ 19:08</span>
+</div>
+<div class="comment_text" id="comment-body-910704">
+<p>For Windows, pipe netstat result to findstr command.</p>
+</div>
+<div class="comment_footer">
+<a rel='nofollow' class='comment-reply-link' href='#comment-910704' data-commentid="910704" data-postid="145734" data-belowelement="comment-body-910704" data-respondelement="respond" data-replyto="Reply to Masoud" aria-label='Reply to Masoud'>Reply</a>
+<a class="comment_permalink" href="#comment-910704" title="permalink to this comment" rel="nofollow">Link</a>
+</div>
+</li>
+<li class="comment even depth-2" id="comment-910730">
+<div class="comment_header">
+<span class="comment_author">Aram Iskenderian</span>
+<span class="comment_date">Nov 17, 2016 @ 9:42</span>
+</div>
+<div class="comment_text" id="comment-body-910730">
+<p>The article title clearly says &#8220;How to check if port is in use on Linux or Unix&#8221; so Windows was not really the focus of this article.</p>
+<p>Now I got that out of the way, there are multiple grep builds on Windows if you don&#8217;t want to use findstr like others suggested.</p>
+</div>
+<div class="comment_footer">
+<a rel='nofollow' class='comment-reply-link' href='#comment-910730' data-commentid="910730" data-postid="145734" data-belowelement="comment-body-910730" data-respondelement="respond" data-replyto="Reply to Aram Iskenderian" aria-label='Reply to Aram Iskenderian'>Reply</a>
+<a class="comment_permalink" href="#comment-910730" title="permalink to this comment" rel="nofollow">Link</a>
+</div>
+</li>
+</ul>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-910726">
+<div class="comment_header">
+<span class="comment_author">janc1c1</span>
+<span class="comment_date">Nov 16, 2016 @ 9:12</span>
+</div>
+<div class="comment_text" id="comment-body-910726">
+<p>netstat is replacing by ss command</p>
+</div>
+<div class="comment_footer">
+<a rel='nofollow' class='comment-reply-link' href='#comment-910726' data-commentid="910726" data-postid="145734" data-belowelement="comment-body-910726" data-respondelement="respond" data-replyto="Reply to janc1c1" aria-label='Reply to janc1c1'>Reply</a>
+<a class="comment_permalink" href="#comment-910726" title="permalink to this comment" rel="nofollow">Link</a>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="comment-910773">
+<div class="comment_header">
+<span class="comment_author">Anon</span>
+<span class="comment_date">Nov 23, 2016 @ 14:17</span>
+</div>
+<div class="comment_text" id="comment-body-910773">
+<p>Fix LISTING -&gt; LISTENING</p>
+</div>
+<div class="comment_footer">
+<a rel='nofollow' class='comment-reply-link' href='#comment-910773' data-commentid="910773" data-postid="145734" data-belowelement="comment-body-910773" data-respondelement="respond" data-replyto="Reply to Anon" aria-label='Reply to Anon'>Reply</a>
+<a class="comment_permalink" href="#comment-910773" title="permalink to this comment" rel="nofollow">Link</a>
+</div>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-910918">
+<div class="comment_header">
+<span class="comment_author">Glenn Reavis</span>
+<span class="comment_date">Dec 20, 2016 @ 12:04</span>
+</div>
+<div class="comment_text" id="comment-body-910918">
+<p>help me find out why my METROPCS ZTE Z820 won&#8217;t allow me to download from the Google play app on my phone and it won&#8217;t let me log in to gmail app on phone.</p>
+</div>
+<div class="comment_footer">
+<a rel='nofollow' class='comment-reply-link' href='#comment-910918' data-commentid="910918" data-postid="145734" data-belowelement="comment-body-910918" data-respondelement="respond" data-replyto="Reply to Glenn Reavis" aria-label='Reply to Glenn Reavis'>Reply</a>
+<a class="comment_permalink" href="#comment-910918" title="permalink to this comment" rel="nofollow">Link</a>
+</div>
+</li>
+<li class="comment even thread-even depth-1" id="comment-920285">
+<div class="comment_header">
+<span class="comment_author">Phil H</span>
+<span class="comment_date">May 16, 2017 @ 6:01</span>
+</div>
+<div class="comment_text" id="comment-body-920285">
+<p>lsof -i: </p>
+<p>works to show you the attached process</p>
+</div>
+<div class="comment_footer">
+<a rel='nofollow' class='comment-reply-link' href='#comment-920285' data-commentid="920285" data-postid="145734" data-belowelement="comment-body-920285" data-respondelement="respond" data-replyto="Reply to Phil H" aria-label='Reply to Phil H'>Reply</a>
+<a class="comment_permalink" href="#comment-920285" title="permalink to this comment" rel="nofollow">Link</a>
+</div>
+</li>
+</ul>
+<div id="respond" class="comment-respond">
+<p class="comment-reply-title">Leave a Reply<a rel="nofollow" id="cancel-comment-reply-link" href="/faq/unix-linux-check-if-port-is-in-use-command/#respond" style="display:none;">Cancel reply</a></p><form action="https://www.cyberciti.biz/faq/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name</label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" /></p>
+<p class="comment-form-email"><label for="email">Email</label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='145734' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form> </div>
+<div style="font-size: 0.65em;">
+<span class="highlight">Use <acronym title="HyperText Markup Language">HTML</acronym> &lt;pre&gt;...&lt;/pre&gt;, &lt;code&gt;...&lt;/code&gt; and &lt;kbd&gt;...&lt;/kbd&gt; for code samples.</span>
+</div>
+</div>
+<div class="prev_next text">
+<p class="next_post">Next FAQ: <a href="https://www.cyberciti.biz/faq/lighttpd-setup-hsts-http-strict-transport-security/" rel="next">How to setup HTTP Strict Transport Security With Lighttpd Web Server</a></p>
+<p class="previous_post">Previous FAQ: <a href="https://www.cyberciti.biz/faq/howto-exit-virsh-console-connection-on-centos-ubuntu-debian-linux/" rel="prev">Linux kvm exit from a virsh console command</a></p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div class="container">
+<div class="text_box">
+©2020 nixCraft • <a href="https://www.cyberciti.biz/tips/privacy" title="Privacy policy">Privacy</a> • <a href="https://www.cyberciti.biz/tips/disclaimer" title="Term of Service">ToS</a> • <a href="https://www.cyberciti.biz/tips/contact-us" title="Contact us via Email">Contact/Email</a> • <a href="https://www.cyberciti.biz/search/" title="Search this site">Search</a> • Sponsored by <a href="https://www.cyberciti.biz/tips/nixcraft-sponsors" title="nixCraft sponsors">Linode</a>
+</div>
+<div class="social-profiles">
+<a class="icon-social" href="bitcoin:1BnbCanB9oyUwGwTnKgSF6JaLYbsotwK9P">&#xf15a;</a>
+<a class="icon-social" href="mailto:webmaster@cyberciti.biz">&#xf0e0;</a>
+<a class="icon-social" href="https://facebook.com/nixcraft">&#xf230;</a>
+<a class="icon-social" href="https://www.patreon.com/nixcraft">&#xe900;</a>
+<a class="icon-social" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&#038;hosted_button_id=LJF8UGD7QKF3U">&#xf1ed;</a>
+<a class="icon-social" href="https://twitter.com/nixcraft">&#xf099;</a>
+</div>
+</div>
+</div>
+<script type='text/javascript' src='https://www.cyberciti.biz/faq/wp-includes/js/comment-reply.min.js?ver=5.5.1' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://www.cyberciti.biz/faq/wp-content/plugins/wp-syntax/js/wp-syntax.js?ver=1.1' id='wp-syntax-js-js'></script>
+</body>
+</html>
+

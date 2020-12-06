@@ -1,0 +1,1082 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>T2 SDE - The Open System Development Environment</title>
+<link rel="stylesheet" title="Default" href="/css-modern/modern.css" media="all">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="container">
+
+
+<div class="allmenu">
+<div class="menu">
+<table width="100%" style="border-spacing:0px;">
+<tr><td width="138px">
+<a href="/">Home</a> ::
+<a href="/startpage/">Startpage</a> </td>
+
+<td width="468px"> <script async 
+src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<!-- T2 SDE top neu --> 
+<ins class="adsbygoogle adslot_1" style="display:inline-block;" 
+     data-ad-client="ca-pub-2860176634161485" 
+     data-ad-slot="6652982395" data-ad-format="auto"></ins> 
+<script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+</td>
+
+<td style="text-align: right;">Search:</td>
+<td width="120px" style="text-align: right;">
+<form id="cse-search-box"
+      action="/search/"
+      style="display: inline; text-align: right;">
+<div><input type="hidden" name="cx" value="010888532094808064914:q0bx6ixm8lk">
+     <input type="hidden" name="cof" value="FORID:11">
+     <input type="hidden" name="ie" value="UTF-8">
+     <input type="text" name="q" size="16"></div></form></td>
+
+<td align="right" width="78px"><a href="https://www.patreon.com/bePatron?u=9504919">
+<img height="25px" src="/images/patron_button.png"></a>
+</td>
+</tr></table>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box"></script>
+ 
+
+</div>
+</div>
+
+
+<div class="sidemenu">
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about.html">About</a></li>
+<li><a href="/releases/">Releases</a></li>
+<li><a href="/download/">Download</a></li>
+
+<li><a href="/documentation/">Documentation</a></li>
+<li><a href="/architectures/">Architectures</a></li>
+<li><a href="/kernel/">OS kernel</a></li>
+<li><a href="/packages/">Packages</a></li>
+
+<li><a href="/targets/">Targets</a></li>
+<li><a href="/hardware/">Hardware</a></li>
+
+<li><a href="/developer/">Developer</a></li>
+<li><a href="/zine/">Magazine</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/support/">Support</a></li>
+
+<li><a href="/faq/">FAQ</a></li>
+</ul>
+</div>
+
+<div class="page" id="Intro">
+
+<H2>T2 System Development Environment</H2>
+<p><b>... more than a distribution next generation.</b></p>
+<!--
+<div class="right">
+<IMG SRC="./t2-logo-medium.gif" ALT="T2 logo">
+</div> -->
+
+<p>T2 SDE is not just a common Linux distribution - it is a flexible Open
+Source <I>System Development Environment</I> or <I>Distribution Build Kit</I>
+(others might even name it Meta Distribution). T2 allows the creation of
+custom distributions with state of the art technology, up-to-date packages and
+integrated support for cross compilation. Currently the Linux kernel is
+normally used - but the T2 SDE is being expanded to Minix, Hurd, OpenDarwin,
+Haiku and OpenBSD - more to come.</p>
+
+White paper:
+<a href="/pr/ProjectFlyer2006en.pdf">
+English</a>
+<a href="/pr/ProjectFlyer2006de.pdf">
+German</a>
+
+
+<H2>News</H2>
+
+<div class="news">Initial support for RISC-V!</div>
+<div class="newsdate">2018-10-30</div>
+<div class="newsbody">
+
+<p>Initial support for the open-source <a href="/architectures/riscv/">RISC-V</a>
+architecture was added to T2! Initial or preliminary, because upstream
+packages do not include support for all bit-widths, such as 32 vs. 64-bit, and
+some low-level packages do not yet have upstream support, such as strace and
+packages of similar low-level nature.</p>
+
+</div>
+
+
+<div class="news">t2/trunk now installable on HP/PA-RISC</div>
+<div class="newsdate">2018-08-01</div>
+<div class="newsbody">
+
+<p>Support for the Hewlett-Packard <a href="/architectures/hppa/">Parallel/Precision
+Architecture Reduced Instruction Set Compute</a> was vastly improved in T2
+<a href="/packages/">trunk</a>. Now also directly providing an installable
+ISO image, too!</p>
+
+</div>
+
+
+<div class="news">Switched to SHA224 checksums</div>
+<div class="newsdate">2017-09-29</div>
+<div class="newsbody">
+
+<p>By switching the bit dated upstream source checksum to SHA-224
+the security of validating unmodified upstream sources is greatly
+improved.</p>
+
+</div>
+
+
+<div class="news">New and shorter domain: t2sde.org!</div>
+<div class="newsdate">2017-07-24</div>
+<div class="newsbody">
+
+<p>The T2 SDE web servieces are now also available with a
+much shorter domain: <a href="https://t2sde.org">t2sde.org</a>!</p>
+
+</div>
+
+
+<div class="news">Switched to Zstd compression</div>
+<div class="newsdate">2016-10-10</div>
+<div class="newsbody">
+
+<p>With switching to the new <a
+href="/packages/zstd.html">Zstandard</a> compression we can greatly
+decrease download bandwidth for you and our mirrors, as well as
+uncompression time of big packages during development.</p>
+
+</div>
+
+
+<div class="news">x32 (x86-64/x32) support added to the T2 trunk</div>
+<div class="newsdate">2016-01-09</div>
+<div class="newsbody">
+
+<p>Support for the memory and cache optimized
+<a href="/architectures/x86-64/">x32 x86-64 ABI</a> was added to the T2
+<a href="/packages/">trunk</a>. Allowig for higher performance embedded,
+desktop and server systems.</p>
+
+</div>
+
+
+<div class="news">ARM64 (aarch64) support added to the T2 trunk</div>
+<div class="newsdate">2014-05-29</div>
+<div class="newsbody">
+
+<p>Support for the upcoming <a href="/architectures/arm64/">64-bit ARM</a> desktop-
+and server-class performance CPUs was added to the T2 <a href="/packages/">
+trunk</a>.</p>
+
+</div>
+
+
+<div class="news">r40000 revisions, Merry Christmas &amp; a Happy New Year!</div>
+<div class="newsdate">2011-12-23</div>
+<div class="newsbody">
+
+The first seven years of the T2 SDE where just the beginning: Welcome
+to revision 40k, and over 3270 <a href="/packages/">packages</a> of
+which about 50% do cross compile.
+
+<p>All of us wish you and your families a peaceful and recreative Christmas time.
+May it be a time of peace and reflection for all of you, whatever religion you
+believe in, whatever culture you are part of and wherever in the world you are.</p>
+
+</div>
+
+
+<div class="news">T2 8.0 "Phoenix" released</div>
+<div class="newsdate">2010-07-14</div>
+
+<div class="newsbody">
+<p>After years of development we are proud to announce the availability
+of the new T2 stable release 8.0.</p>
+
+<p>The 8.0 release received updates across the board, while a major
+working target was further improving cross compilation, and all official
+ISO images are now fully cross build!</p>
+
+<p>Over 10000 Subversion revisions indicate the magnitude of the release,
+with over 200 new packages, new features and various other improvements
+and fixes.</p>
+
+(<a href="releases/8.0.html">more...</a> - <a href="download/">download...</a>)
+</p>
+
+</div>
+
+
+<div class="news"><a href="http://en.wikipedia.org/wiki/May_Day">May Day</a>! &gt;36200 revisions, &gt;3219 packages, ~50% cross, 6 years</div>
+<div class="newsdate">2010-05-01</div>
+
+<div class="newsbody">
+
+We now have been working and polishing T2 for over 6 years! A massive
+effort to maintain all the different <a href="/architectures/">architectures</a> -
+from <a href="/architectures/arm/">ARM</a> to <a href="/architectures/x86/">x86</a>,
+<a href="/kernel/">operating system</a> support - from <a href="/kernel/linux/">Linux</a> to
+<a href="/kernel/mingw/">win32</a>, packages - from
+<a href="/packages/a2ps.html">a2ps</a> to <a href="/packages/zziplib.html">zziplib</a>,
+and the cross compilation of it.<p>
+
+The T2 SVN tree now contains more than 36000 versioned revisions, with
+over 3200 <a href="/packages/">packages</a> in tree, of which nearly
+50% do cross compile.<p>
+
+The T2 team wishes you a happy public holiday! Enjoy!
+</div>
+
+
+<div class="news">GCC updated to 4.5</div>
+<div class="newsdate">2010-04-18</div>
+
+<div class="newsbody">
+
+<a href="/packages/gcc.html">GCC 4.5</a> comes with new, exciting
+optimizations and is now available in the T2 SDE SVN trunk.
+
+</div>
+
+
+<div class="news">LLVM support starts to trickle in</div>
+<div class="newsdate">2010-04-01</div>
+
+<div class="newsbody">
+
+Initial support for <a href="/packages/llvm.html">LLVM/clang</a>
+<a href="http://rene.rebe.name/2010-02-16/llvm-clang-support-in-t2-sde-linux/">
+started to trickle into the T2 SVN trunk</a>.
+
+</div>
+
+
+<div class="news">GCC updated to 4.4</div>
+<div class="newsdate">2009-11-13</div>
+
+<div class="newsbody">
+
+<a href="/packages/gcc.html">GCC 4.4</a> comes with new, exciting
+optimizations and is now available in the T2 SDE SVN trunk.
+
+</div>
+
+
+<div class="news">X11R7.5 starts to appear in trunk</div>
+<div class="newsdate">2009-10-06</div>
+
+<div class="newsbody">
+
+X11R7.5 approaching the final release, and so are the T2 X.org
+<a href="/packages/">packages</a> in the 
+<a href="https://svn.exactcode.de/t2/trunk/package/xorg/">t2/trunk</a>
+already being updated.
+
+</div>
+
+
+<div class="news">Alternative kernel, MinGW (Win32) support merged to trunk</div>
+<div class="newsdate">2009-08-30</div>
+
+<div class="newsbody">
+
+Support for non-Linux kernels for the T2 System Development Environment was
+on our <a href="/releases/">agenda</a> for quite a while, now. Last
+weekend <a href="http://exactcode.com">ExactCODE</a> committed the
+initial script adaptions and basic infrastructure. As a first step
+T2 gained support to cross-compile <a href="/kernel/mingw/">MinGW
+(Win32)</a> Windows executables.
+
+</div>
+
+
+<div class="news">33333 revisions, 3170 packages, 5 years and counting!</div>
+<div class="newsdate">2009-06-11</div>
+
+<div class="newsbody">
+
+The first five years of the T2 SDE where just the beginning: Welcome
+to revision 33333, and over 3170 <a href="/packages/">packages</a> of
+which nearly 50% do cross compile.
+
+</div>
+
+
+<div class="news">Over 30000 revisions, 3100 packages!</div>
+<div class="newsdate">2008-08-10</div>
+
+<div class="newsbody">
+
+The T2 SDE project team is proud to announce the 30000's T2 SVN source
+repository revision, with over 3100 packages in the T2
+<a href="/packages/">package repositories</a>. Of those 3100
+source based packages, 1462 (47%) do cross compile, now (as setup and
+patched in T2).
+(<a href="http://article.gmane.org/gmane.comp.t2.devel/3501">more...</a>)
+
+</div>
+
+
+<div class="news">T2 @ LinuxTag 2008</div>
+<div class="newsdate">2008-05-15</div>
+
+<div class="newsbody">
+<!--<<div class="left">
+<IMG SRC="./linuxtag.gif" ALT="LinuxTag logo"></div>-->
+
+T2 project will attend the europeans largest Linux fair, Linux Tag 2008 in
+Berlin.<br>
+
+The LinuxTag 2008 opens its doors from May 28 to May 31, 2008 at the Berlin
+Expo Center under the Funkturm. We invite users, developers and deploying
+companies to learn more about the potential of T2, Linux, Open Source, and
+Free Software at Europe's leading conference and expo - where .COM meets .ORG.
+
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">Puppy Linux 4.00 bases on T2, again!</div>
+<div class="newsdate">2008-05-05</div>
+
+<div class="newsbody">
+
+<div class="left">
+<IMG SRC="./puppylogo96.png" ALT="Puppy 4.00 logo"></div>
+
+The <a href="http://www.puppylinux.com/">
+Puppy Linux OS</a> in the just releases version 4.00 does now use
+the T2 Open System Development Environment as
+<a href="http://puppylinux.com/download/release-4.00.htm"> base</a>,
+again.
+
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">New, dedicated T2 download server</div>
+<div class="newsdate">2008-05-01</div>
+
+<div class="newsbody">
+
+<p>Thanks to the T2 sponsor <a href="http://www.exactcode.com">ExactCODE GmbH</a>,
+a new and dedicated master download server for source and binary releases,
+as well as the upstream source mirror is now available:</p>
+
+<a href="http://dl.t2-project.org/">http://dl.t2-project.org</a><br>
+
+<p>Formerly the source mirror and binary releases where only available on
+a off-site and not really reliable university server.</p>
+
+</div>
+
+
+<div class="news">T2 @ CeBIT 2008</div>
+<div class="newsdate">2008-02-24</div>
+
+<div class="newsbody">
+<div class="left">
+<IMG SRC="./cebit08_logo.png" ALT="CeBIT logo"></div>
+
+Thanks to the <a href="http://www.linuxnewmedia.de">Linux New Media AG</a>, their
+<a href="http://www.linux-events.de/LinuxPark_2008">OpenBooth</a>,
+and <a href="http://www.exactcode.com">ExactCODE</a>,
+T2 is attending the world's largest computer fair: CeBIT, yet again!<br>
+
+The LinuxPark is located in hall 5 with the T2 SDE/ExactCODE booth at E60/2.
+
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">T2 SDE magazine article #1</div>
+<div class="newsdate">2008-02-03</div>
+
+<div class="newsbody">
+
+The T2 SDE project team is proud to announce the first issue of
+the T2 magazine, a magazine dedicated to T2 and other open
+source related topics. Issue #1 covers
+<a href="/zine/1/">a recent filesystem benchmark</a>.
+
+</div>
+
+
+<div class="news">Over 3000 packages!</div>
+<div class="newsdate">2007-12-07</div>
+
+<div class="newsbody">
+
+The T2 SDE project team is proud to announce to exceed the 3000
+packages mark, with over 3000 (!!!) packages in the T2 SDE
+<a href="/packages/">trunk package repositories</a>!
+
+</div>
+
+
+<div class="news">T2 7.0-rc2 "autumn leaves" released</div>
+<div class="newsdate">2007-11-12</div>
+
+<div class="newsbody">
+<p>The 7.0 series release candidate two features bugfixes and stability
+improvements for the non-x86 architectures, mainly AVR32, PowerPC and
+SPARC while quite some packages received updates and security fixes.</p>
+
+<p>The major features of series 7 are
+<a href="architectures/avr32/">AVR32</a> and
+<a href="architectures/blackfin/">Blackfin</a> architecture support as well
+as the brand new <a href="packages/7.0/gcc.html">GCC 4.2</a> and
+<a href="packages/7.0/glibc.html">GlibC 2.6</a>. Additionally
+the T2 7.0 series comes with over 400 new <a href="packages/7.0/">
+packages</a>, while most of the existing packages received an update.
+
+(<a href="releases/7.0.html">more...</a> - <a href="download/">download...</a>)
+</p>
+
+<a href="http://digg.com/linux_unix/T2_SDE_7_0_rc2_autumn_leaves_released">
+<img src="https://digg.com/img/badges/85x10-digg-link.png"
+     width="85" height="10" alt="Digg!"></a>
+<!-- sync w/ image -->
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">T2 @ Systems 2007</div>
+<div class="newsdate">2007-10-20</div>
+
+<div class="newsbody">
+<div class="left">
+<IMG SRC="./systemslogo.jpg" ALT="Systems logo"></div>
+
+T2 will attend the Systems 2007, the leading business-to-business
+exhibition for the ICT sector - in Munich, Germany.<br>
+
+The Systems 2007 opens its doors from 23 - 26 October, with the T2
+SDE booth will be located in Hall 2B, in the Open Source area.
+
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">1333 T2 package known to cross compile (&gt;45%)</div>
+<div class="newsdate">2007-08-18</div>
+
+<div class="newsbody">
+<p>As part of the ongoing <a href="./releases/7.0.html">7.0</a>
+finalization, a whole new bunch of packages got fixed to cross-compile
+and thus where marked with the new T2 CROSS tag.<br>
+With the now 1333 T2 packages, including nearly all GPE, X.Org, XFCE and
+most GNOME packages, known to cross compile, over &gt;45% of the T2
+packages are ready for embedded development.
+(<a href="http://article.gmane.org/gmane.comp.t2.devel/3109">more...</a>)
+</p>
+</div>
+
+
+<div class="news">FIC/Neo1973 T2 target created</div>
+<div class="newsdate">2007-08-11</div>
+
+<div class="newsbody">
+
+<p>As the first FIC/Neo1973 prototype arrived, T2 support for this
+first mostly free and open mobile phone platform was started. This T2
+effort includes the creation of a dedicated <a
+href="/targets/neo1973/">target</a> for this <a
+href="/hardware/mobile/FIC/Neo1973/">smartphone device</a>.</p>
+</div>
+
+
+<div class="news">1000 T2 package known to cross compile (&gt;33%)</div>
+<div class="newsdate">2007-06-25</div>
+
+<div class="newsbody">
+<p>As part of the ongoing <a href="./releases/7.0.html">7.0</a>
+finalization a whole lot of packages got fixed to cross-compile and thus
+where marked with the new T2 CROSS tag.<br>
+With the now 1000 T2 packages known to cross compile, over &gt;33% of the
+T2 packages are ready for embedded development.
+(<a href="http://article.gmane.org/gmane.comp.t2.devel/3081">more...</a>)
+</p>
+</div>
+
+
+<div class="news">Live from the LinuxTag 2007 Berlin</div>
+<div class="newsdate">2007-06-02</div>
+
+<div class="newsbody">
+<p>On Google Video you can find a
+<a href="http://video.google.com/videoplay?docid=466588481451128430&amp;hl=en">
+interview with René Rebe</a>, the founder of T2 SDE Linux, at the
+LinuxTag which was made by Kushal Das.</p>
+</div>
+
+
+<div class="news">T2 7.0-rc "water falls" released</div>
+<div class="newsdate">2007-05-30</div>
+
+<div class="newsbody">
+<p>The release features the two newly supported CPU architectures
+<a href="architectures/avr32/">AVR32</a> and
+<a href="architectures/blackfin/">Blackfin</a> as well
+as the brand new <a href="packages/7.0/gcc.html">GCC 4.2</a> and
+<a href="packages/7.0/glibc.html">GlibC 2.6</a>. Additionally
+the T2 7.0 series comes with over 400 new <a href="packages/7.0/">
+packages</a>, while most of the existing packages received an update.
+
+(<a href="releases/7.0.html">more...</a> - <a href="download/">download...</a>)
+</p>
+
+<a href="http://digg.com/linux_unix/T2_SDE_7_0_rc_water_falls_releases">
+<img src="https://digg.com/img/badges/85x10-digg-link.png"
+     width="85" height="10" alt="Digg!"></a>
+<!-- sync w/ image -->
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">T2 for Blackfin</div>
+<div class="newsdate">2007-05-27</div>
+
+<div class="newsbody">
+<div class="left">
+<IMG WIDTH="148" HEIGHT="125" SRC="./architectures/blackfin/bfin.png" ALT="Blackfin CPU"></div>
+
+<p>The T2 SDE project announces the immediate availability of T2 SDE
+support for the Blackfin CPU architecture from Analog Devices.
+(<a href="architectures/blackfin/">more...</a>)</p>
+
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">T2 @ LinuxTag 2007</div>
+<div class="newsdate">2007-04-05</div>
+
+<div class="newsbody">
+<div class="left">
+<IMG SRC="./linuxtag.gif" ALT="LinuxTag logo"></div>
+
+T2 will attend the europeans largest Linux fair, Linux Tag 2007 in Berlin.<br>
+
+The LinuxTag 2007 opens its doors from May 30 to June 2, 2007 at the Berlin
+Expo Center under the Funkturm. We invite users and experts to learn more
+about the potential of T2, Linux, Open Source, and Free Software at Europe's
+leading conference and expo - where .COM meets .ORG.
+
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">T2 6.0.3 "Spring Fever" released</div>
+<div class="newsdate">2007-03-28</div>
+
+<div class="newsbody">
+<p>With the usual care and a new maintenance release
+of the popular T2 6.0 series was released today.</p>
+<p>As stable series, the 6.0 series is maintained under strong API/ABI
+compatibility aspects and receives bug fixes, security fixes and light,
+compatible updates only.</p>
+<p>The release primarily focuses to iron out all known LiveCD issues for smooth 
+building of custom T2-based LiveCD/DVD and USB sticks.
+</p>
+<p>Prebuilt x86, x86-64, PowerPC and PowerPC64 ISOs images of the
+minimal-X.org-livecd are available (SPARC64 to follow, soon).</p>
+
+</div>
+
+
+<div class="news">T2 for AVR32</div>
+<div class="newsdate">2007-03-06</div>
+
+<div class="newsbody">
+<div class="left">
+<IMG SRC="./architectures/avr32/avr32.jpg" ALT="AVR32 CPU"></div>
+
+<p>In cooperation with <a href="http://www.atmel.com">Atmel</a>
+and <a href="http://www.exactcode.com">ExactCODE</a> the T2 SDE
+project announces the immediate availability of T2 SDE support for
+the new AVR32 CPU architecture designed by Atmel, Norway.</p>
+
+<p>The AVR32 STK1000 reference implementation running the T2 SDE
+Linux will be showcased on the CeBIT 2007, T2 SDE Project booth,
+hall 5 booth G68/4. (<a href="architectures/avr32/">more...</a>)</p>
+
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">T2 @ CeBIT 2007</div>
+<div class="newsdate">2007-02-23</div>
+
+<div class="newsbody">
+<div class="left">
+<IMG SRC="./cebit.png" ALT="CeBIT logo"></div>
+
+Thanks to the <a href="http://www.linuxnewmedia.de">Linux New Media AG</a>, their
+<a href="http://www.linux-events.de/LinuxPark_2007/OpenBooth">OpenBooth</a>,
+and <a href="http://www.exactcode.com">ExactCODE</a>,
+T2 is attending the world's largest computer fair: CeBIT, yet again!<br>
+
+The LinuxPark is located in hall 5 with the T2 SDE/ExactCODE booth at G68/4.
+
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">T2 incorporated support for GPE</div>
+<div class="newsdate">2007-02-09</div>
+
+<div class="newsbody">
+<p>The <a href="http://gpe.handhelds.org/">GPE</a> Palmtop Environment is
+a Gtk+ based user interface environment for palmtop/handheld computers
+running the GNU/Linux or any other UNIX-like operating system.</p>
+
+<p>Thanks go to Susanne Klaus from ExactCODE for the ungoing mobility effort
+thru which the GPE packages are now included in T2.</p>
+</div>
+
+
+<div class="news">T2 T-Resc(ue) Technology Preview</div>
+<div class="newsdate">2007-01-18</div>
+
+<div class="newsbody">
+<p><a href="targets/t-resc.html">T-Resc</a> is a new target incorporated into
+T2. It is meant for demonstration purposes and brings embedded features into
+the hands of every day users and administrators.</p>
+<p>T-Resc is uClibC based as well as size optimized by GCC thruout the whole
+system to minimize the ISO size. With minimal, k-drive based Xvesa and Xfbdev
+X servers as well as blackbox few bytes are dedicated to graphic functionality.
+</p>
+<p>Included are open-source disk, network and virus scanning utilities.
+(<a href="targets/t-resc.html">more...</a>)</p>
+</div>
+
+
+<div class="news">T2 6.0.2 "Continuity" released</div>
+<div class="newsdate">2006-12-07</div>
+
+<div class="newsbody">
+<p>With the usual care and maintenance a new maintenance release
+of the popular T2 6.0 series was released today.</p>
+<p>As stable series, the 6.0 series is maintained under strong API/ABI
+compatibility aspects and receives bug fixes, security fixes and light,
+compatible updates only.</p>
+<p>The release primarily focus to iron out all known sparc64 issues for smooth
+support on Sun T1, Niagara CPU systems such as the T1000 and T2000 - but also
+includes non SPARC security fixes, updates and improvements along the lines.
+</p>
+<p>Prebuilt SPARC64, Niagara binary ISO images of the minimal target are
+ available.</p>
+</div>
+
+<div class="news">T2 6.0.1 "From Zero to One" released</div>
+<div class="newsdate">2006-10-30</div>
+
+<div class="newsbody">
+<p>With the usual care and maintenance the first maintenance release
+of the popular T2 6.0 series was released today.</p>
+<p>As stable series, the 6.0 series is maintained under strong API/ABI
+compatibility aspects and receives bug fixes, security fixes and light,
+compatible updates only. Package version updates include Linux
+(2.6.17.9 -> 2.6.17.14) and KDE (3.5.4 -> 3.5.5).</p>
+</div>
+
+<div class="news">T2 incorporated support for OpenPCD</div>
+<div class="newsdate">2006-10-07</div>
+
+<div class="newsbody">
+The <a href="http://www.openpcd.org/">
+OpenPCD</a> is a free 13.56MHz RFID reader and writer hardware design.<br>
+This device is able to screen informations from Proximity Integrated Circuit
+Cards (PICC) conforming to vendor-independent standards such as ISO 14443, ISO
+15693 as well as proprietary protocols such as Mifare Classic.
+</div>
+
+<div class="news">Puppy Linux 2.10 bases on T2!</div>
+<div class="newsdate">2006-09-15</div>
+
+<div class="newsbody">
+The <a href="http://www.puppyos.com/">
+Puppy Linux OS</a> in the just releases version 2.10 does now use
+the T2 Open System Development Environment as
+<a href="http://www.puppyos.net/blog/index.php?entry=entry060913-205111">
+base</a>.<br>
+This release is no suprise and based on an ongoing
+<a href="http://www.puppyos.net/pfs/">collaboration between the developers</a>.
+</div>
+
+<div class="news">T2 6.0.0 "Ready to Go" released</div>
+<div class="newsdate">2006-08-25</div>
+
+<div class="newsbody">
+Finally, after a lot of testing, security updates and work on details,
+such as simplifing the installation we are proud to announce the immediate
+availability of 6.0.0 final release code name: "Ready to Go".
+
+The release features u/dev, early user-space, fully modular kernel, X11R7,
+C++ cross compilation, PowerPC64 and MIPS64 support as well as a whole lot of
+updates and refactoring under the hood. The x86 flavour already includes
+support for latest Apple Macintosh Intel (Mactel) hardware and the associated
+Grub fixes (A20 gate and keyboard) and we finally can ship the first
+production ready SPARC64 T2 Linux even supporting the Sun T1 Niagara CPU!
+</div>
+
+<div class="news">T2 @ Linux World Expo Cologne 2006</div>
+<div class="newsdate">2006-08-24</div>
+
+<div class="newsbody">
+<div class="left">
+<IMG SRC="./lwe.png" ALT="LWE logo"></div>
+
+The T2 Project will be presenting Linux solutions based on the T2
+SDE on the Linux World Expo, Cologne, Germany from November
+the 14th to 16th.<br>
+
+<div class="p"></div>
+
+</div>
+
+<div class="news">T2 able to cross compile modular X11R7!</div>
+<div class="newsdate">2006-08-01</div>
+
+<div class="newsbody">
+T2 always was strong in being self-hosting and starting each build
+bootstrapping a fresh cross compiler itself - even if the build
+actually is a native build.
+<br>
+Due to popular demand, more and more packages have been fixed over
+the past time and T2 is able to cross compile the modular X11R7, now!
+</div>
+
+<div class="news">T2 2.2 becomes 6.0!</div>
+<div class="newsdate">2006-07-29</div>
+
+<div class="newsbody">
+For marketing reasons T2 2.2 will be released as series 6.0
+in the upcoming week.
+<br>
+The change of versioning was made to obviously promote the progress
+T2 made over the last years and thus being way ahead of competing
+systems.
+</div>
+
+<div class="news">T2 2.2.0-rc for SPARC64 released!</div>
+<div class="newsdate">2006-06-19</div>
+
+<div class="newsbody">
+Due preparations for Sun's latest Niagara CPU the sparc64 got some push
+and a fully installable ISO based on the current codebase was released.
+<br>
+See <a href="http://article.gmane.org/gmane.comp.t2.devel/1939">the release
+announcement</a> as well as the <a href="/platforms/sparc64.html">
+sparc64 platform page</a> for more details.
+</div>
+
+<div class="news">T2 2.2.0-rc "Get the power back!" released</div>
+<div class="newsdate">2006-06-02</div>
+
+<div class="newsbody">
+Finally, the Release Candidate of the 2.2.0 series "Get the power back!" is
+out. The series features u/dev, early user-space, fully modular kernel, X11R7,
+C++ cross compilation, powerpc64 and mips64 support as well as a whole lot of
+updates and refactoring under the hood. The x86 flavour already includes
+support for latest Apple Macintosh Intel (Mactel) hardware and the associated
+Grub fixes (A20 gate and keyboard).
+</div>
+
+<div class="news">T2 @ CeBIT 2006</div>
+<div class="newsdate">2006-03-08</div>
+
+<div class="newsbody">
+<div class="left">
+<IMG SRC="./cebit.png" ALT="CeBIT logo"></div>
+
+Thanks to the <a href="http://www.linuxnewmedia.de">Linux New Media AG</a> and their
+<a href="http://www.linux-events.de/LinuxPark_2006/OpenBooth">OpenBooth</a>,
+T2 is attending the worlds largest computer fair: CeBIT!<br>
+
+The LinuxPark is located in hall 5, section F56.
+
+<div class="p"></div>
+
+</div>
+
+<div class="news">T2 2.1.1.1 "lychee punch" released</div>
+<div class="newsdate">2006-01-14</div>
+
+<div class="newsbody">
+The first maintenance release (2.1.1) for the stable 2.1 branch was finalized.
+This release includes bug fixes, security fixes, updates and even some
+improvement to the SDE. Most notable are: kaffe 1.1.6, kde 3.4.3, xfce 4.2.3.2,
+wine 0.9.1, mono 1.1.10, eclipse 3.1.1, xpdf 3.01pl1, koffice 1.4.2,
+samba 3.0.21a, OpenOffice.org (ooo) 2.0.0.1 and mplayer 1.0pre7try2.<br>
+
+A vastly improved Emerge-Pkg script, improved dietlibc as well as improved
+x86-64 and PowerPC64 support, target inheritance and autoextraction of .zip
+files was merged from the development trunk.
+</div>
+
+
+<div class="news">T2 2.2.0-epsilon "Yuletide" released</div>
+<div class="newsdate">2005-12-24</div>
+
+<div class="newsbody">
+Finally, with 2.2.0-epsilon the necessary installer rewrite was done to include
+support for u/dev. Additionally the 2.2 series includes a fully modular kernel,
+support for C++ cross compilation, powerpc64 and mips64 support as well as a whole
+lot of updates, including modular X.Org X11R7 and cleanups and refactoring under
+the hood.
+</div>
+
+
+<div class="news">T2 2.1.0 "Charlotte" released</div>
+<div class="newsdate">2005-11-04</div>
+
+<div class="newsbody">
+Finally 2.1.0 was release with some bugfixes and minor (but important) updates,
+including: GCC 3.4.4, Abiword 2.2.11, Gnumeric 1.6.0, Samba 3.0.20b,
+and Apache 2.0.55.
+</div>
+
+
+<div class="news">Over 2100 packages!</div>
+<div class="newsdate">2005-10-07</div>
+
+<div class="newsbody">
+
+After the addition of the modular X.org - X11R7 - packages we are proud
+to announce to pass the 2000 packages mark with over 2100 (!!!)
+packages in the T2 <a href="/packages/">package repositories</a>!
+
+</div>
+
+
+<div class="news">X11R7 packaged in trunk</div>
+<div class="newsdate">2005-10-02</div>
+
+<div class="newsbody">
+The modularized X.org release candidate X11R7 got packaged for T2.
+It is now the default X implementation in trunk and will be used
+in the T2 2.2 release scheduled for November.
+</div>
+
+
+<div class="news">T2 2.1.0-rc3 "The Toasted Badger" released</div>
+<div class="newsdate">2005-09-17</div>
+
+<div class="newsbody">
+This, hopefully last, release candidate includes general bugfixes and minor
+(but important) updates, most notably OpenOffice 1.9-m123, Mono 1.1.8.3,
+bdb 4.3.28, KDE 3.4.2 and Gnome 2.10.2.
+</div>
+
+
+<div class="news">T2 2.1.0-rc2 "Carmenere" released</div>
+<div class="newsdate">2005-08-09</div>
+
+<div class="newsbody">
+We are happy to announce the release of our second (and last?) candidate
+for T2 2.1. The release includes major bugfix, and many harmless updates
+where most notable are: linux 2.6.11.12, glibc 2.3.5, OpenOffice 1.9-m104,
+wx 2.6.1.0, mono 1.1.8.2, XFCE 4.2.2, KDE 3.4.1 and Gnome 2.10.1.
+</div>
+
+<div class="news">T2 2.1.0-rc1 "summer sunshine" released</div>
+<div class="newsdate">2005-06-20</div>
+
+<div class="newsbody">
+
+Again AMD64/x86-64 as well as sparc64 support got improved again.
+
+Of course the release ships with the latest stable release of KDE, GNOME,
+XFCE and Enlightenment 17.
+
+About 152 packages got updated, including Linux (2.4.31) and Linux (2.6.11.10)
+and 146 issues fixed. The release includes enhanced Java support, including
+Kaffee and Jikes. Automatic dependency and installed files detection was
+improved. Other package updates include Subversion (1.2.0), nvidia (1.0-7174)
+and Apache (2.0.54). Acroread (7.0) was added.
+
+</div>
+
+<div class="news">T2 @Live 2.2.0-beta "the remedy" released</div>
+<div class="newsdate">2005-05-22</div>
+
+<div class="newsbody">
+With a lot of improvements over the first alpha version, the state of the art
+<a href="/targets/live/">T2 live CD</a> is coming along. An quite
+<a href="/targets/live/hardware.html">impressive amount of hardware</a> has already been
+certified to be able to run the CD without problems.
+</div>
+
+<div class="news">T2 @Live 2.2.0-alpha released</div>
+<div class="newsdate">2005-05-10</div>
+
+<div class="newsbody">
+Despite preparing the stable series for release, next generation
+work is going on in the development trunk. Beside strong u/dev,
+D-BUS and HAL integration a really sophisticated as well as state
+of the art <a href="/targets/live/">T2 live CD</a> is coming along. Visit
+the <a href="/targets/live/">project page for details and download link</a>.
+</div>
+
+<div class="news">T2 2.1.0-beta4 "warm rain" released</div>
+<div class="newsdate">2005-04-13</div>
+
+<div class="newsbody">
+
+After an enormous amount of updates and additions we released
+2.1.0-beta4 as last snapshot before the first release candidate
+will be deployed in about one week.<br>
+
+The release includes support for the SuperH CPU family,
+as well as enhanced AMD64 / x86-64 support, many improvements
+for cross compiling - including a new embedded target as solid
+base for industrial products and support for squashfs and
+unionfs. <br>
+
+Of course, the latest stable release of KDE (3.4.0), GNOME (2.10.0),
+XFCE (4.2.1) and Enlightenment 17 (2005-03-29).
+
+</div>
+
+<div class="news">New, upcoming website</div>
+<div class="newsdate">2005-03-05</div>
+
+<div class="newsbody">
+
+Setting up a CMS managed community website was on the todo since the beginning
+of T2. A work in progress site now <a href="https://www2.t2-project.org">up
+and running</a>.
+
+</div>
+
+<div class="news">T2 2.1.0-beta3 "Serpentine" Released</div>
+<div class="newsdate">2005-02-19</div>
+
+<div class="newsbody">
+
+After much last minute showstopper work in the 2.1.0-beta3 branch the tree
+was frozen and released, finally.  <br>
+
+The release includes: uclibc support (builds with far more packages than
+dietlibc!), parallel build support for make and scons, builds on x86-64,
+fixed ccache support to work reliable with recent ccache releases,
+improved sparc64 support, bash3 was fixed significantly, various bootdisk
+creation and file layout improvements, wide ncurses added, the nvidia binary
+only driver really does get installed. The numerous package updates include
+linux-2.6.10, linux-2.4.29 as well as migration to aspell-0.60 and development
+tools for Atmel AVR chips got included.
+
+</div>
+
+<div class="news">T2 @ CeBIT 2005</div>
+<div class="newsdate">2005-02-14</div>
+
+<div class="newsbody">
+<div class="left">
+<IMG SRC="./cebit.png" ALT="CeBIT logo"></div>
+
+Thanks to the <a href="http://www.linuxnewmedia.de">Linux New Media AG</a> and their
+<a href="http://www.linux-events.de/LinuxPark_2005">OpenBooth</a>,
+T2 is attending the worlds largest computer fair: CeBIT!<br>
+
+The LinuxPark is located in hall 6, section H18.
+
+<div class="p"></div>
+
+</div>
+
+
+<div class="news">T2 2.1.0-beta2 "Your own sweet way" Released</div>
+<div class="newsdate">2004-12-26</div>
+
+<div class="newsbody">
+
+The "T2" project tagged and released the internal milestone 2.1.0-beta2
+("Your own sweet way").<br>
+
+The release includes more ROCK to T2 naming transitions, including the
+rename of the internally used toolchain directory from ROCK to
+TOOLCHAIN, fixes for findutils, enhanced X.org radeon support
+(especially on PowerPC). The command wrapper code got a significant
+restructuring so that ccache works more reliable now, as well as
+general ccache fixes and basic distcc support. We now support marking
+download URLs as "no mirror". And the many updates include gtk+-2.6.0
+as well as freetype-2.1.7..
+
+</div>
+
+
+<div class="news">T2 2.1.0-beta "Today is gonna be the day" Released</div>
+<div class="newsdate">2004-12-15</div>
+
+<div class="newsbody">
+
+The "T2" project tagged and released the internal milestone 2.1.0-beta
+("Today is gonna be the day").<br>
+
+The release includes updates to linux26 (2.6.8.1 -> 2.6.9), linux24
+(2.4.28-pre4 -> 2.4.28),binutils (2.15.91.0.2 -> 2.15.92.0.2), gcc
+(3.4.2 -> 3.4.3), uclibc (0.9.26 -> 0.9.27-20041106), binutils
+(2.15.91.0.2 -> 2.15.94.0.1), KDE 3.3.2, Gnome 2.8.2 as well as many
+other updates, fixes and improvements.
+
+</div>
+
+<div class="news">T2 2.1.0-alpha "Way to heaven" Released</div>
+<div class="newsdate">2004-10-03</div>
+
+<div class="newsbody">
+
+The "T2" project tagged and released the internal milestone 2.1.0-alpha
+("Way to heaven").<br>
+
+Major changes from ROCK Linux 2.0 and 2.1 include: gcc-3.4.x used
+exclusively, a "sanitized" linux-header package which currently uses
+2.6.8.1 headers, X.Org is used exclusively, some packages got split
+into individual ones (e.g. alsa, mad, ogg-vorbis and xine), the .desc
+D tag for the cvs:// URL scheme got revisited, the ugly date encoding
+via a '!' fot dropped in favor of more natural form as to be executed
+manually on the command line, the .desc NODIST "hack" support was
+removed, as well as the new CD tag not imported, the .desc tags CV-PAT
+and CV-DEL support was dropped, many packages got updated and added,
+no people named repositories - most packages should now be sorted into
+category repositories - which so far scale quite well, no package fork
+/ package split stuff, no pseudo cross native compiler hacks and no
+perl cpan meta package fork whatever (tm) stuff, no default kernel
+stuff - a "sanitized" linux-header package is always used (always as
+up-to-date as possible - currently 2.6.8.1), no linux*-src packages -
+third party modules will be build as part of any kernel package (will
+be implemented next week ;-)
+
+</div>
+
+
+</div>
+
+<div class="footer">Last modified: 2019-08-04 14:31  &mdash; Copyright &copy; 2004 - 2018 <a href="http://exactcode.com">ExactCODE</a> and others. All Rights Reserved. The <a href="https://t2sde.org">T2 SDE Project</a> is maintained<br>and driven by the community and sponsored by ExactCODE. This is a community maintained site. ExactCODE is not responsible for the content.</div>
+</div>
+</body>
+</html>
+

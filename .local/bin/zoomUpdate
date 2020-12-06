@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd ~/Downloads ; killall zoom ; rm -r ~/Downloads/zoom_x86_64.pkg.tar.xz ~/.zoom ; wget https://zoom.us/client/latest/zoom_x86_64.pkg.tar.xz ; sudo pacman -U ~/Downloads/zoom_x86_64.pkg.tar.xz

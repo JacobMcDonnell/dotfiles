@@ -1,0 +1,303 @@
+/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+'use strict';var aa="function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
+function ba(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}
+var ca=ba(this);function da(a,b){if(b)a:{var c=ca;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&null!=b&&aa(c,a,{configurable:!0,writable:!0,value:b})}}
+da("Array.prototype.includes",function(a){return a?a:function(b,c){var d=this;d instanceof String&&(d=String(d));var e=d.length;c=c||0;for(0>c&&(c=Math.max(c+e,0));c<e;c++){var f=d[c];if(f===b||Object.is(f,b))return!0}return!1}});
+da("Object.entries",function(a){return a?a:function(b){var c=[],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&c.push([d,b[d]]);return c}});
+da("String.prototype.matchAll",function(a){return a?a:function(b){if(b instanceof RegExp&&!b.global)throw new TypeError("RegExp passed into String.prototype.matchAll() must have global tag.");var c=new RegExp(b,b instanceof RegExp?void 0:"g"),d=this,e=!1,f={next:function(){var g={},h=c.lastIndex;if(e)return{value:void 0,done:!0};var l=c.exec(d);if(!l)return e=!0,{value:void 0,done:!0};c.lastIndex===h&&(c.lastIndex+=1);g.value=l;g.done=!1;return g}};
+f[Symbol.iterator]=function(){return f};
+return f}});
+var q=this||self;function u(a,b){a=a.split(".");b=b||q;for(var c=0;c<a.length;c++)if(b=b[a[c]],null==b)return null;return b}
+function v(){}
+function ea(a){var b=typeof a;b="object"!=b?b:a?Array.isArray(a)?"array":b:"null";return"array"==b||"object"==b&&"number"==typeof a.length}
+function fa(a){var b=typeof a;return"object"==b&&null!=a||"function"==b}
+function ha(a,b,c){return a.call.apply(a.bind,arguments)}
+function ia(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var e=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(e,d);return a.apply(b,e)}}return function(){return a.apply(b,arguments)}}
+function ja(a,b,c){Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?ja=ha:ja=ia;return ja.apply(null,arguments)}
+function w(a,b){a=a.split(".");var c=q;a[0]in c||"undefined"==typeof c.execScript||c.execScript("var "+a[0]);for(var d;a.length&&(d=a.shift());)a.length||void 0===b?c[d]&&c[d]!==Object.prototype[d]?c=c[d]:c=c[d]={}:c[d]=b}
+function ka(a,b){function c(){}
+c.prototype=b.prototype;a.fa=b.prototype;a.prototype=new c;a.prototype.constructor=a;a.ia=function(d,e,f){for(var g=Array(arguments.length-2),h=2;h<arguments.length;h++)g[h-2]=arguments[h];return b.prototype[e].apply(d,g)}}
+function la(a){return a}
+;function y(a){if(Error.captureStackTrace)Error.captureStackTrace(this,y);else{const b=Error().stack;b&&(this.stack=b)}a&&(this.message=String(a))}
+ka(y,Error);y.prototype.name="CustomError";function z(a,b,c){Array.prototype.forEach.call(a,b,c)}
+function ma(a){var b=a.length;if(0<b){for(var c=Array(b),d=0;d<b;d++)c[d]=a[d];return c}return[]}
+function na(a,b){for(var c=1;c<arguments.length;c++){var d=arguments[c];if(ea(d)){var e=a.length||0,f=d.length||0;a.length=e+f;for(var g=0;g<f;g++)a[e+g]=d[g]}else a.push(d)}}
+;function oa(a,b){for(const c in a)b.call(void 0,a[c],c,a)}
+function pa(a){if(!a||"object"!==typeof a)return a;if("function"===typeof a.clone)return a.clone();const b=Array.isArray(a)?[]:"function"!==typeof ArrayBuffer||"function"!==typeof ArrayBuffer.isView||!ArrayBuffer.isView(a)||a instanceof DataView?{}:new a.constructor(a.length);for(const c in a)b[c]=pa(a[c]);return b}
+var qa="constructor hasOwnProperty isPrototypeOf propertyIsEnumerable toLocaleString toString valueOf".split(" ");function ra(a,b){let c,d;for(let e=1;e<arguments.length;e++){d=arguments[e];for(c in d)a[c]=d[c];for(let f=0;f<qa.length;f++)c=qa[f],Object.prototype.hasOwnProperty.call(d,c)&&(a[c]=d[c])}}
+;var sa;var ta=String.prototype.trim?function(a){return a.trim()}:function(a){return/^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[1]};
+function ua(a,b){if(b)a=a.replace(va,"&amp;").replace(wa,"&lt;").replace(xa,"&gt;").replace(ya,"&quot;").replace(za,"&#39;").replace(Aa,"&#0;");else{if(!Ba.test(a))return a;-1!=a.indexOf("&")&&(a=a.replace(va,"&amp;"));-1!=a.indexOf("<")&&(a=a.replace(wa,"&lt;"));-1!=a.indexOf(">")&&(a=a.replace(xa,"&gt;"));-1!=a.indexOf('"')&&(a=a.replace(ya,"&quot;"));-1!=a.indexOf("'")&&(a=a.replace(za,"&#39;"));-1!=a.indexOf("\x00")&&(a=a.replace(Aa,"&#0;"))}return a}
+var va=/&/g,wa=/</g,xa=/>/g,ya=/"/g,za=/'/g,Aa=/\x00/g,Ba=/[\x00&<>"']/;var A=class{constructor(a,b){this.c=b===Ca?a:""}};A.prototype.A=!0;A.prototype.u=function(){return this.c.toString()};
+A.prototype.I=!0;A.prototype.H=function(){return 1};
+var Da=/^(?:audio\/(?:3gpp2|3gpp|aac|L16|midi|mp3|mp4|mpeg|oga|ogg|opus|x-m4a|x-matroska|x-wav|wav|webm)|font\/\w+|image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp|x-icon)|video\/(?:mpeg|mp4|ogg|webm|quicktime|x-matroska))(?:;\w+=(?:\w+|"[\w;,= ]+"))*$/i,Ea=/^data:(.*);base64,[a-z0-9+\/]+=*$/i,Fa=/^(?:(?:https?|mailto|ftp):|[^:/?#]*(?:[/?#]|$))/i,Ca={},Ga=new A("about:invalid#zClosurez",Ca);var C;a:{var Ha=q.navigator;if(Ha){var Ia=Ha.userAgent;if(Ia){C=Ia;break a}}C=""};var D=class{constructor(a,b,c){this.c=c===Ja?a:"";this.f=b}};D.prototype.I=!0;D.prototype.H=function(){return this.f};
+D.prototype.A=!0;D.prototype.u=function(){return this.c.toString()};
+var Ja={};function Ka(a){return a=ua(a,void 0)}
+;var La=-1!=C.indexOf("Opera"),Ma=-1!=C.indexOf("Trident")||-1!=C.indexOf("MSIE"),Na=-1!=C.indexOf("Edge"),Oa=-1!=C.indexOf("Gecko")&&!(-1!=C.toLowerCase().indexOf("webkit")&&-1==C.indexOf("Edge"))&&!(-1!=C.indexOf("Trident")||-1!=C.indexOf("MSIE"))&&-1==C.indexOf("Edge"),Pa=-1!=C.toLowerCase().indexOf("webkit")&&-1==C.indexOf("Edge");function Qa(){var a=q.document;return a?a.documentMode:void 0}
+var Ra;a:{var Sa="",Ta=function(){var a=C;if(Oa)return/rv:([^\);]+)(\)|;)/.exec(a);if(Na)return/Edge\/([\d\.]+)/.exec(a);if(Ma)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(Pa)return/WebKit\/(\S+)/.exec(a);if(La)return/(?:Version)[ \/]?(\S+)/.exec(a)}();
+Ta&&(Sa=Ta?Ta[1]:"");if(Ma){var Ua=Qa();if(null!=Ua&&Ua>parseFloat(Sa)){Ra=String(Ua);break a}}Ra=Sa}var Va=Ra,Wa;if(q.document&&Ma){var Xa=Qa();Wa=Xa?Xa:parseInt(Va,10)||void 0}else Wa=void 0;var Ya=Wa;var Za={},$a=null;var ab=class{constructor({url:a}){const b=/[?&]dsh=1(&|$)/.test(a);this.g=!b&&/[?&]ae=1(&|$)/.test(a);this.h=!b&&/[?&]ae=2(&|$)/.test(a);if((this.c=/[?&]adurl=([^&]*)/.exec(a))&&this.c[1]){let c;try{c=decodeURIComponent(this.c[1])}catch(d){c=null}this.f=c}}};var bb=/^(?:([^:/?#.]+):)?(?:\/\/(?:([^\\/?#]*)@)?([^\\/?#]*?)(?::([0-9]+))?(?=[\\/?#]|$))?([^?#]+)?(?:\?([^#]*))?(?:#([\s\S]*))?$/;function F(a){return a?decodeURI(a):a}
+function G(a,b){return b.match(bb)[a]||null}
+function cb(a,b,c){if(Array.isArray(b))for(var d=0;d<b.length;d++)cb(a,String(b[d]),c);else null!=b&&c.push(a+(""===b?"":"="+encodeURIComponent(String(b))))}
+function db(a){var b=[],c;for(c in a)cb(c,a[c],b);return b.join("&")}
+var eb=/#|$/;function fb(a,b){var c=void 0;return new (c||(c=Promise))(function(d,e){function f(l){try{h(b.next(l))}catch(m){e(m)}}
+function g(l){try{h(b["throw"](l))}catch(m){e(m)}}
+function h(l){l.done?d(l.value):(new c(function(m){m(l.value)})).then(f,g)}
+h((b=b.apply(a,void 0)).next())})}
+;function gb(a){var b=u("window.location.href");null==a&&(a='Unknown Error of type "null/undefined"');if("string"===typeof a)return{message:a,name:"Unknown error",lineNumber:"Not available",fileName:b,stack:"Not available"};var c=!1;try{var d=a.lineNumber||a.line||"Not available"}catch(g){d="Not available",c=!0}try{var e=a.fileName||a.filename||a.sourceURL||q.$googDebugFname||b}catch(g){e="Not available",c=!0}b=hb(a);if(!(!c&&a.lineNumber&&a.fileName&&a.stack&&a.message&&a.name)){c=a.message;if(null==
+c){if(a.constructor&&a.constructor instanceof Function){if(a.constructor.name)c=a.constructor.name;else if(c=a.constructor,H[c])c=H[c];else{c=String(c);if(!H[c]){var f=/function\s+([^\(]+)/m.exec(c);H[c]=f?f[1]:"[Anonymous]"}c=H[c]}c='Unknown Error of type "'+c+'"'}else c="Unknown Error of unknown type";"function"===typeof a.toString&&Object.prototype.toString!==a.toString&&(c+=": "+a.toString())}return{message:c,name:a.name||"UnknownError",lineNumber:d,fileName:e,stack:b||"Not available"}}a.stack=
+b;return a}
+function hb(a,b){b||(b={});b[ib(a)]=!0;var c=a.stack||"";(a=a.ja)&&!b[ib(a)]&&(c+="\nCaused by: ",a.stack&&0==a.stack.indexOf(a.toString())||(c+="string"===typeof a?a:a.message+"\n"),c+=hb(a,b));return c}
+function ib(a){var b="";"function"===typeof a.toString&&(b=""+a);return b+a.stack}
+var H={};function I(){this.c=document||{cookie:""}}
+I.prototype.isEnabled=function(){return navigator.cookieEnabled};
+I.prototype.set=function(a,b,c){let d,e;let f=!1,g;if("object"===typeof c){g=c.qa;f=c.ra||!1;var h=c.domain||void 0;e=c.path||void 0;d=c.ba}if(/[;=\s]/.test(a))throw Error('Invalid cookie name "'+a+'"');if(/[;\r\n]/.test(b))throw Error('Invalid cookie value "'+b+'"');void 0===d&&(d=-1);this.c.cookie=a+"="+b+(h?";domain="+h:"")+(e?";path="+e:"")+(0>d?"":0==d?";expires="+(new Date(1970,1,1)).toUTCString():";expires="+(new Date(Date.now()+1E3*d)).toUTCString())+(f?";secure":"")+(null!=g?";samesite="+
+g:"")};
+I.prototype.get=function(a,b){for(var c=a+"=",d=(this.c.cookie||"").split(";"),e=0,f;e<d.length;e++){f=ta(d[e]);if(0==f.lastIndexOf(c,0))return f.substr(c.length);if(f==a)return""}return b};
+I.prototype.remove=function(a,b,c){var d=void 0!==this.get(a);this.set(a,"",{ba:0,path:b,domain:c});return d};
+I.prototype.isEmpty=function(){return!this.c.cookie};
+I.prototype.clear=function(){for(var a=(this.c.cookie||"").split(";"),b=[],c=[],d,e,f=0;f<a.length;f++)e=ta(a[f]),d=e.indexOf("="),-1==d?(b.push(""),c.push(e)):(b.push(e.substring(0,d)),c.push(e.substring(d+1)));for(a=b.length-1;0<=a;a--)this.remove(b[a])};var jb=!Ma||9<=Number(Ya);function kb(a,b){oa(b,function(c,d){c&&"object"==typeof c&&c.A&&(c=c.u());"style"==d?a.style.cssText=c:"class"==d?a.className=c:"for"==d?a.htmlFor=c:lb.hasOwnProperty(d)?a.setAttribute(lb[d],c):0==d.lastIndexOf("aria-",0)||0==d.lastIndexOf("data-",0)?a.setAttribute(d,c):a[d]=c})}
+var lb={cellpadding:"cellPadding",cellspacing:"cellSpacing",colspan:"colSpan",frameborder:"frameBorder",height:"height",maxlength:"maxLength",nonce:"nonce",role:"role",rowspan:"rowSpan",type:"type",usemap:"useMap",valign:"vAlign",width:"width"};
+function mb(a,b,c){var d=arguments,e=document,f=String(d[0]),g=d[1];if(!jb&&g&&(g.name||g.type)){f=["<",f];g.name&&f.push(' name="',Ka(g.name),'"');if(g.type){f.push(' type="',Ka(g.type),'"');var h={};ra(h,g);delete h.type;g=h}f.push(">");f=f.join("")}f=String(f);"application/xhtml+xml"===e.contentType&&(f=f.toLowerCase());f=e.createElement(f);g&&("string"===typeof g?f.className=g:Array.isArray(g)?f.className=g.join(" "):kb(f,g));2<d.length&&nb(e,f,d);return f}
+function nb(a,b,c){function d(h){h&&b.appendChild("string"===typeof h?a.createTextNode(h):h)}
+for(var e=2;e<c.length;e++){var f=c[e];if(!ea(f)||fa(f)&&0<f.nodeType)d(f);else{a:{if(f&&"number"==typeof f.length){if(fa(f)){var g="function"==typeof f.item||"string"==typeof f.item;break a}if("function"===typeof f){g="function"==typeof f.item;break a}}g=!1}z(g?ma(f):f,d)}}}
+;function J(){this.g=this.g;this.h=this.h}
+J.prototype.g=!1;J.prototype.dispose=function(){this.g||(this.g=!0,this.m())};
+J.prototype.m=function(){if(this.h)for(;this.h.length;)this.h.shift()()};var ob={};var pb=class{},qb=class extends pb{constructor(a,b){super();if(b!==ob)throw Error("Bad secret");this.c=a}toString(){return this.c}};new qb("about:blank",ob);new qb("about:invalid#zTSz",ob);function rb(a){if(!a)return"";a=a.split("#")[0].split("?")[0];a=a.toLowerCase();0==a.indexOf("//")&&(a=window.location.protocol+a);/^[\w\-]*:\/\//.test(a)||(a=window.location.href);var b=a.substring(a.indexOf("://")+3),c=b.indexOf("/");-1!=c&&(b=b.substring(0,c));a=a.substring(0,a.indexOf("://"));if("http"!==a&&"https"!==a&&"chrome-extension"!==a&&"moz-extension"!==a&&"file"!==a&&"android-app"!==a&&"chrome-search"!==a&&"chrome-untrusted"!==a&&"chrome"!==a&&"app"!==a&&"devtools"!==a)throw Error("Invalid URI scheme in origin: "+
+a);c="";var d=b.indexOf(":");if(-1!=d){var e=b.substring(d+1);b=b.substring(0,d);if("http"===a&&"80"!==e||"https"===a&&"443"!==e)c=":"+e}return a+"://"+b+c}
+;function sb(){function a(){e[0]=1732584193;e[1]=4023233417;e[2]=2562383102;e[3]=271733878;e[4]=3285377520;p=m=0}
+function b(n){for(var t=g,k=0;64>k;k+=4)t[k/4]=n[k]<<24|n[k+1]<<16|n[k+2]<<8|n[k+3];for(k=16;80>k;k++)n=t[k-3]^t[k-8]^t[k-14]^t[k-16],t[k]=(n<<1|n>>>31)&4294967295;n=e[0];var r=e[1],B=e[2],x=e[3],O=e[4];for(k=0;80>k;k++){if(40>k)if(20>k){var E=x^r&(B^x);var K=1518500249}else E=r^B^x,K=1859775393;else 60>k?(E=r&B|x&(r|B),K=2400959708):(E=r^B^x,K=3395469782);E=((n<<5|n>>>27)&4294967295)+E+O+K+t[k]&4294967295;O=x;x=B;B=(r<<30|r>>>2)&4294967295;r=n;n=E}e[0]=e[0]+n&4294967295;e[1]=e[1]+r&4294967295;e[2]=
+e[2]+B&4294967295;e[3]=e[3]+x&4294967295;e[4]=e[4]+O&4294967295}
+function c(n,t){if("string"===typeof n){n=unescape(encodeURIComponent(n));for(var k=[],r=0,B=n.length;r<B;++r)k.push(n.charCodeAt(r));n=k}t||(t=n.length);k=0;if(0==m)for(;k+64<t;)b(n.slice(k,k+64)),k+=64,p+=64;for(;k<t;)if(f[m++]=n[k++],p++,64==m)for(m=0,b(f);k+64<t;)b(n.slice(k,k+64)),k+=64,p+=64}
+function d(){var n=[],t=8*p;56>m?c(h,56-m):c(h,64-(m-56));for(var k=63;56<=k;k--)f[k]=t&255,t>>>=8;b(f);for(k=t=0;5>k;k++)for(var r=24;0<=r;r-=8)n[t++]=e[k]>>r&255;return n}
+for(var e=[],f=[],g=[],h=[128],l=1;64>l;++l)h[l]=0;var m,p;a();return{reset:a,update:c,digest:d,S:function(){for(var n=d(),t="",k=0;k<n.length;k++)t+="0123456789ABCDEF".charAt(Math.floor(n[k]/16))+"0123456789ABCDEF".charAt(n[k]%16);return t}}}
+;function tb(a,b,c){var d=[],e=[];if(1==(Array.isArray(c)?2:1))return e=[b,a],z(d,function(h){e.push(h)}),ub(e.join(" "));
+var f=[],g=[];z(c,function(h){g.push(h.key);f.push(h.value)});
+c=Math.floor((new Date).getTime()/1E3);e=0==f.length?[c,b,a]:[f.join(":"),c,b,a];z(d,function(h){e.push(h)});
+a=ub(e.join(" "));a=[c,a];0==g.length||a.push(g.join(""));return a.join("_")}
+function ub(a){var b=sb();b.update(a);return b.S().toLowerCase()}
+;function vb(a,b){a.i(b);a.f<a.h&&(a.f++,b.next=a.c,a.c=b)}
+var wb=class{constructor(a,b,c){this.h=c;this.g=a;this.i=b;this.f=0;this.c=null}get(){let a;0<this.f?(this.f--,a=this.c,this.c=a.next,a.next=null):a=this.g();return a}};function xb(a){q.setTimeout(function(){throw a;},0)}
+;function yb(){this.f=this.c=null}
+var Ab=new wb(function(){return new zb},function(a){a.reset()},100);
+yb.prototype.add=function(a,b){var c=Ab.get();c.set(a,b);this.f?this.f.next=c:this.c=c;this.f=c};
+yb.prototype.remove=function(){var a=null;this.c&&(a=this.c,this.c=this.c.next,this.c||(this.f=null),a.next=null);return a};
+function zb(){this.next=this.scope=this.c=null}
+zb.prototype.set=function(a,b){this.c=a;this.scope=b;this.next=null};
+zb.prototype.reset=function(){this.next=this.scope=this.c=null};function Bb(a,b){Cb||Db();Eb||(Cb(),Eb=!0);Fb.add(a,b)}
+var Cb;function Db(){var a=q.Promise.resolve(void 0);Cb=function(){a.then(Gb)}}
+var Eb=!1,Fb=new yb;function Gb(){for(var a;a=Fb.remove();){try{a.c.call(a.scope)}catch(b){xb(b)}vb(Ab,a)}Eb=!1}
+;var Hb=q.JSON.stringify;function L(a){this.c=0;this.m=void 0;this.h=this.f=this.g=null;this.i=this.l=!1;if(a!=v)try{var b=this;a.call(void 0,function(c){M(b,2,c)},function(c){M(b,3,c)})}catch(c){M(this,3,c)}}
+function Ib(){this.next=this.context=this.onRejected=this.f=this.c=null;this.g=!1}
+Ib.prototype.reset=function(){this.context=this.onRejected=this.f=this.c=null;this.g=!1};
+var Jb=new wb(function(){return new Ib},function(a){a.reset()},100);
+function Kb(a,b,c){var d=Jb.get();d.f=a;d.onRejected=b;d.context=c;return d}
+function Lb(a){if(a instanceof L)return a;var b=new L(v);M(b,2,a);return b}
+L.prototype.then=function(a,b,c){return Mb(this,"function"===typeof a?a:null,"function"===typeof b?b:null,c)};
+L.prototype.$goog_Thenable=!0;L.prototype.cancel=function(a){if(0==this.c){var b=new Nb(a);Bb(function(){Ob(this,b)},this)}};
+function Ob(a,b){if(0==a.c)if(a.g){var c=a.g;if(c.f){for(var d=0,e=null,f=null,g=c.f;g&&(g.g||(d++,g.c==a&&(e=g),!(e&&1<d)));g=g.next)e||(f=g);e&&(0==c.c&&1==d?Ob(c,b):(f?(d=f,d.next==c.h&&(c.h=d),d.next=d.next.next):Pb(c),Qb(c,e,3,b)))}a.g=null}else M(a,3,b)}
+function Rb(a,b){a.f||2!=a.c&&3!=a.c||Sb(a);a.h?a.h.next=b:a.f=b;a.h=b}
+function Mb(a,b,c,d){var e=Kb(null,null,null);e.c=new L(function(f,g){e.f=b?function(h){try{var l=b.call(d,h);f(l)}catch(m){g(m)}}:f;
+e.onRejected=c?function(h){try{var l=c.call(d,h);void 0===l&&h instanceof Nb?g(h):f(l)}catch(m){g(m)}}:g});
+e.c.g=a;Rb(a,e);return e.c}
+L.prototype.B=function(a){this.c=0;M(this,2,a)};
+L.prototype.C=function(a){this.c=0;M(this,3,a)};
+function M(a,b,c){if(0==a.c){a===c&&(b=3,c=new TypeError("Promise cannot resolve to itself"));a.c=1;a:{var d=c,e=a.B,f=a.C;if(d instanceof L){Rb(d,Kb(e||v,f||null,a));var g=!0}else{if(d)try{var h=!!d.$goog_Thenable}catch(m){h=!1}else h=!1;if(h)d.then(e,f,a),g=!0;else{if(fa(d))try{var l=d.then;if("function"===typeof l){Tb(d,l,e,f,a);g=!0;break a}}catch(m){f.call(a,m);g=!0;break a}g=!1}}}g||(a.m=c,a.c=b,a.g=null,Sb(a),3!=b||c instanceof Nb||Ub(a,c))}}
+function Tb(a,b,c,d,e){function f(l){h||(h=!0,d.call(e,l))}
+function g(l){h||(h=!0,c.call(e,l))}
+var h=!1;try{b.call(a,g,f)}catch(l){f(l)}}
+function Sb(a){a.l||(a.l=!0,Bb(a.o,a))}
+function Pb(a){var b=null;a.f&&(b=a.f,a.f=b.next,b.next=null);a.f||(a.h=null);return b}
+L.prototype.o=function(){for(var a;a=Pb(this);)Qb(this,a,this.c,this.m);this.l=!1};
+function Qb(a,b,c,d){if(3==c&&b.onRejected&&!b.g)for(;a&&a.i;a=a.g)a.i=!1;if(b.c)b.c.g=null,Vb(b,c,d);else try{b.g?b.f.call(b.context):Vb(b,c,d)}catch(e){Wb.call(null,e)}vb(Jb,b)}
+function Vb(a,b,c){2==b?a.f.call(a.context,c):a.onRejected&&a.onRejected.call(a.context,c)}
+function Ub(a,b){a.i=!0;Bb(function(){a.i&&Wb.call(null,b)})}
+var Wb=xb;function Nb(a){y.call(this,a)}
+ka(Nb,y);Nb.prototype.name="cancel";function N(a){J.call(this);this.B=1;this.i=[];this.l=0;this.c=[];this.f={};this.P=!!a}
+ka(N,J);N.prototype.R=function(a,b,c){var d=this.f[a];d||(d=this.f[a]=[]);var e=this.B;this.c[e]=a;this.c[e+1]=b;this.c[e+2]=c;this.B=e+3;d.push(e);return e};
+N.prototype.o=function(a){var b=this.c[a];if(b){var c=this.f[b];if(0!=this.l)this.i.push(a),this.c[a+1]=v;else{if(c){var d=Array.prototype.indexOf.call(c,a,void 0);0<=d&&Array.prototype.splice.call(c,d,1)}delete this.c[a];delete this.c[a+1];delete this.c[a+2]}}return!!b};
+N.prototype.C=function(a,b){var c=this.f[a];if(c){for(var d=Array(arguments.length-1),e=1,f=arguments.length;e<f;e++)d[e-1]=arguments[e];if(this.P)for(e=0;e<c.length;e++){var g=c[e];Xb(this.c[g+1],this.c[g+2],d)}else{this.l++;try{for(e=0,f=c.length;e<f;e++)g=c[e],this.c[g+1].apply(this.c[g+2],d)}finally{if(this.l--,0<this.i.length&&0==this.l)for(;c=this.i.pop();)this.o(c)}}return 0!=e}return!1};
+function Xb(a,b,c){Bb(function(){a.apply(b,c)})}
+N.prototype.clear=function(a){if(a){var b=this.f[a];b&&(z(b,this.o,this),delete this.f[a])}else this.c.length=0,this.f={}};
+N.prototype.m=function(){N.fa.m.call(this);this.clear();this.i.length=0};/*
+
+Math.uuid.js (v1.4)
+http://www.broofa.com
+mailto:robert@broofa.com
+Copyright (c) 2010 Robert Kieffer
+Dual licensed under the MIT and GPL licenses.
+*/
+var Yb=a=>new Promise((b,c)=>{let d=a.length,e=null;if(d){var f=(g,h)=>{g||e||(e=h);d--;d||(e?c(e):b())};
+for(const g of a)g.then(f.bind(null,!0),f.bind(null,!1))}else b()}),Zb=a=>self.btoa(String.fromCharCode.apply(null,new Uint8Array(a))).replace(/\+/g,"-").replace(/\//g,"_");var $b=class extends Error{constructor(a,...b){super(a);this.args=[...b]}};let ac=null;function P(a,b){const c={};c.key=a;c.value=b;return bc().then(d=>new Promise((e,f)=>{try{const g=d.transaction("swpushnotificationsstore","readwrite").objectStore("swpushnotificationsstore").put(c);g.onsuccess=()=>{e()};
+g.onerror=()=>{f()}}catch(g){f(g)}}))}
+function cc(){return P("IndexedDBCheck","testing IndexedDB").then(()=>Q("IndexedDBCheck")).then(a=>"testing IndexedDB"===a?Promise.resolve():Promise.reject()).then(()=>!0).catch(()=>!1)}
+function Q(a){const b=new $b("Error accessing DB");return bc().then(c=>new Promise((d,e)=>{try{const f=c.transaction("swpushnotificationsstore").objectStore("swpushnotificationsstore").get(a);f.onsuccess=()=>{const g=f.result;d(g?g.value:null)};
+f.onerror=()=>{b.params={key:a,source:"onerror"};e(b)}}catch(f){b.params={key:a,
+thrownError:String(f)},e(b)}}),()=>null)}
+function bc(){return ac?Promise.resolve(ac):new Promise((a,b)=>{const c=self.indexedDB.open("swpushnotificationsdb");c.onerror=b;c.onsuccess=()=>{const d=c.result;if(d.objectStoreNames.contains("swpushnotificationsstore"))ac=d,a(ac);else return self.indexedDB.deleteDatabase("swpushnotificationsdb"),bc()};
+c.onupgradeneeded=dc})}
+function dc(a){a=a.target.result;a.objectStoreNames.contains("swpushnotificationsstore")&&a.deleteObjectStore("swpushnotificationsstore");a.createObjectStore("swpushnotificationsstore",{keyPath:"key"})}
+;const R=window.yt&&window.yt.config_||window.ytcfg&&window.ytcfg.data_||{};w("yt.config_",R);function ec(a){var b=arguments;1<b.length?R[b[0]]=b[1]:1===b.length&&Object.assign(R,b[0])}
+function S(a,b){return a in R?R[a]:b}
+;function T(a){a=fc(a);return"string"===typeof a&&"false"===a?!1:!!a}
+function gc(a,b){a=fc(a);return void 0===a&&void 0!==b?b:Number(a||0)}
+function fc(a){const b=S("EXPERIMENTS_FORCED_FLAGS",{});return void 0!==b[a]?b[a]:S("EXPERIMENT_FLAGS",{})[a]}
+;let hc=0;w("ytDomDomGetNextId",u("ytDomDomGetNextId")||(()=>++hc));const ic=[];function jc(a){ic.forEach(b=>b(a))}
+function kc(a){return a&&window.yterr?function(){try{return a.apply(this,arguments)}catch(b){lc(b),jc(b)}}:a}
+function lc(a){var b=u("yt.logging.errors.log");b?b(a,"ERROR",void 0,void 0,void 0):(b=S("ERRORS",[]),b.push([a,"ERROR",void 0,void 0,void 0]),ec("ERRORS",b))}
+function mc(a){var b=u("yt.logging.errors.log");b?b(a,"WARNING",void 0,void 0,void 0):(b=S("ERRORS",[]),b.push([a,"WARNING",void 0,void 0,void 0]),ec("ERRORS",b))}
+;w("ytEventsEventsListeners",q.ytEventsEventsListeners||{});w("ytEventsEventsCounter",q.ytEventsEventsCounter||{count:0});function nc(a,b){"function"===typeof a&&(a=kc(a));return window.setTimeout(a,b)}
+;function oc(a){{var b=5E3;isNaN(b)&&(b=void 0);const c=u("yt.scheduler.instance.addJob");c?a=c(a,0,b):void 0===b?(a(),a=NaN):a=nc(a,b||0)}return a}
+class pc{constructor(){}};class qc extends pc{start(){const a=u("yt.scheduler.instance.start");a&&a()}}(function(){var a=qc;a.J=void 0;a.T=function(){a.J||(a.J=new a)}})();
+qc.T();q.ytPubsubPubsubInstance||new N;const U=window;var V=U.ytcsi&&U.ytcsi.now?U.ytcsi.now:U.performance&&U.performance.timing&&U.performance.now&&U.performance.timing.navigationStart?()=>U.performance.timing.navigationStart+U.performance.now():()=>(new Date).getTime();const rc=gc("initial_gel_batch_timeout",1E3),sc=Math.pow(2,16)-1;let tc=null,uc=0,vc=void 0,wc=0,xc=0,yc=0,zc=!0;const Ac=q.ytLoggingTransportLogPayloadsQueue_||{},Bc=q.ytLoggingTransportGELQueue_||new Map,Cc=q.ytLoggingTransportTokensToCttTargetIds_||{};function Dc(){window.clearTimeout(wc);window.clearTimeout(xc);xc=0;vc&&Ec(vc)?(Fc(Bc),"log_event"in Ac&&Fc(Object.entries(Ac.log_event)),Bc.clear(),delete Ac.log_event):Gc()}
+function Gc(){T("web_gel_timeout_cap")&&!xc&&(xc=nc(Dc,6E4));window.clearTimeout(wc);let a=S("LOGGING_BATCH_TIMEOUT",gc("web_gel_debounce_ms",1E4));T("shorten_initial_gel_batch_timeout")&&zc&&(a=rc);wc=nc(Dc,a)}
+function Fc(a){var b=vc;const c=Math.round(V());for(const [d,e]of a){a=pa({context:Hc(b.c||Ic())});a.events=e;const f=Cc[d];f&&Jc(a,d,f);delete Cc[d];Kc(a,c);Lc(b,a,{retry:!0,onSuccess:()=>{uc=Math.round(V()-c)}});
+zc=!1}}
+function Kc(a,b){a.requestTimeMs=String(b);T("unsplit_gel_payloads_in_logs")&&(a.unsplitGelPayloadsInLogs=!0);if(b=S("EVENT_ID",void 0)){let c=S("BATCH_CLIENT_COUNTER",void 0)||0;!c&&T("web_client_counter_random_seed")&&(c=Math.floor(Math.random()*sc/2));c++;c>sc&&(c=1);ec("BATCH_CLIENT_COUNTER",c);b={serializedEventId:b,clientCounter:String(c)};a.serializedClientEventId=b;tc&&uc&&T("log_gel_rtt_web")&&(a.previousBatchInfo={serializedClientEventId:tc,roundtripMs:String(uc)});tc=b;uc=0}}
+function Jc(a,b,c){let d;if(c.videoId)d="VIDEO";else if(c.playlistId)d="PLAYLIST";else return;a.credentialTransferTokenTargetId=c;a.context=a.context||{};a.context.user=a.context.user||{};a.context.user.credentialTransferTokens=[{token:b,scope:d}]}
+;const Mc=q.ytLoggingGelSequenceIdObj_||{};
+function Nc(a,b,c,d={}){var e={};e.eventTimeMs=Math.round(d.timestamp||V());e[a]=b;a=String;d.timestamp?b=-1:(b=u("_lact",window),b=null==b?-1:Math.max(Date.now()-b,0));e.context={lastActivityMs:a(b)};T("log_sequence_info_on_gel_web")&&d.O&&(a=e.context,b=d.O,Mc[b]=b in Mc?Mc[b]+1:0,a.sequence={index:Mc[b],groupKey:b},d.la&&delete Mc[d.O]);d=d.ka;a="";d&&(a={},d.videoId?a.videoId=d.videoId:d.playlistId&&(a.playlistId=d.playlistId),Cc[d.token]=a,a=d.token);d=Bc.get(a)||[];Bc.set(a,d);d.push(e);c&&
+(vc=new c);c=gc("web_logging_max_batch")||100;e=V();d.length>=c?Dc():10<=e-yc&&(Gc(),yc=e)}
+;function Oc(a){"?"==a.charAt(0)&&(a=a.substr(1));{a=a.split("&");const c={};for(let d=0,e=a.length;d<e;d++){const f=a[d].split("=");if(1==f.length&&f[0]||2==f.length)try{var b=decodeURIComponent((f[0]||"").replace(/\+/g," "));const g=decodeURIComponent((f[1]||"").replace(/\+/g," "));b in c?Array.isArray(c[b])?na(c[b],g):c[b]=[c[b],g]:c[b]=g}catch(g){if("q"!=f[0]){const h=Error("Error decoding URL component");h.params={key:f[0],value:f[1]};lc(h)}}}b=c}return b}
+function Pc(a,b,c){var d=a.split("#",2);a=d[0];d=1<d.length?"#"+d[1]:"";var e=a.split("?",2);a=e[0];e=Oc(e[1]||"");for(var f in b)!c&&null!==e&&f in e||(e[f]=b[f]);b=a;a=db(e);a?(c=b.indexOf("#"),0>c&&(c=b.length),f=b.indexOf("?"),0>f||f>c?(f=c,e=""):e=b.substring(f+1,c),b=[b.substr(0,f),e,b.substr(c)],c=b[1],b[1]=a?c?c+"&"+a:a:c,a=b[0]+(b[1]?"?"+b[1]:"")+b[2]):a=b;return a+d}
+;const Qc="XMLHttpRequest"in q?()=>new XMLHttpRequest:null;
+function Rc(){if(!Qc)return null;const a=Qc();return"open"in a?a:null}
+;const Sc={Authorization:"AUTHORIZATION","X-Goog-Visitor-Id":"SANDBOXED_VISITOR_ID","X-YouTube-Client-Name":"INNERTUBE_CONTEXT_CLIENT_NAME","X-YouTube-Client-Version":"INNERTUBE_CONTEXT_CLIENT_VERSION","X-YouTube-Device":"DEVICE","X-Youtube-Identity-Token":"ID_TOKEN","X-YouTube-Page-CL":"PAGE_CL","X-YouTube-Page-Label":"PAGE_BUILD_LABEL","X-YouTube-Variants-Checksum":"VARIANTS_CHECKSUM"},Tc="app debugcss debugjs expflag force_ad_params force_viral_ad_response_params forced_experiments innertube_snapshots innertube_goldens internalcountrycode internalipoverride absolute_experiments conditional_experiments sbb sr_bns_address".split(" ");
+let Uc=!1;
+function Vc(a,b={}){if(!c)var c=window.location.href;var d=G(1,a),e=F(G(3,a));d&&e?(d=c,c=a.match(bb),d=d.match(bb),c=c[3]==d[3]&&c[1]==d[1]&&c[4]==d[4]):c=e?F(G(3,c))==e&&(Number(G(4,c))||null)==(Number(G(4,a))||null):!0;d=T("web_ajax_ignore_global_headers_if_set");for(let f in Sc)e=S(Sc[f]),!e||!c&&F(G(3,a))||d&&void 0!==b[f]||(b[f]=e);if(c||!F(G(3,a)))b["X-YouTube-Utc-Offset"]=String(-(new Date).getTimezoneOffset());(c||!F(G(3,a)))&&(a="undefined"!=typeof Intl?(new Intl.DateTimeFormat).resolvedOptions().timeZone:null)&&
+(b["X-YouTube-Time-Zone"]=a);return b}
+function Wc(a){var b=window.location.search,c=F(G(3,a)),d=F(G(5,a));d=(c=c&&(c.endsWith("youtube.com")||c.endsWith("youtube-nocookie.com")))&&d&&d.startsWith("/api/");if(!c||d)return a;const e=Oc(b),f={};z(Tc,g=>{e[g]&&(f[g]=e[g])});
+return Pc(a,f||{},!1)}
+function Xc(a,b){const c={method:b.method||"GET",credentials:"same-origin"};b.headers&&(c.headers=b.headers);a=Yc(a,b);const d=Zc(a,b);d&&(c.body=d);b.withCredentials&&(c.credentials="include");let e=!1,f;fetch(a,c).then(g=>{if(!e){e=!0;f&&window.clearTimeout(f);var h=g.ok,l=m=>{m=m||{};const p=b.context||q;h?b.onSuccess&&b.onSuccess.call(p,m,g):b.onError&&b.onError.call(p,m,g);b.da&&b.da.call(p,m,g)};
+"JSON"==(b.format||"JSON")&&(h||400<=g.status&&500>g.status)?g.json().then(l,function(){l(null)}):l(null)}});
+b.ca&&0<b.timeout&&(f=nc(()=>{e||(e=!0,window.clearTimeout(f))},b.timeout))}
+function Yc(a,b){b.na&&(a=document.location.protocol+"//"+document.location.hostname+(document.location.port?":"+document.location.port:"")+a);const c=S("XSRF_FIELD_NAME",void 0);if(b=b.sa)b[c]&&delete b[c],a=Pc(a,b||{},!0);return a}
+function Zc(a,b){var c=S("XSRF_FIELD_NAME",void 0);const d=S("XSRF_TOKEN",void 0);var e=b.postBody||"",f=b.G;{const g=S("XSRF_FIELD_NAME",void 0);let h;b.headers&&(h=b.headers["Content-Type"]);a=!b.ma&&(!F(G(3,a))||b.withCredentials||F(G(3,a))==document.location.hostname)&&"POST"==b.method&&(!h||"application/x-www-form-urlencoded"==h)&&!(b.G&&b.G[g])}a&&(f||(f={}),f[c]=d);f&&"string"===typeof e&&(e=Oc(e),ra(e,f),e=b.M&&"JSON"==b.M?JSON.stringify(e):db(e));if(!(c=e)&&(c=f)){a:{for(const g in f){f=
+!1;break a}f=!0}c=!f}!Uc&&c&&"POST"!=b.method&&(Uc=!0,lc(Error("AJAX request with postData should use POST")));return e}
+function $c(a,b,c="GET",d="",e){const f=Rc();if(f){var g=()=>{4==(f&&"readyState"in f?f.readyState:0)&&b&&kc(b)(f)};
+"onloadend"in f?f.addEventListener("loadend",g,!1):f.onreadystatechange=g;T("debug_forward_web_query_parameters")&&(a=Wc(a));f.open(c,a,!0);c="POST"==c&&(void 0===window.FormData||!(d instanceof FormData));if(e=Vc(a,e))for(let h in e)f.setRequestHeader(h,e[h]),"content-type"==h.toLowerCase()&&(c=!1);c&&f.setRequestHeader("Content-Type","application/x-www-form-urlencoded");f.send(d)}}
+;function ad(){var a=S("DEVICE","");const b={};for(const [c,d]of Object.entries(Oc(a)))"cbrand"===c?b.deviceMake=d:"cmodel"===c?b.deviceModel=d:"cbr"===c?b.browserName=d:"cbrver"===c?b.browserVersion=d:"cos"===c?b.osName=d:"cosver"===c?b.osVersion=d:"cplatform"===c&&(b.platform=d);return b}
+;function bd(){return"INNERTUBE_API_KEY"in R&&"INNERTUBE_API_VERSION"in R}
+function Ic(){return{innertubeApiKey:S("INNERTUBE_API_KEY",void 0),innertubeApiVersion:S("INNERTUBE_API_VERSION",void 0),U:S("INNERTUBE_CONTEXT_CLIENT_CONFIG_INFO"),V:S("INNERTUBE_CONTEXT_CLIENT_NAME","WEB"),innertubeContextClientVersion:S("INNERTUBE_CONTEXT_CLIENT_VERSION",void 0),X:S("INNERTUBE_CONTEXT_HL",void 0),W:S("INNERTUBE_CONTEXT_GL",void 0),Y:S("INNERTUBE_HOST_OVERRIDE",void 0)||"",aa:!!S("INNERTUBE_USE_THIRD_PARTY_AUTH",!1),Z:!!S("INNERTUBE_OMIT_API_KEY_WHEN_AUTH_HEADER_IS_PRESENT",!1),
+appInstallData:S("SERIALIZED_CLIENT_CONFIG_DATA",void 0)}}
+function Hc(a){const b={client:{hl:a.X,gl:a.W,clientName:a.V,clientVersion:a.innertubeContextClientVersion,configInfo:a.U}};var c=window.devicePixelRatio;c&&1!=c&&(b.client.screenDensityFloat=String(c));c=S("EXPERIMENTS_TOKEN","");""!==c&&(b.client.experimentsToken=c);{c=[];const f=S("EXPERIMENTS_FORCED_FLAGS",{});for(var d in f)c.push({key:d,value:String(f[d])});d=S("EXPERIMENT_FLAGS",{});for(e in d)e.startsWith("force_")&&void 0===f[e]&&c.push({key:e,value:String(d[e])});var e=c}0<e.length&&(b.request=
+{internalExperimentFlags:e});a.appInstallData&&T("web_log_app_install_experiments")&&(b.client.configInfo=b.client.configInfo||{},b.client.configInfo.appInstallData=a.appInstallData);S("DELEGATED_SESSION_ID")&&!T("pageid_as_header_web")&&(b.user={onBehalfOfUser:S("DELEGATED_SESSION_ID")});b.client=Object.assign(b.client,ad());return b}
+function cd(a,b,c={}){const d={"X-Goog-Visitor-Id":c.visitorData||S("VISITOR_DATA","")};if(b&&b.includes("www.youtube-nocookie.com"))return d;b=c.ha||S("AUTHORIZATION");if(!b)if(a)b=`Bearer ${u("gapi.auth.getToken")().ga}`;else a:{a=[];b=rb(String(q.location.href));(c=q.__SAPISID||q.__APISID||q.__OVERRIDE_SID)?c=!0:(c=new I,c=c.get("SAPISID")||c.get("APISID")||c.get("__Secure-3PAPISID")||c.get("SID"),c=!!c);if(c&&(c=(b=0==b.indexOf("https:")||0==b.indexOf("chrome-extension:")||0==b.indexOf("moz-extension:"))?
+q.__SAPISID:q.__APISID,c||(c=new I,c=c.get(b?"SAPISID":"APISID")||c.get("__Secure-3PAPISID")),c)){b=b?"SAPISIDHASH":"APISIDHASH";var e=String(q.location.href);b=e&&c&&b?[b,tb(rb(e),c,a||null)].join(" "):null;break a}b=null}b&&(d.Authorization=b,d["X-Goog-AuthUser"]=S("SESSION_INDEX",0),T("pageid_as_header_web")&&(d["X-Goog-PageId"]=S("DELEGATED_SESSION_ID")));return d}
+;function dd(a){const b=C;return b?0<=b.toLowerCase().indexOf(a):!1}
+;let ed,fd;const gd=["getAll","getAllKeys","getKey","openKeyCursor"],hd=["getAll","getAllKeys","getKey","openKeyCursor"];function id(){return fb(this,function*(){return!0})}
+function jd(){return void 0!==ed?Lb(ed):new L(a=>{id().then(b=>{ed=b;a(b)})})}
+function kd(){return void 0!==fd?Lb(fd):jd().then(a=>{if(!a)return!1;for(const b of gd)if(!IDBObjectStore.prototype[b])return!1;for(const b of hd)if(!IDBIndex.prototype[b])return!1;return IDBObjectStore.prototype.getKey?!0:!1}).then(a=>fd=a)}
+;function ld(){return fb(this,function*(){return T("networkless_logging")?(2===gc("networkless_ytidb_version")&&kd().then(a=>a),jd()):!1})}
+;function Ec(a){!a.c&&bd()&&(a.c=Ic());return!!a.c}
+function Lc(a,b,c){!S("VISITOR_DATA")&&.01>Math.random()&&mc(new $b("Missing VISITOR_DATA when sending innertube request.","log_event",b,c));if(!Ec(a))throw a=new $b("innertube xhrclient not ready","log_event",b,c),lc(a),a.sampleWeight=0,a;const d={headers:{"Content-Type":"application/json"},method:"POST",G:b,M:"JSON",ea:()=>{},
+ca:c.ea,onSuccess:(h,l)=>{if(c.onSuccess)c.onSuccess(l)},
+pa:h=>{if(c.onSuccess)c.onSuccess(h)},
+onError:(h,l)=>{if(c.onError)c.onError(l)},
+oa:h=>{if(c.onError)c.onError(h)},
+timeout:c.timeout,withCredentials:!0};b="";var e=a.c.Y;e&&(b=e);e=cd(a.c.aa||!1,b,c);Object.assign(d.headers,e);d.headers.Authorization&&!b&&(d.headers["x-origin"]=window.location.origin);e=`/${"youtubei"}/${a.c.innertubeApiVersion}/${"log_event"}`;let f={alt:"json"};a.c.Z&&d.headers.Authorization||(f.key=a.c.innertubeApiKey);const g=Pc(`${b}${e}`,f||{},!0);ld().then(()=>{try{Xc(g,d)}catch(h){if("InvalidAccessError"==h.name)mc(Error("An extension is blocking network request."));else throw h;}})}
+class md{constructor(a){this.c=null;a?this.c=a:bd()&&(this.c=Ic())}};let nd=md;function od(a,b,c={}){let d=nd;S("ytLoggingEventsDefaultDisabled",!1)&&nd==md&&(d=null);Nc(a,b,d,c)}
+;const pd=[{K:a=>`Cannot read property '${a.key}'`,
+F:{TypeError:[{j:/Cannot read property '([^']+)' of (null|undefined)/,groups:["key","value"]},{j:/\u65e0\u6cd5\u83b7\u53d6\u672a\u5b9a\u4e49\u6216 (null|undefined) \u5f15\u7528\u7684\u5c5e\u6027\u201c([^\u201d]+)\u201d/,groups:["value","key"]},{j:/\uc815\uc758\ub418\uc9c0 \uc54a\uc74c \ub610\ub294 (null|undefined) \ucc38\uc870\uc778 '([^']+)' \uc18d\uc131\uc744 \uac00\uc838\uc62c \uc218 \uc5c6\uc2b5\ub2c8\ub2e4./,groups:["value","key"]},{j:/No se puede obtener la propiedad '([^']+)' de referencia nula o sin definir/,
+groups:["key"]},{j:/Unable to get property '([^']+)' of (undefined or null) reference/,groups:["key","value"]}],Error:[{j:/(Permission denied) to access property "([^']+)"/,groups:["reason","key"]}]}},{K:a=>`Cannot call '${a.key}'`,
+F:{TypeError:[{j:/(?:([^ ]+)?\.)?([^ ]+) is not a function/,groups:["base","key"]},{j:/Object (.*) has no method '([^ ]+)'/,groups:["base","key"]},{j:/Object doesn't support property or method '([^ ]+)'/,groups:["key"]},{j:/\u30aa\u30d6\u30b8\u30a7\u30af\u30c8\u306f '([^']+)' \u30d7\u30ed\u30d1\u30c6\u30a3\u307e\u305f\u306f\u30e1\u30bd\u30c3\u30c9\u3092\u30b5\u30dd\u30fc\u30c8\u3057\u3066\u3044\u307e\u305b\u3093/,groups:["key"]},{j:/\uac1c\uccb4\uac00 '([^']+)' \uc18d\uc131\uc774\ub098 \uba54\uc11c\ub4dc\ub97c \uc9c0\uc6d0\ud558\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4./,
+groups:["key"]}]}}];var qd=class{constructor(){this.c=[];this.f=[]}},rd;const sd=new N;var td=new Set,ud=0;const vd=["PhantomJS","Googlebot","TO STOP THIS SECURITY SCAN go/scan"];
+function wd(a){var b={};b.name=S("INNERTUBE_CONTEXT_CLIENT_NAME",1);b.version=S("INNERTUBE_CONTEXT_CLIENT_VERSION",void 0);b=b||{};if(a){if(T("console_log_js_exceptions")){var c=[];c.push(`Name: ${a.name}`);c.push(`Message: ${a.message}`);a.hasOwnProperty("params")&&c.push(`Error Params: ${JSON.stringify(a.params)}`);c.push(`File name: ${a.fileName}`);c.push(`Stacktrace: ${a.stack}`);window.console.log(c.join("\n"),a)}if(window&&window.yterr&&!(5<=ud)&&0!==a.sampleWeight){var d=gb(a);c=d.message||
+"Unknown Error";var e=d.name||"UnknownError",f=d.lineNumber||"Not available",g=d.fileName||"Not available";d=d.stack||a.c||"Not available";if(a.hasOwnProperty("args")&&a.args&&a.args.length){var h=0;for(var l=0;l<a.args.length;l++){var m=a.args[l],p=`params.${l}`;h+=p.length;if(m)if(Array.isArray(m)){var n=b;for(let K=0;K<m.length&&!(m[K]&&(h+=xd(K,m[K],p,n),500<h));K++);}else if("object"===typeof m){n=b;for(var t in m)if(m[t]&&(h+=xd(t,m[t],p,n),500<h))break}else b[p]=String(JSON.stringify(m)).substring(0,
+500),h+=b[p].length;else b[p]=String(JSON.stringify(m)).substring(0,500),h+=b[p].length;if(500<=h)break}}else if(a.hasOwnProperty("params")&&a.params)if(t=a.params,"object"===typeof a.params)for(l in h=0,t){if(t[l]&&(m=`params.${l}`,p=String(JSON.stringify(t[l])).substr(0,500),b[m]=p,h+=m.length+p.length,500<h))break}else b.params=String(JSON.stringify(t)).substr(0,500);navigator.vendor&&!b.hasOwnProperty("vendor")&&(b.vendor=navigator.vendor);b={message:c,name:e,lineNumber:f,fileName:g,stack:d,params:b};
+a=Number(a.columnNumber);isNaN(a)||(b.lineNumber=`${b.lineNumber}:${a}`);a=b;for(var k of pd)if(k.F[a.name]){b=k.F[a.name];for(var r of b)if(b=a.message.match(r.j)){a.params["error.original"]=b[0];c=r.groups;e={};for(f=0;f<c.length;f++)e[c[f]]=b[f+1],a.params[`error.${c[f]}`]=b[f+1];a.message=k.K(e);break}}window.yterr&&"function"===typeof window.yterr&&window.yterr(a);if(!(td.has(a.message)||0<=a.stack.indexOf("/YouTubeCenter.js")||0<=a.stack.indexOf("/mytube.js"))){sd.C("handleError",a);a:{for(var B of vd)if(dd(B.toLowerCase())){k=
+!0;break a}k=!1}if(!k){k={stackTrace:a.stack};a.fileName&&(k.filename=a.fileName);r=a.lineNumber&&a.lineNumber.split?a.lineNumber.split(":"):[];0!==r.length&&(1!==r.length||isNaN(Number(r[0]))?2!==r.length||isNaN(Number(r[0]))||isNaN(Number(r[1]))||(k.lineNumber=Number(r[0]),k.columnNumber=Number(r[1])):k.lineNumber=Number(r[0]));r=a.message;B=a.name;rd||(rd=new qd);b=rd;a:{for(x of b.f)if(a.message&&a.message.match(x.c)){var x=x.weight;break a}for(var O of b.c)if(O.c(a)){x=O.weight;break a}x=1}x=
+{message:r,errorClassName:B,sampleWeight:x,level:"ERROR_LEVEL_WARNNING"};O={isObfuscated:!0,browserStackInfo:k};k={pageUrl:window.location.href,kvPairs:[]};if(r=a.params)for(var E of Object.keys(r))k.kvPairs.push({key:`client.${E}`,value:String(r[E])});E=S("SERVER_NAME",void 0);r=S("SERVER_VERSION",void 0);E&&r&&(k.kvPairs.push({key:"server.name",value:E}),k.kvPairs.push({key:"server.version",value:r}));od("clientError",{errorMetadata:k,stackTrace:O,logMessage:x});Dc()}td.add(a.message);ud++}}}}
+function xd(a,b,c,d){c+=`.${a}`;a=String(JSON.stringify(b)).substr(0,500);d[c]=a;return c.length+a.length}
+;w("ytglobal.prefsUserPrefsPrefs_",u("ytglobal.prefsUserPrefsPrefs_")||{});const yd=Date.now().toString();
+function zd(){a:{if(window.crypto&&window.crypto.getRandomValues)try{var a=Array(16),b=new Uint8Array(16);window.crypto.getRandomValues(b);for(var c=0;c<a.length;c++)a[c]=b[c];var d=a;break a}catch(e){}d=Array(16);for(a=0;16>a;a++){b=Date.now();for(c=0;c<b%23;c++)d[a]=Math.random();d[a]=Math.floor(256*Math.random())}if(yd)for(a=1,b=0;b<yd.length;b++)d[a%16]=d[a%16]^d[(a-1)%16]/4^yd.charCodeAt(b),a++}a=[];for(b=0;b<d.length;b++)a.push("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_".charAt(d[b]&63));
+return a.join("")}
+;q.ytLoggingDocDocumentNonce_||zd();function Ad(){return self.clients.matchAll({type:"window",includeUncontrolled:!0}).then(a=>{if(a)for(const b of a)b.postMessage({type:"update_unseen_notifications_count_signal"})})}
+function Bd(a){return fb(this,function*(){if(!(a.payload&&a.payload.chrome&&a.payload.chrome.endpoint))return Promise.resolve();const b=new FormData;b.append("json_navigation_endpoints",JSON.stringify([a.payload.chrome.endpoint]));let c="[]";a.payload.chrome.extraUrlParams&&(c=JSON.stringify(a.payload.chrome.extraUrlParams));b.append("extra_url_params",c);a.payload.chrome.endpointUrl&&b.append("navigation_endpoint_urls",JSON.stringify([a.payload.chrome.endpointUrl]));b.append("hashed_identifier",
+a.hashedIdentifier||"");b.append("identifier_salt",a.identifierSalt||"");return fetch("/notifications_ajax?action_convert_endpoint_to_url=1",{credentials:"include",method:"POST",body:b}).then(d=>d.ok?d.json().then(e=>{if(!e.successful_conversion)return Promise.resolve();if(a.payload.chrome.postedEndpoint){{var f=a.payload.chrome.postedEndpoint;const g=new FormData;g.append("record_notification_interactions_endpoint",JSON.stringify(f));fetch("/notifications_ajax?action_record_notification_interactions=1",
+{credentials:"include",method:"POST",body:g})}}return Cd(a,e.url)}).catch(()=>Promise.resolve()):Promise.resolve())})}
+function Cd(a,b){a.deviceId&&P("DeviceId",a.deviceId);a.timestampSec&&Dd(a.timestampSec);const c=a.payload.chrome;return self.registration.showNotification(c.title,{body:c.body,icon:c.iconUrl,data:{nav:b,id:c.notificationId,attributionTag:c.attributionTag},tag:c.title+c.body+c.iconUrl,requireInteraction:!0}).then(()=>{Ed(a.displayCap)}).catch(()=>{})}
+function Fd(a){return Q("DeviceId").then(b=>{b={credentials:"include",method:"POST",body:Gd({deviceId:b,D:a})};return fetch("/notifications_ajax?action_notification_click=1",b)})}
+function Hd(){return Promise.all([Q("TimestampLowerBound"),Id(),Q("DeviceId")]).then(([a,b,c])=>{if(!a)return Promise.reject(null);a={credentials:"include",method:"POST",body:Gd({endpoint:b,deviceId:c,ts:a})};return fetch("/notifications_ajax?action_get_notifications=1",a).then(Jd)})}
+function Jd(a){return a.ok?a.json().then(Kd).catch(()=>{}):Promise.resolve()}
+function Kd(a){if(a.errors)return Promise.reject(a.errors);a.device_id&&P("DeviceId",a.device_id);a.ts&&Dd(a.ts);if(a.notifications){const b=[];a.notifications.forEach(c=>{b.push(self.registration.showNotification(c.title,{body:c.message,icon:c.iconUrl,data:{nav:c.nav,id:c.id,attributionTag:c.attributionTag},tag:c.title+c.message+c.iconUrl,requireInteraction:c.requireInteraction}))});
+return Yb(b).then(()=>{Ed(a.display_cap)})}return Promise.resolve()}
+function Ed(a){-1!==a&&self.registration.getNotifications().then(b=>{for(let c=0;c<b.length-a;c++)b[c].close()})}
+function Ld(a){const b=[Md(a),Q("RegistrationTimestamp").then(Nd),Od(),Pd(),Qd()];Promise.all(b).catch(()=>{P("IDToken",a);Rd();return Promise.resolve()})}
+function Nd(a){return 9E7>=Date.now()-(a||0)?Promise.resolve():Promise.reject()}
+function Md(a){return Q("IDToken").then(b=>a===b?Promise.resolve():Promise.reject())}
+function Od(){return Q("Permission").then(a=>Notification.permission===a?Promise.resolve():Promise.reject())}
+function Pd(){return Q("Endpoint").then(a=>Id().then(b=>a===b?Promise.resolve():Promise.reject()))}
+function Qd(){return Q("application_server_key").then(a=>Sd().then(b=>a===b?Promise.resolve():Promise.reject()))}
+function Rd(){P("RegistrationTimestamp",0);Promise.all([Id(),Td(),Ud(),Sd()]).then(([a,b,c,d])=>{b=b?Zb(b):null;c=c?Zb(c):null;if(d){d=new Uint8Array(d);var e=4;void 0===e&&(e=0);if(!$a){$a={};for(var f="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),g=["+/=","+/","-_=","-_.","-_"],h=0;5>h;h++){var l=f.concat(g[h].split(""));Za[h]=l;for(var m=0;m<l.length;m++){var p=l[m];void 0===$a[p]&&($a[p]=m)}}}e=Za[e];f=[];for(g=0;g<d.length;g+=3){var n=d[g],t=(h=g+1<d.length)?d[g+
+1]:0;p=(l=g+2<d.length)?d[g+2]:0;m=n>>2;n=(n&3)<<4|t>>4;t=(t&15)<<2|p>>6;p&=63;l||(p=64,h||(t=64));f.push(e[m],e[n],e[t]||"",e[p]||"")}d=f.join("")}else d=null;Vd(a,b,c,d)}).catch(()=>{Vd()})}
+function Vd(a=null,b=null,c=null,d=null){cc().then(e=>{e&&(P("Endpoint",a),P("P256dhKey",b),P("AuthKey",c),P("application_server_key",d),P("Permission",Notification.permission),Promise.all([Q("DeviceId"),Q("NotificationsDisabled"),Wd()]).then(([f,g,h])=>{Xd(a,f,b,c,d,g,h)}))})}
+function Xd(a,b,c,d,e,f,g){a={credentials:"include",method:"POST",body:Gd({endpoint:a,deviceId:b,L:f,p256dhKey:c,authKey:d,applicationServerKey:e,N:g})};q.fetch("/notifications_ajax?action_register_device=1",a).then(Yd).catch(()=>{})}
+function Gd(a){const b=new FormData;a.endpoint&&b.append("endpoint",a.endpoint);a.deviceId&&b.append("device_id",a.deviceId);a.ts&&b.append("timestamp_lower_bound",a.ts);a.D&&(b.append("notification_id",a.D.id),b.append("attribution_tag",a.D.attributionTag));a.L&&b.append("notifications_disabled",(!!a.L).toString());a.p256dhKey&&b.append("p256dh_key",a.p256dhKey);a.authKey&&b.append("auth_key",a.authKey);a.applicationServerKey&&b.append("application_server_key",a.applicationServerKey);a.N&&b.append("registration_token",
+a.N);b.append("permission",Notification.permission);return b}
+function Yd(a){P("RegistrationTimestamp",Date.now());a.ok&&a.json().then(b=>{b.ts&&Dd(b.ts);b.device_id&&P("DeviceId",b.device_id)}).catch(()=>{})}
+function Id(){return self.registration.pushManager.getSubscription().then(a=>a?Promise.resolve(a.endpoint):Promise.resolve(null))}
+function Td(){return self.registration.pushManager.getSubscription().then(a=>a&&a.getKey?Promise.resolve(a.getKey("p256dh")):Promise.resolve(null))}
+function Ud(){return self.registration.pushManager.getSubscription().then(a=>a&&a.getKey?Promise.resolve(a.getKey("auth")):Promise.resolve(null))}
+function Sd(){return self.registration.pushManager.getSubscription().then(a=>a?Promise.resolve(a.options.applicationServerKey):Promise.resolve(null))}
+function Wd(){return fetch("/notifications_ajax?action_get_registration_token=1",{credentials:"include",method:"POST"}).then(a=>{if(a.ok)return a.json().then(b=>b.registration_token).catch(()=>{})})}
+function Dd(a){P("TimestampLowerBound",a)}
+;function Zd(a,...b){if(!$d(a)||b.some(c=>!$d(c)))throw Error("Only objects may be merged.");
+for(const c of b)ae(a,c);return a}
+function ae(a,b){for(const c in b)if($d(b[c])){if(c in a&&!$d(a[c]))throw Error("Cannot merge an object into a non-object.");c in a||(a[c]={});ae(a[c],b[c])}else if(be(b[c])){if(c in a&&!be(a[c]))throw Error("Cannot merge an array into a non-array.");c in a||(a[c]=[]);ce(a[c],b[c])}else a[c]=b[c];return a}
+function ce(a,b){for(const c of b)$d(c)?a.push(ae({},c)):be(c)?a.push(ce([],c)):a.push(c);return a}
+function $d(a){return"object"===typeof a&&!Array.isArray(a)}
+function be(a){return"object"===typeof a&&Array.isArray(a)}
+;function de(a,b){this.version=a;this.args=b}
+;function ee(a){this.topic=a}
+ee.prototype.toString=function(){return this.topic};const fe=u("ytPubsub2Pubsub2Instance")||new N;N.prototype.subscribe=N.prototype.R;N.prototype.unsubscribeByKey=N.prototype.o;N.prototype.publish=N.prototype.C;N.prototype.clear=N.prototype.clear;w("ytPubsub2Pubsub2Instance",fe);w("ytPubsub2Pubsub2SubscribedKeys",u("ytPubsub2Pubsub2SubscribedKeys")||{});w("ytPubsub2Pubsub2TopicToKeys",u("ytPubsub2Pubsub2TopicToKeys")||{});w("ytPubsub2Pubsub2IsAsync",u("ytPubsub2Pubsub2IsAsync")||{});w("ytPubsub2Pubsub2SkipSubKey",null);
+function ge(a,b){const c=u("ytPubsub2Pubsub2Instance");c&&c.publish.call(c,a.toString(),a,b)}
+;const he={};let ie=0;
+function je(a,b,c,d,e=""){if(a)if(c&&!dd("cobalt")){if(a){a instanceof A||(a="object"==typeof a&&a.A?a.u():String(a),Fa.test(a)?a=new A(a,Ca):(a=String(a),a=a.replace(/(%0A|%0D)/g,""),a=(b=a.match(Ea))&&Da.test(b[1])?new A(a,Ca):null));a=a||Ga;a=a instanceof A&&a.constructor===A?a.c:"type_error:SafeUrl";if("about:invalid#zClosurez"===a||a.startsWith("data"))a="";else{if(!(a instanceof D)){var f="object"==typeof a;b=null;f&&a.I&&(b=a.H());a=ua(f&&a.A?a.u():String(a));if(void 0===sa){f=null;var g=q.trustedTypes;
+if(g&&g.createPolicy){try{f=g.createPolicy("goog#html",{createHTML:la,createScript:la,createScriptURL:la})}catch(r){q.console&&q.console.error(r.message)}sa=f}else sa=f}a=(f=sa)?f.createHTML(a):a;a=new D(a,b,Ja)}a=encodeURIComponent(String(Hb((a instanceof D&&a.constructor===D?a.c:"type_error:SafeHtml").toString())))}/^[\s\xa0]*$/.test(a)||(a=mb("IFRAME",{src:`javascript:"<body><img src=\\""+${a}+"\\"></body>"`,style:"display:none"}),(9==a.nodeType?a:a.ownerDocument||a.document).body.appendChild(a))}}else if(e)$c(a,
+b,"POST",e,d);else if(S("USE_NET_AJAX_FOR_PING_TRANSPORT",!1)||d)$c(a,b,"GET","",d);else{b:{try{var h=new ab({url:a});if(h.g&&h.f||h.h){const r=F(G(5,a));if(!(g=!r||!r.endsWith("/aclk"))){var l=a.search(eb);d:{for(c=0;0<=(c=a.indexOf("ri",c))&&c<l;){var m=a.charCodeAt(c-1);if(38==m||63==m){var p=a.charCodeAt(c+2);if(!p||61==p||38==p||35==p){var n=c;break d}}c+=3}n=-1}if(0>n)var t=null;else{var k=a.indexOf("&",n);if(0>k||k>l)k=l;n+=3;t=decodeURIComponent(a.substr(n,k-n).replace(/\+/g," "))}g="1"!==
+t}f=!g;break b}}catch(r){}f=!1}f?ke(a)?(b&&b(),f=!0):f=!1:f=!1;f||le(a,b)}}
+function ke(a,b=""){try{if(window.navigator&&window.navigator.sendBeacon&&window.navigator.sendBeacon(a,b))return!0}catch(c){}return!1}
+function le(a,b){const c=new Image,d=""+ie++;he[d]=c;c.onload=c.onerror=()=>{b&&he[d]&&b();delete he[d]};
+c.src=a}
+;var me=class extends de{constructor(a,b){super(1,arguments)}},ne=class extends de{constructor(a,b){super(1,arguments)}},oe=new ee("aft-recorded"),pe=new ee("timing-sent");const qe=window;class re{constructor(){this.timing={};this.clearResourceTimings=()=>{};
+this.webkitClearResourceTimings=()=>{};
+this.mozClearResourceTimings=()=>{};
+this.msClearResourceTimings=()=>{};
+this.oClearResourceTimings=()=>{}}}
+var W=qe.performance||qe.mozPerformance||qe.msPerformance||qe.webkitPerformance||new re;let se=!1;ja(W.clearResourceTimings||W.webkitClearResourceTimings||W.mozClearResourceTimings||W.msClearResourceTimings||W.oClearResourceTimings||v,W);function te(a){const b=X(a);if(b.aft)return b.aft;a=S((a||"")+"TIMING_AFT_KEYS",["ol"]);const c=a.length;for(let d=0;d<c;d++){const e=b[a[d]];if(e)return e}return NaN}
+function Y(a){var b;(b=u("ytcsi."+(a||"")+"data_"))||(b={tick:{},info:{}},w("ytcsi."+(a||"")+"data_",b));return b}
+function ue(a){a=Y(a);a.info||(a.info={});return a.info}
+function X(a){a=Y(a);a.tick||(a.tick={});return a.tick}
+function ve(a){let b=Y(a).nonce;b||(b=zd(),Y(a).nonce=b);return b}
+function we(a){const b=X(a||""),c=te(a);c&&!se&&(ge(oe,new me(Math.round(c-b._start),a)),se=!0)}
+;function xe(){let a=u("ytcsi.debug");a||(a=[],w("ytcsi.debug",a),w("ytcsi.reference",{}));return a}
+function ye(a){a=a||"";var b=u("ytcsi.reference");b||(xe(),b=u("ytcsi.reference"));if(b[a])return b[a];{const c=xe(),d={timerName:a,info:{},tick:{},span:{}};c.push(d);return b[a]=d}}
+;const Z=q.ytLoggingLatencyUsageStats_||{};w("ytLoggingLatencyUsageStats_",Z);function ze(){Ae.instance||(Ae.instance=new Ae);return Ae.instance}
+function Be(a,b){Z[b]=Z[b]||{count:0};var c=Z[b];c.count++;c.time=V();a.c||(a.c=oc(()=>{{const d=V();for(const e in Z)Z[e]&&6E4<d-Z[e].time&&delete Z[e];a&&(a.c=0)}}));
+return 5<c.count?(6===c.count&&1>1E5*Math.random()&&(c=new $b("CSI data exceeded logging limit with key",b.split("_")),0<=b.indexOf("plev")||wd(c)),!0):!1}
+var Ae=class{constructor(){this.c=0}tick(a,b,c){Be(this,`tick_${a}_${b}`)||od("latencyActionTicked",{tickName:a,clientActionNonce:b},{timestamp:c})}info(a,b){const c=Object.keys(a).join("");Be(this,`info_${c}_${b}`)||(a=Object.assign({},a),a.clientActionNonce=b,od("latencyActionInfo",a))}span(a,b){const c=Object.keys(a).join("");Be(this,`span_${c}_${b}`)||(a.clientActionNonce=b,od("latencyActionSpan",a))}};var Ce={["ad_allowed"]:"adTypesAllowed",["yt_abt"]:"adBreakType",["ad_cpn"]:"adClientPlaybackNonce",["ad_docid"]:"adVideoId",["yt_ad_an"]:"adNetworks",["ad_at"]:"adType",["aida"]:"appInstallDataAgeMs",["browse_id"]:"browseId",["p"]:"httpProtocol",["t"]:"transportProtocol",["cpn"]:"clientPlaybackNonce",["ccs"]:"creatorInfo.creatorCanaryState",["cseg"]:"creatorInfo.creatorSegment",["csn"]:"clientScreenNonce",["docid"]:"videoId",["GetHome_rid"]:"requestIds",["GetSearch_rid"]:"requestIds",["GetPlayer_rid"]:"requestIds",
+["GetWatchNext_rid"]:"requestIds",["GetBrowse_rid"]:"requestIds",["GetLibrary_rid"]:"requestIds",["is_continuation"]:"isContinuation",["is_nav"]:"isNavigation",["b_p"]:"kabukiInfo.browseParams",["is_prefetch"]:"kabukiInfo.isPrefetch",["is_secondary_nav"]:"kabukiInfo.isSecondaryNav",["prev_browse_id"]:"kabukiInfo.prevBrowseId",["query_source"]:"kabukiInfo.querySource",["voz_type"]:"kabukiInfo.vozType",["yt_lt"]:"loadType",["mver"]:"creatorInfo.measurementVersion",["yt_ad"]:"isMonetized",["nr"]:"webInfo.navigationReason",
+["nrsu"]:"navigationRequestedSameUrl",["ncnp"]:"webInfo.nonPreloadedNodeCount",["pnt"]:"performanceNavigationTiming",["prt"]:"playbackRequiresTap",["plt"]:"playerInfo.playbackType",["pis"]:"playerInfo.playerInitializedState",["paused"]:"playerInfo.isPausedOnLoad",["yt_pt"]:"playerType",["fmt"]:"playerInfo.itag",["yt_pl"]:"watchInfo.isPlaylist",["yt_pre"]:"playerInfo.preloadType",["yt_ad_pr"]:"prerollAllowed",["pa"]:"previousAction",["yt_red"]:"isRedSubscriber",["rce"]:"mwebInfo.responseContentEncoding",
+["scrh"]:"screenHeight",["scrw"]:"screenWidth",["st"]:"serverTimeMs",["ssdm"]:"shellStartupDurationMs",["aq"]:"tvInfo.appQuality",["br_trs"]:"tvInfo.bedrockTriggerState",["kebqat"]:"kabukiInfo.earlyBrowseRequestInfo.abandonmentType",["kebqa"]:"kabukiInfo.earlyBrowseRequestInfo.adopted",["label"]:"tvInfo.label",["is_mdx"]:"tvInfo.isMdx",["preloaded"]:"tvInfo.isPreloaded",["upg_player_vis"]:"playerInfo.visibilityState",["query"]:"unpluggedInfo.query",["upg_chip_ids_string"]:"unpluggedInfo.upgChipIdsString",
+["yt_vst"]:"videoStreamType",["vph"]:"viewportHeight",["vpw"]:"viewportWidth",["yt_vis"]:"isVisible",["rcl"]:"mwebInfo.responseContentLength",["GetSettings_rid"]:"requestIds",["GetTrending_rid"]:"requestIds",["GetMusicSearchSuggestions_rid"]:"requestIds",REQUEST_ID:"requestIds"},De="isContinuation isNavigation kabukiInfo.earlyBrowseRequestInfo.adopted kabukiInfo.isPrefetch kabukiInfo.isSecondaryNav isMonetized navigationRequestedSameUrl performanceNavigationTiming playerInfo.isPausedOnLoad prerollAllowed isRedSubscriber tvInfo.isMdx tvInfo.isPreloaded isVisible watchInfo.isPlaylist playbackRequiresTap".split(" "),
+Ee={["ccs"]:"CANARY_STATE_",["mver"]:"MEASUREMENT_VERSION_",["pis"]:"PLAYER_INITIALIZED_STATE_",["yt_pt"]:"LATENCY_PLAYER_",["pa"]:"LATENCY_ACTION_",["yt_vst"]:"VIDEO_STREAM_TYPE_"},Fe="all_vc ap c cver cbrand cmodel cplatform ctheme ei l_an l_mm plid srt yt_fss yt_li vpst vpni2 vpil2 icrc icrt pa GetAccountOverview_rid GetHistory_rid cmt d_vpct d_vpnfi d_vpni nsru pc pfa pfeh pftr pnc prerender psc rc start tcrt tcrc ssr vpr vps yt_abt yt_fn yt_fs yt_pft yt_pre yt_pt yt_pvis ytu_pvis yt_ref yt_sts tds".split(" ");
+function Ge(a){return!!S("FORCE_CSI_ON_GEL",!1)||T("csi_on_gel")||!!Y(a).useGel}
+function He(a){a=Y(a);if(!("gel"in a))a.gel={gelTicks:{},gelInfos:{}};else if(a.gel){const b=a.gel;b.gelInfos||(b.gelInfos={});b.gelTicks||(b.gelTicks={})}return a.gel}
+;function Ie(a,b,c){if(null!==b)if(ue(c)[a]=b,Ge(c)){var d=b;b=He(c);b.gelInfos?b.gelInfos["info_"+a]=!0:b.gelInfos={["info_"+a]:!0};if(a.match("_rid")){var e=a.split("_rid")[0];a="REQUEST_ID"}if(a in Ce){b=Ce[a];0<=Array.prototype.indexOf.call(De,b,void 0)&&(d=!!d);a in Ee&&"string"===typeof d&&(d=Ee[a]+d.toUpperCase());{a=d;d=b.split(".");const f={};let g=f;for(let h=0;h<d.length-1;h++){const l=d[h];g[l]={};g=g[l]}g[d[d.length-1]]="requestIds"===b?[{id:a,endpoint:e}]:a;b=Zd({},f)}}else 0<=Array.prototype.indexOf.call(Fe,
+a,void 0)||wd(new $b("Unknown label logged with GEL CSI",a)),b=void 0;b&&Ge(c)&&(a=ye(c||""),Zd(a.info,b),a=He(c),"gelInfos"in a||(a.gelInfos={}),a=a.gelInfos,Zd(a,b),c=ve(c),ze().info(b,c))}else ye(c||"").info[a]=b}
+function Je(a,b,c){const d=X(c);if(T("use_first_tick")&&Ke(a,c))return d[a];if(!b&&"_"!==a[0]){var e=a;W.mark&&(0==e.lastIndexOf("mark_",0)||(e="mark_"+e),c&&(e+=` (${c})`),W.mark(e))}e=b||V();d[a]=e;e=He(c);e.gelTicks&&(e.gelTicks["tick_"+a]=!0);c||b||V();if(Ge(c)){ye(c||"").tick[a]=b||V();var f=ve(c);"_start"===a?(e=ze(),Be(e,`baseline_${f}`)||od("latencyActionBaselined",{clientActionNonce:f},{timestamp:b})):ze().tick(a,f,b);we(c);e=!0}else e=!1;if(!e){if(!u("yt.timing."+(c||"")+"pingSent_")&&(f=
+S((c||"")+"TIMING_ACTION",void 0),e=X(c),u("ytglobal.timing"+(c||"")+"ready_")&&f&&Ke("_start")&&te(c)))if(we(c),c)Le(c);else{f=!0;var g=S("TIMING_WAIT",[]);if(g.length)for(let h=0,l=g.length;h<l;++h)if(!(g[h]in e)){f=!1;break}f&&Le(c)}ye(c||"").tick[a]=b||V()}return d[a]}
+function Ke(a,b){b=X(b);return a in b}
+function Le(a){if(!Ge(a)){var b=X(a),c=ue(a),d=b._start,e=S("CSI_SERVICE_NAME","youtube"),f={v:2,s:e,action:S((a||"")+"TIMING_ACTION",void 0)},g=c.srt;void 0!==b.srt&&delete c.srt;b.aft=te(a);{var h=X(a);var l=h.pbr;const p=h.vc;h=h.pbs;l=!!(l&&p&&h&&l<p&&p<h&&ue(a).yt_pvis)}l&&"youtube"===e&&(Ie("yt_lt","hot_bg",a),e=b.vc,l=b.pbs,delete b.aft,c.aft=Math.round(l-e));for(var m in c)"_"!==m.charAt(0)&&(f[m]=c[m]);b.ps=V();m={};e=[];for(const p in b)"_"!==p.charAt(0)&&(l=Math.round(b[p]-d),m[p]=l,e.push(`${p}.${l}`));
+f.rt=e.join(",");b=!!c.ap;T("debug_csi_data")&&(c=u("yt.timing.csiData"),c||(c=[],w("yt.timing.csiData",c)),c.push({page:location.href,time:new Date,args:f}));c="";for(const p in f)f.hasOwnProperty(p)&&(c+=`&${p}=${f[p]}`);f="/csi_204?"+c.substring(1);window.navigator&&window.navigator.sendBeacon&&b?ke(f,"")||je(f,void 0,void 0,void 0,""):je(f);w("yt.timing."+(a||"")+"pingSent_",!0);ge(pe,new ne(m.aft+(Number(g)||0),a))}}
+const Me=window;Me.ytcsi&&(Me.ytcsi.info=Ie,Me.ytcsi.tick=Je);self.onmessage=function(a){var b=a.data;a=b.type;b=b.data;"notifications_register"===a?(P("IDToken",b),Rd()):"notifications_check_registration"===a&&Ld(b)};
+self.onnotificationclick=function(a){a.notification.close();const b=a.notification.data,c=self.clients.matchAll({type:"window",includeUncontrolled:!0});c.then(d=>{a:{var e=b.nav;for(const f of d)if(f.url===e){f.focus();break a}self.clients.openWindow(e)}});
+a.waitUntil(c);a.waitUntil(Fd(b))};
+self.onpush=function(a){a.waitUntil(Q("NotificationsDisabled").then(b=>{if(b)return Promise.resolve();if(a.data&&a.data.text().length)try{return Bd(a.data.json())}catch(c){return Promise.resolve(c.message)}return Hd()}));
+a.waitUntil(Ad())};
+self.onpushsubscriptionchange=function(){Rd()};
+self.oninstall=function(a){a.waitUntil(self.skipWaiting())};
+self.onactivate=function(a){a.waitUntil(self.clients.claim())};

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+<title>SSHD Init Script</title>
+<meta charset="UTF-8" />
+<meta property="og:title" content="SSHD Init Script" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;topic=104.0" />
+<meta property="og:description" content="SSHD Init Script" />
+<meta property="og:site_name" content="Artix Linux Forum" />
+<meta name="viewport" content="width=device-width" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="description" content="SSHD Init Script" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/index.css?R116" id="index.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/icons_svg.css?R116" id="icons_svg.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/custom.css?R116" id="custom.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/font-awesome.min.css?R116" id="font-awesome.min.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/_dark/index_dark.css?R116" id="index_dark.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/prettify.css?R116" id="prettify.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/default/css/mentions_droppy.css?R116" id="mentions_droppy.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/default/css/ILA.css?R116" id="ILA.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/fancybox/jquery.fancybox.css?v=2.1.6" id="jquery.fancybox.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/fancybox/jquery.fancybox-buttons.css?v=2.1.6" id="jquery.fancybox-buttons.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/fancybox/jquery.fancybox-thumbs.css?v=2.1.6" id="jquery.fancybox-thumbs.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/default/css/jquery.atwho.css?R116" id="jquery.atwho.css" />
+<link rel="canonical" href="https://forum.artixlinux.org/index.php/topic,104.0.html?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s" />
+<link rel="shortcut icon" sizes="196x196" href="https://forum.artixlinux.org/themes/silence/images/mobile.png" />
+<link rel="help" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=help" />
+<link rel="contents" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;" />
+<link rel="search" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=search" />
+<link rel="alternate" type="application/rss+xml" title="Artix Linux Forum - RSS" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=.xml;type=rss2;limit=5" />
+<link rel="alternate" type="application/rss+xml" title="Artix Linux Forum - Atom" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=.xml;type=atom;limit=5" />
+<link rel="next" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;topic=104.0;prev_next=next" />
+<link rel="prev" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;topic=104.0;prev_next=prev" />
+<link rel="index" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;board=29.0" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" id="jquery"></script>
+<script>
+		window.jQuery || document.write('<script src="https://forum.artixlinux.org/themes/default/scripts/jquery-3.1.1.min.js"><\/script>');
+	</script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/elk_jquery_plugins.js?R116" id="elk_jquery_plugins.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/script.js?R116" id="script.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/script_elk.js?R116" id="script_elk.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/theme.js?R116" id="theme.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/mentions_droppy.js?R116" id="mentions_droppy.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/fancybox/jquery.fancybox.min.js?v=2.1.6" id="jquery.fancybox.min.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/fancybox/helpers/jquery.fancybox-buttons.js?v=2.1.6" id="jquery.fancybox-buttons.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/fancybox/helpers/jquery.fancybox-thumbs.js?v=2.1.6" id="jquery.fancybox-thumbs.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/topic.js?R116" id="topic.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/mentioning.js?R116" id="mentioning.js"></script>
+<script>
+		$(document).ready(function() {$("[data-lightboximage]").off("click.elk_lb");});
+		$(function() {
+			$().linkifyvideo(oEmbedtext);
+		});
+		$(function() {
+			for (var i = 0, count = all_elk_mentions.length; i < count; i++)
+				all_elk_mentions[i].oMention = new elk_mentions(all_elk_mentions[i].oOptions);
+		});
+		var elk_theme_url = 'https://forum.artixlinux.org/themes/silence',
+			elk_default_theme_url = 'https://forum.artixlinux.org/themes/default',
+			elk_images_url = 'https://forum.artixlinux.org/themes/silence/images',
+			elk_smiley_url = 'https://artixlinux.org/forum/smileys',
+			elk_scripturl = 'https://forum.artixlinux.org/index.php',
+			elk_iso_case_folding = false,
+			elk_charset = "UTF-8",
+			elk_session_id = '8q3g6ensk5bdg7abOJ8FlRYVIerqynyf',
+			elk_session_var = 'sk5bdg7a01i',
+			elk_member_id = 0,
+			ajax_notification_text = 'Loading...',
+			ajax_notification_cancel_text = 'Cancel',
+			help_popup_heading_text = 'A little lost? Let me explain:',
+			use_click_menu = false,
+			todayMod = 2,
+			likemsg_are_you_sure = 'You already liked this message, are you sure you want to remove your like?',
+			notification_topic_notice = 'Are you sure you wish to enable notification of new replies for this topic?',
+			elk_forum_action = 'action=forum';
+	</script>
+<style>
+	.gist-data {max-height: 20em;}
+		
+		.avatarresize {
+			max-width:65px;
+			max-height:65px;
+		}
+		
+		.wrapper {width: 100%;}
+	</style>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://artixlinux.org/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://artixlinux.org/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://artixlinux.org/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://artixlinux.org/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://artixlinux.org/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://artixlinux.org/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://artixlinux.org/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://artixlinux.org/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-128x128.png" sizes="128x128" />
+<meta name="application-name" content="Artix Linux" /> 
+<meta name="msapplication-TileColor" content="#1a1a1a" />
+<meta name="msapplication-TileImage" content="https://artixlinux.org/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="https://artixlinux.org/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="https://artixlinux.org/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="https://artixlinux.org/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="https://artixlinux.org/favicons/mstile-310x310.png" />
+</head>
+<body id="safari" class="action_messageindex board_29">
+<a id="top" href="#skipnav" tabindex="0">Skip to main content</a>
+<a href="#top" id="gotop" title="Go Up">&#8593;</a>
+<a href="#bot" id="gobottom" title="Go Down">&#8595;</a>
+<header id="top_section">
+<aside class="wrapper">
+<div id="top_section_notice" class="user">
+<form action="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=login2;quicklogin" method="post" accept-charset="UTF-8">
+<div id="password_login">
+<input type="text" name="user" size="10" class="input_text" placeholder="Username" />
+<input type="password" name="passwrd" size="10" class="input_password" placeholder="Password" />
+<select name="cookielength">
+<option value="60">1 Hour</option>
+<option value="1440">1 Day</option>
+<option value="10080">1 Week</option>
+<option value="43200">1 Month</option>
+<option value="-1" selected="selected">Forever</option>
+</select>
+<input type="submit" value="Log in" />
+<input type="hidden" name="hash_passwrd" value="" />
+<input type="hidden" name="old_hash_passwrd" value="" />
+<input type="hidden" name="sk5bdg7a01i" value="8q3g6ensk5bdg7abOJ8FlRYVIerqynyf" />
+<input type="hidden" name="iXzqUJyFXwjq" value="7hxhQzwuk9d7YtpxKPuNavdCYUxZNiYF" />
+</div>
+</form>
+</div>
+<form id="search_form" action="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=search;sa=results" method="post" accept-charset="UTF-8">
+<label for="quicksearch">
+<input type="text" name="search" id="quicksearch" value="" class="input_text" placeholder="Search" />
+</label>
+<label for="search_selection">
+<select name="search_selection" id="search_selection">
+<option value="all">Entire Forum </option>
+<option value="topic" selected="selected">This topic</option>
+<option value="board">This board</option>
+<option value="members">Members </option>
+</select>
+</label>
+<input type="hidden" name="sd_topic" value="104" />
+<input type="hidden" name="sd_brd[29]" value="29" />
+<button type="submit" name="search;sa=results" class="with_select"><i class="icon i-search icon-shade"></i></button>
+<input type="hidden" name="advanced" value="0" />
+</form>
+</aside>
+<section id="header" class="wrapper">
+<h1 id="forumtitle">
+<a class="forumlink" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;">Artix Linux Forum</a>
+<span id="logobox">
+<img id="logo" src="https://artixlinux.org/forum/themes/silence/images/logo.png" alt="Artix Linux Forum" title="Artix Linux Forum" />
+</span>
+</h1>
+</section>
+<nav id="menu_nav">
+<ul id="main_menu" class="wrapper" role="menubar">
+<li id="collapse_button" class="listlevel1">
+<a class="linklevel1 panel_toggle">
+<i id="upshrink" class="hide chevricon i-chevron-up icon icon-lg" title="Shrink or expand the header."></i>
+</a>
+</li>
+<li id="button_5df700799cfa1a5dc47d174bd6bc47a5-1519303895" class="listlevel1">
+<a class="linklevel1" href="https://artixlinux.org" target="_self"><span class="button_title" aria-hidden="true">Home</span></a>
+</li>
+<li id="button_2f153e69a662148592d3d8adb732b144-1519303929" class="listlevel1">
+<a class="linklevel1" href="https://wiki.artixlinux.org" target="_self"><span class="button_title" aria-hidden="true">Wiki</span></a>
+</li>
+<li id="button_home" class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 active" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;"><i class="icon icon-menu icon-lg i-home" title="Community"></i> <span class="button_title" aria-hidden="true">Community</span></a>
+<ul class="menulevel2" role="menu">
+<li id="button_help" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=help">Help</a>
+</li>
+<li id="button_search" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=search">Search</a>
+</li>
+<li id="button_recent" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=recent">Recent Posts</a>
+</li>
+<li id="button_like_stats" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=likes;sa=likestats">Like stats</a>
+</li>
+<li id="button_contact" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=register;sa=contact">Contact Us</a>
+</li>
+</ul>
+</li>
+<li id="button_login" class="listlevel1">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=login"><i class="icon icon-menu icon-lg i-sign-in" title="Log in"></i> <span class="button_title" aria-hidden="true">Log in</span></a>
+</li>
+<li id="button_register" class="listlevel1">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=register"><i class="icon icon-menu icon-lg i-register" title="Register"></i> <span class="button_title" aria-hidden="true">Register</span></a>
+</li>
+</ul>
+</nav>
+</header>
+<div id="wrapper" class="wrapper">
+<aside id="upper_section">
+<div id="news">
+<h2>News</h2>
+<ul id="elkFadeScroller">
+<li>
+Our <a href="https://wiki.artixlinux.org" class="bbc_link" target="_blank" rel="noopener noreferrer">Wiki</a> is up and running, waiting for some loving contributions.</li><li>Due to a series of spam posts, all new forum registrations will require administrator approval. Spam accounts and their posts have been deleted.
+</li>
+</ul>
+</div>
+</aside>
+<nav>
+<ul class="navigate_section">
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;"><i class="icon i-home"><s>Home</s></i></a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=forum;#c7">Init systems</a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;board=29.0">OpenRC</a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;topic=104.0">SSHD Init Script</a>
+</span>
+</li>
+</ul>
+</nav>
+<div id="main_content_section"><a id="skipnav"></a>
+<a id="msg718"></a>
+<nav class="pagesection">
+<ul class="pagelinks floatleft" role="menubar"><li class="linavPages"><strong class="current_page" role="menuitem">1</strong></li></ul>
+<ul role="menubar" class="buttonlist floatright">
+<li role="menuitem"><a class="linklevel1 button_strip_print" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=topic;sa=printpage;topic=104.0" rel="nofollow">Print</a></li>
+</ul>
+</nav>
+<main id="forumposts">
+<header class="category_header">
+<img src="https://forum.artixlinux.org/themes/silence/images/topic/normal_post.png" alt="" />
+Topic: SSHD Init Script&nbsp;<span class="views_text">(Read 1126 times)</span>
+<span class="nextlinks"><a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;topic=104.0;prev_next=prev#new">previous topic</a> - <a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;topic=104.0;prev_next=next#new">next topic</a></span>
+</header>
+<section>
+<div class="generalinfo">
+<span id="whoisviewing">0 Members and 1 Guest are viewing this topic.
+</span>
+</div>
+<form id="quickModForm" action="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=quickmod2;topic=104.0" method="post" accept-charset="UTF-8" name="quickModForm" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('8q3g6ensk5bdg7abOJ8FlRYVIerqynyf', 'sk5bdg7a01i') : false">
+<article class="post_wrapper forumposts">
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=profile;u=32">
+mrbrklyn
+</a>
+<ul id="msg_718_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postgroup">Hero Member</li>
+<li class="listlevel2 postcount">Posts: 828</li>
+<li class="listlevel2 registered">Joined: Sep 03, 2017</li>
+<li class="listlevel2 profile">
+<ol>
+<li class="cf_icon"><a href="http://www.mrbrklyn.com" title="MrBrklyn" target="_blank" class="new_win"><i class="icon i-website" title="MrBrklyn"></i></a></li>
+</ol>
+</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=profile;u=32">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=dlattach;attach=181;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icon.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icon.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icon.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icon.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icon.png" alt="[*]" /></li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_718" class="post_subject">SSHD Init Script</h2>
+<span id="messageicon_718" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_718">
+<a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;topic=104.msg718#msg718" rel="nofollow"></a><time title="Last post" datetime="2017-10-06 02:24" data-timestamp="1507249441">06 October 2017, 02:24:01</time>
+</h5>
+<div id="msg_718_quick_mod"></div>
+</header>
+<section id="msg_718" class="messageContent">I made this script but I&#039;m not absolutely happy because it doesn&#039;t kill the whole chain of sshd services that are already open.&nbsp; It only kills the&nbsp; top<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint">#!/usr/bin/openrc-run<br /># Copyright 1999-2015 Gentoo Foundation<br /># Distributed under the terms of the GNU General Public License v2<br /><br />extra_commands=&quot;checkconfig&quot;<br />extra_started_commands=&quot;reload&quot;<br /><br />: ${SSHD_CONFDIR:=/etc/ssh}<br />: ${SSHD_CONFIG:=${SSHD_CONFDIR}/sshd_config}<br />: ${SSHD_PIDFILE:=/run/${SVCNAME}.pid}<br />: ${SSHD_BINARY:=/usr/bin/sshd}<br /><br />depend() {<br />&nbsp; &nbsp; &nbsp; &nbsp; use logger dns<br />&nbsp; &nbsp; &nbsp; &nbsp; if &#91; &quot;${rc_need+set}&quot; = &quot;set&quot; &#93; ; then<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : # Do nothing, the user has explicitly set rc_need<br />&nbsp; &nbsp; &nbsp; &nbsp; else<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; local x warn_addr<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for x in $(awk &#039;/^ListenAddress/{ print $2 }&#039; &quot;$SSHD_CONFIG&quot; 2&gt;/dev/null) ; do<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case &quot;${x}&quot; in<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0.0.0.0|0.0.0.0:*) ;;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ::|\&#91;::\&#93;*) ;;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *) warn_addr=&quot;${warn_addr} ${x}&quot; ;;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; esac<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; done<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if &#91; -n &quot;${warn_addr}&quot; &#93; ; then<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; need net<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ewarn &quot;You are binding an interface in ListenAddress statement in your sshd_config!&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ewarn &quot;You must add rc_need=\&quot;net.FOO\&quot; to your /etc/conf.d/sshd&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ewarn &quot;where FOO is the interface(s) providing the following address(es):&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ewarn &quot;${warn_addr}&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fi<br />&nbsp; &nbsp; &nbsp; &nbsp; fi<br />}<br /><br />checkconfig() {<br />&nbsp; &nbsp; &nbsp; &nbsp; if &#91; ! -d /var/empty &#93; ; then<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mkdir -p /var/empty || return 1<br />&nbsp; &nbsp; &nbsp; &nbsp; fi<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; if &#91; ! -e &quot;${SSHD_CONFIG}&quot; &#93; ; then<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; eerror &quot;You need an ${SSHD_CONFIG} file to run sshd&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; eerror &quot;There is a sample file in /usr/share/doc/openssh&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return 1<br />&nbsp; &nbsp; &nbsp; &nbsp; fi<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; ssh-keygen -A || return 1<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &#91; &quot;${SSHD_PIDFILE}&quot; != &quot;/run/sshd.pid&quot; &#93; \<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp;&amp; SSHD_OPTS=&quot;${SSHD_OPTS} -o PidFile=${SSHD_PIDFILE}&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; &#91; &quot;${SSHD_CONFIG}&quot; != &quot;/etc/ssh/sshd_config&quot; &#93; \<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &amp;&amp; SSHD_OPTS=&quot;${SSHD_OPTS} -f ${SSHD_CONFIG}&quot;<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &quot;${SSHD_BINARY}&quot; -t ${SSHD_OPTS} || return 1<br />}<br />stop() {<br />&nbsp; &nbsp; &nbsp; &nbsp; ebegin &quot;Stopping ${SVCNAME}&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; echo &quot;start-stop-daemon --stop --exec ${SSHD_BINARY}&nbsp; --pidfile ${SSHD_PIDFILE} --quiet&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; start-stop-daemon --stop --exec &quot;${SSHD_BINARY}&quot;&nbsp; --pidfile &quot;${SSHD_PIDFILE}&quot; --quiet<br />&nbsp; &nbsp; &nbsp; &nbsp; eend $?<br />}<br /><br />reload() {<br />&nbsp; &nbsp; &nbsp; &nbsp; checkconfig || return 1<br />&nbsp; &nbsp; &nbsp; &nbsp; ebegin &quot;Reloading ${SVCNAME}&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; start-stop-daemon --signal HUP \<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --exec &quot;${SSHD_BINARY}&quot; --pidfile &quot;${SSHD_PIDFILE}&quot;<br />&nbsp; &nbsp; &nbsp; &nbsp; eend $?<br />}<br /></pre><br />now the binary sshd does not have a shutdown so I&#039;m not sure what to do here.&nbsp; I can run it in the foreground and force it to the background.<br /><br /><br />
+</section>
+<nav>
+<ul id="buttons_718" class="quickbuttons">
+<li id="modified_718" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg6541"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=profile;u=97">
+#######
+</a>
+<ul id="msg_6541_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postgroup">Senior Member</li>
+<li class="listlevel2 postcount">Posts: 469</li>
+<li class="listlevel2 registered">Joined: Sep 23, 2017</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=profile;u=97">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=dlattach;attach=108;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icon.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icon.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icon.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icon.png" alt="[*]" /></li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_6541" class="post_subject">Re: SSHD Init Script</h2>
+<span id="messageicon_6541" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_6541">
+<a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;topic=104.msg6541#msg6541" rel="nofollow">Reply #1</a> &ndash; <time title="Last post" datetime="2019-02-02 23:07" data-timestamp="1549145251">02 February 2019, 23:07:31</time>
+</h5>
+<div id="msg_6541_quick_mod"></div>
+</header>
+<section id="msg_6541" class="messageContent">Please delete this, it was meant to be posted on another thread but it moved here at some point&nbsp; <img src="https://artixlinux.org/forum/smileys/default/angry.gif" alt="&gt;&#58;&#40;" title="Angry" class="smiley" />
+</section>
+<nav>
+<ul id="buttons_6541" class="quickbuttons">
+<li id="modified_6541" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+</form>
+</section>
+</main>
+<nav class="pagesection">
+<ul class="pagelinks floatleft" role="menubar"><li class="linavPages"><strong class="current_page" role="menuitem">1</strong></li></ul>
+ <ul role="menubar" class="buttonlist floatright">
+<li role="menuitem"><a class="linklevel1 button_strip_print" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=topic;sa=printpage;topic=104.0" rel="nofollow">Print</a></li>
+</ul>
+</nav>
+<nav>
+<ul class="navigate_section">
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;"><i class="icon i-home"><s>Home</s></i></a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=forum;#c7">Init systems</a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;board=29.0">OpenRC</a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;topic=104.0">SSHD Init Script</a>
+</span>
+</li>
+</ul>
+</nav>
+<div id="moderationbuttons" class="hide_30 hamburger_30_target"></div>
+<div id="display_jump_to">&nbsp;</div>
+<script>
+				aJumpTo[aJumpTo.length] = new JumpTo({
+					sContainerId: "display_jump_to",
+					sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+					iCurBoardId: 29,
+					iCurBoardChildLevel: 0,
+					sCurBoardName: "OpenRC",
+					sBoardChildLevelIndicator: "&#8195;",
+					sBoardPrefix: "&#10148;",
+					sCatClass: "jump_to_header",
+					sCatPrefix: "",
+					sGoButtonLabel: "Go"
+				});
+			</script>
+</div>
+</div>
+<footer id="footer_section"><a id="bot"></a>
+<div class="wrapper">
+<ul>
+<li class="copyright">
+<a href="http://www.elkarte.net" title="ElkArte Forum" target="_blank" class="new_win">Powered by ElkArte 1.1.6</a> | <a href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=who;sa=credits" title="Credits" target="_blank" class="new_win" rel="nofollow">Credits</a>
+</li><li>
+<a id="button_rss" href="https://forum.artixlinux.org/index.php?PHPSESSID=b8q3g6ensk5bdg7aghvrvn6v1s&amp;action=.xml;type=rss2;limit=5" class="rssfeeds new_win"><i class="icon icon-margin i-rss icon-big"><s>RSS</s></i></a>
+</li></ul>
+<p>Page created in 0.668 seconds with 30 queries.</p>
+</div>
+</footer>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/sha256.js?R116" id="sha256.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/elk_jquery_embed.js?R116" id="elk_jquery_embed.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/prettify.min.js?R116" id="prettify.min.js"></script>
+<script src="https://forum.artixlinux.org/themes/default/scripts/cookiechoices.js?R116" id="cookiechoices.js"></script>
+<script src="https://stats.artixlinux.org/matomo.js" id="matomo.js" async="async"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/like_posts.js?R116" id="like_posts.js"></script>
+<script>
+		var oEmbedtext = ({
+				embed_limit : 25,
+				preview_image : 'Video Preview Image',
+				ctp_video : 'Click to play video, double click to load video',
+				hide_video : 'Show/Hide video',
+				youtube : 'YouTube video:',
+				vimeo : 'Vimeo video:',
+				dailymotion : 'Dailymotion video:'
+			});
+		$(function() {
+				prettyPrint();
+			});
+		$('.bbc_link').each(function() {
+			var url = $(this).attr('href'),
+				domain = url.match(/:\/\/(.[^/]+)/)[1],
+				schema = url.match(/^(http[s]*):\/\//)[1];
+			$(this).css({
+				'background-image': 'url(//www.google.com/s2/favicons?domain=' + schema + '://' + domain + ')',
+				'background-repeat': 'no-repeat',
+				'background-position': '0 2px',
+				'padding-left': '18px'
+			});
+		})
+		$(document).ready(function() {
+			// All the attachment links get fancybox data, remove onclick events
+			$("a[id^=link_]").each(function(){
+				var tag = $(this);
+
+				tag.attr("data-fancybox", "").removeAttr("onclick");
+
+				// No rel tag yet? then add one
+				if (!tag.attr("rel")) {
+					if (tag.data("lightboxmessage"))
+						tag.attr("rel", "gallery_" + tag.data("lightboxmessage"));
+					else
+						tag.attr("rel", "gallery");
+				}
+			});
+
+			// Find all the attachment / bbc divs on the page
+			$("div[id$=_footer]").each(function() {
+				// Fancybox Galleries are created from elements who have the same "rel" tag
+				var id = $(this).attr("id");
+				$("#" + id + " a[rel=gallery]").attr("rel", "gallery_" + id);
+			});
+
+			// Attach FB to everything we tagged with the fancybox data attr
+			$("[data-fancybox]").fancybox({
+				type: "image",
+				padding: 0,
+				arrows: true,
+				closeBtn: true,
+				loop: "1",
+				openEffect: "elastic",
+				openSpeed: 300,
+				closeEffect: "elastic",
+				closeSpeed: 300,
+				nextEffect: "elastic",
+				nextSpeed: 300,
+				prevEffect: "elastic",
+				prevSpeed: 300,
+				autoPlay: false,
+				playSpeed: 3000,
+				tpl: {
+					error: '<p class="errorbox">Unable to load the requested image.</p>',
+					closeBtn: '<div title="Close" class="fancybox-item fancybox-close"></div>',
+					next: '<a title="Next" class="fancybox-item fancybox-next"><span></span></a>',
+					prev: '<a title="Previous" class="fancybox-item fancybox-prev"><span></span></a>'
+				},
+				helpers: {
+					buttons: {
+						tpl: ''+
+						'<div id="fancybox-buttons"> ' +
+							'<ul> ' +
+							'	<li> ' +
+							'		<a class="btnPrev" title="Previous" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnPlay" title="Start slideshow" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnNext" title="Next" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnToggle" title="Toggle size" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnClose" title="Close" href="javascript:jQuery.fancybox.close();"></a> ' +
+							'	</li> ' +
+							'</ul> ' +
+						'</div>',
+						position : "top"
+					},
+					thumbs: {
+						width: 40,
+						height: 40,
+						position: "bottom"
+					},
+					overlay: {
+						showEarly: true,
+						closeClick : true,
+					},
+					ajax: {
+						dataType : 'html',
+						headers  : { 'X-fancyBox': true, 'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15 Surf/2.0"}
+					},
+				}
+			});
+		});
+		$(document).ready(function() {
+    cookieChoices.showCookieConsentBar('Artix forum uses a single cookie to remember you', 'OK', 'More information', '');
+  });
+		var _paq = window._paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.artixlinux.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+		$(function() {
+					var likePostInstance = likePosts.prototype.init({
+						oTxt: ({
+							btnText : 'OK',
+							likeHeadingError : 'Error in Likes',
+							error_occurred : 'An Error Has Occurred'
+						}),
+					});
+
+					$(".like_button, .unlike_button, .likes_button").SiteTooltip({
+						hoverIntent: {
+							sensitivity: 10,
+							interval: 150,
+							timeout: 50
+						}
+					});
+				});
+		var oMainHeaderToggle = new elk_Toggle({
+						bToggleEnabled: true,
+						bCurrentlyCollapsed: false,
+						aSwappableContainers: [
+							'upper_section','header'
+						],
+						aSwapClasses: [
+							{
+								sId: 'upshrink',
+								classExpanded: 'chevricon i-chevron-up icon-lg',
+								titleExpanded: 'Shrink or expand the header.',
+								classCollapsed: 'chevricon i-chevron-down icon-lg',
+								titleCollapsed: 'Shrink or expand the header.'
+							}
+						],
+						oThemeOptions: {
+							bUseThemeSettings: false,
+							sOptionName: 'minmax_preferences',
+							sSessionId: elk_session_id,
+							sSessionVar: elk_session_var,
+							sAdditionalVars: ';minmax_key=upshrink'
+						},
+						oCookieOptions: {
+							bUseCookie: elk_member_id == 0 ? true : false,
+							sCookieName: 'upshrink'
+						}
+					});
+		$('#elkFadeScroller').Elk_NewsFader({'iFadeDelay': 5000});
+	</script>
+</body>
+</html>

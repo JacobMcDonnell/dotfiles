@@ -1,0 +1,491 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'a
+	/home/jmm/.config/vifm
+	vifmrc
+1599871568
+'b
+	/home/jmm/.local/bin
+	..
+1599871660
+'c
+	/home/jmm/.config
+	..
+1599871676
+'d
+	/home/jmm/Documents
+	..
+1599933504
+'g
+	/home/jmm/Documents/projects/gitlab
+	..
+1599961725
+'h
+	/home/jmm/
+	..
+1599871393
+'k
+	/home/jmm/Documents/books
+	..
+1599933508
+'m
+	/home/jmm/Documents/projects/gitlab
+	LearningGO
+1599961690
+'s
+	/home/jmm/.local/share
+	..
+1599933481
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v1
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/jmm/.local/share/nvim/plugged/coc.nvim
+	history.md
+11
+d/home/jmm
+	.local
+4
+d/home/jmm/.local
+	share
+2
+d/home/jmm/.local/share
+	..
+0
+d/home/jmm/.local
+	..
+0
+d/home/jmm
+	.config
+2
+d/home/jmm/.config
+	..
+0
+d/home/jmm
+	Documents
+11
+d/home/jmm/Documents
+	books
+3
+d/home/jmm/Documents/books
+	Computers
+1
+d/home/jmm/Documents/books/Computers
+	Programming
+2
+d/home/jmm/Documents/books/Computers/Programming
+	GO
+3
+d/home/jmm/Documents/books/Computers/Programming/GO
+	..
+0
+d/home/jmm/Documents/books/Computers/Programming
+	C
+2
+d/home/jmm/Documents/books/Computers/Programming/C
+	TheANSICProgrammingLanguage.pdf
+3
+d/home/jmm
+	Documents
+11
+d/home/jmm/Documents/books
+	Computers
+1
+d/home/jmm/Documents/books/Computers
+	OperatingSystems
+1
+d/home/jmm/Documents/books/Computers/OperatingSystems
+	TheUnixProgrammingEnvironment.pdf
+5
+d/home/jmm
+	Documents
+11
+d/home/jmm/Documents/books
+	Computers
+1
+d/home/jmm/Documents/books/Computers
+	Programming
+2
+d/home/jmm/Documents/books/Computers/Programming
+	ThePracticeofProgramming.pdf
+5
+d/home/jmm/Downloads
+	_html_files
+3
+d/home/jmm/Downloads/_html_files
+	..
+0
+d/home/jmm/Downloads
+	src
+3
+d/home/jmm/Downloads/src
+	..
+0
+d/home/jmm/Downloads
+	..
+0
+d/home/jmm
+	Pictures
+13
+d/home/jmm/Pictures
+	..
+0
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Downloads
+	..
+0
+d/home/jmm
+	Pictures
+13
+d/home/jmm/Pictures
+	..
+0
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Downloads
+	..
+0
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Documents/books
+	Computers
+1
+d/home/jmm/Documents/books/Computers
+	Programming
+2
+d/home/jmm/Documents/books/Computers/Programming
+	C
+2
+d/home/jmm/Documents/books/Computers/Programming/C
+	TheANSICProgrammingLanguage.pdf
+3
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Documents/books
+	Computers
+1
+d/home/jmm/Documents/books/Computers
+	Programming
+2
+d/home/jmm/Documents/books/Computers/Programming
+	GO
+3
+d/home/jmm/Documents/books/Computers/Programming/GO
+	TheGoProgrammingLanguage.pdf
+1
+d/home/jmm
+	Downloads
+14
+d/home/jmm/Documents/projects/gitlab
+	Jarvis-Go
+2
+d/home/jmm/Documents/projects/gitlab/Jarvis-Go
+	talk.go
+2
+d/home/jmm
+	Downloads
+14
+d/home/jmm/.local/bin
+	dateAndTime
+4
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Downloads
+	install67.iso
+6
+d/home/jmm
+	Downloads
+12
+d/home/jmm/.local/bin
+	setWall
+15
+d/home/jmm/.config
+	xinitrc
+47
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Documents/books
+	Computers
+1
+d/home/jmm/Documents/books/Computers
+	Programming
+2
+d/home/jmm/Documents/books/Computers/Programming
+	C
+2
+d/home/jmm/Documents/books/Computers/Programming/C
+	TheANSICProgrammingLanguage.pdf
+3
+d/home/jmm/Documents/backup/backup2tb/Music/Rap
+	(2000) Busta Rhymes - Anarchy
+2
+d/home/jmm/Documents/backup/backup2tb/Music/Rap/(2000) Busta Rhymes - Anarchy
+	21. Anarchy.mp3
+21
+d/home/jmm
+	Documents
+12
+d/home/jmm/Documents
+	Music
+2
+d/home/jmm/Documents/Music
+	Albums
+1
+d/home/jmm/Documents/Music/Albums
+	Dr. Dre - 2001
+19
+d/home/jmm
+	Documents
+12
+d/home/jmm/.config
+	user-dirs.dirs
+47
+d/home/jmm
+	Documents
+12
+d/home/jmm/Documents/books
+	Computers
+1
+d/home/jmm/Documents/books/Computers
+	Programming
+2
+d/home/jmm/Documents/books/Computers/Programming
+	C
+2
+d/home/jmm/Documents/books/Computers/Programming/C
+	TheANSICProgrammingLanguage.pdf
+3
+d/home/jmm
+	Documents
+13
+d/home/jmm/Documents/books
+	Computers
+1
+d/home/jmm/Documents/books/Computers
+	Programming
+2
+d/home/jmm/Documents/books/Computers/Programming
+	C
+2
+d/home/jmm/Documents/books/Computers/Programming/C
+	TheANSICProgrammingLanguage.pdf
+3
+d/home/jmm
+	Documents
+11
+d/home/jmm/Documents
+	Pictures
+5
+d/home/jmm/Documents/Pictures
+	..
+0
+d/home/jmm/Documents/NOTREPACKED
+	XPSP1
+2
+d/home/jmm/Documents/NOTREPACKED/XPSP1
+	..
+0
+d/home/jmm/Documents/NOTREPACKED/XPSP1/shell/osshell/control/bitmaps
+	paper.bmp
+23
+d/home/jmm
+	Documents
+11
+d/home/jmm/Documents/NOTREPACKED/XPSP1/shell/osshell/control/bitmaps
+	makefile
+20
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Downloads
+	IconForAppAngelo.jpg
+8
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Downloads
+	ReactOS-0.4.13.iso
+14
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Documents/books
+	How_to_Think_Like_a_Roman_Emperor_-_The_Stoic_Philosophy_of_Marcus_Aurelius_by_Donald_J._Robertson.epub
+3
+d/home/jmm
+	Downloads
+12
+d/home/jmm/Documents/books
+	How_to_Think_Like_a_Roman_Emperor_-_The_Stoic_Philosophy_of_Marcus_Aurelius_by_Donald_J._Robertson.epub
+3
+d/home/jmm
+	Downloads
+13
+d/home/jmm/Documents/books
+	Computers
+1
+d/home/jmm/Documents/books/Computers
+	Programming
+2
+d/home/jmm/Documents/books/Computers/Programming
+	C
+2
+d/home/jmm/Documents/books/Computers/Programming/C
+	TheANSICProgrammingLanguage.pdf
+3
+
+# Right window history (oldest to newest):
+D/home/jmm
+	..
+0
+D/home
+	
+0
+D/home/jmm
+	
+0
+D/home/jmm/Downloads
+	
+0
+D/home/jmm
+	
+0
+D/home/jmm/Documents/backup/backup2tb/Music/Rap
+	
+0
+D/home/jmm
+	
+0
+D/home/jmm/Documents/NOTREPACKED
+	
+0
+D/home/jmm/Documents/NOTREPACKED/XPSP1/shell/osshell/control/bitmaps
+	
+0
+D/home/jmm
+	
+0
+D/home/jmm/Documents/NOTREPACKED/XPSP1/shell/osshell/control/bitmaps
+	
+0
+D/home/jmm
+	
+0
+D/home/jmm/Documents/books
+	
+0
+D/home/jmm
+	
+0
+
+# Command line history (oldest to newest):
+:nvim open
+:mark b ~/.local/bin
+:w
+:q
+
+# Search history (oldest to newest):
+/plan
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/jmm/.local/share/vifm/Trash/000_Not_logos.pdf
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/jmm/.local/share/vifm/Trash/000__html_files
+	/home/jmm/Downloads/_html_files
+t/home/jmm/.local/share/vifm/Trash/000_src
+	/home/jmm/Downloads/src
+t/home/jmm/.local/share/vifm/Trash/000_6_6240d6f9-0349-4851-b9b8-337249f5a758_1800x1800.jpg
+	/home/jmm/Downloads/6_6240d6f9-0349-4851-b9b8-337249f5a758_1800x1800.jpg
+t/home/jmm/.local/share/vifm/Trash/000_9front-7781.38dcaeaa222c.amd64.iso
+	/home/jmm/Downloads/9front-7781.38dcaeaa222c.amd64.iso
+t/home/jmm/.local/share/vifm/Trash/000_47-647.jpg
+	/home/jmm/Downloads/47-647.jpg
+t/home/jmm/.local/share/vifm/Trash/000_47-647.xcf
+	/home/jmm/Downloads/47-647.xcf
+t/home/jmm/.local/share/vifm/Trash/000_20200802_211735.jpg
+	/home/jmm/Downloads/20200802_211735.jpg
+t/home/jmm/.local/share/vifm/Trash/000_20200802_211804.jpg
+	/home/jmm/Downloads/20200802_211804.jpg
+t/home/jmm/.local/share/vifm/Trash/000_ReactOS-0.4.13-Live.iso
+	/home/jmm/Downloads/ReactOS-0.4.13-Live.iso
+t/home/jmm/.local/share/vifm/Trash/000_ReactOS-0.4.13-iso.zip
+	/home/jmm/Downloads/ReactOS-0.4.13-iso.zip
+t/home/jmm/.local/share/vifm/Trash/000_ReactOS-0.4.13-live.zip
+	/home/jmm/Downloads/ReactOS-0.4.13-live.zip
+t/home/jmm/.local/share/vifm/Trash/000_ReactOS-0.4.13.iso
+	/home/jmm/Downloads/ReactOS-0.4.13.iso
+t/home/jmm/.local/share/vifm/Trash/000_Screenshot_20200824-004655_Instagram.jpg
+	/home/jmm/Downloads/Screenshot_20200824-004655_Instagram.jpg
+t/home/jmm/.local/share/vifm/Trash/000__html.html
+	/home/jmm/Downloads/_html.html
+t/home/jmm/.local/share/vifm/Trash/000_fabric-installer-0.6.1.51.jar
+	/home/jmm/Downloads/fabric-installer-0.6.1.51.jar
+t/home/jmm/.local/share/vifm/Trash/000_harddrive.bin
+	/home/jmm/Downloads/harddrive.bin
+t/home/jmm/.local/share/vifm/Trash/000_lib32-nvidia-utils-440.82-1-x86_64.pkg.tar.xz
+	/home/jmm/Downloads/lib32-nvidia-utils-440.82-1-x86_64.pkg.tar.xz
+t/home/jmm/.local/share/vifm/Trash/000_nvidia-440.82-21-x86_64.pkg.tar.zst
+	/home/jmm/Downloads/nvidia-440.82-21-x86_64.pkg.tar.zst
+t/home/jmm/.local/share/vifm/Trash/000_nvidia-settings-440.82-1-x86_64.pkg.tar.xz
+	/home/jmm/Downloads/nvidia-settings-440.82-1-x86_64.pkg.tar.xz
+t/home/jmm/.local/share/vifm/Trash/000_nvidia-utils-440.82-2-x86_64.pkg.tar.zst
+	/home/jmm/Downloads/nvidia-utils-440.82-2-x86_64.pkg.tar.zst
+t/home/jmm/.local/share/vifm/Trash/000_ookla-speedtest-1.0.0-x86_64-linux.tgz
+	/home/jmm/Downloads/ookla-speedtest-1.0.0-x86_64-linux.tgz
+t/home/jmm/.local/share/vifm/Trash/000_pyramid-the-great-pyramid-of-giza-architecture-giving.png
+	/home/jmm/Downloads/pyramid-the-great-pyramid-of-giza-architecture-giving.png
+t/home/jmm/.local/share/vifm/Trash/000_pyramid-the-great-pyramid-of-giza-architecture-giving.xcf
+	/home/jmm/Downloads/pyramid-the-great-pyramid-of-giza-architecture-giving.xcf
+t/home/jmm/.local/share/vifm/Trash/000_tor-browser-linux64-9.5.4_en-US.tar.xz
+	/home/jmm/Downloads/tor-browser-linux64-9.5.4_en-US.tar.xz
+t/home/jmm/.local/share/vifm/Trash/000_tour_img-114880-90.jpg
+	/home/jmm/Downloads/tour_img-114880-90.jpg
+t/home/jmm/.local/share/vifm/Trash/000_tour_img-114880-90.xcf
+	/home/jmm/Downloads/tour_img-114880-90.xcf
+t/home/jmm/.local/share/vifm/Trash/000_winworldpc.com.txt
+	/home/jmm/Downloads/winworldpc.com.txt
+t/home/jmm/.local/share/vifm/Trash/000_20200802_211804.xcf
+	/home/jmm/Downloads/20200802_211804.xcf
+t/home/jmm/.local/share/vifm/Trash/000_work.pdf
+	/home/jmm/Downloads/work.pdf
+t/home/jmm/Documents/.vifm-Trash-1000/000_459463.jpg
+	/home/jmm/Documents/Pictures/Wallpapers/459463.jpg
+t/home/jmm/Documents/.vifm-Trash-1000/000_mount-fuji-night-reflections-do-1920x1080.jpg
+	/home/jmm/Documents/Pictures/Wallpapers/mount-fuji-night-reflections-do-1920x1080.jpg
+t/home/jmm/.local/share/vifm/Trash/000_Not_logos.pdf
+	/home/jmm/Downloads/Not_logos.pdf
+
+# State:
+f
+i1
+[.0
+[F
+F
+I1
+].1
+]F
+s0

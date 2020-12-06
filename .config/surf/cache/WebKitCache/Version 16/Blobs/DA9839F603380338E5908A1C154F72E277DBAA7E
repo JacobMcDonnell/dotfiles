@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+<title>Artix Linux Forum - Index</title>
+<meta charset="UTF-8" />
+<meta property="og:title" content="Artix Linux Forum - Index" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://forum.artixlinux.org/index.php" />
+<meta property="og:description" content="Artix Linux Forum - Index" />
+<meta property="og:site_name" content="Artix Linux Forum" />
+<meta name="viewport" content="width=device-width" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="description" content="Artix Linux Forum - Index" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/index.css?R116" id="index.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/icons_svg.css?R116" id="icons_svg.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/custom.css?R116" id="custom.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/font-awesome.min.css?R116" id="font-awesome.min.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/_dark/index_dark.css?R116" id="index_dark.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/prettify.css?R116" id="prettify.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/default/css/mentions_droppy.css?R116" id="mentions_droppy.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/default/css/ILA.css?R116" id="ILA.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/fancybox/jquery.fancybox.css?v=2.1.6" id="jquery.fancybox.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/fancybox/jquery.fancybox-buttons.css?v=2.1.6" id="jquery.fancybox-buttons.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/fancybox/jquery.fancybox-thumbs.css?v=2.1.6" id="jquery.fancybox-thumbs.css" />
+<link rel="canonical" href="https://forum.artixlinux.org/index.php" />
+<link rel="shortcut icon" sizes="196x196" href="https://forum.artixlinux.org/themes/silence/images/mobile.png" />
+<link rel="help" href="https://forum.artixlinux.org/index.php?action=help" />
+<link rel="contents" href="https://forum.artixlinux.org/index.php" />
+<link rel="search" href="https://forum.artixlinux.org/index.php?action=search" />
+<link rel="alternate" type="application/rss+xml" title="Artix Linux Forum - RSS" href="https://forum.artixlinux.org/index.php?action=.xml;type=rss2;limit=5" />
+<link rel="alternate" type="application/rss+xml" title="Artix Linux Forum - Atom" href="https://forum.artixlinux.org/index.php?action=.xml;type=atom;limit=5" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" id="jquery"></script>
+<script>
+		window.jQuery || document.write('<script src="https://forum.artixlinux.org/themes/default/scripts/jquery-3.1.1.min.js"><\/script>');
+	</script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/elk_jquery_plugins.js?R116" id="elk_jquery_plugins.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/script.js?R116" id="script.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/script_elk.js?R116" id="script_elk.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/theme.js?R116" id="theme.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/mentions_droppy.js?R116" id="mentions_droppy.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/fancybox/jquery.fancybox.min.js?v=2.1.6" id="jquery.fancybox.min.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/fancybox/helpers/jquery.fancybox-buttons.js?v=2.1.6" id="jquery.fancybox-buttons.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/fancybox/helpers/jquery.fancybox-thumbs.js?v=2.1.6" id="jquery.fancybox-thumbs.js"></script>
+<script>
+		$(document).ready(function() {$("[data-lightboximage]").off("click.elk_lb");});
+		var elk_theme_url = 'https://forum.artixlinux.org/themes/silence',
+			elk_default_theme_url = 'https://forum.artixlinux.org/themes/default',
+			elk_images_url = 'https://forum.artixlinux.org/themes/silence/images',
+			elk_smiley_url = 'https://artixlinux.org/forum/smileys',
+			elk_scripturl = 'https://forum.artixlinux.org/index.php',
+			elk_iso_case_folding = false,
+			elk_charset = "UTF-8",
+			elk_session_id = '8q3g6ensk5bdg7abOJ8FlRYVIerqynyf',
+			elk_session_var = 'sk5bdg7a01i',
+			elk_member_id = 0,
+			ajax_notification_text = 'Loading...',
+			ajax_notification_cancel_text = 'Cancel',
+			help_popup_heading_text = 'A little lost? Let me explain:',
+			use_click_menu = false,
+			todayMod = 2,
+			txt_mark_as_read_confirm = 'Are you sure you want to mark ALL messages as read?',
+			elk_forum_action = 'action=forum';
+	</script>
+<style>
+	.gist-data {max-height: 20em;}
+		
+		.avatarresize {
+			max-width:65px;
+			max-height:65px;
+		}
+		
+		.wrapper {width: 100%;}
+	</style>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://artixlinux.org/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://artixlinux.org/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://artixlinux.org/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://artixlinux.org/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://artixlinux.org/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://artixlinux.org/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://artixlinux.org/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://artixlinux.org/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-128x128.png" sizes="128x128" />
+<meta name="application-name" content="Artix Linux" />
+<meta name="msapplication-TileColor" content="#1a1a1a" />
+<meta name="msapplication-TileImage" content="https://artixlinux.org/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="https://artixlinux.org/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="https://artixlinux.org/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="https://artixlinux.org/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="https://artixlinux.org/favicons/mstile-310x310.png" />
+</head>
+<body id="safari" class="action_forum">
+<a id="top" href="#skipnav" tabindex="0">Skip to main content</a>
+<a href="#top" id="gotop" title="Go Up">&#8593;</a>
+<a href="#bot" id="gobottom" title="Go Down">&#8595;</a>
+<header id="top_section">
+<aside class="wrapper">
+<div id="top_section_notice" class="user">
+<form action="https://forum.artixlinux.org/index.php?action=login2;quicklogin" method="post" accept-charset="UTF-8">
+<div id="password_login">
+<input type="text" name="user" size="10" class="input_text" placeholder="Username" />
+<input type="password" name="passwrd" size="10" class="input_password" placeholder="Password" />
+<select name="cookielength">
+<option value="60">1 Hour</option>
+<option value="1440">1 Day</option>
+<option value="10080">1 Week</option>
+<option value="43200">1 Month</option>
+<option value="-1" selected="selected">Forever</option>
+</select>
+<input type="submit" value="Log in" />
+<input type="hidden" name="hash_passwrd" value="" />
+<input type="hidden" name="old_hash_passwrd" value="" />
+<input type="hidden" name="sk5bdg7a01i" value="8q3g6ensk5bdg7abOJ8FlRYVIerqynyf" />
+<input type="hidden" name="iXzqUJyFXwjq" value="7hxhQzwuk9d7YtpxKPuNavdCYUxZNiYF" />
+</div>
+</form>
+</div>
+<form id="search_form" action="https://forum.artixlinux.org/index.php?action=search;sa=results" method="post" accept-charset="UTF-8">
+<label for="quicksearch">
+<input type="text" name="search" id="quicksearch" value="" class="input_text" placeholder="Search" />
+</label>
+<label for="search_selection">
+<select name="search_selection" id="search_selection">
+<option value="all" selected="selected">Entire Forum </option>
+<option value="members">Members </option>
+</select>
+</label>
+<button type="submit" name="search;sa=results" class="with_select"><i class="icon i-search icon-shade"></i></button>
+<input type="hidden" name="advanced" value="0" />
+</form>
+</aside>
+<section id="header" class="wrapper">
+<h1 id="forumtitle">
+<a class="forumlink" href="https://forum.artixlinux.org/index.php">Artix Linux Forum</a>
+<span id="logobox">
+<img id="logo" src="https://artixlinux.org/forum/themes/silence/images/logo.png" alt="Artix Linux Forum" title="Artix Linux Forum" />
+</span>
+</h1>
+</section>
+<nav id="menu_nav">
+<ul id="main_menu" class="wrapper" role="menubar">
+<li id="collapse_button" class="listlevel1">
+<a class="linklevel1 panel_toggle">
+<i id="upshrink" class="hide chevricon i-chevron-up icon icon-lg" title="Shrink or expand the header."></i>
+</a>
+</li>
+<li id="button_5df700799cfa1a5dc47d174bd6bc47a5-1519303895" class="listlevel1">
+<a class="linklevel1" href="https://artixlinux.org" target="_self"><span class="button_title" aria-hidden="true">Home</span></a>
+</li>
+<li id="button_2f153e69a662148592d3d8adb732b144-1519303929" class="listlevel1">
+<a class="linklevel1" href="https://wiki.artixlinux.org" target="_self"><span class="button_title" aria-hidden="true">Wiki</span></a>
+</li>
+<li id="button_home" class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 active" href="https://forum.artixlinux.org/index.php"><i class="icon icon-menu icon-lg i-home" title="Community"></i> <span class="button_title" aria-hidden="true">Community</span></a>
+<ul class="menulevel2" role="menu">
+<li id="button_help" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=help">Help</a>
+</li>
+<li id="button_search" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=search">Search</a>
+</li>
+<li id="button_recent" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=recent">Recent topics</a>
+</li>
+<li id="button_like_stats" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=likes;sa=likestats">Like stats</a>
+</li>
+<li id="button_contact" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=register;sa=contact">Contact Us</a>
+</li>
+</ul>
+</li>
+<li id="button_login" class="listlevel1">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=login"><i class="icon icon-menu icon-lg i-sign-in" title="Log in"></i> <span class="button_title" aria-hidden="true">Log in</span></a>
+</li>
+<li id="button_register" class="listlevel1">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=register"><i class="icon icon-menu icon-lg i-register" title="Register"></i> <span class="button_title" aria-hidden="true">Register</span></a>
+</li>
+</ul>
+</nav>
+</header>
+<div id="wrapper" class="wrapper">
+<aside id="upper_section">
+<div id="news">
+<h2>News</h2>
+<ul id="elkFadeScroller">
+<li>
+Our <a href="https://wiki.artixlinux.org" class="bbc_link" target="_blank" rel="noopener noreferrer">Wiki</a> is up and running, waiting for some loving contributions.</li><li>Due to a series of spam posts, all new forum registrations will require administrator approval. Spam accounts and their posts have been deleted.
+</li>
+</ul>
+</div>
+</aside>
+<nav>
+<ul class="navigate_section">
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php"><i class="icon i-home"><s>Home</s></i></a>
+</span>
+</li>
+</ul>
+</nav>
+<div id="main_content_section"><a id="skipnav"></a>
+<main>
+<header class="category_header">
+<a id="c3"></a>Artix Linux
+</header>
+<section class="forum_category" id="category_3">
+<ul class="category_boards" id="category_3_boards">
+<li class="board_row" id="board_4">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,4.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,4.0.html" id="b4">Announcements</a>
+</h3>
+<h4 class="board_description">Important announcements about the project</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+705 Posts<br /> 36 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=13"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=2;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1923.msg12960.html#new" title="Re: how to ask correctly to get the right answer">Re: how to ask correc...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=13">conky60</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-21 17:52" data-timestamp="1603295569">Yesterday at 17:52:49</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_6">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,6.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,6.0.html" id="b6">Installation / Migration / Configuration</a>
+</h3>
+<h4 class="board_description">Help about new installations and migration from systemd setups</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+2,845 Posts<br /> 364 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1245"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1925.msg12969.html#new" title="Re: Installation Boot Terminal doesn't fit all prompts on screen">Re: Installation Boot...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=1245">aseo</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-21 22:09" data-timestamp="1603310969">Yesterday at 22:09:29</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_9">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,9.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,9.0.html" id="b9">Applications &amp; Software</a>
+</h3>
+<h4 class="board_description">Issues related to applications, WM/DE, configuration, mounting, printing,sound, video, productivity, office, graphics, games</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+2,025 Posts<br /> 348 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=539"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=858;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1924.msg12972.html#new" title="Re: KIO not working in Plasma 5; links not opening properly when clicked">Re: KIO not working i...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=539">xqtha2276</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-21 22:43" data-timestamp="1603312988">Yesterday at 22:43:08</time></span>
+</p>
+</div>
+</li>
+<li class="board_row parent_board" id="board_8">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,8.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,8.0.html" id="b8">Package management</a>
+</h3>
+<h4 class="board_description">Updating, upgrading, downgrading, conflicts and Artix repositories issues</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+2,159 Posts<br /> 310 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1246"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1926.msg12973.html#new" title="A lib32-elogind glitch">A lib32-elogind glitch</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=1246">mogs</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-22 00:39" data-timestamp="1603319953">Today at 00:39:13</time></span>
+</p>
+</div>
+</li>
+<li class="childboard_row" id="board_8_children">
+<ul class="childboards">
+<li>
+<h4>Sub-boards:</h4>
+</li>
+<li>
+<a href="https://forum.artixlinux.org/index.php/board,39.0.html" title="No New Posts (Topics: 11, Posts: 65)">AUR Packages</a>
+</li>
+</ul>
+</li>
+<li class="board_row" id="board_10">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,10.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,10.0.html" id="b10">System</a>
+</h3>
+<h4 class="board_description">Kernel, hardware, administration, servers. daemons, networking</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+1,301 Posts<br /> 197 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=282"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=658;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1922.msg12953.html#new" title="Re: Are Artix's packages compiled the same way as Arch's? ">Re: Are Artix's packa...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=282">alium</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-21 09:36" data-timestamp="1603265765">Yesterday at 09:36:05</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_11">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,11.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,11.0.html" id="b11">Software development </a>
+</h3>
+<h4 class="board_description">User contributions, scripts, ideas, feature requests</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+186 Posts<br /> 25 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=84"><img class="avatar" src="https://artixlinux.org/forum/avatars/Oxygen/pi.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,645.msg12850.html#new" title="Re: Aarch64 image / ArtixARM">Re: Aarch64 image / A...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=84">phoenix_king_rus</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-09 11:39" data-timestamp="1602236367">09 October 2020, 11:39:27</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_7">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,7.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,7.0.html" id="b7">Tutorials and HOWTOs</a>
+</h3>
+<h4 class="board_description">Share your experience</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+118 Posts<br /> 27 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1175"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=905;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1837.msg12542.html#new" title="Brother MFC-L2700DW printer drivers">Brother MFC-L2700DW p...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=1175">YvesSaintYuran</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-09-19 18:43" data-timestamp="1600533788">19 September 2020, 18:43:08</time></span>
+</p>
+</div>
+</li>
+</ul>
+</section>
+<header class="category_header">
+<a id="c7"></a>Init systems
+</header>
+<section class="forum_category" id="category_7">
+<ul class="category_boards" id="category_7_boards">
+<li class="board_row" id="board_29">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,29.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,29.0.html" id="b29">OpenRC</a>
+</h3>
+<h4 class="board_description"></h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+232 Posts<br /> 36 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=994"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1800.msg12391.html#new" title="Re: No Login Screen After Artix KDE Openrc Update! ">Re: No Login Screen A...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=994">vgnmnky</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-09-13 11:59" data-timestamp="1599991167">13 September 2020, 11:59:27</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_30">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,30.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,30.0.html" id="b30">runit</a>
+</h3>
+<h4 class="board_description"></h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+399 Posts<br /> 47 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1215"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1883.msg12958.html#new" title="Re: [SOLVED] Black screen with blinking cursor">Re: [SOLVED] Black sc...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=1215">Mr.Bones</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-21 15:23" data-timestamp="1603286600">Yesterday at 15:23:20</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_31">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,31.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,31.0.html" id="b31">S6</a>
+</h3>
+<h4 class="board_description"></h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+384 Posts<br /> 51 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=71"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=569;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1752.msg12838.html#new" title="Re: convert/rewrite optimus-manager service for s6">Re: convert/rewrite o...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=71">Dudemanguy</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-08 17:05" data-timestamp="1602169515">08 October 2020, 17:05:15</time></span>
+</p>
+</div>
+</li>
+</ul>
+</section>
+<header class="category_header">
+<a id="c8"></a>General Category
+</header>
+<section class="forum_category" id="category_8">
+<ul class="category_boards" id="category_8_boards">
+<li class="board_row" id="board_12">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,12.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,12.0.html" id="b12">News about Artix</a>
+</h3>
+<h4 class="board_description">All news about Artix</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+35 Posts<br /> 6 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=3"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=40;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1527.msg10520.html#new" title="Google analytics">Google analytics</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=3">nous</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-06-20 14:33" data-timestamp="1592656385">20 June 2020, 14:33:05</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_13">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,13.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,13.0.html" id="b13">Discussion about Artix</a>
+</h3>
+<h4 class="board_description">Chit-chat about Artix and its greatness</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+700 Posts<br /> 75 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=862"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1817.msg12837.html#new" title="Re: Why did I come here?">Re: Why did I come here?</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=862">tintin</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-08 16:46" data-timestamp="1602168377">08 October 2020, 16:46:17</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_32">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,32.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,32.0.html" id="b32">General Discussion</a>
+</h3>
+<h4 class="board_description">Various topics, not fitting elsewhere</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+416 Posts<br /> 69 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=893"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1878.msg12782.html#new" title="Re: How to check service is running [Solved]">Re: How to check serv...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=893">KoO-i3</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-05 08:48" data-timestamp="1601880504">05 October 2020, 08:48:24</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_16">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,16.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,16.0.html" id="b16">Artwork, Screenshots, Widgets</a>
+</h3>
+<h4 class="board_description">Share or show off your Artix desktops, art work and screenshots</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+171 Posts<br /> 7 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1223"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,8.msg12839.html#new" title="Re: Show Your Screenshots Here">Re: Show Your Screens...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=1223">teeds</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-08 18:06" data-timestamp="1602173206">08 October 2020, 18:06:46</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_14">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,14.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,14.0.html" id="b14">Forum </a>
+</h3>
+<h4 class="board_description">You have a problem or a suggestion for the forum? </h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+207 Posts<br /> 36 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1165"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1897.msg12842.html#new" title="Re: year only in profile update">Re: year only in prof...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=1165">badsector</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-08 19:58" data-timestamp="1602179902">08 October 2020, 19:58:22</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_40">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,40.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,40.0.html" id="b40">Other distros</a>
+</h3>
+<h4 class="board_description">Talk and issues about other Linux distributions. No support is to be expected here from the Artix Team.</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+67 Posts<br /> 9 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=925"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=801;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1081.msg10858.html#new" title="Re: 2 new &quot;distros&quot; released based on distros that are based on Arch">Re: 2 new &quot;distros&quot; r...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=925">jrballesteros05</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-07-07 20:43" data-timestamp="1594147429">07 July 2020, 20:43:49</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_15">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,15.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,15.0.html" id="b15">Off-Topic</a>
+ </h3>
+<h4 class="board_description">Anything unrelated to Artix</h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+448 Posts<br /> 62 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=282"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=658;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1827.msg12477.html#new" title="Re: Should I open less important topics into artix subreddit?">Re: Should I open les...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=282">alium</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-09-17 06:32" data-timestamp="1600317126">17 September 2020, 06:32:06</time></span>
+</p>
+</div>
+</li>
+</ul>
+</section>
+<header class="category_header">
+<a id="c11"></a>Other languages
+</header>
+<section class="forum_category" id="category_11">
+<ul class="category_boards" id="category_11_boards">
+<li class="board_row parent_board" id="board_37">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,37.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,37.0.html" id="b37">Deutsch</a>
+</h3>
+<h4 class="board_description"></h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+37 Posts<br /> 10 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=282"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=658;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1709.msg11742.html#new" title="Re: Virtualbox">Re: Virtualbox</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=282">alium</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-08-16 18:42" data-timestamp="1597596149">16 August 2020, 18:42:29</time></span>
+</p>
+</div>
+</li>
+<li class="childboard_row" id="board_37_children">
+<ul class="childboards">
+<li>
+<h4>Sub-boards:</h4>
+</li>
+<li>
+<a href="https://forum.artixlinux.org/index.php/board,17.0.html" title="No New Posts (Topics: 1, Posts: 7)">Ankündigungen und Sicherheitshinweise</a></li><li><a href="https://forum.artixlinux.org/index.php/board,18.0.html" title="No New Posts (Topics: 8, Posts: 28)"> Installation und Konfiguration</a></li><li><a href="https://forum.artixlinux.org/index.php/board,19.0.html" title="No New Posts (Topics: 0, Posts: 0)">Tutorials</a></li><li><a href="https://forum.artixlinux.org/index.php/board,20.0.html" title="No New Posts (Topics: 1, Posts: 2)">Paketmanager</a>
+</li>
+</ul>
+</li>
+<li class="board_row" id="board_34">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,34.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,34.0.html" id="b34">Español</a>
+</h3>
+<h4 class="board_description"></h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+45 Posts<br /> 13 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=925"><img class="avatar" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=801;type=avatar" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1899.msg12859.html#new" title="Re: error keymaps">Re: error keymaps</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=925">jrballesteros05</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-10 10:13" data-timestamp="1602317626">10 October 2020, 10:13:46</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_35">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,35.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,35.0.html" id="b35">Français</a>
+</h3>
+<h4 class="board_description"></h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+43 Posts<br /> 14 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=862"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1611.msg12680.html#new" title="Re: [RESOLU] Pamac  &quot;Aucun paquet trouvé&quot;">Re: [RESOLU] Pamac &quot;...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=862">tintin</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-09-27 19:08" data-timestamp="1601226528">27 September 2020, 19:08:48</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_38">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,38.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,38.0.html" id="b38">Portugues</a>
+</h3>
+<h4 class="board_description"></h4>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+5 Posts<br /> 1 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href=""><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,419.msg7335.html#new" title="Re: Βραζιλιάνες να βλέπω">Re: Βραζιλιάνες να βλέπω</a> </span><span class="board_lastposter">by fungalnet</span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2019-04-10 21:43" data-timestamp="1554925420">10 April 2019, 21:43:40</time></span>
+</p>
+</div>
+</li>
+<li class="board_row" id="board_42">
+<div class="board_info">
+<a class="icon_anchor" href="https://forum.artixlinux.org/index.php/board,42.0.html">
+<span class="board_icon i-board-off" title="No New Posts"></span>
+</a>
+<h3 class="board_name">
+<a href="https://forum.artixlinux.org/index.php/board,42.0.html" id="b42">Русский</a>
+</h3>
+<h4 class="board_description"></h4>
+<p class="moderators">Moderator: <a href="https://forum.artixlinux.org/index.php?action=profile;u=84" title="Board Moderator">phoenix_king_rus</a></p>
+</div>
+<div class="board_latest">
+<aside class="board_stats">
+57 Posts<br /> 10 Topics
+</aside>
+<p class="board_lastpost">
+<span class="board_avatar"><a href="https://forum.artixlinux.org/index.php?action=profile;u=814"><img class="avatar" src="https://forum.artixlinux.org/themes/silence/images/default_avatar.png" alt="" /></a></span>
+<span class="lastpost_link"><a href="https://forum.artixlinux.org/index.php/topic,1896.msg12831.html#new" title="Re: Настройка dnscrypt-proxy">Re: Настройка dnscryp...</a> </span><span class="board_lastposter">by <a href="https://forum.artixlinux.org/index.php?action=profile;u=814">Max</a></span><span class="board_lasttime"><strong>Last post: </strong><time title="Last post" datetime="2020-10-08 08:45" data-timestamp="1602139501">08 October 2020, 08:45:01</time></span>
+</p>
+</div>
+</li>
+</ul>
+</section>
+<aside id="info_center" class="forum_category">
+<h2 class="category_header panel_toggle">
+<i id="upshrink_ic" class="hide chevricon i-chevron-up" title="Hide"></i>
+<a href="#" id="upshrink_link">Artix Linux Forum - Info Center</a>
+</h2>
+<ul id="upshrinkHeaderIC" class="category_boards">
+<li class="board_row hslice" id="recent_posts_content">
+<h3 class="ic_section_header">
+<a href="https://forum.artixlinux.org/index.php?action=recent"><i class="icon i-post-text"></i>Recent topics</a>
+</h3>
+<table id="ic_recentposts">
+<tr>
+<th class="recentpost">Message</th>
+<th class="recentposter">Author</th>
+<th class="recentboard">Board</th>
+<th class="recenttime">Date</th>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1926.msg12973/topicseen.html#msg12973" rel="nofollow">A lib32-elogind glitch</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1926.msg0.html#new" id="newicon12973">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1246">mogs</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,8.0.html">Package management</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-22 00:39" data-timestamp="1603319953">Today at 00:39:13</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1924.msg12972/topicseen.html#msg12972" rel="nofollow">KIO not working in Plasma 5; links not opening properly when clicked</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1924.msg0.html#new" id="newicon12972">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=539">xqtha2276</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,9.0.html">Applications &amp; Software</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-21 22:43" data-timestamp="1603312988">Yesterday at 22:43:08</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1925.msg12969/topicseen.html#msg12969" rel="nofollow">Installation Boot Terminal doesn't fit all prompts on screen</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1925.msg0.html#new" id="newicon12969">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1245">aseo</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,6.0.html">Installation / Migration / Configuration</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-21 22:09" data-timestamp="1603310969">Yesterday at 22:09:29</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1919.msg12963/topicseen.html#msg12963" rel="nofollow">USB audio device</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1919.msg0.html#new" id="newicon12963">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=282">alium</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,6.0.html">Installation / Migration / Configuration</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-21 19:41" data-timestamp="1603302101">Yesterday at 19:41:41</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1923.msg12960/topicseen.html#msg12960" rel="nofollow">how to ask correctly to get the right answer</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1923.msg0.html#new" id="newicon12960">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=13">conky60</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,4.0.html">Announcements</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-21 17:52" data-timestamp="1603295569">Yesterday at 17:52:49</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1883.msg12958/topicseen.html#msg12958" rel="nofollow">[SOLVED] Black screen with blinking cursor</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1883.msg0.html#new" id="newicon12958">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1215">Mr.Bones</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,30.0.html">runit</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-21 15:23" data-timestamp="1603286600">Yesterday at 15:23:20</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1922.msg12953/topicseen.html#msg12953" rel="nofollow">Are Artix's packages compiled the same way as Arch's? </a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1922.msg0.html#new" id="newicon12953">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=282">alium</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,10.0.html">System</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-21 09:36" data-timestamp="1603265765">Yesterday at 09:36:05</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1921.msg12949/topicseen.html#msg12949" rel="nofollow">freetube landed in the universe repo</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1921.msg0.html#new" id="newicon12949">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=282">alium</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,8.0.html">Package management</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-20 23:41" data-timestamp="1603230067">20 October 2020, 23:41:07</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1434.msg12948/topicseen.html#msg12948" rel="nofollow">we provide ungoogled-chromium for Artixlinux </a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1434.msg0.html#new" id="newicon12948">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=282">alium</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,9.0.html">Applications &amp; Software</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-20 23:17" data-timestamp="1603228630">20 October 2020, 23:17:10</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1879.msg12947/topicseen.html#msg12947" rel="nofollow">MariaDb - MySql</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1879.msg0.html#new" id="newicon12947">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1038">Oziel</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,9.0.html">Applications &amp; Software</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-20 21:51" data-timestamp="1603223473">20 October 2020, 21:51:13</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1920.msg12941/topicseen.html#msg12941" rel="nofollow">grub-mkconfig - no canonical path</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1920.msg0.html#new" id="newicon12941">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=684">ndowens</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,6.0.html">Installation / Migration / Configuration</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-19 14:54" data-timestamp="1603112079">19 October 2020, 14:54:39</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1918.msg12934/topicseen.html#msg12934" rel="nofollow">[SOLVED] Can't startx on Nvidia drivers after updating to linux 5.9.1</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1918.msg0.html#new" id="newicon12934">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=1126">fehigax145</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,10.0.html">System</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-18 14:19" data-timestamp="1603023560">18 October 2020, 14:19:20</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1917.msg12931/topicseen.html#msg12931" rel="nofollow">Total Noob Question re gui displays</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1917.msg0.html#new" id="newicon12931">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=862">tintin</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,6.0.html">Installation / Migration / Configuration</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-18 09:29" data-timestamp="1603006150">18 October 2020, 09:29:10</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1914.msg12925/topicseen.html#msg12925" rel="nofollow">Displaymanagers, revisited.</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1914.msg0.html#new" id="newicon12925">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=71">Dudemanguy</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,6.0.html">Installation / Migration / Configuration</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-16 22:56" data-timestamp="1602881771">16 October 2020, 22:56:11</time></td>
+</tr>
+<tr>
+<td class="recentpost"><strong><a href="https://forum.artixlinux.org/index.php/topic,1913.msg12924/topicseen.html#msg12924" rel="nofollow">[SOLVED] CANNOT get Steam games to use my NVIDIA card</a>
+<a class="new_posts" href="https://forum.artixlinux.org/index.php/topic,1913.msg0.html#new" id="newicon12924">New</a></strong></td>
+<td class="recentposter"><a href="https://forum.artixlinux.org/index.php?action=profile;u=539">xqtha2276</a></td>
+<td class="recentboard"><a href="https://forum.artixlinux.org/index.php/board,9.0.html">Applications &amp; Software</a></td>
+<td class="recenttime"><time title="Last post" datetime="2020-10-16 20:56" data-timestamp="1602874584">16 October 2020, 20:56:24</time></td>
+</tr>
+</table>
+</li>
+<li class="board_row">
+<h3 class="ic_section_header">
+<a href="https://forum.artixlinux.org/index.php?action=stats" title="[More Stats]"><i class="icon i-pie-chart"></i>Forum Stats</a>
+</h3>
+<p class="inline">
+12,770 Posts in 1,787 Topics by 1,146 Members - Latest Member: <strong> <a href="https://forum.artixlinux.org/index.php?action=profile;u=1246">mogs</a></strong> - Most Online Today: 69<br />
+Latest Post: <strong>&quot;<a href="https://forum.artixlinux.org/index.php/topic,1926.msg12973.html#new" title="A lib32-elogind glitch">A lib32-elogind glitch</a>&quot;</strong> ( Today at 00:39:13 ) - <a href="https://forum.artixlinux.org/index.php?action=recent">View all recent posts.</a>
+</p>
+</li>
+<li class="board_row">
+<h3 class="ic_section_header">
+<i class="icon i-users"></i>Online Now:
+34 Guests, 2 Users (2 Hidden)
+</h3>
+<p class="inline">Active in past 15 minutes: <a href="https://forum.artixlinux.org/index.php?action=profile;u=1246">mogs</a>, <a href="https://forum.artixlinux.org/index.php?action=profile;u=90" style="color: #DD3333;">SGOrava</a></p>
+<p class="inline membergroups">[<a href="https://forum.artixlinux.org/index.php?action=groups;sa=members;group=1" style="color: #DD3333">Administrator</a>,&nbsp;<a href="https://forum.artixlinux.org/index.php?action=groups;sa=members;group=9" style="color: #3377FF">Artix Developer</a>,&nbsp;<a href="https://forum.artixlinux.org/index.php?action=groups;sa=members;group=2" style="color: #66A055">Global Moderator</a>]</p>
+</li>
+<li class="board_row">
+<h3 class="ic_section_header">
+<img class="icon" src="https://forum.artixlinux.org/themes/silence/images/icons/online.png" alt="" />Online today:
+30 Users (2 Hidden)
+</h3>
+<p class="inline">Users active in last 24 hours: <a title="Yesterday at 03:52:08" href="https://forum.artixlinux.org/index.php?action=profile;u=631">ncmprhnsbl</a>, <a title="Yesterday at 04:24:22" href="https://forum.artixlinux.org/index.php?action=profile;u=862">tintin</a>, <a title="Yesterday at 05:38:51" href="https://forum.artixlinux.org/index.php?action=profile;u=1183">crboyd</a>, <a title="Yesterday at 09:01:21" href="https://forum.artixlinux.org/index.php?action=profile;u=747">jjg1965</a>, <a title="Yesterday at 11:41:01" href="https://forum.artixlinux.org/index.php?action=profile;u=1126">fehigax145</a>, <a title="Yesterday at 12:10:53" href="https://forum.artixlinux.org/index.php?action=profile;u=871">Artist</a>, <a title="Yesterday at 15:30:16" href="https://forum.artixlinux.org/index.php?action=profile;u=1215">Mr.Bones</a>, <a title="Yesterday at 15:36:49" href="https://forum.artixlinux.org/index.php?action=profile;u=1116">aki72</a>, <a title="Yesterday at 15:41:55" href="https://forum.artixlinux.org/index.php?action=profile;u=236">kekek</a>, <a title="Yesterday at 16:12:58" href="https://forum.artixlinux.org/index.php?action=profile;u=684">ndowens</a>, <a title="Yesterday at 17:50:23" href="https://forum.artixlinux.org/index.php?action=profile;u=543">dxrobertson</a>, <a title="Yesterday at 17:53:59" style="color: #66A055" href="https://forum.artixlinux.org/index.php?action=profile;u=13">conky60</a>, <a title="Yesterday at 18:20:09" href="https://forum.artixlinux.org/index.php?action=profile;u=687">mattz7</a>, <a title="Yesterday at 18:37:28" href="https://forum.artixlinux.org/index.php?action=profile;u=846">nycko</a>, <a title="Yesterday at 18:41:02" href="https://forum.artixlinux.org/index.php?action=profile;u=114">CustomerServiceRobot</a>, <a title="Yesterday at 19:31:43" href="https://forum.artixlinux.org/index.php?action=profile;u=960">2jcm</a>, <a title="Yesterday at 20:11:35" href="https://forum.artixlinux.org/index.php?action=profile;u=25">toxygen</a>, <a title="Yesterday at 21:23:51" href="https://forum.artixlinux.org/index.php?action=profile;u=746">VictorBrand</a>, <a title="Yesterday at 21:29:21" href="https://forum.artixlinux.org/index.php?action=profile;u=1018">armando</a>, <a title="Yesterday at 21:29:59" href="https://forum.artixlinux.org/index.php?action=profile;u=84">phoenix_king_rus</a>, <a title="Yesterday at 22:35:38" href="https://forum.artixlinux.org/index.php?action=profile;u=1245">aseo</a>, <a title="Yesterday at 22:38:38" href="https://forum.artixlinux.org/index.php?action=profile;u=570">Bodge99</a>, <a title="Yesterday at 22:40:00" href="https://forum.artixlinux.org/index.php?action=profile;u=636">linox</a>, <a title="Yesterday at 22:43:04" href="https://forum.artixlinux.org/index.php?action=profile;u=282">alium</a>, <a title="Yesterday at 22:49:07" href="https://forum.artixlinux.org/index.php?action=profile;u=1053">spliskin</a>, <a title="Today at 00:11:20" href="https://forum.artixlinux.org/index.php?action=profile;u=749">linuxer</a>, <a title="Today at 00:15:05" href="https://forum.artixlinux.org/index.php?action=profile;u=539">xqtha2276</a>, <a title="Today at 00:32:15" href="https://forum.artixlinux.org/index.php?action=profile;u=383">karibe</a>, <a title="Today at 00:45:04" style="color: #DD3333" href="https://forum.artixlinux.org/index.php?action=profile;u=90">SGOrava</a>, <a title="Today at 00:47:18" href="https://forum.artixlinux.org/index.php?action=profile;u=1246">mogs</a></p>
+<p class="inline membergroups">[<a href="https://forum.artixlinux.org/index.php?action=groups;sa=members;group=1" style="color: #DD3333">Administrator</a>,&nbsp;<a href="https://forum.artixlinux.org/index.php?action=groups;sa=members;group=9" style="color: #3377FF">Artix Developer</a>,&nbsp;<a href="https://forum.artixlinux.org/index.php?action=groups;sa=members;group=2" style="color: #66A055">Global Moderator</a>]</p>
+</li>
+</ul>
+</aside>
+</main>
+<aside id="posting_icons">
+<p title="No New Posts"><i class="icon i-board-off"></i>No New Posts</p>
+<p title="Redirect Board"><i class="icon i-board-redirect"></i>Redirect Board</p>
+</aside>
+</div>
+</div>
+<footer id="footer_section"><a id="bot"></a>
+<div class="wrapper">
+<ul>
+<li class="copyright">
+<a href="http://www.elkarte.net" title="ElkArte Forum" target="_blank" class="new_win">Powered by ElkArte 1.1.6</a> | <a href="https://forum.artixlinux.org/index.php?action=who;sa=credits" title="Credits" target="_blank" class="new_win" rel="nofollow">Credits</a>
+</li><li>
+<a id="button_rss" href="https://forum.artixlinux.org/index.php?action=.xml;type=rss2;limit=5" class="rssfeeds new_win"><i class="icon icon-margin i-rss icon-big"><s>RSS</s></i></a>
+</li></ul>
+<p>Page created in 0.073 seconds with 19 queries.</p>
+</div>
+</footer>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/sha256.js?R116" id="sha256.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/elk_jquery_embed.js?R116" id="elk_jquery_embed.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/prettify.min.js?R116" id="prettify.min.js"></script>
+<script src="https://forum.artixlinux.org/themes/default/scripts/cookiechoices.js?R116" id="cookiechoices.js"></script>
+<script src="https://stats.artixlinux.org/matomo.js" id="matomo.js" async="async"></script>
+<script>
+		var oEmbedtext = ({
+				embed_limit : 25,
+				preview_image : 'Video Preview Image',
+				ctp_video : 'Click to play video, double click to load video',
+				hide_video : 'Show/Hide video',
+				youtube : 'YouTube video:',
+				vimeo : 'Vimeo video:',
+				dailymotion : 'Dailymotion video:'
+			});
+		$(function() {
+				prettyPrint();
+			});
+		$('.bbc_link').each(function() {
+			var url = $(this).attr('href'),
+				domain = url.match(/:\/\/(.[^/]+)/)[1],
+				schema = url.match(/^(http[s]*):\/\//)[1];
+			$(this).css({
+				'background-image': 'url(//www.google.com/s2/favicons?domain=' + schema + '://' + domain + ')',
+				'background-repeat': 'no-repeat',
+				'background-position': '0 2px',
+				'padding-left': '18px'
+			});
+		})
+		$(document).ready(function() {
+			// All the attachment links get fancybox data, remove onclick events
+			$("a[id^=link_]").each(function(){
+				var tag = $(this);
+
+				tag.attr("data-fancybox", "").removeAttr("onclick");
+
+				// No rel tag yet? then add one
+				if (!tag.attr("rel")) {
+					if (tag.data("lightboxmessage"))
+						tag.attr("rel", "gallery_" + tag.data("lightboxmessage"));
+					else
+						tag.attr("rel", "gallery");
+				}
+			});
+
+			// Find all the attachment / bbc divs on the page
+			$("div[id$=_footer]").each(function() {
+				// Fancybox Galleries are created from elements who have the same "rel" tag
+				var id = $(this).attr("id");
+				$("#" + id + " a[rel=gallery]").attr("rel", "gallery_" + id);
+			});
+
+			// Attach FB to everything we tagged with the fancybox data attr
+			$("[data-fancybox]").fancybox({
+				type: "image",
+				padding: 0,
+				arrows: true,
+				closeBtn: true,
+				loop: "1",
+				openEffect: "elastic",
+				openSpeed: 300,
+				closeEffect: "elastic",
+				closeSpeed: 300,
+				nextEffect: "elastic",
+				nextSpeed: 300,
+				prevEffect: "elastic",
+				prevSpeed: 300,
+				autoPlay: false,
+				playSpeed: 3000,
+				tpl: {
+					error: '<p class="errorbox">Unable to load the requested image.</p>',
+					closeBtn: '<div title="Close" class="fancybox-item fancybox-close"></div>',
+					next: '<a title="Next" class="fancybox-item fancybox-next"><span></span></a>',
+					prev: '<a title="Previous" class="fancybox-item fancybox-prev"><span></span></a>'
+				},
+				helpers: {
+					buttons: {
+						tpl: ''+
+						'<div id="fancybox-buttons"> ' +
+							'<ul> ' +
+							'	<li> ' +
+							'		<a class="btnPrev" title="Previous" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnPlay" title="Start slideshow" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnNext" title="Next" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnToggle" title="Toggle size" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnClose" title="Close" href="javascript:jQuery.fancybox.close();"></a> ' +
+							'	</li> ' +
+							'</ul> ' +
+						'</div>',
+						position : "top"
+					},
+					thumbs: {
+						width: 40,
+						height: 40,
+						position: "bottom"
+					},
+					overlay: {
+						showEarly: true,
+						closeClick : true,
+					},
+					ajax: {
+						dataType : 'html',
+						headers  : { 'X-fancyBox': true, 'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15 Surf/2.0"}
+					},
+				}
+			});
+		});
+		$(document).ready(function() {
+    cookieChoices.showCookieConsentBar('Artix forum uses a single cookie to remember you', 'OK', 'More information', '');
+  });
+		var _paq = window._paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.artixlinux.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+		var oMainHeaderToggle = new elk_Toggle({
+						bToggleEnabled: true,
+						bCurrentlyCollapsed: false,
+						aSwappableContainers: [
+							'upper_section','header'
+						],
+						aSwapClasses: [
+							{
+								sId: 'upshrink',
+								classExpanded: 'chevricon i-chevron-up icon-lg',
+								titleExpanded: 'Shrink or expand the header.',
+								classCollapsed: 'chevricon i-chevron-down icon-lg',
+								titleCollapsed: 'Shrink or expand the header.'
+							}
+						],
+						oThemeOptions: {
+							bUseThemeSettings: false,
+							sOptionName: 'minmax_preferences',
+							sSessionId: elk_session_id,
+							sSessionVar: elk_session_var,
+							sAdditionalVars: ';minmax_key=upshrink'
+						},
+						oCookieOptions: {
+							bUseCookie: elk_member_id == 0 ? true : false,
+							sCookieName: 'upshrink'
+						}
+					});
+		$('#elkFadeScroller').Elk_NewsFader({'iFadeDelay': 5000});
+		var oInfoCenterToggle = new elk_Toggle({
+			bToggleEnabled: true,
+			bCurrentlyCollapsed: false,
+			aSwappableContainers: [
+				'upshrinkHeaderIC'
+			],
+			aSwapClasses: [
+				{
+					sId: 'upshrink_ic',
+					classExpanded: 'chevricon i-chevron-up',
+					titleExpanded: 'Hide',
+					classCollapsed: 'chevricon i-chevron-down',
+					titleCollapsed: 'Show'
+				}
+			],
+			aSwapLinks: [
+				{
+					sId: 'upshrink_link',
+					msgExpanded: 'Artix Linux Forum - Info Center',
+					msgCollapsed: 'Artix Linux Forum - Info Center'
+				}
+			],
+			oThemeOptions: {
+				bUseThemeSettings: false,
+				sOptionName: 'minmax_preferences',
+				sSessionId: elk_session_id,
+				sSessionVar: elk_session_var,
+				sAdditionalVars: ';minmax_key=info'
+			},
+			oCookieOptions: {
+				bUseCookie: true,
+				sCookieName: 'upshrinkIC'
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+<title>[TRACKER] Runit support - Page 5</title>
+<meta charset="UTF-8" />
+<meta property="og:title" content="[TRACKER] Runit support" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://forum.artixlinux.org/index.php/topic,29.60.html" />
+<meta property="og:description" content="[TRACKER] Runit support - Page 5" />
+<meta property="og:site_name" content="Artix Linux Forum" />
+<meta name="viewport" content="width=device-width" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="description" content="[TRACKER] Runit support - Page 5" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/index.css?R116" id="index.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/icons_svg.css?R116" id="icons_svg.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/custom.css?R116" id="custom.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/font-awesome.min.css?R116" id="font-awesome.min.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/_dark/index_dark.css?R116" id="index_dark.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/prettify.css?R116" id="prettify.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/default/css/mentions_droppy.css?R116" id="mentions_droppy.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/default/css/ILA.css?R116" id="ILA.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/fancybox/jquery.fancybox.css?v=2.1.6" id="jquery.fancybox.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/fancybox/jquery.fancybox-buttons.css?v=2.1.6" id="jquery.fancybox-buttons.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/silence/css/fancybox/jquery.fancybox-thumbs.css?v=2.1.6" id="jquery.fancybox-thumbs.css" />
+<link rel="stylesheet" href="https://forum.artixlinux.org/themes/default/css/jquery.atwho.css?R116" id="jquery.atwho.css" />
+<link rel="canonical" href="https://forum.artixlinux.org/index.php/topic,29.60.html" />
+<link rel="shortcut icon" sizes="196x196" href="https://forum.artixlinux.org/themes/silence/images/mobile.png" />
+<link rel="help" href="https://forum.artixlinux.org/index.php?action=help" />
+<link rel="contents" href="https://forum.artixlinux.org/index.php" />
+<link rel="search" href="https://forum.artixlinux.org/index.php?action=search" />
+<link rel="alternate" type="application/rss+xml" title="Artix Linux Forum - RSS" href="https://forum.artixlinux.org/index.php?action=.xml;type=rss2;limit=5" />
+<link rel="alternate" type="application/rss+xml" title="Artix Linux Forum - Atom" href="https://forum.artixlinux.org/index.php?action=.xml;type=atom;limit=5" />
+<link rel="next" href="https://forum.artixlinux.org/index.php/topic,29.75.html" />
+<link rel="prev" href="https://forum.artixlinux.org/index.php/topic,29.45.html" />
+<link rel="index" href="https://forum.artixlinux.org/index.php/board,30.0.html" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" id="jquery"></script>
+<script>
+		window.jQuery || document.write('<script src="https://forum.artixlinux.org/themes/default/scripts/jquery-3.1.1.min.js"><\/script>');
+	</script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/elk_jquery_plugins.js?R116" id="elk_jquery_plugins.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/script.js?R116" id="script.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/script_elk.js?R116" id="script_elk.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/theme.js?R116" id="theme.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/mentions_droppy.js?R116" id="mentions_droppy.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/fancybox/jquery.fancybox.min.js?v=2.1.6" id="jquery.fancybox.min.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/fancybox/helpers/jquery.fancybox-buttons.js?v=2.1.6" id="jquery.fancybox-buttons.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/fancybox/helpers/jquery.fancybox-thumbs.js?v=2.1.6" id="jquery.fancybox-thumbs.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/topic.js?R116" id="topic.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/mentioning.js?R116" id="mentioning.js"></script>
+<script>
+		$(document).ready(function() {$("[data-lightboximage]").off("click.elk_lb");});
+		$(function() {
+			$().linkifyvideo(oEmbedtext);
+		});
+		$(function() {
+			for (var i = 0, count = all_elk_mentions.length; i < count; i++)
+				all_elk_mentions[i].oMention = new elk_mentions(all_elk_mentions[i].oOptions);
+		});
+		var elk_theme_url = 'https://forum.artixlinux.org/themes/silence',
+			elk_default_theme_url = 'https://forum.artixlinux.org/themes/default',
+			elk_images_url = 'https://forum.artixlinux.org/themes/silence/images',
+			elk_smiley_url = 'https://artixlinux.org/forum/smileys',
+			elk_scripturl = 'https://forum.artixlinux.org/index.php',
+			elk_iso_case_folding = false,
+			elk_charset = "UTF-8",
+			elk_session_id = '8q3g6ensk5bdg7abOJ8FlRYVIerqynyf',
+			elk_session_var = 'sk5bdg7a01i',
+			elk_member_id = 0,
+			ajax_notification_text = 'Loading...',
+			ajax_notification_cancel_text = 'Cancel',
+			help_popup_heading_text = 'A little lost? Let me explain:',
+			use_click_menu = false,
+			todayMod = 2,
+			likemsg_are_you_sure = 'You already liked this message, are you sure you want to remove your like?',
+			notification_topic_notice = 'Are you sure you wish to enable notification of new replies for this topic?',
+			elk_forum_action = 'action=forum';
+	</script>
+<style>
+	.gist-data {max-height: 20em;}
+		
+		.avatarresize {
+			max-width:65px;
+			max-height:65px;
+		}
+		
+		.wrapper {width: 100%;}
+	</style>
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://artixlinux.org/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://artixlinux.org/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://artixlinux.org/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://artixlinux.org/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://artixlinux.org/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://artixlinux.org/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://artixlinux.org/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://artixlinux.org/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="https://artixlinux.org/favicons/favicon-128x128.png" sizes="128x128" />
+<meta name="application-name" content="Artix Linux" />
+<meta name="msapplication-TileColor" content="#1a1a1a" />
+<meta name="msapplication-TileImage" content="https://artixlinux.org/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="https://artixlinux.org/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="https://artixlinux.org/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="https://artixlinux.org/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="https://artixlinux.org/favicons/mstile-310x310.png" />
+</head>
+<body id="safari" class="action_messageindex board_30">
+<a id="top" href="#skipnav" tabindex="0">Skip to main content</a>
+<a href="#top" id="gotop" title="Go Up">&#8593;</a>
+<a href="#bot" id="gobottom" title="Go Down">&#8595;</a>
+<header id="top_section">
+<aside class="wrapper">
+<div id="top_section_notice" class="user">
+<form action="https://forum.artixlinux.org/index.php?action=login2;quicklogin" method="post" accept-charset="UTF-8">
+<div id="password_login">
+<input type="text" name="user" size="10" class="input_text" placeholder="Username" />
+<input type="password" name="passwrd" size="10" class="input_password" placeholder="Password" />
+<select name="cookielength">
+<option value="60">1 Hour</option>
+<option value="1440">1 Day</option>
+<option value="10080">1 Week</option>
+<option value="43200">1 Month</option>
+<option value="-1" selected="selected">Forever</option>
+</select>
+<input type="submit" value="Log in" />
+<input type="hidden" name="hash_passwrd" value="" />
+<input type="hidden" name="old_hash_passwrd" value="" />
+<input type="hidden" name="sk5bdg7a01i" value="8q3g6ensk5bdg7abOJ8FlRYVIerqynyf" />
+<input type="hidden" name="iXzqUJyFXwjq" value="7hxhQzwuk9d7YtpxKPuNavdCYUxZNiYF" />
+</div>
+</form>
+</div>
+<form id="search_form" action="https://forum.artixlinux.org/index.php?action=search;sa=results" method="post" accept-charset="UTF-8">
+<label for="quicksearch">
+<input type="text" name="search" id="quicksearch" value="" class="input_text" placeholder="Search" />
+</label>
+<label for="search_selection">
+<select name="search_selection" id="search_selection">
+<option value="all">Entire Forum </option>
+<option value="topic" selected="selected">This topic</option>
+<option value="board">This board</option>
+<option value="members">Members </option>
+</select>
+</label>
+<input type="hidden" name="sd_topic" value="29" />
+<input type="hidden" name="sd_brd[30]" value="30" />
+<button type="submit" name="search;sa=results" class="with_select"><i class="icon i-search icon-shade"></i></button>
+<input type="hidden" name="advanced" value="0" />
+</form>
+</aside>
+<section id="header" class="wrapper">
+<h1 id="forumtitle">
+<a class="forumlink" href="https://forum.artixlinux.org/index.php">Artix Linux Forum</a>
+<span id="logobox">
+<img id="logo" src="https://artixlinux.org/forum/themes/silence/images/logo.png" alt="Artix Linux Forum" title="Artix Linux Forum" />
+</span>
+</h1>
+</section>
+<nav id="menu_nav">
+<ul id="main_menu" class="wrapper" role="menubar">
+<li id="collapse_button" class="listlevel1">
+<a class="linklevel1 panel_toggle">
+<i id="upshrink" class="hide chevricon i-chevron-up icon icon-lg" title="Shrink or expand the header."></i>
+</a>
+</li>
+<li id="button_5df700799cfa1a5dc47d174bd6bc47a5-1519303895" class="listlevel1">
+<a class="linklevel1" href="https://artixlinux.org" target="_self"><span class="button_title" aria-hidden="true">Home</span></a>
+</li>
+<li id="button_2f153e69a662148592d3d8adb732b144-1519303929" class="listlevel1">
+<a class="linklevel1" href="https://wiki.artixlinux.org" target="_self"><span class="button_title" aria-hidden="true">Wiki</span></a>
+</li>
+<li id="button_home" class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 active" href="https://forum.artixlinux.org/index.php"><i class="icon icon-menu icon-lg i-home" title="Community"></i> <span class="button_title" aria-hidden="true">Community</span></a>
+<ul class="menulevel2" role="menu">
+<li id="button_help" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=help">Help</a>
+</li>
+<li id="button_search" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=search">Search</a>
+</li>
+<li id="button_recent" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=recent">Recent Posts</a>
+</li>
+<li id="button_like_stats" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=likes;sa=likestats">Like stats</a>
+</li>
+<li id="button_contact" class="listlevel2">
+<a class="linklevel2" href="https://forum.artixlinux.org/index.php?action=register;sa=contact">Contact Us</a>
+</li>
+</ul>
+</li>
+<li id="button_login" class="listlevel1">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=login"><i class="icon icon-menu icon-lg i-sign-in" title="Log in"></i> <span class="button_title" aria-hidden="true">Log in</span></a>
+</li>
+<li id="button_register" class="listlevel1">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=register"><i class="icon icon-menu icon-lg i-register" title="Register"></i> <span class="button_title" aria-hidden="true">Register</span></a>
+</li>
+</ul>
+</nav>
+</header>
+<div id="wrapper" class="wrapper">
+<aside id="upper_section">
+<div id="news">
+<h2>News</h2>
+<ul id="elkFadeScroller">
+<li>
+Our <a href="https://wiki.artixlinux.org" class="bbc_link" target="_blank" rel="noopener noreferrer">Wiki</a> is up and running, waiting for some loving contributions.</li><li>Due to a series of spam posts, all new forum registrations will require administrator approval. Spam accounts and their posts have been deleted.
+</li>
+</ul>
+</div>
+</aside>
+<nav>
+<ul class="navigate_section">
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php"><i class="icon i-home"><s>Home</s></i></a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?action=forum;#c7">Init systems</a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php/board,30.0.html">runit</a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php/topic,29.0.html">[TRACKER] Runit support</a>
+</span>
+</li>
+</ul>
+</nav>
+<div id="main_content_section"><a id="skipnav"></a>
+<a id="msg4036"></a>
+<nav class="pagesection">
+<ul class="pagelinks floatleft" role="menubar"><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.45.html" role="menuitem"><span class="previous_page" role="menuitem">previous</span></a></li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.0.html" role="menuitem">1</a></li><li class="linavPages expand_pages" role="menuitem" data-baseurl="'' + elk_scripturl + '?topic=29.%1$d'" data-perpage="15" data-firstpage="15" data-lastpage="30"> <a href="#">...</a> </li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.30.html" role="menuitem">3</a></li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.45.html" role="menuitem">4</a></li><li class="linavPages"><strong class="current_page" role="menuitem">5</strong></li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.75.html" role="menuitem">6</a></li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.75.html" role="menuitem"><span class="next_page" role="menuitem">next</span></a></li></ul>
+<ul role="menubar" class="buttonlist floatright">
+<li role="menuitem"><a class="linklevel1 button_strip_print" href="https://forum.artixlinux.org/index.php?action=topic;sa=printpage;topic=29.0" rel="nofollow">Print</a></li>
+</ul>
+</nav><div class="successbox"><strong>Topic solved</strong><br />This topic has been marked as solved and requires no further attention.</div>
+<main id="forumposts">
+<header class="category_header">
+<img src="https://forum.artixlinux.org/themes/silence/images/topic/veryhot_post_locked.png" alt="" />
+Topic: [TRACKER] Runit support&nbsp;<span class="views_text">(Read 7435 times)</span>
+<span class="nextlinks"><a href="https://forum.artixlinux.org/index.php/topic,29.0/prev_next,prev.html#new">previous topic</a> - <a href="https://forum.artixlinux.org/index.php/topic,29.0/prev_next,next.html#new">next topic</a></span>
+</header>
+<section>
+<div class="generalinfo">
+<span id="whoisviewing">0 Members and 1 Guest are viewing this topic.
+</span>
+</div>
+<form id="quickModForm" action="https://forum.artixlinux.org/index.php?action=quickmod2;topic=29.60" method="post" accept-charset="UTF-8" name="quickModForm" onsubmit="return oQuickModify.bInEditMode ? oQuickModify.modifySave('8q3g6ensk5bdg7abOJ8FlRYVIerqynyf', 'sk5bdg7a01i') : false">
+<article class="post_wrapper forumposts">
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name">
+fungalnet
+</a>
+<ul id="msg_4036_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 membergroup">Guest</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4036" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4036" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4036">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4036.html#msg4036" rel="nofollow">Reply #60</a> &ndash; <time title="Last post" datetime="2018-04-21 20:19" data-timestamp="1524334792">21 April 2018, 20:19:52</time>
+</h5>
+<div id="msg_4036_quick_mod"></div>
+</header>
+<section id="msg_4036" class="messageContent"><div class="quoteheader">Quote</div><blockquote class="bbc_quote">The wiki was intended to follow stable releases, not testing.</blockquote><br />Ok, I don&#039;t understand, just yesterday you were telling me the right package (20180414-4) should be in gremlins but the repository is not updated yet, now you are saying it is based on stable?<br />So 20180414-1 would have been fine it was 20180414-2 that messed me up?<br /><br />If so, then I just picked the wrong damn day to try runit, didn&#039;t I?<br /><br />For the rest of you not knowing what we are talking about, up until 36 hrs ago the pkg in gremlins was &quot;a faulty one&quot;, what other faulty packages were there in gremlins since 4/16?<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint"> gremlins/runit-artix 20180414-4 (init) &#91;installed&#93;<br />&nbsp; &nbsp; Runit initscripts for Artix<br />&nbsp;system/runit-artix 20180414-1 &#91;installed: 20180414-4&#93;<br />&nbsp; &nbsp; Runit initscripts for Artix</pre>
+</section>
+<nav>
+<ul id="buttons_4036" class="quickbuttons">
+<li id="modified_4036" class="listlevel1 modified">
+<span class="lastedit">Last Edit</span>: 21 April 2018, 20:35:24 by fungalnet
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4038"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?action=profile;u=50">
+konimex
+</a>
+<ul id="msg_4038_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postcount">Posts: 150</li>
+<li class="listlevel2 registered">Joined: Sep 07, 2017</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=profile;u=50">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=63;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /></li>
+<li class="listlevel1 membergroup">Artix Developer</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4038" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4038" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4038">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4038.html#msg4038" rel="nofollow">Reply #61</a> &ndash; <time title="Last post" datetime="2018-04-22 04:07" data-timestamp="1524362829">22 April 2018, 04:07:09</time>
+</h5>
+<div id="msg_4038_quick_mod"></div>
+</header>
+<section id="msg_4038" class="messageContent"><div class="quoteheader"><a href="https://forum.artixlinux.org/index.php?msg=4036">Quote from: fungalnet on <time title="Last post" datetime="2018-04-21 20:19" data-timestamp="1524334792">21 April 2018, 20:19:52</time></a></div><blockquote class="bbc_quote">Ok, I don&#039;t understand, just yesterday you were telling me the right package (20180414-4) should be in gremlins but the repository is not updated yet, now you are saying it is based on stable?<br /></blockquote>It&#039;s the wiki page that is based on stable. But the right unstable package is on gremlins (-4).<br /><br /><div class="quoteheader"><a href="https://forum.artixlinux.org/index.php?msg=4036">Quote from: fungalnet on <time title="Last post" datetime="2018-04-21 20:19" data-timestamp="1524334792">21 April 2018, 20:19:52</time></a></div><blockquote class="bbc_quote">So 20180414-1 would have been fine it was 20180414-2 that messed me up?<br /></blockquote><br />Yes.
+</section>
+<nav>
+<ul id="buttons_4038" class="quickbuttons">
+<li id="modified_4038" class="listlevel1 modified">
+<span class="lastedit">Last Edit</span>: 22 April 2018, 08:59:11 by konimex
+</li>
+</ul>
+</nav>
+<footer>
+<div id="msg_4038_signature" class="signature">the runit guy on artix</div>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4041"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name">
+fungalnet
+</a>
+<ul id="msg_4041_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 membergroup">Guest</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4041" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4041" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4041">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4041.html#msg4041" rel="nofollow">Reply #62</a> &ndash; <time title="Last post" datetime="2018-04-22 12:32" data-timestamp="1524393171">22 April 2018, 12:32:51</time>
+</h5>
+<div id="msg_4041_quick_mod"></div>
+</header>
+<section id="msg_4041" class="messageContent">Ok, I managed by going back and forth to get it back and it is booting fine now, although my networking is still a mess and I need to clear this out still.&nbsp; I will start another topic but under the runit hierarchy as it pertains to problems that developed from the runit transition.&nbsp; Right now I have inet4 and inet6 but I have 3 lines of commands in autostart to get to have network access after X start.&nbsp; Which means at console at stage 2 I have no access unless I run those commands.&nbsp; <br /><br />Ram use is comparable to that with OpenRC, by far higher than it is with Void with about the same exact things running on start.<br />To me that translates to the need to strip unnecessary crud off of it.<br /><br />While utilizing some of the instructions systemd-free.artixlin...&nbsp; for moving from that &quot;other&quot; init system into OpenRC, sddm and xorg settings went out of wack.&nbsp; I was trying to go &quot;back there&quot; so I can move forward again.&nbsp; I am still running on Gremlins and I will continue to report on development.<br />Right now I feel like the basement got flooded and I have just been able to move the water out but there is work to do.<br />
+</section>
+<nav>
+<ul id="buttons_4041" class="quickbuttons">
+<li id="modified_4041" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4065"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name">
+fungalnet
+</a>
+<ul id="msg_4065_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 membergroup">Guest</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4065" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4065" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4065">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4065.html#msg4065" rel="nofollow">Reply #63</a> &ndash; <time title="Last post" datetime="2018-04-24 22:19" data-timestamp="1524601176">24 April 2018, 22:19:36</time>
+</h5>
+<div id="msg_4065_quick_mod"></div>
+</header>
+<section id="msg_4065" class="messageContent">On the rc.conf file why can&#039;t there be options of what to run on stage 1 and what not?&nbsp; (ie lvm, swap, btrfs, raid, etc)<br /><br />Here is a clip of the s6 .conf file:<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint"># Apply kernel runtime &#91;yes|no&#93;<br />KERNELRUNTIME=yes<br /><br /># Boot with dmraid support &#91;yes|no&#93;<br />USEDMRAID=no<br /><br /># Boot with btrfs support &#91;yes|no&#93;<br />USEBTRFS=no<br /><br /># Boot with lvm support &#91;yes|no&#93;<br /># Do not forget to remake your initramfs with lvm2 hook on it<br />USELVM=no<br /><br />#swap support &#91;yes|no&#93;<br />USESWAP=yes<br /><br />#enable cgroups &#91;yes|no&#93;<br />CGROUPS=yes</pre><br />Instead we get just error messages with runit of things that may not apply to our system.<br />Now I understand that you don&#039;t do runit development here, you just apply what comes from upstream, but can there be a modification?
+</section>
+<nav>
+<ul id="buttons_4065" class="quickbuttons">
+<li id="modified_4065" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4067"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?action=profile;u=71">
+Dudemanguy
+</a>
+<ul id="msg_4067_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postcount">Posts: 625</li>
+<li class="listlevel2 registered">Joined: Sep 13, 2017</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=profile;u=71">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=569;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /></li>
+<li class="listlevel1 membergroup">Package Maintainer</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4067" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4067" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4067">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4067.html#msg4067" rel="nofollow">Reply #64</a> &ndash; <time title="Last post" datetime="2018-04-24 23:04" data-timestamp="1524603843">24 April 2018, 23:04:03</time>
+</h5>
+<div id="msg_4067_quick_mod"></div>
+</header>
+<section id="msg_4067" class="messageContent">There are shell scripts in /etc/runit/core-services/ that are executed as stage one. I think every example you named is already handled by default (swap, the filesystems, etc.). Not sure about raid though, you might have to configure that one.
+</section>
+<nav>
+<ul id="buttons_4067" class="quickbuttons">
+<li id="modified_4067" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4069"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?action=profile;u=50">
+konimex
+</a>
+<ul id="msg_4069_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postcount">Posts: 150</li>
+<li class="listlevel2 registered">Joined: Sep 07, 2017</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=profile;u=50">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=63;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /></li>
+<li class="listlevel1 membergroup">Artix Developer</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4069" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4069" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4069">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4069.html#msg4069" rel="nofollow">Reply #65</a> &ndash; <time title="Last post" datetime="2018-04-25 00:18" data-timestamp="1524608306">25 April 2018, 00:18:26</time>
+</h5>
+<div id="msg_4069_quick_mod"></div>
+</header>
+<section id="msg_4069" class="messageContent"><div class="quoteheader"><a href="https://forum.artixlinux.org/index.php?msg=4065">Quote from: fungalnet on <time title="Last post" datetime="2018-04-24 22:19" data-timestamp="1524601176">24 April 2018, 22:19:36</time></a></div><blockquote class="bbc_quote">On the rc.conf file why can&#039;t there be options of what to run on stage 1 and what not?&nbsp; (ie lvm, swap, btrfs, raid, etc)<br /><br />Here is a clip of the s6 .conf file:<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint"># Apply kernel runtime &#91;yes|no&#93;<br />KERNELRUNTIME=yes<br /><br /># Boot with dmraid support &#91;yes|no&#93;<br />USEDMRAID=no<br /><br /># Boot with btrfs support &#91;yes|no&#93;<br />USEBTRFS=no<br /><br /># Boot with lvm support &#91;yes|no&#93;<br /># Do not forget to remake your initramfs with lvm2 hook on it<br />USELVM=no<br /><br />#swap support &#91;yes|no&#93;<br />USESWAP=yes<br /><br />#enable cgroups &#91;yes|no&#93;<br />CGROUPS=yes</pre><br />Instead we get just error messages with runit of things that may not apply to our system.<br />Now I understand that you don&#039;t do runit development here, you just apply what comes from upstream, but can there be a modification?<br /></blockquote><br />I simply think it isn&#039;t necessary.<br /><br />If you look carefully into our <a href="https://github.com/artix-linux/runit-artix/blob/master/core-services/03-filesystems.sh" class="bbc_link" target="_blank" rel="noopener noreferrer">filesystems stage1</a>, some will only be triggered if certain binaries are there (read: you installed it through a package). If you don&#039;t use btrfs you can uninstall btrfs-progs. If you don&#039;t have LVM don&#039;t install lvm2.<br /><br />I would consider it unnecessary bloat.
+</section>
+<nav>
+<ul id="buttons_4069" class="quickbuttons">
+<li id="modified_4069" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+<div id="msg_4069_signature" class="signature">the runit guy on artix</div>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4071"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name">
+fungalnet
+</a>
+<ul id="msg_4071_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 membergroup">Guest</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4071" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4071" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4071">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4071.html#msg4071" rel="nofollow">Reply #66</a> &ndash; <time title="Last post" datetime="2018-04-25 11:56" data-timestamp="1524650177">25 April 2018, 11:56:17</time>
+</h5>
+<div id="msg_4071_quick_mod"></div>
+</header>
+<section id="msg_4071" class="messageContent">No I have run it with # .. same thing, but dbus is running, it is not like it isn&#039;t.<br />If dbus wasn&#039;t running should I or should I not have had network on console.&nbsp; The problem was at the start of stage 2, not on desktop.<br /><br />Here is some sv status now, when the problem is not there anymore, but what fixed it I am still trying to find out<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint"># sv status /etc/runit/runsvdir/default/*&nbsp; <br />run: /etc/runit/runsvdir/default/acpid: (pid 602) 15668s<br />run: /etc/runit/runsvdir/default/agetty-tty1: (pid 595) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty2: (pid 581) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty3: (pid 584) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty4: (pid 582) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty5: (pid 585) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty6: (pid 583) 15669s<br />run: /etc/runit/runsvdir/default/alsa: (pid 658) 15666s<br />down: /etc/runit/runsvdir/default/avahi-daemon: 0s, normally up, want up<br />run: /etc/runit/runsvdir/default/cronie: (pid 605) 15668s<br />fail: /etc/runit/runsvdir/default/dbus: unable to change to service directory: file does not exist<br />down: /etc/runit/runsvdir/default/dhclient: 1s, normally up, want up<br />fail: /etc/runit/runsvdir/default/dhcp: unable to change to service directory: file does not exist<br />run: /etc/runit/runsvdir/default/dhcpcd: (pid 603) 15668s<br />fail: /etc/runit/runsvdir/default/dhcpd: unable to change to service directory: file does not exist<br />down: /etc/runit/runsvdir/default/dhcpd4: 1s, normally up, want up<br />down: /etc/runit/runsvdir/default/dhcpd6: 1s, normally up, want up<br />run: /etc/runit/runsvdir/default/dmeventd: (pid 32448) 1268s<br />down: /etc/runit/runsvdir/default/elogind: 0s, normally up, want up<br />run: /etc/runit/runsvdir/default/haveged: (pid 645) 15667s<br />down: /etc/runit/runsvdir/default/ip6tables: 1s, normally up, want up<br />down: /etc/runit/runsvdir/default/iptables: 1s, normally up, want up<br />down: /etc/runit/runsvdir/default/lm_sensors: 1s, normally up, want up<br />fail: /etc/runit/runsvdir/default/lvm: unable to change to service directory: file does not exist<br />fail: /etc/runit/runsvdir/default/lvm2: unable to change to service directory: file does not exist<br />run: /etc/runit/runsvdir/default/lvmetad: (pid 654) 15666s<br />run: /etc/runit/runsvdir/default/mdadm: (pid 642) 15667s<br />run: /etc/runit/runsvdir/default/nfs-server: (pid 609) 15668s<br />down: /etc/runit/runsvdir/default/ntpd: 1s, normally up, want up<br />run: /etc/runit/runsvdir/default/rpcbind: (pid 601) 15668s<br />run: /etc/runit/runsvdir/default/rsyncd: (pid 631) 15667s<br />down: /etc/runit/runsvdir/default/sddm: 1s, normally up, want up<br />run: /etc/runit/runsvdir/default/sshd: (pid 596) 15669s<br />run: /etc/runit/runsvdir/default/statd: (pid 666) 15666s</pre>
+</section>
+<nav>
+<ul id="buttons_4071" class="quickbuttons">
+<li id="modified_4071" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4073"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?action=profile;u=50">
+konimex
+</a>
+<ul id="msg_4073_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postcount">Posts: 150</li>
+<li class="listlevel2 registered">Joined: Sep 07, 2017</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=profile;u=50">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=63;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /></li>
+<li class="listlevel1 membergroup">Artix Developer</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4073" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4073" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4073">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4073.html#msg4073" rel="nofollow">Reply #67</a> &ndash; <time title="Last post" datetime="2018-04-25 15:28" data-timestamp="1524662916">25 April 2018, 15:28:36</time>
+</h5>
+<div id="msg_4073_quick_mod"></div>
+</header>
+<section id="msg_4073" class="messageContent"><div class="quoteheader"><a href="https://forum.artixlinux.org/index.php?msg=4071">Quote from: fungalnet on <time title="Last post" datetime="2018-04-25 11:56" data-timestamp="1524650177">25 April 2018, 11:56:17</time></a></div><blockquote class="bbc_quote">No I have run it with # .. same thing, but dbus is running, it is not like it isn&#039;t.<br />If dbus wasn&#039;t running should I or should I not have had network on console.&nbsp; The problem was at the start of stage 2, not on desktop.<br /><br />Here is some sv status now, when the problem is not there anymore, but what fixed it I am still trying to find out<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint"># sv status /etc/runit/runsvdir/default/*&nbsp; <br />run: /etc/runit/runsvdir/default/acpid: (pid 602) 15668s<br />run: /etc/runit/runsvdir/default/agetty-tty1: (pid 595) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty2: (pid 581) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty3: (pid 584) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty4: (pid 582) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty5: (pid 585) 15669s<br />run: /etc/runit/runsvdir/default/agetty-tty6: (pid 583) 15669s<br />run: /etc/runit/runsvdir/default/alsa: (pid 658) 15666s<br />down: /etc/runit/runsvdir/default/avahi-daemon: 0s, normally up, want up<br />run: /etc/runit/runsvdir/default/cronie: (pid 605) 15668s<br />fail: /etc/runit/runsvdir/default/dbus: unable to change to service directory: file does not exist<br />down: /etc/runit/runsvdir/default/dhclient: 1s, normally up, want up<br />fail: /etc/runit/runsvdir/default/dhcp: unable to change to service directory: file does not exist<br />run: /etc/runit/runsvdir/default/dhcpcd: (pid 603) 15668s<br />fail: /etc/runit/runsvdir/default/dhcpd: unable to change to service directory: file does not exist<br />down: /etc/runit/runsvdir/default/dhcpd4: 1s, normally up, want up<br />down: /etc/runit/runsvdir/default/dhcpd6: 1s, normally up, want up<br />run: /etc/runit/runsvdir/default/dmeventd: (pid 32448) 1268s<br />down: /etc/runit/runsvdir/default/elogind: 0s, normally up, want up<br />run: /etc/runit/runsvdir/default/haveged: (pid 645) 15667s<br />down: /etc/runit/runsvdir/default/ip6tables: 1s, normally up, want up<br />down: /etc/runit/runsvdir/default/iptables: 1s, normally up, want up<br />down: /etc/runit/runsvdir/default/lm_sensors: 1s, normally up, want up<br />fail: /etc/runit/runsvdir/default/lvm: unable to change to service directory: file does not exist<br />fail: /etc/runit/runsvdir/default/lvm2: unable to change to service directory: file does not exist<br />run: /etc/runit/runsvdir/default/lvmetad: (pid 654) 15666s<br />run: /etc/runit/runsvdir/default/mdadm: (pid 642) 15667s<br />run: /etc/runit/runsvdir/default/nfs-server: (pid 609) 15668s<br />down: /etc/runit/runsvdir/default/ntpd: 1s, normally up, want up<br />run: /etc/runit/runsvdir/default/rpcbind: (pid 601) 15668s<br />run: /etc/runit/runsvdir/default/rsyncd: (pid 631) 15667s<br />down: /etc/runit/runsvdir/default/sddm: 1s, normally up, want up<br />run: /etc/runit/runsvdir/default/sshd: (pid 596) 15669s<br />run: /etc/runit/runsvdir/default/statd: (pid 666) 15666s</pre></blockquote><br />If you really symlinked all directories in /etc/runit/sv to /run/runit/service, then you didn&#039;t install dbus-runit and NetworkManager-runit, plain and simple.<br /><br />If you have both dbus and NetworkManager service running (and by running I meant properly in a runsv process) you should have something like this in your pstree -a output.<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint">runit,1<br />&nbsp; |-compton,1254<br />&nbsp; |-dbus-daemon,1274 --syslog-only --fork --print-pid 5 --print-address 7 --session<br />&nbsp; |-dbus-launch,1271 --autolaunch=c22ecdc4b8715fda2bdd99c05a7e7132 --binary-syntax --close-stderr<br />&nbsp; |-elogind,1037 --daemon<br />&nbsp; |-runsvdir,772 -P /run/runit/service...<br />&nbsp; |&nbsp;&nbsp; |-runsv,778 alsa<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-pause,802<br />&nbsp; |&nbsp;&nbsp; |-runsv,779 acpid<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; |-acpid,864 -f<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-svlogd,801 -tt /var/log/acpid<br />&nbsp; |&nbsp;&nbsp; |-runsv,780 agetty-tty5<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-agetty,804 tty5 38400 linux<br />&nbsp; |&nbsp;&nbsp; |-runsv,781 openntpd<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; |-logger,797 -t openntpd -p daemon notice<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-ntpd,863 -d -s<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp;&nbsp; `-ntpd,947&nbsp; &nbsp; &nbsp; <br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `-ntpd,950&nbsp; &nbsp;&nbsp; <br />&nbsp; |&nbsp;&nbsp; |-runsv,782 socklog<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; |-socklog,862 unix /dev/log<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-svlogd,799 /var/log/socklog/cron /var/log/socklog/daemon /var/log/socklog/debug /var/log/socklog/errors ...<br />&nbsp; |&nbsp;&nbsp; |-runsv,783 NetworkManager<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-NetworkManager,800 -n<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp;&nbsp; |-{NetworkManager},1018<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp;&nbsp; `-{NetworkManager},1020<br />&nbsp; |&nbsp;&nbsp; |-runsv,784 agetty-tty1<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-login,803&nbsp; &nbsp;&nbsp; <br />&nbsp; |&nbsp;&nbsp; |-runsv,785 tlp<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-pause,796<br />&nbsp; |&nbsp;&nbsp; |-runsv,786 agetty-tty3<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-agetty,793 tty3 38400 linux<br />&nbsp; |&nbsp;&nbsp; |-runsv,787 agetty-tty4<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-agetty,792 tty4 38400 linux<br />&nbsp; |&nbsp;&nbsp; |-runsv,788 dbus<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-dbus-daemon,798 --system --nofork --nopidfile<br />&nbsp; |&nbsp;&nbsp; |-runsv,789 dnscrypt-proxy<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-{dnscrypt-proxy},1528<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-svlogd,805 -t /var/log/dnscrypt-proxy<br />&nbsp; |&nbsp;&nbsp; |-runsv,790 agetty-tty6<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-agetty,794 tty6 38400 linux<br />&nbsp; |&nbsp;&nbsp; `-runsv,791 agetty-tty2<br />&nbsp; |&nbsp; &nbsp; &nbsp;&nbsp; `-agetty,795 tty2 38400 linux<br />&nbsp; |-udevd,291 --daemon<br />&nbsp; `-wpa_supplicant,1043 -u<br /></pre><br />Note that there are <strong class="bbc_strong">two</strong> different dbus processes. One is a child process of a runsv process (PID 798) and one is a direct child of runit (PID 1274). The dbus process with PID 1274 are launched (in this case) by Firefox (and Firefox immediately closed after I manually killed the dbus process), this means that your &quot;running&quot; dbus process will listen to Firefox and <strong class="bbc_strong">only</strong> Firefox, and will not work with any other processes (elogind, NetworkManager, wicd, etc.)<br /><br />So no. In your case, dbus is not running as a proper service. It is likely that you&#039;re not installing both dbus-runit and networkmanager-runit and you didn&#039;t enable <strong class="bbc_strong">both</strong> services (because the service doesn&#039;t even exist).<br /><br /><div class="codeheader">Code: (fungalnet) <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint">fail: /etc/runit/runsvdir/default/dbus: unable to change to service directory: file does not exist<br /></pre><br />Also, the problem is likely fixed by enabling the dhcpcd runit service.
+</section>
+<nav>
+<ul id="buttons_4073" class="quickbuttons">
+<li id="modified_4073" class="listlevel1 modified">
+<span class="lastedit">Last Edit</span>: 25 April 2018, 15:58:19 by konimex
+</li>
+</ul>
+</nav>
+<footer>
+<div id="msg_4073_signature" class="signature">the runit guy on artix</div>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4074"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name">
+fungalnet
+</a>
+<ul id="msg_4074_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 membergroup">Guest</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4074" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4074" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4074">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4074.html#msg4074" rel="nofollow">Reply #68</a> &ndash; <time title="Last post" datetime="2018-04-25 19:11" data-timestamp="1524676262">25 April 2018, 19:11:02</time>
+</h5>
+<div id="msg_4074_quick_mod"></div>
+</header>
+<section id="msg_4074" class="messageContent">What I did (remember the day the reps weren&#039;t working and got the bad runit-artix ---3 instead of 4) was to make a list of all the runscripts I had installed and find the corresponding -runit pkgs.&nbsp; Except for a few that had no match, I removed ALL the -openrc and replaced them with -runit + runit + runit-artix<br />Then I had no network and decided to get rid of networkmanager <br />Then I still had problems with dhcpd which was running, but something was missing and by enabling (linking all services I had installed and available somehow cured the network problem).&nbsp; <br />I have no firefox, I have palemoon, which might be working the same way.<br />But dbus-runit was installed all along.&nbsp; If I hadn&#039;t linked dbus or any of those other ones that produce the error it wouldn&#039;t show up in sv status when I run it for the whole run directory<br />A week has gone by and the only thing I get is that I did something wrong, and I am not asking for blame, but I did follow ALL instructions on the wiki, just did it when a bad runit-artix file was in the repositories.<br /><br />Now WHAT?
+</section>
+<nav>
+<ul id="buttons_4074" class="quickbuttons">
+<li id="modified_4074" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4075"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?action=profile;u=71">
+Dudemanguy
+</a>
+<ul id="msg_4075_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postcount">Posts: 625</li>
+<li class="listlevel2 registered">Joined: Sep 13, 2017</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=profile;u=71">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=569;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /></li>
+<li class="listlevel1 membergroup">Package Maintainer</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4075" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4075" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4075">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4075.html#msg4075" rel="nofollow">Reply #69</a> &ndash; <time title="Last post" datetime="2018-04-25 19:47" data-timestamp="1524678427">25 April 2018, 19:47:07</time>
+</h5>
+<div id="msg_4075_quick_mod"></div>
+</header>
+<section id="msg_4075" class="messageContent">Could you post your output of a couple of things?<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint">$ ls /run/runit/service</pre><br />And also<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint">$ pstree -a</pre>
+</section>
+<nav>
+<ul id="buttons_4075" class="quickbuttons">
+<li id="modified_4075" class="listlevel1 modified">
+<span class="lastedit">Last Edit</span>: 25 April 2018, 19:58:36 by Dudemanguy
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<a id="new">&nbsp;</a>
+<hr class="new_post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4076"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name">
+fungalnet
+</a>
+<ul id="msg_4076_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 membergroup">Guest</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4076" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4076" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4076">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4076.html#msg4076" rel="nofollow">Reply #70</a> &ndash; <time title="Last post" datetime="2018-04-25 22:20" data-timestamp="1524687641">25 April 2018, 22:20:41</time>
+</h5>
+<div id="msg_4076_quick_mod"></div>
+</header>
+<section id="msg_4076" class="messageContent">Need I remind you that the installation does not have functionality problems now, but the way I fixed it was by linking pretty every service there was to the active directory<br />I just replace some of the ids with 111s and 000s<br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint">$ ls&nbsp; /run/runit/service<br />acpid&nbsp; &nbsp; &nbsp; &nbsp; agetty-tty4&nbsp; avahi-daemon&nbsp; dhcp&nbsp; &nbsp; dhcpd6&nbsp; &nbsp; ip6tables&nbsp;&nbsp; lvm2&nbsp; &nbsp; &nbsp; &nbsp; ntpd&nbsp; &nbsp;&nbsp; sshd<br />agetty-tty1&nbsp; agetty-tty5&nbsp; cronie&nbsp; &nbsp; &nbsp; &nbsp; dhcpcd&nbsp; dmeventd&nbsp; iptables&nbsp; &nbsp; lvmetad&nbsp; &nbsp;&nbsp; rpcbind&nbsp; statd<br />agetty-tty2&nbsp; agetty-tty6&nbsp; dbus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dhcpd&nbsp;&nbsp; elogind&nbsp;&nbsp; lm_sensors&nbsp; mdadm&nbsp; &nbsp; &nbsp;&nbsp; rsyncd<br />agetty-tty3&nbsp; alsa&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; dhclient&nbsp; &nbsp; &nbsp; dhcpd4&nbsp; haveged&nbsp;&nbsp; lvm&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; nfs-server&nbsp; sddm<br /><br /><br /><br />$ pstree -a<br />runit<br />&nbsp; |-at-spi-bus-laun<br />&nbsp; |&nbsp;&nbsp; |-dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf <br />--nofork--print-addre<br />&nbsp; |&nbsp;&nbsp; `-3*&#91;{at-spi-bus-laun}&#93;<br />&nbsp; |-at-spi2-registr --use-gnome-session<br />&nbsp; |&nbsp;&nbsp; `-2*&#91;{at-spi2-registr}&#93;<br />&nbsp; |-conky -c /home/artix2/.conky/TeejeeTech/ProcessPanel<br />&nbsp; |&nbsp;&nbsp; `-3*&#91;{conky}&#93;<br />&nbsp; |-conky -c /home/artix2/.conky/TeejeeTech/CpuPanel<br />&nbsp; |&nbsp;&nbsp; `-8*&#91;{conky}&#93;<br />&nbsp; |-dbus-daemon --syslog-only --fork --print-pid 5 --print-address 7 --session<br />&nbsp; |-dbus-daemon --syslog-only --fork --print-pid 5 --print-address 7 --session<br />&nbsp; |-dbus-launch --autolaunch 1111111111111111111111111 --binary-syntax --close-stderr<br />&nbsp; |-dbus-launch --autolaunch=1111111111111111111111111 --binary-syntax --close-stderr<br />&nbsp; |-gconfd-2<br />&nbsp; |-lxpolkit<br />&nbsp; |&nbsp;&nbsp; `-2*&#91;{lxpolkit}&#93;<br />&nbsp; |-runsvdir -P /run/runit/service...<br />&nbsp; |&nbsp;&nbsp; |-runsv agetty-tty4<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-agetty tty4 38400 linux<br />&nbsp; |&nbsp;&nbsp; |-runsv agetty-tty2<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-agetty tty2 38400 linux<br />&nbsp; |&nbsp;&nbsp; |-runsv nfs-server<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-rpc.mountd --foreground<br />&nbsp; |&nbsp;&nbsp; |-runsv sshd<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-sshd -D<br />&nbsp; |&nbsp;&nbsp; |-runsv agetty-tty6<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-agetty tty6 38400 linux<br />&nbsp; |&nbsp;&nbsp; |-runsv dhcpcd<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-dhcpcd -B -M<br />&nbsp; |&nbsp;&nbsp; |-runsv dhclient<br />&nbsp; |&nbsp;&nbsp; |-runsv dhcpd4<br />&nbsp; |&nbsp;&nbsp; |-runsv rpcbind<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-rpcbind -f<br />&nbsp; |&nbsp;&nbsp; |-runsv agetty-tty3<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-agetty tty3 38400 linux<br />&nbsp; |&nbsp;&nbsp; |-runsv mdadm<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-mdadm --monitor --scan --syslog<br />&nbsp; |&nbsp;&nbsp; |-runsv iptables<br />&nbsp; |&nbsp;&nbsp; |-runsv dmeventd<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-dmeventd -f<br />&nbsp; |&nbsp;&nbsp; |-runsv haveged<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-haveged -w 1024 -v 1 -F<br />&nbsp; |&nbsp;&nbsp; |-runsv dhcpd6<br />&nbsp; |&nbsp;&nbsp; |-runsv agetty-tty5<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-agetty tty5 38400 linux<br />&nbsp; |&nbsp;&nbsp; |-runsv rsyncd<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-rsync --daemon --no-detach<br />&nbsp; |&nbsp;&nbsp; |-runsv alsa<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-pause<br />&nbsp; |&nbsp;&nbsp; |-runsv elogind<br />&nbsp; |&nbsp;&nbsp; |-runsv ip6tables<br />&nbsp; |&nbsp;&nbsp; |-runsv sddm<br />&nbsp; |&nbsp;&nbsp; |-runsv statd<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-rpc.statd -F -d<br />&nbsp; |&nbsp;&nbsp; |-runsv cronie<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-crond -n<br />&nbsp; |&nbsp;&nbsp; |-runsv lm_sensors<br />&nbsp; |&nbsp;&nbsp; |-runsv lvmetad<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-lvmetad -f<br />&nbsp; |&nbsp;&nbsp; |-runsv agetty-tty1<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-login&nbsp; &nbsp;&nbsp; <br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp;&nbsp; `-bash<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `-sudo sddm<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `-sddm<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |-Xorg -nolisten tcp -auth ...<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp;&nbsp; `-4*&#91;{Xorg}&#93;<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |-sddm-helper --socket <br />/tmp/sddm-auth00000000000000000000000000000 ...<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp;&nbsp; `-openbox --startup /usr/lib/openbox/openbox-autostart OPENBOX<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp; &nbsp; &nbsp;&nbsp; `-lxterminal<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |-bash<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp;&nbsp; `-pstree -a<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |-bash<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp;&nbsp; `-nano /tmp/tmpnote<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `-{lxterminal}<br />&nbsp; |&nbsp;&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; `-{sddm}<br />&nbsp; |&nbsp;&nbsp; |-runsv ntpd<br />&nbsp; |&nbsp;&nbsp; |-runsv acpid<br />&nbsp; |&nbsp;&nbsp; |&nbsp;&nbsp; `-acpid -f<br />&nbsp; |&nbsp;&nbsp; `-runsv avahi-daemon<br />&nbsp; |-sh /home/artix2/.config/openbox/autostart<br />&nbsp; |&nbsp;&nbsp; `-conky -c /home/artix2/.conky/Gotham/Gotham<br />&nbsp; |&nbsp; &nbsp; &nbsp;&nbsp; `-3*&#91;{conky}&#93;<br />&nbsp; `-udevd --daemon<br /><br /><br />$ sudo sv status *<br />run: acpid: (pid 627) 1712s<br />run: agetty-tty1: (pid 623) 1713s<br />run: agetty-tty2: (pid 622) 1713s<br />run: agetty-tty3: (pid 620) 1713s<br />run: agetty-tty4: (pid 624) 1713s<br />run: agetty-tty5: (pid 621) 1713s<br />run: agetty-tty6: (pid 625) 1713s<br />run: alsa: (pid 641) 1712s<br />down: avahi-daemon: 1s, normally up, want up<br />run: cronie: (pid 645) 1712s<br />fail: dbus: unable to change to service directory: file does not exist<br />down: dhclient: 1s, normally up, want up<br />fail: dhcp: unable to change to service directory: file does not exist<br />run: dhcpcd: (pid 642) 1712s<br />fail: dhcpd: unable to change to service directory: file does not exist<br />down: dhcpd4: 1s, normally up, want up<br />down: dhcpd6: 1s, normally up, want up<br />run: dmeventd: (pid 639) 1712s<br />down: elogind: 1s, normally up, want up<br />run: haveged: (pid 638) 1712s<br />down: ip6tables: 1s, normally up, want up<br />down: iptables: 1s, normally up, want up<br />down: lm_sensors: 0s, normally up, want up<br />fail: lvm: unable to change to service directory: file does not exist<br />fail: lvm2: unable to change to service directory: file does not exist<br />run: lvmetad: (pid 643) 1712s<br />run: mdadm: (pid 636) 1712s<br />run: nfs-server: (pid 646) 1712s<br />down: ntpd: 1s, normally up, want up<br />run: rpcbind: (pid 640) 1712s<br />run: rsyncd: (pid 631) 1712s<br />down: sddm: 1s, normally up, want up<br />run: sshd: (pid 628) 1712s<br />run: statd: (pid 632) 1712s<br /><br /></pre>
+</section>
+<nav>
+<ul id="buttons_4076" class="quickbuttons">
+<li id="modified_4076" class="listlevel1 modified">
+<span class="lastedit">Last Edit</span>: 25 April 2018, 22:24:44 by fungalnet
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4077"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?action=profile;u=71">
+Dudemanguy
+</a>
+<ul id="msg_4077_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postcount">Posts: 625</li>
+<li class="listlevel2 registered">Joined: Sep 13, 2017</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=profile;u=71">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=569;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /></li>
+<li class="listlevel1 membergroup">Package Maintainer</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4077" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4077" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4077">
+ <a href="https://forum.artixlinux.org/index.php/topic,29.msg4077.html#msg4077" rel="nofollow">Reply #71</a> &ndash; <time title="Last post" datetime="2018-04-25 23:02" data-timestamp="1524690147">25 April 2018, 23:02:27</time>
+</h5>
+<div id="msg_4077_quick_mod"></div>
+</header>
+<section id="msg_4077" class="messageContent">Looking at that output, I honestly don&#039;t know how your system is running okay because it just looks completely broken to me. Here&#039;s my output right now (with admittedly much fewer services but you get the picture).<br /><br /><div class="codeheader">Code: <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint">$ ls /run/runit/service <br />agetty-tty1&nbsp; agetty-tty2&nbsp; agetty-tty3&nbsp; agetty-tty4&nbsp; agetty-tty5&nbsp; agetty-tty6&nbsp; cgmanager&nbsp; cupsd<span class="tab">	</span>dbus&nbsp; dhcpcd&nbsp; elogind<br /><br /><br />$ pstree -a<br />runit<br />&nbsp; ├─at-spi-bus-laun<br />&nbsp; │&nbsp;&nbsp; ├─dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3<br />&nbsp; │&nbsp;&nbsp; └─3*&#91;{at-spi-bus-laun}&#93;<br />&nbsp; ├─at-spi2-registr --use-gnome-session<br />&nbsp; │&nbsp;&nbsp; └─2*&#91;{at-spi2-registr}&#93;<br />&nbsp; ├─dbus-daemon --syslog --fork --print-pid 4 --print-address 6 --session<br />&nbsp; ├─dconf-service<br />&nbsp; │&nbsp;&nbsp; └─2*&#91;{dconf-service}&#93;<br />&nbsp; ├─gconfd-2<br />&nbsp; ├─git-credential- /home/user/.cache/git/credential/socket<br />&nbsp; ├─gvfs-udisks2-vo<br />&nbsp; │&nbsp;&nbsp; └─2*&#91;{gvfs-udisks2-vo}&#93;<br />&nbsp; ├─gvfsd<br />&nbsp; │&nbsp;&nbsp; ├─gvfsd-dnssd --spawner :1.2 /org/gtk/gvfs/exec_spaw/5<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─2*&#91;{gvfsd-dnssd}&#93;<br />&nbsp; │&nbsp;&nbsp; ├─gvfsd-network --spawner :1.2 /org/gtk/gvfs/exec_spaw/2<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─3*&#91;{gvfsd-network}&#93;<br />&nbsp; │&nbsp;&nbsp; ├─gvfsd-trash --spawner :1.2 /org/gtk/gvfs/exec_spaw/0<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─2*&#91;{gvfsd-trash}&#93;<br />&nbsp; │&nbsp;&nbsp; └─2*&#91;{gvfsd}&#93;<br />&nbsp; ├─gvfsd-fuse /run/user/1000/gvfs -f -o big_writes<br />&nbsp; │&nbsp;&nbsp; └─5*&#91;{gvfsd-fuse}&#93;<br />&nbsp; ├─gvfsd-metadata<br />&nbsp; │&nbsp;&nbsp; └─2*&#91;{gvfsd-metadata}&#93;<br />&nbsp; ├─ibus-daemon -drx<br />&nbsp; │&nbsp;&nbsp; ├─ibus-dconf<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─3*&#91;{ibus-dconf}&#93;<br />&nbsp; │&nbsp;&nbsp; ├─ibus-engine-sim<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─3*&#91;{ibus-engine-sim}&#93;<br />&nbsp; │&nbsp;&nbsp; ├─ibus-extension-<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─3*&#91;{ibus-extension-}&#93;<br />&nbsp; │&nbsp;&nbsp; ├─ibus-ui-gtk3<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─3*&#91;{ibus-ui-gtk3}&#93;<br />&nbsp; │&nbsp;&nbsp; ├─python /usr/share/ibus-anthy/engine/main.py --ibus<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─3*&#91;{python}&#93;<br />&nbsp; │&nbsp;&nbsp; └─2*&#91;{ibus-daemon}&#93;<br />&nbsp; ├─ibus-portal<br />&nbsp; │&nbsp;&nbsp; └─2*&#91;{ibus-portal}&#93;<br />&nbsp; ├─ibus-x11 --kill-daemon<br />&nbsp; │&nbsp;&nbsp; └─2*&#91;{ibus-x11}&#93;<br />&nbsp; ├─palemoon<br />&nbsp; │&nbsp;&nbsp; └─55*&#91;{palemoon}&#93;<br />&nbsp; ├─pcmanfm<br />&nbsp; │&nbsp;&nbsp; └─2*&#91;{pcmanfm}&#93;<br />&nbsp; ├─polkitd --no-debug<br />&nbsp; │&nbsp;&nbsp; └─15*&#91;{polkitd}&#93;<br />&nbsp; ├─pulseaudio --start<br />&nbsp; │&nbsp;&nbsp; └─{pulseaudio}<br />&nbsp; ├─runsvdir -P /run/runit/service...<br />&nbsp; │&nbsp;&nbsp; ├─runsv agetty-tty2<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─agetty tty2 38400 linux<br />&nbsp; │&nbsp;&nbsp; ├─runsv cgmanager<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─cgmanager -q -m name=systemd<br />&nbsp; │&nbsp;&nbsp; ├─runsv agetty-tty6<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─agetty tty6 38400 linux<br />&nbsp; │&nbsp;&nbsp; ├─runsv agetty-tty1<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─login&nbsp; &nbsp;&nbsp; <br />&nbsp; │&nbsp;&nbsp; │&nbsp; &nbsp; &nbsp;&nbsp; └─sway<br />&nbsp; │&nbsp;&nbsp; │&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; ├─Xwayland :0 -rootless -terminate -listen 32 -listen 33 -wm 37<br />&nbsp; │&nbsp;&nbsp; │&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; │&nbsp;&nbsp; └─9*&#91;{Xwayland}&#93;<br />&nbsp; │&nbsp;&nbsp; │&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; ├─sway<br />&nbsp; │&nbsp;&nbsp; │&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; ├─swaybar -b bar-0<br />&nbsp; │&nbsp;&nbsp; │&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; │&nbsp;&nbsp; └─sh -c while :; do date +&#039;%Y-%m-%d %H:%M:%S %p&#039;; sleep 1; done<br />&nbsp; │&nbsp;&nbsp; │&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; │&nbsp; &nbsp; &nbsp;&nbsp; └─sleep 1<br />&nbsp; │&nbsp;&nbsp; │&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; ├─swaybg 0 /usr/share/backgrounds/warty-final-ubuntu.png fill<br />&nbsp; │&nbsp;&nbsp; │&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; └─{sway}<br />&nbsp; │&nbsp;&nbsp; ├─runsv dhcpcd<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─dhcpcd -B -M<br />&nbsp; │&nbsp;&nbsp; ├─runsv agetty-tty5<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─agetty tty5 38400 linux<br />&nbsp; │&nbsp;&nbsp; ├─runsv cupsd<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─cupsd -f<br />&nbsp; │&nbsp;&nbsp; ├─runsv agetty-tty3<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─agetty tty3 38400 linux<br />&nbsp; │&nbsp;&nbsp; ├─runsv elogind<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─elogind<br />&nbsp; │&nbsp;&nbsp; ├─runsv dbus<br />&nbsp; │&nbsp;&nbsp; │&nbsp;&nbsp; └─dbus-daemon --system --nofork --nopidfile<br />&nbsp; │&nbsp;&nbsp; └─runsv agetty-tty4<br />&nbsp; │&nbsp; &nbsp; &nbsp;&nbsp; └─agetty tty4 38400 linux<br />&nbsp; ├─udevd --daemon<br />&nbsp; ├─udisksd<br />&nbsp; │&nbsp;&nbsp; └─4*&#91;{udisksd}&#93;<br />&nbsp; ├─urxvt<br />&nbsp; │&nbsp;&nbsp; └─zsh<br />&nbsp; │&nbsp; &nbsp; &nbsp;&nbsp; └─weechat<br />&nbsp; │&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; └─8*&#91;{weechat}&#93;<br />&nbsp; ├─urxvt<br />&nbsp; │&nbsp;&nbsp; └─zsh<br />&nbsp; │&nbsp; &nbsp; &nbsp;&nbsp; └─R -q<br />&nbsp; └─urxvt<br />&nbsp; &nbsp; &nbsp; └─zsh<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; └─pstree -a<br /><br /><br />$ sudo sv status *<br />run: agetty-tty1: (pid 639) 28256s<br />run: agetty-tty2: (pid 643) 28256s<br />run: agetty-tty3: (pid 640) 28256s<br />run: agetty-tty4: (pid 641) 28256s<br />run: agetty-tty5: (pid 642) 28256s<br />run: agetty-tty6: (pid 638) 28256s<br />run: cgmanager: (pid 647) 28256s<br />run: cupsd: (pid 646) 28256s<br />run: dbus: (pid 644) 28256s<br />run: dhcpcd: (pid 649) 28256s<br />run: elogind: (pid 645) 28256s</pre><br />Looking at the output of the /run/runit/service directory, I don&#039;t know where in the world &quot;dhcp&quot;, &quot;dhcpd&quot;, &quot;dhcpd4&quot;,&nbsp; &quot;dhcpd6&quot;, &quot;lvm&quot;, or &quot;lvm2&quot; came from. Those aren&#039;t proper names for any of those. The dhcpcd-runit package gives you the &quot;dhcpcd&quot; directory which is the correct one. It also looks like dbus and elogind are both down which is probably not good and will give you trouble later. Try force reinstalling the dbus-runit and elogind-runit packages. There may be some other things wrong in there but I don&#039;t use most of those services so I don&#039;t really know for sure.
+</section>
+<nav>
+<ul id="buttons_4077" class="quickbuttons">
+<li id="modified_4077" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4078"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name">
+fungalnet
+</a>
+<ul id="msg_4078_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 membergroup">Guest</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4078" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4078" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4078">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4078.html#msg4078" rel="nofollow">Reply #72</a> &ndash; <time title="Last post" datetime="2018-04-25 23:27" data-timestamp="1524691632">25 April 2018, 23:27:12</time>
+</h5>
+<div id="msg_4078_quick_mod"></div>
+</header>
+<section id="msg_4078" class="messageContent">I had already tried reinstalling, from what I had in cache.&nbsp; No difference.<br />dbus now is giving me the correct output.&nbsp; What I did was using sv restart<br />The screen turned black and everything controlling anything valished.&nbsp; I had to kill it with the button.<br />When I rebooted dbus was running fine, (it was running before as well but was giving the error about directory not found, although it was there)?<br />I tried the same with lvm* and dhcp* but no change.<br />If dhcp is not running, although I see the processes going up and down the process list) how come I have a flawless connection now?
+</section>
+<nav>
+<ul id="buttons_4078" class="quickbuttons">
+<li id="modified_4078" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4079"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?action=profile;u=71">
+Dudemanguy
+</a>
+<ul id="msg_4079_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postcount">Posts: 625</li>
+<li class="listlevel2 registered">Joined: Sep 13, 2017</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=profile;u=71">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=569;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /></li>
+<li class="listlevel1 membergroup">Package Maintainer</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4079" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4079" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4079">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4079.html#msg4079" rel="nofollow">Reply #73</a> &ndash; <time title="Last post" datetime="2018-04-26 00:29" data-timestamp="1524695393">26 April 2018, 00:29:53</time>
+</h5>
+<div id="msg_4079_quick_mod"></div>
+</header>
+<section id="msg_4079" class="messageContent">You also have &quot;dhcpcd&quot; in your directory which is the correct name of the service (which is why you have internet). The other ones are extra folders you should get rid of. It&#039;s good that you have dbus working properly. Is elogind running ok now as well? If you get rid of those extra/unneeded directories (&quot;dhcp&quot;, &quot;dhcpd&quot;, &quot;dhcpd4&quot;,&nbsp; &quot;dhcpd6&quot;, &quot;lvm&quot;, and &quot;lvm2&quot;),&nbsp; I think your output should be normal.
+</section>
+<nav>
+<ul id="buttons_4079" class="quickbuttons">
+<li id="modified_4079" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+<article class="post_wrapper forumposts">
+<a class="post_anchor" id="msg4081"></a>
+<aside>
+<ul class="poster">
+<li class="listlevel1 subsections" aria-haspopup="true">
+<a class="linklevel1 name" href="https://forum.artixlinux.org/index.php?action=profile;u=50">
+konimex
+</a>
+<ul id="msg_4081_extra_info" class="menulevel2" aria-haspopup="true">
+<li class="listlevel2 postcount">Posts: 150</li>
+<li class="listlevel2 registered">Joined: Sep 07, 2017</li>
+<li class="listlevel2 report_seperator"></li>
+<li class="listlevel2 poster_ip">Logged</li>
+</ul>
+</li>
+<li class="listlevel1 poster_avatar">
+<a class="linklevel1" href="https://forum.artixlinux.org/index.php?action=profile;u=50">
+<img class="avatar avatarresize" src="https://forum.artixlinux.org/index.php?action=dlattach;attach=63;type=avatar" alt="" />
+</a>
+</li>
+<li class="listlevel1 icons"><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /><img src="https://forum.artixlinux.org/themes/silence/images/group_icons/icongmod.png" alt="[*]" /></li>
+<li class="listlevel1 membergroup">Artix Developer</li></ul>
+</aside>
+<div class="postarea">
+<header class="keyinfo">
+<h2 id="post_subject_4081" class="post_subject">Re: [TRACKER] Runit support</h2>
+<span id="messageicon_4081" class="messageicon hide">
+<img src="https://forum.artixlinux.org/themes/silence/images/post/xx.png" alt="" />
+</span>
+<h5 id="info_4081">
+<a href="https://forum.artixlinux.org/index.php/topic,29.msg4081.html#msg4081" rel="nofollow">Reply #74</a> &ndash; <time title="Last post" datetime="2018-04-26 03:28" data-timestamp="1524706127">26 April 2018, 03:28:47</time>
+</h5>
+<div id="msg_4081_quick_mod"></div>
+</header>
+<section id="msg_4081" class="messageContent"><div class="quoteheader"><a href="https://forum.artixlinux.org/index.php?msg=4074">Quote from: fungalnet on <time title="Last post" datetime="2018-04-25 19:11" data-timestamp="1524676262">25 April 2018, 19:11:02</time></a></div><blockquote class="bbc_quote">Now WHAT?<br /></blockquote><br />Calm down. You seem to be very worked up. Be patient.<br /><br /><div class="quoteheader"><a href="https://forum.artixlinux.org/index.php?msg=4074">Quote from: fungalnet on <time title="Last post" datetime="2018-04-25 19:11" data-timestamp="1524676262">25 April 2018, 19:11:02</time></a></div><blockquote class="bbc_quote">What I did (remember the day the reps weren&#039;t working and got the bad runit-artix ---3 instead of 4) was to make a list of all the runscripts I had installed and find the corresponding -runit pkgs.&nbsp; Except for a few that had no match, I removed ALL the -openrc and replaced them with -runit + runit + runit-artix<br /></blockquote><br />runit-artix has nothing to do with this. We&#039;re talking purely about dbus-runit since your problem is with NetworkManager (and really, why go back to this thread when we have a separate thread). When you did something and you&#039;re corresponding with someone over the forums to troubleshoot your problem about your &quot;network problems&quot;, you immediately notfiy them. You&#039;re a little too late.<br /><br /><div class="quoteheader"><a href="https://forum.artixlinux.org/index.php?msg=4074">Quote from: fungalnet on <time title="Last post" datetime="2018-04-25 19:11" data-timestamp="1524676262">25 April 2018, 19:11:02</time></a></div><blockquote class="bbc_quote">But dbus-runit was installed all along.&nbsp; If I hadn&#039;t linked dbus or any of those other ones that produce the error it wouldn&#039;t show up in sv status when I run it for the whole run directory<br /></blockquote><br />Did you even read your own error?<br /><br /><div class="codeheader">Code: (fungalnet) <a href="#" onclick="return elkSelectText(this);" class="codeoperation">[Select]</a></div><pre class="bbc_code prettyprint">fail: /etc/runit/runsvdir/default/dbus: unable to change to service directory: file does not exist<br /></pre><br />However, since your problem is resolved, I&#039;m not replying to you anymore for this matter since this discussion is quickly turning into a flamefest (if it isn&#039;t a flamefest already).
+</section>
+<nav>
+<ul id="buttons_4081" class="quickbuttons">
+<li id="modified_4081" class="listlevel1 modified hide">
+</li>
+</ul>
+</nav>
+<footer>
+<div id="msg_4081_signature" class="signature">the runit guy on artix</div>
+</footer>
+</div>
+</article>
+<hr class="post_separator" />
+</form>
+</section>
+</main>
+<nav class="pagesection">
+<ul class="pagelinks floatleft" role="menubar"><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.45.html" role="menuitem"><span class="previous_page" role="menuitem">previous</span></a></li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.0.html" role="menuitem">1</a></li><li class="linavPages expand_pages" role="menuitem" data-baseurl="'' + elk_scripturl + '?topic=29.%1$d'" data-perpage="15" data-firstpage="15" data-lastpage="30"> <a href="#">...</a> </li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.30.html" role="menuitem">3</a></li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.45.html" role="menuitem">4</a></li><li class="linavPages"><strong class="current_page" role="menuitem">5</strong></li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.75.html" role="menuitem">6</a></li><li class="linavPages"><a class="navPages" href="https://forum.artixlinux.org/index.php/topic,29.75.html" role="menuitem"><span class="next_page" role="menuitem">next</span></a></li></ul>
+<ul role="menubar" class="buttonlist floatright">
+<li role="menuitem"><a class="linklevel1 button_strip_print" href="https://forum.artixlinux.org/index.php?action=topic;sa=printpage;topic=29.0" rel="nofollow">Print</a></li>
+</ul>
+</nav>
+<nav>
+<ul class="navigate_section">
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php"><i class="icon i-home"><s>Home</s></i></a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php?action=forum;#c7">Init systems</a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php/board,30.0.html">runit</a>
+</span>
+</li>
+<li class="linktree">
+<span><a href="https://forum.artixlinux.org/index.php/topic,29.0.html">[TRACKER] Runit support</a>
+</span>
+</li>
+</ul>
+</nav>
+<div id="moderationbuttons" class="hide_30 hamburger_30_target"></div>
+<div id="display_jump_to">&nbsp;</div>
+<script>
+				aJumpTo[aJumpTo.length] = new JumpTo({
+					sContainerId: "display_jump_to",
+					sJumpToTemplate: "<label class=\"smalltext\" for=\"%select_id%\">Jump to:<" + "/label> %dropdown_list%",
+					iCurBoardId: 30,
+					iCurBoardChildLevel: 0,
+					sCurBoardName: "runit",
+					sBoardChildLevelIndicator: "&#8195;",
+					sBoardPrefix: "&#10148;",
+					sCatClass: "jump_to_header",
+					sCatPrefix: "",
+					sGoButtonLabel: "Go"
+				});
+			</script>
+</div>
+</div>
+<footer id="footer_section"><a id="bot"></a>
+<div class="wrapper">
+<ul>
+<li class="copyright">
+<a href="http://www.elkarte.net" title="ElkArte Forum" target="_blank" class="new_win">Powered by ElkArte 1.1.6</a> | <a href="https://forum.artixlinux.org/index.php?action=who;sa=credits" title="Credits" target="_blank" class="new_win" rel="nofollow">Credits</a>
+</li><li>
+<a id="button_rss" href="https://forum.artixlinux.org/index.php?action=.xml;type=rss2;limit=5" class="rssfeeds new_win"><i class="icon icon-margin i-rss icon-big"><s>RSS</s></i></a>
+</li></ul>
+<p>Page created in 0.067 seconds with 25 queries.</p>
+</div>
+</footer>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/sha256.js?R116" id="sha256.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/elk_jquery_embed.js?R116" id="elk_jquery_embed.js"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/prettify.min.js?R116" id="prettify.min.js"></script>
+<script src="https://forum.artixlinux.org/themes/default/scripts/cookiechoices.js?R116" id="cookiechoices.js"></script>
+<script src="https://stats.artixlinux.org/matomo.js" id="matomo.js" async="async"></script>
+<script src="https://forum.artixlinux.org/themes/silence/scripts/like_posts.js?R116" id="like_posts.js"></script>
+<script>
+		var oEmbedtext = ({
+				embed_limit : 25,
+				preview_image : 'Video Preview Image',
+				ctp_video : 'Click to play video, double click to load video',
+				hide_video : 'Show/Hide video',
+				youtube : 'YouTube video:',
+				vimeo : 'Vimeo video:',
+				dailymotion : 'Dailymotion video:'
+			});
+		$(function() {
+				prettyPrint();
+			});
+		$('.bbc_link').each(function() {
+			var url = $(this).attr('href'),
+				domain = url.match(/:\/\/(.[^/]+)/)[1],
+				schema = url.match(/^(http[s]*):\/\//)[1];
+			$(this).css({
+				'background-image': 'url(//www.google.com/s2/favicons?domain=' + schema + '://' + domain + ')',
+				'background-repeat': 'no-repeat',
+				'background-position': '0 2px',
+				'padding-left': '18px'
+			});
+		})
+		$(document).ready(function() {
+			// All the attachment links get fancybox data, remove onclick events
+			$("a[id^=link_]").each(function(){
+				var tag = $(this);
+
+				tag.attr("data-fancybox", "").removeAttr("onclick");
+
+				// No rel tag yet? then add one
+				if (!tag.attr("rel")) {
+					if (tag.data("lightboxmessage"))
+						tag.attr("rel", "gallery_" + tag.data("lightboxmessage"));
+					else
+						tag.attr("rel", "gallery");
+				}
+			});
+
+			// Find all the attachment / bbc divs on the page
+			$("div[id$=_footer]").each(function() {
+				// Fancybox Galleries are created from elements who have the same "rel" tag
+				var id = $(this).attr("id");
+				$("#" + id + " a[rel=gallery]").attr("rel", "gallery_" + id);
+			});
+
+			// Attach FB to everything we tagged with the fancybox data attr
+			$("[data-fancybox]").fancybox({
+				type: "image",
+				padding: 0,
+				arrows: true,
+				closeBtn: true,
+				loop: "1",
+				openEffect: "elastic",
+				openSpeed: 300,
+				closeEffect: "elastic",
+				closeSpeed: 300,
+				nextEffect: "elastic",
+				nextSpeed: 300,
+				prevEffect: "elastic",
+				prevSpeed: 300,
+				autoPlay: false,
+				playSpeed: 3000,
+				tpl: {
+					error: '<p class="errorbox">Unable to load the requested image.</p>',
+					closeBtn: '<div title="Close" class="fancybox-item fancybox-close"></div>',
+					next: '<a title="Next" class="fancybox-item fancybox-next"><span></span></a>',
+					prev: '<a title="Previous" class="fancybox-item fancybox-prev"><span></span></a>'
+				},
+				helpers: {
+					buttons: {
+						tpl: ''+
+						'<div id="fancybox-buttons"> ' +
+							'<ul> ' +
+							'	<li> ' +
+							'		<a class="btnPrev" title="Previous" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnPlay" title="Start slideshow" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnNext" title="Next" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnToggle" title="Toggle size" href="javascript:;"></a> ' +
+							'	</li> ' +
+							'	<li> ' +
+							'		<a class="btnClose" title="Close" href="javascript:jQuery.fancybox.close();"></a> ' +
+							'	</li> ' +
+							'</ul> ' +
+						'</div>',
+						position : "top"
+					},
+					thumbs: {
+						width: 40,
+						height: 40,
+						position: "bottom"
+					},
+					overlay: {
+						showEarly: true,
+						closeClick : true,
+					},
+					ajax: {
+						dataType : 'html',
+						headers  : { 'X-fancyBox': true, 'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15 Surf/2.0"}
+					},
+				}
+			});
+		});
+		$(document).ready(function() {
+    cookieChoices.showCookieConsentBar('Artix forum uses a single cookie to remember you', 'OK', 'More information', '');
+  });
+		var _paq = window._paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.artixlinux.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+		$(function() {
+					var likePostInstance = likePosts.prototype.init({
+						oTxt: ({
+							btnText : 'OK',
+							likeHeadingError : 'Error in Likes',
+							error_occurred : 'An Error Has Occurred'
+						}),
+					});
+
+					$(".like_button, .unlike_button, .likes_button").SiteTooltip({
+						hoverIntent: {
+							sensitivity: 10,
+							interval: 150,
+							timeout: 50
+						}
+					});
+				});
+		var oMainHeaderToggle = new elk_Toggle({
+						bToggleEnabled: true,
+						bCurrentlyCollapsed: false,
+						aSwappableContainers: [
+							'upper_section','header'
+						],
+						aSwapClasses: [
+							{
+								sId: 'upshrink',
+								classExpanded: 'chevricon i-chevron-up icon-lg',
+								titleExpanded: 'Shrink or expand the header.',
+								classCollapsed: 'chevricon i-chevron-down icon-lg',
+								titleCollapsed: 'Shrink or expand the header.'
+							}
+						],
+						oThemeOptions: {
+							bUseThemeSettings: false,
+							sOptionName: 'minmax_preferences',
+							sSessionId: elk_session_id,
+							sSessionVar: elk_session_var,
+							sAdditionalVars: ';minmax_key=upshrink'
+						},
+						oCookieOptions: {
+							bUseCookie: elk_member_id == 0 ? true : false,
+							sCookieName: 'upshrink'
+						}
+					});
+		$('#elkFadeScroller').Elk_NewsFader({'iFadeDelay': 5000});
+	</script>
+</body>
+</html>

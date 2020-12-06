@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>[SOLVED] sshd won&#039;t start / Networking, Server, and Protection / Arch Linux Forums</title>
+<link rel="stylesheet" type="text/css" href="style/ArchLinux.css" />
+<link rel="canonical" href="viewtopic.php?id=144449" title="Page 1" />
+<link rel="alternate" type="application/atom+xml" href="extern.php?action=feed&amp;tid=144449&amp;type=atom" title="Atom topic feed" />
+    <link rel="stylesheet" media="screen" href="style/ArchLinux/arch.css?v=4"/>
+        <link rel="stylesheet" media="screen" href="style/ArchLinux/archnavbar.css?v=4"/>
+    
+<link rel="shortcut icon" href="style/ArchLinux/favicon.ico" />
+</head>
+
+<body>
+<div id="archnavbar" class="anb-forum">
+	<div id="archnavbarlogo"><h1><a href="http://www.archlinux.org/">Arch Linux</a></h1></div>
+	<div id="archnavbarmenu">
+		<ul id="archnavbarlist">
+			<li id="anb-home"><a href="http://www.archlinux.org/">Home</a></li><li id="anb-packages"><a href="http://www.archlinux.org/packages/">Packages</a></li><li id="anb-forums" class="anb-selected"><a href="https://bbs.archlinux.org/">Forums</a></li><li id="anb-wiki"><a href="https://wiki.archlinux.org/">Wiki</a></li><li id="anb-bugs"><a href="https://bugs.archlinux.org/">Bugs</a></li><li id="anb-security"><a href="https://security.archlinux.org/">Security</a></li><li id="anb-aur"><a href="https://aur.archlinux.org/">AUR</a></li><li id="anb-download"><a href="http://www.archlinux.org/download/">Download</a></li>		</ul>
+	</div>
+</div>
+
+
+<div id="punviewtopic" class="pun">
+<div class="top-box"></div>
+<div class="punwrap">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex" class="isactive"><a href="index.php">Index</a></li>
+				<li id="navrules"><a href="misc.php?action=rules">Rules</a></li>
+				<li id="navsearch"><a href="search.php">Search</a></li>
+				<li id="navregister"><a href="register.php">Register</a></li>
+				<li id="navlogin"><a href="login.php">Login</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<p class="conl">You are not logged in.</p>
+			<ul class="conr">
+				<li><span>Topics: <a href="search.php?action=show_recent" title="Find topics with recent posts.">Active</a> | <a href="search.php?action=show_unanswered" title="Find topics with no replies.">Unanswered</a></span></li>
+			</ul>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="brdmain">
+<div class="linkst">
+	<div class="inbox crumbsplus">
+		<ul class="crumbs">
+			<li><a href="index.php">Index</a></li>
+			<li><span>»&#160;</span><a href="viewforum.php?id=8">Networking, Server, and Protection</a></li>
+			<li><span>»&#160;</span><strong><a href="viewtopic.php?id=144449">[SOLVED] sshd won&#039;t start</a></strong></li>
+		</ul>
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages: </span><strong class="item1">1</strong></p>
+		</div>
+		<div class="clearer"></div>
+	</div>
+</div>
+
+<div id="p1125049" class="blockpost rowodd firstpost blockpost1">
+	<h2><span><span class="conr">#1</span> <a href="viewtopic.php?pid=1125049#p1125049">2012-07-04 01:17:05</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>4r45tzero0</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/61569.jpg?m=1572193439" width="80" height="80" alt="" /></dd>
+						<dd><span>Registered: 2012-07-04</span></dd>
+						<dd><span>Posts: 5</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>[SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<p>hi <br />i have problem , and i don&#039;t know what can i do . so please guide me .<br />i install openssh , and i changed protocol line to protocol 2 but it can&#039;t run</p><div class="codebox"><pre><code>[root@4r45tzero0 ~]#/etc/rc.d/sshd start
+:: Starting Secure Shell Daemon                            [BUSY]
+Could not load host key: /etc/ssh/ssh_host_rsa_key
+Could not load host key: /etc/ssh/ssh_host_dsa_key
+Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+Disabling protocol version 2. Could not load host key
+sshd: no hostkeys available -- exiting.                   [FAIL]</code></pre></div>
+						<p class="postedit"><em>Last edited by 4r45tzero0 (2012-07-12 16:10:23)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125058" class="blockpost roweven">
+	<h2><span><span class="conr">#2</span> <a href="viewtopic.php?pid=1125058#p1125058">2012-07-04 02:05:47</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>Trilby</strong></dt>
+						<dd class="usertitle"><strong>Inspector Parrot</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/54694.png?m=1572193435" width="53" height="80" alt="" /></dd>
+						<dd><span>Registered: 2011-11-29</span></dd>
+						<dd><span>Posts: 24,393</span></dd>
+						<dd class="usercontacts"><span class="website"><a href="https://jessemcclure.org" rel="nofollow">Website</a></span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<p>That&#039;s a pretty clear error message.&#160; Have you generated a key?</p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p><span style="color: #888888">&quot;UNIX is simple and coherent...&quot; - Dennis Ritchie, &quot;GNU&#039;s Not UNIX&quot; -&#160; Richard Stallman</span></p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125060" class="blockpost rowodd">
+	<h2><span><span class="conr">#3</span> <a href="viewtopic.php?pid=1125060#p1125060">2012-07-04 02:10:53</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>jasonwryan</strong></dt>
+						<dd class="usertitle"><strong>Anarchist</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/25579.png?m=1572193435" width="80" height="69" alt="" /></dd>
+						<dd><span>From: .nz</span></dd>
+						<dd><span>Registered: 2009-05-09</span></dd>
+						<dd><span>Posts: 29,049</span></dd>
+						<dd class="usercontacts"><span class="website"><a href="http://jasonwryan.com/" rel="nofollow">Website</a></span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<p>Please post your sshd_config</p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p><a href="http://www.flickr.com/photos/jasonwryan/9333810442/lightbox/" rel="nofollow">Arch + dwm</a>&#160; &#160;•&#160; &#160;<a href="https://hg.sr.ht/~jasonwryan/" rel="nofollow">Mercurial repos</a>&#160; •&#160; &#160;<a href="https://gitlab.com/surfraw/Surfraw" rel="nofollow">Surfraw</a></p><p>Registered Linux User #482438</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125147" class="blockpost roweven">
+	<h2><span><span class="conr">#4</span> <a href="viewtopic.php?pid=1125147#p1125147">2012-07-04 10:45:39</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>4r45tzero0</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/61569.jpg?m=1572193439" width="80" height="80" alt="" /></dd>
+						<dd><span>Registered: 2012-07-04</span></dd>
+						<dd><span>Posts: 5</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<p>hi<br />yes i generated key with this command </p><div class="codebox"><pre><code> ssh-keygen -b 521 -t ecdsa -C&quot;$(id -un)@$(hostname)-$(date --rfc-3339=date)&quot;</code></pre></div><p>and this is my sshd_config<br /><a href="https://gist.github.com/3046672" rel="nofollow">https://gist.github.com/3046672</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125156" class="blockpost rowodd">
+	<h2><span><span class="conr">#5</span> <a href="viewtopic.php?pid=1125156#p1125156">2012-07-04 11:14:35</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>hiciu</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd><span>Registered: 2010-08-11</span></dd>
+						<dd><span>Posts: 83</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<div class="quotebox"><cite>4r45tzero0 wrote:</cite><blockquote><div><div class="codebox"><pre><code>Could not load host key: /etc/ssh/ssh_host_rsa_key
+Could not load host key: /etc/ssh/ssh_host_dsa_key
+Could not load host key: /etc/ssh/ssh_host_ecdsa_key</code></pre></div></div></blockquote></div><p>These keys should be generated by &quot;ssh-keygen -A&quot; in /etc/rc.d/sshd. It should work out of box. </p><p>Could you check if they exists? (important things: -rw------- and owner root)</p><div class="codebox"><pre><code>$ ls -la /etc/ssh/ssh_host_rsa_key
+-rw------- 1 root root 1675 2012-06-14 23:14 /etc/ssh/ssh_host_rsa_key</code></pre></div><p>Try to run sshd with strace:</p><div class="codebox"><pre><code>sudo strace -f -v -e open rc.d start sshd</code></pre></div><p>You will get a lot of text (you can use &#039;-o /tmp/ssh_log&#039; to save it; man strace). Somewhere near bottom will be something similar to this:</p><div class="codebox"><pre><code>[pid  7006] open(&quot;/etc/ssh/ssh_host_rsa_key&quot;, O_RDONLY) = 3
+[pid  7006] open(&quot;/etc/ssh/ssh_host_dsa_key&quot;, O_RDONLY) = 3
+[pid  7006] open(&quot;/etc/ssh/ssh_host_ecdsa_key&quot;, O_RDONLY) = 3</code></pre></div><p>Post your output if you get something different.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125277" class="blockpost roweven">
+	<h2><span><span class="conr">#6</span> <a href="viewtopic.php?pid=1125277#p1125277">2012-07-04 17:44:11</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>jasonwryan</strong></dt>
+						<dd class="usertitle"><strong>Anarchist</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/25579.png?m=1572193435" width="80" height="69" alt="" /></dd>
+						<dd><span>From: .nz</span></dd>
+						<dd><span>Registered: 2009-05-09</span></dd>
+						<dd><span>Posts: 29,049</span></dd>
+						<dd class="usercontacts"><span class="website"><a href="http://jasonwryan.com/" rel="nofollow">Website</a></span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<div class="quotebox"><cite>4r45tzero0 wrote:</cite><blockquote><div><p>and this is my sshd_config<br /><a href="https://gist.github.com/3046672" rel="nofollow">https://gist.github.com/3046672</a></p></div></blockquote></div><p>Your hostkey entries are commented out...</p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p><a href="http://www.flickr.com/photos/jasonwryan/9333810442/lightbox/" rel="nofollow">Arch + dwm</a>&#160; &#160;•&#160; &#160;<a href="https://hg.sr.ht/~jasonwryan/" rel="nofollow">Mercurial repos</a>&#160; •&#160; &#160;<a href="https://gitlab.com/surfraw/Surfraw" rel="nofollow">Surfraw</a></p><p>Registered Linux User #482438</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125289" class="blockpost rowodd">
+	<h2><span><span class="conr">#7</span> <a href="viewtopic.php?pid=1125289#p1125289">2012-07-04 18:18:48</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>Zancarius</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/59928.png?m=1572193435" width="80" height="80" alt="" /></dd>
+						<dd><span>From: NM, USA</span></dd>
+						<dd><span>Registered: 2012-05-06</span></dd>
+						<dd><span>Posts: 207</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<div class="quotebox"><cite>jasonwryan wrote:</cite><blockquote><div><p>Your hostkey entries are commented out...</p></div></blockquote></div><p>They are by default. AFAIK, HostKey is intended to change their location from the defaults.</p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>He who has no .plan has small finger.<br />~Confucius on UNIX.</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125305" class="blockpost roweven">
+	<h2><span><span class="conr">#8</span> <a href="viewtopic.php?pid=1125305#p1125305">2012-07-04 19:01:01</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>jasonwryan</strong></dt>
+						<dd class="usertitle"><strong>Anarchist</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/25579.png?m=1572193435" width="80" height="69" alt="" /></dd>
+						<dd><span>From: .nz</span></dd>
+						<dd><span>Registered: 2009-05-09</span></dd>
+						<dd><span>Posts: 29,049</span></dd>
+						<dd class="usercontacts"><span class="website"><a href="http://jasonwryan.com/" rel="nofollow">Website</a></span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<div class="quotebox"><cite>Zancarius wrote:</cite><blockquote><div><div class="quotebox"><cite>jasonwryan wrote:</cite><blockquote><div><p>Your hostkey entries are commented out...</p></div></blockquote></div><p>They are by default. AFAIK, HostKey is intended to change their location from the defaults.</p></div></blockquote></div><br /><p><a href="http://www.openbsd.org/cgi-bin/cvsweb/src/usr.bin/ssh/sshd_config" rel="nofollow">You are right</a>. I have them uncommented in all my (working) sshd_configs, but I set that up some time ago now...</p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p><a href="http://www.flickr.com/photos/jasonwryan/9333810442/lightbox/" rel="nofollow">Arch + dwm</a>&#160; &#160;•&#160; &#160;<a href="https://hg.sr.ht/~jasonwryan/" rel="nofollow">Mercurial repos</a>&#160; •&#160; &#160;<a href="https://gitlab.com/surfraw/Surfraw" rel="nofollow">Surfraw</a></p><p>Registered Linux User #482438</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125321" class="blockpost rowodd">
+	<h2><span><span class="conr">#9</span> <a href="viewtopic.php?pid=1125321#p1125321">2012-07-04 19:33:35</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>4r45tzero0</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/61569.jpg?m=1572193439" width="80" height="80" alt="" /></dd>
+						<dd><span>Registered: 2012-07-04</span></dd>
+						<dd><span>Posts: 5</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<p>so , what should i do ?</p>
+						<p class="postedit"><em>Last edited by 4r45tzero0 (2012-07-04 19:35:39)</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125764" class="blockpost roweven">
+	<h2><span><span class="conr">#10</span> <a href="viewtopic.php?pid=1125764#p1125764">2012-07-05 18:10:05</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>Zancarius</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/59928.png?m=1572193435" width="80" height="80" alt="" /></dd>
+						<dd><span>From: NM, USA</span></dd>
+						<dd><span>Registered: 2012-05-06</span></dd>
+						<dd><span>Posts: 207</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<div class="quotebox"><cite>jasonwryan wrote:</cite><blockquote><div><p>I have them uncommented in all my (working) sshd_configs, but I set that up some time ago now...</p></div></blockquote></div><p>I know how that goes! I have a few configs sitting around that have evolved over a period of 6+ years. <img src="https://bbs.archlinux.org/img/smilies/smile.png" width="15" height="15" alt="smile" /></p><p>Admittedly, when I made the switch to Arch, I ended up accepting <em>most</em> defaults, because I decided that the Arch Way of keeping things simple was probably better for me in the long run. I still have a few samba/sshd tweaks carried over, though.</p><div class="quotebox"><cite>4r45tzero0 wrote:</cite><blockquote><div><p>so , what should i do ?</p></div></blockquote></div><p>Don&#039;t forget that hiciu also suggested running strace and posting the results of that. It might be a good start. Failing that, you could follow jasonwryan&#039;s implicit advice and try uncommenting the entries in sshd_config. I suspect that won&#039;t change anything, but you won&#039;t know if you don&#039;t at least try.</p><p>Failing that, as suggested earlier, you should check the permissions of your host keys. If they&#039;re readable by anyone other than the user sshd(8) is being run as (typically root), sshd will not start. From the man page for sshd_config(5):</p><div class="quotebox"><blockquote><div><p>HostKey<br />Specifies&#160; a&#160; file&#160; containing&#160; a&#160; private&#160; host&#160; key&#160; used&#160; by&#160; SSH.&#160; &#160;The&#160; default&#160; is&#160; /etc/ssh/ssh_host_key&#160; for&#160; protocol&#160; version&#160; 1,&#160; and&#160; &#160;/etc/ssh/ssh_host_dsa_key, /etc/ssh/ssh_host_ecdsa_key and /etc/ssh/ssh_host_rsa_key for protocol version 2.&#160; <strong>Note that sshd(8) will refuse to use a file if it is group/world-accessible</strong>.&#160; It is possible to have multiple host key files.&#160; ``rsa1&#039;&#039; keys are used for version 1 and ``dsa&#039;&#039;, ``ecdsa&#039;&#039; or ``rsa&#039;&#039; are used for version 2 of the SSH protocol.</p></div></blockquote></div>
+						<p class="postedit"><em>Last edited by Zancarius (2012-07-05 18:13:32)</em></p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>He who has no .plan has small finger.<br />~Confucius on UNIX.</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1125778" class="blockpost rowodd">
+	<h2><span><span class="conr">#11</span> <a href="viewtopic.php?pid=1125778#p1125778">2012-07-05 18:55:18</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>MoonSwan</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/14382.png?m=1572193435" width="48" height="48" alt="" /></dd>
+						<dd><span>From: Great White North</span></dd>
+						<dd><span>Registered: 2008-01-23</span></dd>
+						<dd><span>Posts: 873</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<p>I used DuckDuckGo to find this answer , and I used it myself a few days ago on a Debian system, so I know for a fact that this works, <a href="http://answers.oreilly.com/topic/62-how-to-generate-new-host-keys/" rel="nofollow">http://answers.oreilly.com/topic/62-how … host-keys/</a></p><p>Hope this helps.</p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p><em>I&#039;m torn apart between worlds. Basically, using vim in a highly visual environment with a lot of mouse features feels like soldering a lose wire to a motherboard with a Zippo and a needle, while working with ANY TEXT AT ALL with a &quot;modern GUI&quot; text editor feels like joining the London Philharmonic Orchestra with a Fisher-Price Laugh and Learn Magical Musical Mirror.</em>&#160; --Awebb</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1126776" class="blockpost roweven">
+	<h2><span><span class="conr">#12</span> <a href="viewtopic.php?pid=1126776#p1126776">2012-07-08 10:10:44</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>4r45tzero0</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/61569.jpg?m=1572193439" width="80" height="80" alt="" /></dd>
+						<dd><span>Registered: 2012-07-04</span></dd>
+						<dd><span>Posts: 5</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<p>output of strace <br /><a href="https://gist.github.com/3070277" rel="nofollow">https://gist.github.com/3070277</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1126910" class="blockpost rowodd">
+	<h2><span><span class="conr">#13</span> <a href="viewtopic.php?pid=1126910#p1126910">2012-07-08 16:44:03</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>Leonid.I</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd><span>From: Aethyr</span></dd>
+						<dd><span>Registered: 2009-03-22</span></dd>
+						<dd><span>Posts: 999</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<div class="quotebox"><cite>4r45tzero0 wrote:</cite><blockquote><div><p>hi<br />yes i generated key with this command </p><div class="codebox"><pre><code> ssh-keygen -b 521 -t ecdsa -C&quot;$(id -un)@$(hostname)-$(date --rfc-3339=date)&quot;</code></pre></div><p>and this is my sshd_config<br /><a href="https://gist.github.com/3046672" rel="nofollow">https://gist.github.com/3046672</a></p></div></blockquote></div><p>I am surprised that noone reads boot scripts and man pages anymore. You can get the hint what&#039;s wrong with your setup from man ssh-keygen.</p><p>Bottom line: do not mess with host keys -- openssh is samrt enough to take care of it. Quick solution:<br />1. # pacman -Rsn openssh &amp;&amp; rm -vfr /etc/ssh &amp;&amp; pacman -S openssh &amp;&amp; /etc/rc.d/sshd start<br />2. # vim /etc/ssh/sshd_config<br />3. # /etc/rc.d/sshd restart</p>
+					</div>
+					<div class="postsignature postmsg"><hr /><p>Arch Linux is more than just GNU/Linux -- it&#039;s an adventure<br />pkill -9 systemd</p></div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="p1128494" class="blockpost roweven">
+	<h2><span><span class="conr">#14</span> <a href="viewtopic.php?pid=1128494#p1128494">2012-07-12 16:13:48</a></span></h2>
+	<div class="box">
+		<div class="inbox">
+			<div class="postbody">
+				<div class="postleft">
+					<dl>
+						<dt><strong>4r45tzero0</strong></dt>
+						<dd class="usertitle"><strong>Member</strong></dd>
+						<dd class="postavatar"><img src="https://bbs.archlinux.org/img/avatars/61569.jpg?m=1572193439" width="80" height="80" alt="" /></dd>
+						<dd><span>Registered: 2012-07-04</span></dd>
+						<dd><span>Posts: 5</span></dd>
+					</dl>
+				</div>
+				<div class="postright">
+					<h3>Re: [SOLVED] sshd won&#039;t start</h3>
+					<div class="postmsg">
+						<p>Thanks all of you guys for helping me</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inbox">
+			<div class="postfoot clearb">
+				<div class="postfootleft"><p><span>Offline</span></p></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="postlinksb">
+	<div class="inbox crumbsplus">
+		<div class="pagepost">
+			<p class="pagelink conl"><span class="pages-label">Pages: </span><strong class="item1">1</strong></p>
+		</div>
+		<ul class="crumbs">
+			<li><a href="index.php">Index</a></li>
+			<li><span>»&#160;</span><a href="viewforum.php?id=8">Networking, Server, and Protection</a></li>
+			<li><span>»&#160;</span><strong><a href="viewtopic.php?id=144449">[SOLVED] sshd won&#039;t start</a></strong></li>
+		</ul>
+		<div class="clearer"></div>
+	</div>
+</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div id="brdfooternav" class="inbox">
+			<div class="conl">
+				<form id="qjump" method="get" action="viewforum.php">
+					<div><label><span>Jump to<br /></span>
+					<select name="id" onchange="window.location=('viewforum.php?id='+this.options[this.selectedIndex].value)">
+						<optgroup label="Technical Issues and Assistance">
+							<option value="23">Newbie Corner</option>
+							<option value="17">Installation</option>
+							<option value="22">Kernel &amp; Hardware</option>
+							<option value="18">Applications &amp; Desktop Environments</option>
+							<option value="31">Laptop Issues</option>
+							<option value="8" selected="selected">Networking, Server, and Protection</option>
+							<option value="32">Multimedia and Games</option>
+							<option value="50">System Administration</option>
+							<option value="35">Other Architectures</option>
+						</optgroup>
+						<optgroup label="Arch-centric">
+							<option value="24">Announcements, Package &amp; Security Advisories</option>
+							<option value="1">Arch Discussion</option>
+							<option value="13">Forum &amp; Wiki discussion</option>
+						</optgroup>
+						<optgroup label="Pacman Upgrades, Packaging &amp; AUR">
+							<option value="44">Pacman &amp; Package Upgrade Issues</option>
+							<option value="49">[testing] Repo Forum</option>
+							<option value="4">Creating &amp; Modifying Packages</option>
+							<option value="38">AUR Issues, Discussion &amp; PKGBUILD Requests</option>
+						</optgroup>
+						<optgroup label="Contributions &amp; Discussion">
+							<option value="20">GNU/Linux Discussion</option>
+							<option value="27">Community Contributions</option>
+							<option value="33">Programming &amp; Scripting</option>
+							<option value="30">Other Languages</option>
+							<option value="47">Artwork and Screenshots</option>
+						</optgroup>
+					</select></label>
+					<input type="submit" value=" Go " accesskey="g" />
+					</div>
+				</form>
+			</div>
+			<div class="conr">
+				<p id="feedlinks"><span class="atom"><a href="extern.php?action=feed&amp;tid=144449&amp;type=atom">Atom topic feed</a></span></p>
+				<p id="poweredby">Powered by <a href="http://fluxbb.org/">FluxBB</a></p>
+			</div>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+<div class="end-box"></div>
+</div>
+
+</body>
+</html>
