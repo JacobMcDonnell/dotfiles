@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Openbox
+Comment=Openbox
+Exec=/usr/bin/openbox-session
+Type=Application

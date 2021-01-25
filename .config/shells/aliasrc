@@ -25,9 +25,9 @@ alias \
 	zshup="source $HOME/.config/shells/zsh/.zshrc" \
 	b="cd ~/.local/bin" \
 	d="cd ~/Documents" \
-	bk="cd ~/Documents/books" \
+	bk="cd ~/Documents/Books" \
 	dw="cd ~/Downloads" \
-	g="cd ~/Documents/projects/gitlab" \
+	g="cd ~/Documents/Projects/gitlab" \
 	c="cd ~/.config" \
 	dosbox="dosbox -conf "$XDG_CONFIG_HOME"/dosbox/dosbox.conf" \
 	pm="pulsemixer" \

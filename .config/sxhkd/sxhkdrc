@@ -39,11 +39,11 @@ super + Escape
 
 # shutdown
 super + shift + ctrl + s
-	prompt "Shutdown?" "sudo shutdown -h now"
+	shutdownPrompt
 
 # Reboot
 super + shift + ctrl + r
-	prompt "Reboot?" "sudo reboot"
+	rebootPrompt
 
 # BSPWM HOTKEYS
 
@@ -176,8 +176,24 @@ super + alt + v
 super + alt + s
 	syncterm
 
+# launch bc
+super + alt + c
+	$TERMINAL -e bc
+
+# launch ncmpcpp
+super + alt + m
+	$TERMINAL -e ncmpcpp
+
+# launch acme
+super + alt + a
+	acme
+
+# launch openBook command
+super + alt + o
+	openBook
+
 # DMENU SCRIPTS (Alt+Ctrl+Key)
 
 # run program launcher
-alt + ctrl + Return
+super + alt + space
 	dmenu_run

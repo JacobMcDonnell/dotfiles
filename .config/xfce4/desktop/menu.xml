@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xfdesktop-menu []>
+<xfdesktop-menu>
+<title name="Desktop Menu"/>
+<separator/>
+<menu name="Development">
+    <app name="Acme" cmd="acme"/>
+    <app name="Android Studio" cmd="android-studio"/>
+    <app name="Fluid" cmd="fluid"/>
+    <app name="IDLE (Python IDE)" cmd="idle"/>
+    <app name="Python" cmd="python" term="true"/>
+    <app name="Tclsh8.6" cmd="tclsh8.6" term="true"/>
+</menu>
+<menu name="Editors">
+    <app name="Neovim" cmd="nvim" term="true"/>
+    <app name="Sam" cmd="sam"/>
+    <app name="Vi" cmd="vi" term="true"/>
+    <app name="Vim" cmd="vim" term="true"/>
+</menu>
+<menu name="Games">
+    <menu name="Adventure">
+        <app name="Sclient" cmd="sclient"/>
+    </menu>
+    <menu name="Amusement">
+        <app name="Ico" cmd="ico"/>
+    </menu>
+    <menu name="Arcade">
+        <app name="PacMan" cmd="pacman"/>
+    </menu>
+    <app name="Minecraft Launcher" cmd="minecraft-launcher"/>
+</menu>
+<menu name="Graphics">
+    <app name="GNU Image Manipulation Program" cmd="gimp-2.10"/>
+    <app name="The GIMP" cmd="gimp"/>
+</menu>
+<menu name="Multimedia">
+    <app name="ALSA mixer" cmd="alsamixer" term="true"/>
+    <app name="Ardour" cmd="ardour6"/>
+    <app name="Audacity" cmd="audacity"/>
+    <app name="Audacity" cmd="env UBUNTU_MENUPROXY=0 audacity"/>
+    <app name="LMMS" cmd="lmms"/>
+    <app name="Qt V4L2 test Utility" cmd="qv4l2"/>
+    <app name="Qt V4L2 video capture utility" cmd="qvidcap"/>
+</menu>
+<menu name="Network">
+    <app name="Avahi SSH Server Browser" cmd="bssh"/>
+    <app name="Avahi VNC Server Browser" cmd="bvnc"/>
+    <app name="Brave" cmd="brave"/>
+    <app name="Lynx" cmd="lynx" term="true"/>
+    <app name="Mail Reader" cmd="exo-open --launch MailReader"/>
+    <app name="PuTTY" cmd="putty"/>
+    <app name="W3m" cmd="w3m" term="true"/>
+    <app name="w3m" cmd="w3m /usr/share/doc/w3m/MANUAL.html" term="true"/>
+    <app name="Web Browser" cmd="exo-open --launch WebBrowser"/>
+    <app name="Zwrite" cmd="read -p 'Zwrite to users: ' u ; zwrite $u" term="true"/>
+</menu>
+<menu name="Office">
+    <app name="Zathura" cmd="zathura"/>
+</menu>
+<menu name="Shells">
+    <app name="GIT" cmd="git" term="true"/>
+    <app name="Ksh" cmd="ksh93" term="true"/>
+    <app name="MC" cmd="mc" term="true"/>
+    <app name="mksh" cmd="mksh -l" term="true"/>
+    <app name="rc" cmd="rc" term="true"/>
+    <app name="ST" cmd="st"/>
+    <app name="Vifm" cmd="vifm" term="true"/>
+</menu>
+<menu name="System">
+    <menu name="Settings">
+        <menu name="Xfce">
+            <app name="Settings Manager" cmd="xfce4-settings-manager"/>
+        </menu>
+        <app name="Accessibility" cmd="xfce4-accessibility-settings"/>
+        <app name="Appearance" cmd="xfce4-appearance-settings"/>
+        <app name="Color Profiles" cmd="xfce4-color-settings"/>
+        <app name="Customize Look and Feel" cmd="lxappearance"/>
+        <app name="Default Applications" cmd="xfce4-mime-settings"/>
+        <app name="Default applications for LXSession" cmd="lxsession-default-apps"/>
+        <app name="Desktop Session Settings" cmd="lxsession-edit"/>
+        <app name="Display" cmd="xfce4-display-settings"/>
+        <app name="Firewall" cmd="firewall-config"/>
+        <app name="Keyboard" cmd="xfce4-keyboard-settings"/>
+        <app name="Mouse and Touchpad" cmd="xfce4-mouse-settings"/>
+        <app name="Openbox Configuration Manager" cmd="obconf"/>
+        <app name="Panel" cmd="xfce4-panel --preferences"/>
+        <app name="Settings Editor" cmd="xfce4-settings-editor"/>
+        <app name="Tint2 Settings" cmd="tint2conf"/>
+    </menu>
+    <app name="Avahi Zeroconf Browser" cmd="avahi-discover"/>
+    <app name="Hardware Locality lstopo" cmd="lstopo"/>
+    <app name="Htop" cmd="htop" term="true"/>
+    <app name="OpenJDK Java 14 Console" cmd="jconsole"/>
+    <app name="OpenJDK Java 14 Shell" cmd="jshell" term="true"/>
+    <app name="Pstree" cmd="pstree.x11" term="true"/>
+    <app name="pstree" cmd="pstree" term="true"/>
+    <app name="Tint2" cmd="tint2"/>
+    <app name="Top" cmd="top" term="true"/>
+    <app name="Virtual Machine Manager" cmd="virt-manager"/>
+    <app name="Xkill" cmd="xkill"/>
+    <app name="Xrefresh" cmd="xrefresh"/>
+</menu>
+<menu name="Utilities">
+    <app name="About Xfce" cmd="xfce4-about"/>
+    <app name="Bc" cmd="bc" term="true"/>
+    <app name="compton" cmd="compton"/>
+    <app name="Dc" cmd="dc" term="true"/>
+    <app name="File Manager" cmd="exo-open --launch FileManager"/>
+    <app name="Info" cmd="info" term="true"/>
+    <app name="picom" cmd="picom"/>
+    <app name="Terminal Emulator" cmd="exo-open --launch TerminalEmulator"/>
+    <app name="Units" cmd="units" term="true"/>
+    <app name="Xev" cmd="xev" term="true"/>
+    <app name="Xsetroot" cmd="xsetroot"/>
+</menu>
+<separator/>
+<menu name="Xfce">
+    <app name="About" cmd="xfce4-about"/>
+    <separator/>
+    <builtin name="Quit" cmd="quit"/>
+</menu>
+</xfdesktop-menu>

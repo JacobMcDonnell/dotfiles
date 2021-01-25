@@ -1,0 +1,3 @@
+#!/bin/sh
+
+prompt 'Shutdown?' 'systemctl poweroff'

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+booksDir=/home/jmm/Documents/Books
+table=$booksDir/tableOfContents
+
+book="$booksDir/$(cut -d ';' -f1 $table | dmenu -i -l 30 | sed "s/ .*//")"
+
+[ -z "$book" ] && exit
+
+$READER $book

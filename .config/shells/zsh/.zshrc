@@ -12,5 +12,7 @@ HISTFILE="$XDG_CACHE_HOME/zshHIST"
 SAVEHIST=100
 HISTSIZE=5000
 setopt prompt_subst
-PS1='$(printf "${BOLD}${BLUE}%s${NORM}${BOLD}@%s:[${BLUE}%s${NORM}${BOLD}]:$ " $USER $(hostname) "$(_collapsed_pwd)" )'
+autoload -U colors && colors
+PROMPT='%{$fg_bold[blue]%}%n%{$reset_color%}@%m\
+:[%{$fg_bold[blue]%}$(_collapsed_pwd)%{$reset_color%}]:$ '
 source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
