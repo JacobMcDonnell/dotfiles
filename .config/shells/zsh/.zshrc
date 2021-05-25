@@ -13,6 +13,7 @@ SAVEHIST=100
 HISTSIZE=5000
 setopt prompt_subst
 autoload -U colors && colors
-PROMPT='%{$fg_bold[blue]%}%n%{$reset_color%}@%m\
-:[%{$fg_bold[blue]%}$(_collapsed_pwd)%{$reset_color%}]:$ '
+#PROMPT='%{$fg_bold[blue]%}%n%{$reset_color%}@%m\
+#:[%{$fg_bold[blue]%}$(_collapsed_pwd)%{$reset_color%}]:$ '
+PROMPT='%{$fg_bold[green]%}λ%{$reset_color%}:[%{$fg_bold[green]%}%c%{$reset_color%}]:$ '
 source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

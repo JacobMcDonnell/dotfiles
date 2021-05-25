@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/jmm/Documents/projects/gitlab/adventOfCode/2020/day7'
+let g:netrw_dirhist_6='/home/jmm/Documents/projects/gitlab/adventOfCode/2020'
+let g:netrw_dirhist_5='/home/jmm/Documents/projects/gitlab/adventOfCode/2020/day7'
 let g:netrw_dirhist_4='/home/jmm/.config/gzdoom'
 let g:netrw_dirhist_3='/home/jmm/.local/share/xsessions'
 let g:netrw_dirhist_2='/home/jmm/.config/ncmpcpp'
