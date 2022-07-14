@@ -1,0 +1,100 @@
+cd Downloads
+ls
+git clone https://github.com/craftzdog/craftzdog-homepage.git nextjs-test
+cd nextjs-test
+ls
+npm install
+npm run start
+npm run build
+npm run start
+ls
+cd pages
+ls
+vim index.js
+..
+npm run start
+theme
+theme
+speedtest
+serv
+exit
+go run test.go
+ls
+exit
+micro test.go
+micro test.go
+set -o emacs
+exit
+neofetch
+serv
+edit
+ls
+rm test.go
+ls
+exit
+m
+exit
+brew install tilde
+serv
+bc
+ls
+m test.go
+micro -plugin install fzf filemanager snippets
+m
+g
+ls
+cd jed
+ls
+cd src
+m
+micro
+micro ..
+cd ..
+ls
+micro src
+micro
+cd src
+m jed.java
+m jed.java
+brew install --cask iterm2
+cask
+dw
+wget https://raw.githubusercontent.com/aseom/dotfiles/master/osx/iterm2/papercolor-light.itermcolors
+ls
+rm iterm2colors
+rm papercolor-light.itermcolors
+ls
+g
+ls
+cd jed
+ls
+cd src
+ls
+m jed.java
+brew install --cask iterm2
+g
+ls
+cd jed/src
+m jed.java
+c
+ls
+cd micro
+ls
+ls
+mkdir colorscheme
+mv colorscheme colorschemes
+cd colorschemes
+wget https://raw.githubusercontent.com/zyedidia/micro/master/runtime/colorschemes/dukelight-tc.micro
+m
+ls
+m
+serv
+g
+ls
+cd Turtle
+ls
+java Turtle.main
+/Users/jmm/Documents/git/Turtle/build/Turtle ; exit;
+sudo killall Dock
+e
+./test

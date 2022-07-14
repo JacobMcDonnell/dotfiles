@@ -1,0 +1,8 @@
+#!/bin/sh
+
+name=$1
+
+sudo scutil --set ComputerName $name &&
+sudo scutil --set HostName $name &&
+sudo scutil --set LocalHostName $name &&
+echo Done
