@@ -1,0 +1,22 @@
+# $OpenBSD: dot.profile,v 1.7 2020/01/24 02:09:51 okan Exp $
+#
+# sh/ksh initialization
+
+PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/games
+export PATH HOME TERM
+
+EDITOR=nvim
+
+# Shell settings
+export shColor=green
+export comSym=λ
+
+# Setting up XDG Dirs
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+# Moving Folder and Files from ~/
+export LESSHISTFILE=-
+export ENV="$XDG_CONFIG_HOME"/shells/ksh/kshrc
+export ZDOTDIR="$XDG_CONFIG_HOME"/shells/zsh
