@@ -1,0 +1,23 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PLAN9=/opt/plan9port
+export CEDEV=/opt/CEdev
+export ProMust=/opt/ProjectMustang
+export PATH=$ProMust/bin:~/.local/bin:$CEDEV/bin:$PATH:$PLAN9/bin:$HOME/Library/Python/3.9/bin:$HOME/go/bin
+
+EDITOR=nvim
+HOMEBREW_EDITOR=nvim
+
+# Shell settings
+export shColor=green
+# export comSym=λ
+export comSym=
+
+# Setting up XDG Dirs
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+# Moving Folder and Files from ~/
+export LESSHISTFILE=-
+export ENV="$XDG_CONFIG_HOME"/shells/ksh/kshrc
+export ZDOTDIR="$XDG_CONFIG_HOME"/shells/zsh
