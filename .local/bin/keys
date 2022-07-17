@@ -1,0 +1,9 @@
+#!/bin/sh
+#Increase key speed
+xset r rate 300 50
+#Map caps lock to super
+setxkbmap -option caps:super -variant altgr-intl
+#Make caps escape when pressed once
+killall xcape 2>/dev/null ; xcape -e 'Super_L=Escape'
+#Map the menu button next to RSuper to super
+xmodmap -e 'keycode 135 = Super_R'
