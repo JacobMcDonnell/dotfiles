@@ -1,11 +1,10 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
-export PLAN9=/opt/plan9port
 export CEDEV=/opt/CEdev
 export ProMust=/opt/ProjectMustang
-export PATH=$ProMust/bin:~/.local/bin:$CEDEV/bin:$PATH:$PLAN9/bin:$HOME/Library/Python/3.9/bin:$HOME/go/bin
+export PATH=$ProMust/bin:~/.local/bin:$CEDEV/bin:$PATH:$HOME/Library/Python/3.9/bin:$HOME/go/bin
 
-EDITOR=nvim
-HOMEBREW_EDITOR=nvim
+export EDITOR=nvim
+export HOMEBREW_EDITOR=nvim
 
 # Shell settings
 export shColor=green

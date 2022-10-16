@@ -18,6 +18,18 @@ map <leader>l :set colorcolumn=120<CR>
 " Change Line break to 80
 map <leader>L :set colorcolumn=80<CR>
 
+" Quick Netrw
+map <leader>x :Ex<CR>
+
+" Keyboard shortcuts for harpoon
+map <leader>q :lua require("harpoon.ui").toggle_quick_menu()<CR>
+map <leader>a :lua require("harpoon.mark").add_file()<CR>
+map <leader>n :lua require("harpoon.ui").nav_next()<CR>
+map <leader>p :lua require("harpoon.ui").nav_prev()<CR>
+
+" Telescope Keyboard shortcuts
+map <leader>ts :Telescope find_files<CR>
+
 " Removes spaces at the end of lines when saving
 autocmd BufWritePre * %s/\s\+$//e
 
@@ -42,8 +54,10 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/goyo.vim' " Nice for reading Documents
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code Completion
 Plug 'tpope/vim-commentary' " Makes commenting multiple lines easier
-Plug 'vimwiki/vimwiki'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'ThePrimeagen/harpoon'
 call plug#end()
 
 " Goyo plugin makes text more readable when writing prose:
@@ -69,7 +83,8 @@ let g:coc_global_extensions = [
 	\ 'coc-css',
 	\ 'coc-clangd',
 	\ 'coc-go',
-	\ 'coc-pairs'
+	\ 'coc-pairs',
+	\ 'coc-python'
 	\ ]
 
 " runs gofmt when closing a go file.

@@ -25,4 +25,7 @@ alias \
 	gc="git clone" \
 	m="micro" \
 	e="	cd ~/Documents/Projects/Experiments" \
-	v="nvim"
+	v="nvim" \
+	python="python3.10" \
+	pip="pip3.10" \
+	cmpsc="cd /Users/jmm/OneDrive\ -\ The\ Pennsylvania\ State\ University/2022/Semester\ 1/CMPSC\ 131/Worksheets/"
