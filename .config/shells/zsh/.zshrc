@@ -9,6 +9,7 @@ source $SHELLDIR/dirrc
 source $SHELLDIR/colorsrc # contians color substituions
 source $SHELLDIR/cpwdrc # contains _collapsed_pwd
 bindkey -v
+bindkey -s ^f "tmux-sessionizer\n"
 HISTFILE="$XDG_CACHE_HOME/zshHIST"
 SAVEHIST=100
 HISTSIZE=5000
