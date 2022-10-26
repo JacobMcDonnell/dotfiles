@@ -1,3 +1,5 @@
 #!/bin/sh
 
 cdl () { cd "${@}" && ls ;}
+mkc () { mkdir "${@}" && cd "${@}" ;}
+

@@ -1,8 +1,20 @@
 #!/bin/sh
+
+# OpenBSD does not have the -G flag
+if [[ "$(uname -s)" == "OpenBSD" ]]
+then
+	alias \
+		la="ls -Ah" \
+		ls="ls -h" \
+		l="ls -lAh"
+else
+	alias \
+		la="ls -AhG" \
+		ls="ls -Gh" \
+		l="ls -lAhG"
+fi
+
 alias \
- 	la="ls -AhG" \
-	ls="ls -Gh" \
-	l="ls -lAhG" \
 	cp="cp -v" \
 	rm="rm -v" \
 	mv="mv -v" \
@@ -13,19 +25,10 @@ alias \
 	.4="cd ../../../../" \
 	.5="cd ../../../../.." \
 	zshup="source $HOME/.config/shells/zsh/.zshrc" \
-	b="cd ~/.local/bin" \
-	d="cd ~/Documents" \
-	bk="cd ~/Documents/Books" \
-	dw="cd ~/Downloads" \
-	g="cd ~/Documents/Projects/git" \
-	c="cd ~/.config" \
-	bc="bc -ls" \
-	serv="ssh -Y jmm@jacobmcdonnell.com" \
-	sfiles="sftp files@jacobmcdonnell.com" \
 	gc="git clone" \
+	gu="git add -u" \
 	m="micro" \
-	e="	cd ~/Documents/Projects/Experiments" \
 	v="nvim" \
 	python="python3.10" \
-	pip="pip3.10" \
-	cmpsc="cd /Users/jmm/OneDrive\ -\ The\ Pennsylvania\ State\ University/2022/Semester\ 1/CMPSC\ 131/Worksheets/"
+	pip="pip3.10"
+

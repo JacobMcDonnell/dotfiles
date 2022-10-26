@@ -7,6 +7,9 @@ set wildmode=longest,list,full
 set mouse=a
 set colorcolumn=80
 
+" Quick Save
+map <leader>w :w<CR>
+
 " Spell check
 map <leader>o :setlocal spell! spelllang=en_us<CR>
 

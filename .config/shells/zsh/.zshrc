@@ -5,6 +5,7 @@ autoload -U +X compinit
 compinit -d $XDG_CACHE_HOME/zcompdump-artix-5.8
 fpath=($ZSH/plugins/zsh-completions/src $fpath)
 source $SHELLDIR/aliasrc
+source $SHELLDIR/dirrc
 source $SHELLDIR/colorsrc # contians color substituions
 source $SHELLDIR/cpwdrc # contains _collapsed_pwd
 bindkey -v
