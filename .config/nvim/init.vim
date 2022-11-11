@@ -6,6 +6,7 @@ syntax on
 set wildmode=longest,list,full
 set mouse=a
 set colorcolumn=80
+set autoindent noexpandtab tabstop=4 shiftwidth=4
 
 " Quick Save
 map <leader>w :w<CR>
@@ -69,16 +70,6 @@ map <leader>f :Goyo \| set bg=dark \| set linebreak<CR>
 " Commentary plugin
 map <leader>c :Commentary \| set linebreak<CR>
 
-" use <tab> for trigger completion and navigate to the next complete item
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-inoremap <silent><expr> <Tab>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<Tab>" :
-      \ coc#refresh()
 let g:coc_global_extensions = [
 	\ 'coc-html',
 	\ 'coc-java',
