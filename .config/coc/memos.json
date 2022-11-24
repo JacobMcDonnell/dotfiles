@@ -26,7 +26,7 @@
         "sysPrefix": "/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10",
         "fileHash": "1910ec10c8373e45fce0a181a4651a5bb8a8f48f728505ba1e441738ff84b968807c6e14b1ea05c1eea8e5c16c62b0b1db885de7a7bbdca1916f0ebb790e9ce7"
       },
-      "expiry": 1668278228004
+      "expiry": 1668882677806
     },
     "/opt/homebrew/bin/python3.v3": {
       "data": {
@@ -51,7 +51,7 @@
         "sysPrefix": "/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10",
         "fileHash": "0e69ba9c7283252581c51a1b17ac991b8c7c2f3218bed7e7267a66ea8db287d301355e226a8de1f0e1555b54ff263a1a8fc3a31d781814633e44eaad4a94dee0"
       },
-      "expiry": 1668278228006
+      "expiry": 1668882677815
     },
     "/opt/homebrew/bin/python3.8.v3": {
       "data": {
@@ -76,7 +76,7 @@
         "sysPrefix": "/opt/homebrew/Cellar/python@3.8/3.8.15/Frameworks/Python.framework/Versions/3.8",
         "fileHash": "cf6bca9eef82597c4d88213768bdfb8811199093c6ccdd85f3c598cd33fa6cbf143b1b07f04edbf3c8b62f914f4cdc520034cc8b4bf723a60cd72e30574eebff"
       },
-      "expiry": 1668278228001
+      "expiry": 1668882677818
     },
     "/opt/homebrew/bin/python3.9.v3": {
       "data": {
@@ -101,7 +101,7 @@
         "sysPrefix": "/opt/homebrew/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
         "fileHash": "b6d571c5b48c97e6988822ba142f973b5408a90a77a0ab98a680a44fd017417d1060ac62c75b2b1360c1fa7026f6de47a9c63aea20d7c348629d69e9ba8bb45d"
       },
-      "expiry": 1668278228022
+      "expiry": 1668882677830
     },
     "/opt/homebrew/opt/python@3.10/bin/python3.10.v3": {
       "data": {
@@ -126,7 +126,7 @@
         "sysPrefix": "/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10",
         "fileHash": "36f5313ec0417c1c53a1ae2f73454216f7ae3f5e89517fcfabd3424122d0523c5ba275f5fcff93e126a8f68e5a03b275bcbe5cb412d43e0215b888b5aa0b74d2"
       },
-      "expiry": 1668278228094
+      "expiry": 1668882677850
     },
     "INTERPRETERS_CACHE_v3_CurrentPathService": [
       {
@@ -174,7 +174,8 @@
       },
       "sysPrefix": "/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10",
       "fileHash": "36f5313ec0417c1c53a1ae2f73454216f7ae3f5e89517fcfabd3424122d0523c5ba275f5fcff93e126a8f68e5a03b275bcbe5cb412d43e0215b888b5aa0b74d2",
-      "type": "Unknown"
+      "type": "Unknown",
+      "cachedEntry": true
     },
     "preferredGlobalPyInterpreter": {
       "architecture": 3,
@@ -224,17 +225,19 @@
           "sysPrefix": "/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10",
           "fileHash": "36f5313ec0417c1c53a1ae2f73454216f7ae3f5e89517fcfabd3424122d0523c5ba275f5fcff93e126a8f68e5a03b275bcbe5cb412d43e0215b888b5aa0b74d2",
           "type": "Unknown",
-          "displayName": "Python 3.10.8 64-bit"
+          "cachedEntry": true,
+          "displayName": "Python 3.10.8 64-bit",
+          "__store": true
         }
       },
-      "expiry": 1668278228165
+      "expiry": 1668882677811
     },
     "/opt/homebrew/opt/python@3.10/bin/python3.10.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.10.8 64-bit",
         "hash": "36f5313ec0417c1c53a1ae2f73454216f7ae3f5e89517fcfabd3424122d0523c5ba275f5fcff93e126a8f68e5a03b275bcbe5cb412d43e0215b888b5aa0b74d2-e6cd247a972cad6127b7bcb1809370f1"
       },
-      "expiry": 1668278228115
+      "expiry": 1668882677839
     },
     "/usr/local/bin/python3.v3": {
       "data": {
@@ -259,7 +262,7 @@
         "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
         "fileHash": "47e5e29f33ea67428f0eee0bc1f045f7ff86ab0878f21fc61e6d476c60cebf36ef81e63f7b97b134d74f4b7ba4ef0607cda3c00b11ac2a6f541e3743fe2c6c21"
       },
-      "expiry": 1668278228774
+      "expiry": 1668882677945
     },
     "/usr/local/bin/python3.9.v3": {
       "data": {
@@ -284,7 +287,7 @@
         "sysPrefix": "/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9",
         "fileHash": "2eedc3183557a39ccf5e512205a78594fcc02e817273434752d8c1527276b75d42c3111c300b1465adc2d3b2c61c240b6655ea79ca6fa3d459822d66897b9f86"
       },
-      "expiry": 1668278228776
+      "expiry": 1668882677946
     },
     "/usr/bin/python3.v3": {
       "data": {
@@ -309,7 +312,7 @@
         "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9",
         "fileHash": "1eccbdcbe105feb81fc58cf4015784105c9ee5a828ceaae3cedd7ce9fe0a03d3e1055e17202fb253568442f0f861b0d125affe08747ea342cee2435802a03736"
       },
-      "expiry": 1668278228207
+      "expiry": 1668882677983
     },
     "INTERPRETERS_CACHE_v3_KnownPathsService": [
       {
@@ -641,35 +644,35 @@
         "displayName": "Python 3.10.8 64-bit",
         "hash": "0e69ba9c7283252581c51a1b17ac991b8c7c2f3218bed7e7267a66ea8db287d301355e226a8de1f0e1555b54ff263a1a8fc3a31d781814633e44eaad4a94dee0-89cfdd86c805836c556b88248b3b0809"
       },
-      "expiry": 1668279447882
+      "expiry": 1668711303540
     },
     "/opt/homebrew/bin/python3.8.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.8.15 64-bit",
         "hash": "cf6bca9eef82597c4d88213768bdfb8811199093c6ccdd85f3c598cd33fa6cbf143b1b07f04edbf3c8b62f914f4cdc520034cc8b4bf723a60cd72e30574eebff-51f59145312ea2eb2d6d6c3f521e5575"
       },
-      "expiry": 1668279447881
+      "expiry": 1668711303541
     },
     "/opt/homebrew/bin/python3.9.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.9.15 64-bit",
         "hash": "b6d571c5b48c97e6988822ba142f973b5408a90a77a0ab98a680a44fd017417d1060ac62c75b2b1360c1fa7026f6de47a9c63aea20d7c348629d69e9ba8bb45d-02e162736e7c9edd0bf4e7ae808fd501"
       },
-      "expiry": 1668279447877
+      "expiry": 1668711303542
     },
     "/usr/local/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.9.5 64-bit",
         "hash": "47e5e29f33ea67428f0eee0bc1f045f7ff86ab0878f21fc61e6d476c60cebf36ef81e63f7b97b134d74f4b7ba4ef0607cda3c00b11ac2a6f541e3743fe2c6c21-345e37cd55eb9b73c22a13e7fc48b206"
       },
-      "expiry": 1668279447878
+      "expiry": 1668711303543
     },
     "/usr/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.9.6 64-bit",
         "hash": "1eccbdcbe105feb81fc58cf4015784105c9ee5a828ceaae3cedd7ce9fe0a03d3e1055e17202fb253568442f0f861b0d125affe08747ea342cee2435802a03736-8f5d17f24a9d0c768b9211375618ba81"
       },
-      "expiry": 1668279447880
+      "expiry": 1668711303545
     },
     "InterpreterAutoSeletionRule-system": {
       "architecture": 3,
@@ -693,6 +696,7 @@
       "sysPrefix": "/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10",
       "fileHash": "36f5313ec0417c1c53a1ae2f73454216f7ae3f5e89517fcfabd3424122d0523c5ba275f5fcff93e126a8f68e5a03b275bcbe5cb412d43e0215b888b5aa0b74d2",
       "type": "Unknown",
+      "cachedEntry": true,
       "displayName": "Python 3.10.8 64-bit"
     },
     "/opt/homebrew/bin/python3.interpreter.Details.v7": {
@@ -723,7 +727,7 @@
           "displayName": "Python 3.10.8 64-bit"
         }
       },
-      "expiry": 1668279447896
+      "expiry": 1668711303551
     },
     "/opt/homebrew/bin/python3.8.interpreter.Details.v7": {
       "data": {
@@ -753,7 +757,7 @@
           "displayName": "Python 3.8.15 64-bit"
         }
       },
-      "expiry": 1668279447894
+      "expiry": 1668711303553
     },
     "/opt/homebrew/bin/python3.9.interpreter.Details.v7": {
       "data": {
@@ -783,7 +787,7 @@
           "displayName": "Python 3.9.15 64-bit"
         }
       },
-      "expiry": 1668279447889
+      "expiry": 1668711303555
     },
     "/usr/local/bin/python3.interpreter.Details.v7": {
       "data": {
@@ -813,7 +817,7 @@
           "displayName": "Python 3.9.5 64-bit"
         }
       },
-      "expiry": 1668279447890
+      "expiry": 1668711303557
     },
     "/usr/bin/python3.interpreter.Details.v7": {
       "data": {
@@ -843,7 +847,7 @@
           "displayName": "Python 3.9.6 64-bit"
         }
       },
-      "expiry": 1668279447893
+      "expiry": 1668711303559
     },
     "InterpreterAutoSeletionRule-cachedInterpreters": {
       "architecture": 3,
@@ -1083,6 +1087,35 @@
     "INTERPRETERS_CACHE_v3_PipEnvService:2b37db29235e4f3b3390565530c3f734": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:2b37db29235e4f3b3390565530c3f734": [],
     "autoSelectedWorkspacePythonInterpreter-/private/tmp": {
+      "architecture": 3,
+      "path": "/opt/homebrew/opt/python@3.10/bin/python3.10",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.10.8-final",
+        "major": 3,
+        "minor": 10,
+        "patch": 8,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.10.8-final"
+      },
+      "sysPrefix": "/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10",
+      "fileHash": "36f5313ec0417c1c53a1ae2f73454216f7ae3f5e89517fcfabd3424122d0523c5ba275f5fcff93e126a8f68e5a03b275bcbe5cb412d43e0215b888b5aa0b74d2",
+      "type": "Unknown"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/Users/jmm/Documents/Projects/Experiments/imapTest": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:28ebab2045718d741db6fcd905616ce1": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:28ebab2045718d741db6fcd905616ce1": [],
+    "autoSelectedWorkspacePythonInterpreter-/Users/jmm/Documents/Projects/Experiments/imapTest": {
       "architecture": 3,
       "path": "/opt/homebrew/opt/python@3.10/bin/python3.10",
       "version": {

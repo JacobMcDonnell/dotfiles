@@ -62,10 +62,11 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'ThePrimeagen/harpoon'
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 " Goyo plugin makes text more readable when writing prose:
-map <leader>f :Goyo \| set bg=dark \| set linebreak<CR>
+map <leader>f :Goyo \| set linebreak<CR>
 
 " Commentary plugin
 map <leader>c :Commentary \| set linebreak<CR>
@@ -78,11 +79,18 @@ let g:coc_global_extensions = [
 	\ 'coc-clangd',
 	\ 'coc-go',
 	\ 'coc-pairs',
-	\ 'coc-python'
+	\ 'coc-python',
+	\ 'coc-flutter'
 	\ ]
 
 " runs gofmt when closing a go file.
 autocmd VimLeave *.go !gofmt -w %
+
+" This handles gofmt on save
+" https://www.getman.io/posts/programming-go-in-neovim/
+lua require("lsp_config")
+autocmd BufWritePre *.go lua vim.lsp.buf.formatting()
+autocmd BufWritePre *.go lua goimports(1000)
 
 set t_Co=256
 
