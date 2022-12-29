@@ -1,0 +1,5 @@
+#!/usr/local/bin/python3
+while True:
+    userIn = input("> ").upper()
+    if userIn == "EXIT": break
+    print(userIn)
