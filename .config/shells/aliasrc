@@ -7,6 +7,14 @@ then
 		la="ls -Ah" \
 		ls="ls -h" \
 		l="ls -lAh"
+# Linux has --color
+elif [[ "$(uname -s)" == "Linux" ]]
+then
+	alias \
+		la="ls -Ah --color" \
+		ls="ls -h --color" \
+		l="ls -lAh --color"
+# macOS has -G
 else
 	alias \
 		la="ls -AhG" \
@@ -27,6 +35,8 @@ alias \
 	zshup="source $HOME/.config/shells/zsh/.zshrc" \
 	gc="git clone" \
 	gu="git add -u" \
+	ga="git commit -a" \
+	gp="git push" \
 	m="micro" \
 	v="nvim" \
 	python="python3.10" \
