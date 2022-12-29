@@ -36,6 +36,7 @@ alias \
 	gc="git clone" \
 	gu="git add -u" \
 	ga="git commit -a" \
+	gp="git push" \
 	m="micro" \
 	v="nvim" \
 	python="python3.10" \
