@@ -39,4 +39,4 @@ export ADB_VENDOR_KEY="$XDG_CONFIG_HOME"/android/
 export WMAKER_USER_ROOT="$XDG_DATA_HOME"/GNUstep
 export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
 
-[ "$(tty | sed 's/[0-9]*//g')" = "/dev/tty" ] && jdm
+[ "$(tty | sed 's/[0-9]*//g')" = "/dev/tty" ] && jdm && exit
