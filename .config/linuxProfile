@@ -2,7 +2,7 @@
 export PATH=$PATH:$HOME/.local/bin:/opt/sparc/bin
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="chromium" #The Chad Ungoogled-chromium
+export BROWSER="firefox"
 export READER="zathura"
 export FILE="vifm"
 export PICTURE="sxiv"
@@ -40,3 +40,4 @@ export WMAKER_USER_ROOT="$XDG_DATA_HOME"/GNUstep
 export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
 
 [ "$(tty | sed 's/[0-9]*//g')" = "/dev/tty" ] && jdm && exit
+
