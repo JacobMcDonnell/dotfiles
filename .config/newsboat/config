@@ -40,11 +40,8 @@ highlight article ":.*\\(link\\)$" cyan default
 highlight article ":.*\\(image\\)$" blue default
 highlight article ":.*\\(embedded flash\\)$" magenta default
 
-browser $BROWSER
+browser linkhandler
 macro , open-in-browser
-macro v set browser "setsid nohup mpv"; open-in-browser ; set browser $BROWSER
-macro u set browser "urlview"; open-in-browser ; set browser $BROWSER
-macro w set browser "w3m"; open-in-browser ; set browser $BROWSER
-macro y set browser "youtube-dl -o '~/Movies/youtubeDownloads/%(title)s.%(ext)s' --restrict-filenames"; open-in-browser ; set browser "$BROWSER %u"
-macro s set browser "surf"; open-in-browser ; set browser $BROWSER
+macro y set browser "yt-dlp -o '~/Videos/youtube/%(title)s.%(ext)s' --restrict-filenames"; open-in-browser ; set browser linkhandler
+macro c set browser "echo %u | xclip -r -sel c" ; open-in-browser ; set browser linkhandler
 

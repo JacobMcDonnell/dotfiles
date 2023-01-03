@@ -1,0 +1,7 @@
+#!/bin/sh
+
+vol="$(pamixer --get-volume-human)"
+
+[ "$vol" == "muted" ] && label="🔇" || label="🔊 $vol"
+
+echo "$label"

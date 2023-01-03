@@ -1,12 +1,8 @@
 #!/bin/sh
-exec /usr/bin/xrandr --output HDMI-1 --mode 2560x1080 --right-of eDP-1 &
-exec $HOME/.local/bin/setWall $HOME/Documents/Pictures/Wallpapers -p &
+exec $HOME/.local/bin/setWall $HOME/Documents/Pictures/Wallpapers/ &
 exec /usr/bin/picom &
 [ $wm == "/usr/local/bin/dwm" ] && exec /usr/local/bin/dwmblocks &
-exec /usr/bin/xset led 3 &
-exec /usr/bin/mpd --no-daemon &
+exec /usr/bin/mpd /home/jmm/.config/mpd/mpd.conf &
 exec $HOME/.local/bin/keys &
 exec /usr/bin/pipewire &
-#exec /usr/bin/dwm
-#exec /usr/bin/openbox-session
 exec $wm
