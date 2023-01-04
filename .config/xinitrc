@@ -1,8 +1,8 @@
 #!/bin/sh
 exec $HOME/.local/bin/setWall $HOME/Documents/Pictures/Wallpapers/ &
 exec /usr/bin/picom &
-[ $wm == "/usr/local/bin/dwm" ] && exec /usr/local/bin/dwmblocks &
 exec /usr/bin/mpd /home/jmm/.config/mpd/mpd.conf &
 exec $HOME/.local/bin/keys &
 exec /usr/bin/pipewire &
+[ $wm == "/usr/local/bin/dwm" ] && exec /usr/local/bin/dwmblocks &
 exec $wm
