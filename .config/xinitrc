@@ -4,5 +4,6 @@ exec /usr/bin/picom &
 exec /usr/bin/mpd /home/jmm/.config/mpd/mpd.conf &
 exec $HOME/.local/bin/keys &
 exec /usr/bin/pipewire &
+exec /usr/bin/redshift -c $HOME/.config/redshift/redshift.conf &
 [ $wm == "/usr/local/bin/dwm" ] && exec /usr/local/bin/dwmblocks &
 exec $wm

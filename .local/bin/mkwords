@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[ -z "$1" ] && words="$(< /dev/stdin)" || words=$1
+echo $words | sed "s/ /\n/g"
+

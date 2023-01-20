@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo $@
+
+[ -z "$(echo $@ | grep "\-l")" ] && str="a-z A-Z" || [ -z "$(echo $@ | grep "\-u")" ] && str="A-Z a-z" || (echo "cs: missing operand" && exit)
+[ -z "$(echo $@ | sed 's/\-l//g;s/\-u//g')" ] && words=$(< /dev/stdin) || words="$(echo $@ | sed 's/\-l//g;s/\-u//g')"
+
+echo $words | tr $str
+

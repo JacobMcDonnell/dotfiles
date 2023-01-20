@@ -2,9 +2,9 @@
 
 [ "$(connmanctl services | grep "Wired" | awk -F' ' '{print $2}')" = "Wired" ] && CONNECTION="Wired" || CONNECTION="$(connmanctl services | grep '*' | awk -F' ' '{print $2}')"
 
-[ "$CONNECTION" = "Wired" ] && IP="$(ip address | grep dynamic | grep 192.168.)" || IP="$(ip address | grep wlo | grep 192.168. )"
+[ "$CONNECTION" = "Wired" ] && IP="$(ip address | grep eth0 | grep 192.168.)" || IP="$(ip address | grep wlo | grep 192.168. )"
 
 IP="${IP%/*}"
 IP="${IP##* }"
 
-printf $CONNECTION
+echo $CONNECTION $IP
