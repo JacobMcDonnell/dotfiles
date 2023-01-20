@@ -22,6 +22,7 @@ autoload -U colors && colors
 #PROMPT='%{$fg_bold[$shColor]%}%n%{$reset_color%}@%m\
 #:[%{$fg_bold[$shColor]%}$(_collapsed_pwd)%{$reset_color%}]:$ '
 #PROMPT='%{$fg_bold[$shColor]%}$comSym%{$reset_color%}:[%{$fg_bold[$shColor]%}%c%{$reset_color%}]:$ '
+python $HOME/.local/bin/days2finals.py
 PROMPT='%{$fg_bold[$shColor]%}$comSym%{$reset_color%} in %{$fg_bold[$shColor]%}%c%{$reset_color%}
 → '
 source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

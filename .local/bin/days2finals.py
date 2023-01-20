@@ -1,7 +1,7 @@
 import datetime
 now = datetime.datetime.now()
 
-finalsDate = datetime.datetime(2022, 12, 12, 0, 0, 0, 0)
+finalsDate = datetime.datetime(2023, 5, 1, 0, 0, 0, 0)
 daysLeft = finalsDate - now
 
 weeks = daysLeft.days // 7
