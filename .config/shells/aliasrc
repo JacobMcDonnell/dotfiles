@@ -40,5 +40,6 @@ alias \
 	m="micro" \
 	v="nvim" \
 	python="python3.10" \
-	pip="pip3.10"
+	pip="pip3.10" \
+	lf="lfub"
 

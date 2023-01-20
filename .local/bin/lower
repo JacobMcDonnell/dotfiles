@@ -1,5 +1,0 @@
-#!/usr/local/bin/python3
-while True:
-    userIn = input("> ").lower()
-    if userIn == "exit": break
-    print(userIn)
