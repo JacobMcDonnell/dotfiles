@@ -944,13 +944,13 @@
         "sysPrefix": "/opt/homebrew/opt/python@3.11/Frameworks/Python.framework/Versions/3.11",
         "fileHash": "05518a8f02f7570b5d03c182df4f7329d3c0ce103c05d1e737779d9213a558e167682a0da207fc10eb6e6d1fa43009b6fbddaa13fddf0b6fad30909275715447"
       },
-      "expiry": 1674146982979
+      "expiry": 1674313812371
     },
     "/opt/homebrew/bin/python3.11.interpreter.Details.v7": {
       "data": {
         "fileHash": "05518a8f02f7570b5d03c182df4f7329d3c0ce103c05d1e737779d9213a558e167682a0da207fc10eb6e6d1fa43009b6fbddaa13fddf0b6fad30909275715447"
       },
-      "expiry": 1674146982781
+      "expiry": 1674313812275
     },
     "/opt/homebrew/bin/python3.11.interpreter.displayName.v7": {
       "data": {
