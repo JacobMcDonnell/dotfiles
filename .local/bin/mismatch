@@ -6,7 +6,6 @@ DICTFILE=/usr/share/dict/words
 
 for word in $words
 do
-	echo "Word: $word"
 	[ -z "$(grep -i "\b$word\b" $DICTFILE)" ] && echo $word
 done
 

@@ -108,5 +108,6 @@ endfunction
 call ChangeBackground()
 
 map <leader>b :call ChangeBackground()<CR>
+map <leader>d :colorscheme default<CR>
 
 colorscheme PaperColor
