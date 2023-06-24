@@ -38,6 +38,7 @@ export ANDROID_EMULATOR_HOME="$XDG_DATA_HOME"/android/
 export ADB_VENDOR_KEY="$XDG_CONFIG_HOME"/android/
 export WMAKER_USER_ROOT="$XDG_DATA_HOME"/GNUstep
 export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
+export _JAVA_AWT_WM_NONREPARENTING=1 # This is needed to run java gui programs
 
 [ "$(tty | sed 's/[0-9]*//g')" = "/dev/tty" ] && jdm && exit
 
