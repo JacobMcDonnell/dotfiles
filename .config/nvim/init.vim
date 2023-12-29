@@ -26,10 +26,11 @@ map <leader>L :set colorcolumn=80<CR>
 map <leader>x :Ex<CR>
 
 " Keyboard shortcuts for harpoon
-map <leader>q :lua require("harpoon.ui").toggle_quick_menu()<CR>
-map <leader>a :lua require("harpoon.mark").add_file()<CR>
-map <leader>n :lua require("harpoon.ui").nav_next()<CR>
-map <leader>p :lua require("harpoon.ui").nav_prev()<CR>
+
+map <leader>q :lua require("harpoon").ui:toggle_quick_menu(require("harpoon"):list())<CR>
+map <leader>a :lua require("harpoon"):list():append()<CR>
+map <leader>n :lua require("harpoon"):list():next()<CR>
+map <leader>p :lua require("harpoon"):list():prev()<CR>
 
 " Telescope Keyboard shortcuts
 map <leader>ts :Telescope find_files<CR>
@@ -60,8 +61,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code Completion
 Plug 'tpope/vim-commentary' " Makes commenting multiple lines easier
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
-Plug 'ThePrimeagen/harpoon'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
+Plug 'ThePrimeagen/harpoon', { 'branch': 'harpoon2' }
 Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
@@ -85,6 +86,9 @@ let g:coc_global_extensions = [
 
 " runs gofmt when closing a go file.
 autocmd VimLeave *.go !gofmt -w %
+
+" required for harpoon to run
+:lua require("harpoon"):setup()
 
 " This handles gofmt on save
 " https://www.getman.io/posts/programming-go-in-neovim/
