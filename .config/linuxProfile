@@ -1,8 +1,8 @@
 # Default programs:
-export PATH=$PATH:$HOME/.local/bin:/opt/sparc/bin:$HOME/go/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/go/bin
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="microsoft-edge-stable" # I know but vertical tabs and chat bot
+export BROWSER="brave"
 export READER="zathura"
 export FILE="vifm"
 export PICTURE="sxiv"
