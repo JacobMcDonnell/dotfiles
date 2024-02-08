@@ -57,7 +57,8 @@ map <C-l> <C-w>l
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/goyo.vim' " Nice for reading Documents
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code Completion
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'tpope/vim-commentary' " Makes commenting multiple lines easier
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'nvim-lua/plenary.nvim'
@@ -66,23 +67,13 @@ Plug 'ThePrimeagen/harpoon', { 'branch': 'harpoon2' }
 Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
+lua vim.g.coq_settings = {auto_start = 'shut-up',}
+
 " Goyo plugin makes text more readable when writing prose:
 map <leader>f :Goyo \| set linebreak<CR>
 
 " Commentary plugin
 map <leader>c :Commentary \| set linebreak<CR>
-
-let g:coc_global_extensions = [
-	\ 'coc-html',
-	\ 'coc-java',
-	\ 'coc-tsserver',
-	\ 'coc-css',
-	\ 'coc-clangd',
-	\ 'coc-go',
-	\ 'coc-pairs',
-	\ 'coc-python',
-	\ 'coc-flutter'
-	\ ]
 
 " runs gofmt when closing a go file.
 autocmd VimLeave *.go !gofmt -w %
