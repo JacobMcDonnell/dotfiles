@@ -57,6 +57,7 @@ map <C-l> <C-w>l
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/goyo.vim' " Nice for reading Documents
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code Completion
 Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'tpope/vim-commentary' " Makes commenting multiple lines easier
@@ -66,6 +67,18 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 Plug 'ThePrimeagen/harpoon', { 'branch': 'harpoon2' }
 Plug 'neovim/nvim-lspconfig'
 call plug#end()
+
+let g:coc_global_extensions = [
+	\ 'coc-html',
+	\ 'coc-java',
+	\ 'coc-tsserver',
+	\ 'coc-css',
+	\ 'coc-clangd',
+	\ 'coc-go',
+	\ 'coc-pairs',
+	\ 'coc-python',
+	\ 'coc-flutter'
+	\ ]
 
 lua vim.g.coq_settings = {auto_start = 'shut-up',}
 
