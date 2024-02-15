@@ -66,6 +66,9 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 Plug 'ThePrimeagen/harpoon', { 'branch': 'harpoon2' }
 Plug 'neovim/nvim-lspconfig'
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'theHamsta/nvim-dap-virtual-text'
 call plug#end()
 
 let g:coc_global_extensions = [
@@ -81,6 +84,8 @@ let g:coc_global_extensions = [
 	\ ]
 
 lua vim.g.coq_settings = {auto_start = 'shut-up',}
+
+lua require("dap_lldb")
 
 " Goyo plugin makes text more readable when writing prose:
 map <leader>f :Goyo \| set linebreak<CR>
