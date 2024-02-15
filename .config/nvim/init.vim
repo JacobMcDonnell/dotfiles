@@ -58,8 +58,6 @@ map <C-l> <C-w>l
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'junegunn/goyo.vim' " Nice for reading Documents
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Code Completion
-Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
-Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 Plug 'tpope/vim-commentary' " Makes commenting multiple lines easier
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'nvim-lua/plenary.nvim'
@@ -67,9 +65,11 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 Plug 'ThePrimeagen/harpoon', { 'branch': 'harpoon2' }
 Plug 'neovim/nvim-lspconfig'
 Plug 'mfussenegger/nvim-dap'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'theHamsta/nvim-dap-virtual-text'
+Plug 'rcarriga/nvim-dap-ui'
 call plug#end()
+
+"Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+"Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 
 let g:coc_global_extensions = [
 	\ 'coc-html',
@@ -86,6 +86,14 @@ let g:coc_global_extensions = [
 lua vim.g.coq_settings = {auto_start = 'shut-up',}
 
 lua require("dap_lldb")
+
+" nvim-dap keybinds
+map <leader>db :lua require("dap").toggle_breakpoint()<CR>
+map <leader>dc :lua require("dap").continue()<CR>
+map <leader>dso :lua require("dap").step_over()<CR>
+map <leader>ds :lua require("dap").step_into()<CR>
+map <leader>dr :lua require("dapui").open({ reset = true })<CR>
+map <leader>dt :lua require("dapui").toggle()<CR>
 
 " Goyo plugin makes text more readable when writing prose:
 map <leader>f :Goyo \| set linebreak<CR>
@@ -107,20 +115,6 @@ autocmd BufWritePre *.go lua goimports(1000)
 
 set t_Co=256
 
-" ChangeBackground changes the background mode based on macOS's `Appearance`
-" setting. We also refresh the statusline colors to reflect the new mode.
-function! ChangeBackground()
-  if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
-    set background=dark   " for the dark version of the theme
-  else
-    set background=light  " for the light version of the theme
-  endif
-endfunction
-
-" initialize the colorscheme for the first run
-call ChangeBackground()
-
-map <leader>b :call ChangeBackground()<CR>
-map <leader>d :colorscheme default<CR>
+set background=light  " for the light version of the theme
 
 colorscheme PaperColor
