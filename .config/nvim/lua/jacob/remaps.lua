@@ -3,6 +3,8 @@ vim.g.mapleader = " "
 -- Netrw Directory Listing
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+vim.keymap.set("n", "<leader>mk", vim.cmd.make)
+
 -- Quick Save
 vim.keymap.set("n", "<leader>w", vim.cmd.w)
 
