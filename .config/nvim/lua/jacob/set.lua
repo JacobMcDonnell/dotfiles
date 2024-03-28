@@ -30,3 +30,9 @@ vim.opt.mouse = 'a'
 
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Remove trailing whitespace
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+    pattern = { "*" },
+    command = [[%s/\s\+$//e]],
+})
