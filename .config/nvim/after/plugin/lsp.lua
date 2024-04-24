@@ -20,3 +20,4 @@ cmp.setup({
 require('lspconfig').clangd.setup({})
 require('lspconfig').gopls.setup({})
 require('lspconfig').texlab.setup({})
+require('lspconfig').pyright.setup({})
