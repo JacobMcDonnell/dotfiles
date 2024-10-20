@@ -16,5 +16,9 @@ elif [[ -z $USER ]]; then
 	exit
 fi
 
-ssh $USER@$SERVER
+if [[ "$2" == "-c" ]]; then
+	ssh $USER@$SERVER
+elif [[ "$2" == "-e" ]]; then
+	nvim scp://$USER@$SERVER//home/ugrads/$USER/
+fi
 
