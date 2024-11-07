@@ -58,11 +58,11 @@
    ;; *****************************************************************************
 
    `(default                          ((t (:foreground ,text :background ,background, :weight normal))))
-   `(region                           ((t (:foreground nil :background ,selection))))
+   `(region                           ((t (:foreground unspecified :background ,selection))))
    `(cursor                           ((t (:background ,white                        ))))
    `(fringe                           ((t (:background ,background   :foreground ,white))))
    `(linum                            ((t (:background ,background :foreground ,gutter-fg))))
-   `(highlight ((t (:foreground nil :background ,selection))))
+   `(highlight ((t (:foreground unspecified :background ,selection))))
 
    ;; Font lock faces
    ;; *****************************************************************************
@@ -83,8 +83,8 @@
 
    ;; Plugins
    ;; *****************************************************************************
-   `(trailing-whitespace ((t (:foreground nil :background ,warning))))
-   `(whitespace-trailing ((t (:background nil :foreground ,warning :inverse-video t))))
+   `(trailing-whitespace ((t (:foreground unspecified :background ,warning))))
+   `(whitespace-trailing ((t (:background unspecified :foreground ,warning :inverse-video t))))
 
    `(linum ((t (:foreground ,line-fg :background ,background))))
    `(linum-relative-current-face ((t (:foreground ,white :background ,background))))
@@ -114,7 +114,7 @@
                                     :underline unspecified
                                     :foreground ,background
                                     :weight bold
-                                    :box nil))))
+                                    :box unspecified))))
 
    ;; mode-line and powerline
    `(mode-line-buffer-id ((t (:foreground ,background :distant-foreground ,text :text ,text :weight bold))))
@@ -122,7 +122,7 @@
                                    :underline unspecified
                                    :foreground ,background
                                    :background ,text
-                                   :box nil))))
+                                   :box unspecified))))
    `(powerline-active1 ((t (:background ,text :foreground ,background))))
    `(powerline-active2 ((t (:background ,text :foreground ,background))))
 
@@ -130,13 +130,13 @@
                                             :underline unspecified
                                             :foreground ,text
                                             :background ,background
-                                            :box nil))))
+                                            :box unspecified))))
    `(powerline-inactive1 ((t (:background ,background :foreground ,text))))
    `(powerline-inactive2 ((t (:background ,background :foreground ,text))))
 
     ;; better compatibility with default DOOM mode-line
-   `(error ((t (:foreground nil :weight normal))))
-   `(doom-modeline-project-dir ((t (:foreground nil :weight bold))))
+   `(error ((t (:foreground unspecified :weight normal))))
+   `(doom-modeline-project-dir ((t (:foreground unspecified :weight bold))))
    
    ;; js2-mode
    `(js2-function-call ((t (:inherit (font-lock-function-name-face)))))
