@@ -4,8 +4,9 @@
 ;; window
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
 (add-to-list 'default-frame-alist '(ns-appearance . dark))
-(add-to-list 'default-frame-alist (cons 'width 120))
-(add-to-list 'default-frame-alist (cons 'height 200))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+;;(add-to-list 'default-frame-alist (cons 'width 120))
+;;(add-to-list 'default-frame-alist (cons 'height 200))
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
@@ -16,7 +17,7 @@
 (defvaralias 'c-basic-offset 'tab-width)
 
 ;; Font
-(set-frame-font "Consolas 14" nil t)
+(set-frame-font "Consolas 16" nil t)
 
 ;; Relative Line Numbers
 (display-line-numbers-mode)
@@ -60,13 +61,12 @@
 (require 'lsp-mode)
 (add-hook 'c-mode-hook #'lsp)
 (add-hook 'c++-mode-hook #'lsp)
-(add-hook 'go-mode #'lsp)
 
 ;; Company-Mode for LSP-Mode
 (unless (package-installed-p 'company)
 	(package-install 'company))
 
 ;; Setup LSP-Mode
-(require 'company)
-(setq company-minimum-prefix-length 1
-      company-idle-delay 0.0) ;; default is 0.2
+;;(require 'company)
+;;(setq company-minimum-prefix-length 1
+;;      company-idle-delay 0.0) ;; default is 0.2
