@@ -6,9 +6,9 @@ target="$HOME/personal"
 
 log() {
 	if [[ $dry == "1" ]]; then
-		echo "[DRY_RUN]: $1"
+		echo "[DRY_RUN]: $@"
 	else
-		echo "$1"
+		echo "$@"
 	fi
 }
 
@@ -26,6 +26,7 @@ copy_dir() {
 	pushd $from
 	dirs="$(find . -maxdepth 1 -mindepth 1 -type d)"
 	for dir in $dirs; do
+		log "Copying $dir"
 		execute rm -rf $to/$dir
 		execute cp -r $dir $to/$dir
 	done

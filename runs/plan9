@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-source ../util
+source $HOME/personal/dotfiles/util
 
 git clone https://github.com/9fans/plan9port.git $target/plan9
 cd $target/plan9
