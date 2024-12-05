@@ -1,0 +1,29 @@
+#!/bin/zsh
+
+source util
+
+dry="1"
+while [[ $# -gt 0 ]]; do
+	if [[ "$1" == "--dry" ]]; then
+		dry="1"
+	fi
+	shift
+done
+
+#cd $target/dotfiles
+log "Copying Scripts"
+scripts="$(find ./scripts -maxdepth 1 -mindepth 1 -perm +111 -type f)"
+for script in $scripts; do
+	log $script
+	copy_file "$script" "$target/bin"
+done
+
+log "Copying Configs"
+copy_dir ".config" $HOME
+copy_file ".config/.profile" $HOME
+copy_file ".config/.profile" $HOME
+copy_file ".config/shells/zsh/.zshrc" $HOME
+
+log "Copying Self to ~/personal/bin"
+copy_file dev-env $target/bin
+
