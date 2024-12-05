@@ -12,7 +12,11 @@ done
 
 cd $target/dotfiles
 log "Copying Scripts"
-scripts="$(find ./scripts -maxdepth 1 -mindepth 1 -executable -type f)"
+if [[ "$(uname -s)" == "Darwin" ]]; then
+	scripts="$(find ./scripts -maxdepth 1 -mindepth 1 -perm +111 -type f)"
+else
+	scripts="$(find ./scripts -maxdepth 1 -mindepth 1 -executable -type f)"
+fi
 for script in $scripts; do
 	log $script
 	copy_file "$script" "$target/bin"
