@@ -20,9 +20,11 @@ done
 
 log "Copying Configs"
 copy_dir .config $HOME/.config
+copy_dir .emacs.d $HOME/.emacs.d
 copy_file ".config/.profile" $HOME
 copy_file ".config/shells/zsh/.zshrc" $HOME
 
 log "Copying Self to ~/personal/bin"
 copy_file dev-env $target/bin
+copy_file util $target/bin
 
