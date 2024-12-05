@@ -1,7 +1,8 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export CEDEV=/opt/CEdev
 export ProMust=/opt/ProjectMustang
-export PATH=/opt/homebrew/opt/llvm/bin:$ProMust/bin:~/.codon/bin:~/.local/bin:$CEDEV/bin:$PATH:$HOME/Library/Python/3.9/bin:$HOME/go/bin
+export PLAN9=$HOME/plan9
+export PATH=/opt/homebrew/opt/llvm/bin:$ProMust/bin:~/.codon/bin:~/.local/bin:$CEDEV/bin:$PATH:$HOME/Library/Python/3.9/bin:$HOME/go/bin:$PLAN9/bin
 
 export EDITOR=nvim
 export HOMEBREW_EDITOR=nvim

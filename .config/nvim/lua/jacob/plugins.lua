@@ -39,10 +39,7 @@ require("lazy").setup({
 			--vim.cmd.colorscheme 'tokyonight-day'
 		--end,
 	},
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-	},
+	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate", },
 	{
 		"mbbill/undotree",
 		config = function()
@@ -58,8 +55,14 @@ require("lazy").setup({
 	{"mfussenegger/nvim-dap" },
 	{
 		'alljokecake/naysayer-theme.nvim',
+	},
+	{
+		"sainnhe/everforest",
 		init = function()
-			vim.cmd.colorscheme 'naysayer'
+			vim.cmd.colorscheme 'everforest'
+			vim.cmd('set background=dark')
 		end,
 	},
+	{"shaunsingh/nord.nvim"},
+	{"EdenEast/nightfox.nvim"},
 })
