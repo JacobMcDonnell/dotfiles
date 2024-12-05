@@ -1,0 +1,11 @@
+#!/bin/sh
+
+DICTFILE=/usr/share/dict/words
+
+[ -z $1 ] && words=$(< /dev/stdin) || words=$1
+
+for word in $words
+do
+	[ -z "$(grep -i "\b$word\b" $DICTFILE)" ] && echo $word
+done
+

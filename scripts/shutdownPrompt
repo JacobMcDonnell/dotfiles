@@ -1,0 +1,3 @@
+#!/bin/sh
+
+prompt 'Shutdown?' 'sudo shutdown -h now'

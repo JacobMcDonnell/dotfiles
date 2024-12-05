@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if test -n "$1";
+then
+	id=$1
+elif test ! -t 0;
+then
+	id=$(cat < /dev/stdin)
+else
+	echo "ytrss: No Input"
+	exit
+fi
+
+echo "https://www.youtube.com/feeds/videos.xml?channel_id="$id
+

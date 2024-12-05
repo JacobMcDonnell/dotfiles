@@ -1,0 +1,34 @@
+#!/bin/sh
+
+RSSFILE=~/.config/newsboat/urls
+
+if test -n "$1";
+then
+	URL=$1
+elif test ! -t 0;
+then
+	URL=$(cat < /dev/stdin)
+else
+	URL=$(xclip -o clipboard)
+	if test -n "$URL";
+	then
+		notify-send "add2rss: copied $URL from clipboard"
+	else
+		notify-send "add2rss: no input"
+		exit
+	fi
+fi
+
+if test -n "$2";
+then
+	URL="$URL \"$2\""
+fi
+
+if test -n "$(grep $URL $RSSFILE)";
+then
+	notify-send "add2rss: You already added this feed"
+else
+	echo "$URL" >> $RSSFILE
+	notify-send "add2rss: Added"
+fi
+

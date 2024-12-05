@@ -1,0 +1,19 @@
+#!/bin/sh
+
+NUMS="01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n"
+
+NUM="$(echo $NUMS | fzf)"
+
+SERVER="e5-cse-135-$NUM.cse.psu.edu"
+
+USER=$1
+
+if [[ -z $NUM ]]; then
+	echo "Select a server number"
+	exit
+elif [[ -z $USER ]]; then
+	echo "Provide a user name"
+	exit
+fi
+
+ssh -Y $USER@$SERVER
