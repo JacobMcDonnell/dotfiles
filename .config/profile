@@ -1,16 +1,18 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
-export CEDEV=/opt/CEdev
-export ProMust=/opt/ProjectMustang
-export PLAN9=$HOME/plan9
-export PATH=/opt/homebrew/opt/llvm/bin:$ProMust/bin:~/.codon/bin:~/.local/bin:$CEDEV/bin:$PATH:$HOME/Library/Python/3.9/bin:$HOME/go/bin:$PLAN9/bin
+export PLAN9=$HOME/personal/plan9
+export PATH=~/personal/bin:~/.local/bin:$PATH:$HOME/go/bin:$PLAN9/bin
 
 export EDITOR=nvim
 export HOMEBREW_EDITOR=nvim
 
 # Shell settings
 export shColor=green
-# export comSym=λ
-export comSym=
+export OS="$(uname -s)"
+if [[ $OS == "Darwin" ]]; then
+	export comSym=
+elif [[ $OS == "Linux" ]]; then
+	export comSym=λ
+fi
 
 # Setting up XDG Dirs
 export XDG_CONFIG_HOME=$HOME/.config
@@ -22,5 +24,3 @@ export LESSHISTFILE=-
 export ENV="$XDG_CONFIG_HOME"/shells/ksh/kshrc
 export ZDOTDIR="$XDG_CONFIG_HOME"/shells/zsh
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/jmm/.cache/lm-studio/bin"
