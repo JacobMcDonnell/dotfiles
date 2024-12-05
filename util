@@ -2,6 +2,8 @@
 
 set -o shwordsplit
 
+target="$HOME/personal"
+
 log() {
 	if [[ $dry == "1" ]]; then
 		echo "[DRY_RUN]: $1"

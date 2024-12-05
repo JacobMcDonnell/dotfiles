@@ -6,7 +6,7 @@ version="v0.10.2"
 
 git clone -b $version https://github.com/neovim/neovim.git $target/neovim
 sudo dnf install -y cmake gettext lua lua-libs
-cd $HOME/neovim
+cd $target/neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
-make CMAKE_INSTALL_PREFIX=$target/bin install
+make CMAKE_INSTALL_PREFIX=$target install
 
