@@ -1,3 +1,0 @@
-#!/bin/sh
-[ "$(printf "No\nYes" | wofi -d -p "$1")" = "Yes" ] && $2
-
