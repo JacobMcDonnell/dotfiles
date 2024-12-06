@@ -1,4 +1,3 @@
-eval "$(/opt/homebrew/bin/brew shellenv)"
 export PLAN9=$HOME/personal/plan9
 export PATH=~/personal/bin:~/.local/bin:$PATH:$HOME/go/bin:$PLAN9/bin
 
@@ -10,6 +9,7 @@ export shColor=green
 export OS="$(uname -s)"
 if [[ $OS == "Darwin" ]]; then
 	export comSym=
+	eval "$(/opt/homebrew/bin/brew shellenv)"
 elif [[ $OS == "Linux" ]]; then
 	export comSym=λ
 fi

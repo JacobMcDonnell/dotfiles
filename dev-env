@@ -32,3 +32,6 @@ log "Copying Self to ~/personal/bin"
 copy_file dev-env $target/bin
 copy_file util $target/bin
 
+log "Setting Up Symlinks"
+execute ln -sf $HOME/.profile $HOME/.zprofile
+
