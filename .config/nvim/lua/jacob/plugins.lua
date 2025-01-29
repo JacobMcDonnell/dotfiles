@@ -65,4 +65,5 @@ require("lazy").setup({
 	},
 	{"shaunsingh/nord.nvim"},
 	{"EdenEast/nightfox.nvim"},
+	{"Civitasv/cmake-tools.nvim"},
 })

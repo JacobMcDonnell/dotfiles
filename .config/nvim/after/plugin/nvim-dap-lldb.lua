@@ -1,7 +1,7 @@
 local dap = require('dap')
 dap.adapters.lldb = {
   type = 'executable',
-  command = '/opt/homebrew/opt/llvm/bin/lldb-dap', -- adjust as needed, must be absolute path
+  command = os.getenv( "HOME" ) .. '/.local/share/nvim/mason/bin/codelldb', -- adjust as needed, must be absolute path
   name = 'lldb'
 }
 
@@ -12,7 +12,7 @@ dap.configurations.c = {
     type = 'lldb',
     request = 'launch',
     program = function()
-      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/build/', 'file')
     end,
     cwd = '${workspaceFolder}',
     stopOnEntry = false,
@@ -32,3 +32,4 @@ dap.configurations.c = {
     -- runInTerminal = false,
   },
 }
+dap.configurations.cpp = dap.configurations.c
