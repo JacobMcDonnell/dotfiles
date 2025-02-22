@@ -5,40 +5,40 @@ set -o shwordsplit
 target="$HOME/personal"
 
 log() {
-	if [[ $dry == "1" ]]; then
-		echo "[DRY_RUN]: $@"
-	else
-		echo "$@"
-	fi
+    if [[ $dry == "1" ]]; then
+        echo "[DRY_RUN]: $@"
+    else
+        echo "$@"
+    fi
 }
 
 execute() {
-	log "execute $@"
-	if [[ $dry == "1" ]]; then
-		return
-	fi
-	"$@"
+    log "execute $@"
+    if [[ $dry == "1" ]]; then
+        return
+    fi
+    "$@"
 }
 
 copy_dir() {
-	from=$1
-	to=$2
-	pushd $from
-	dirs="$(find . -maxdepth 1 -mindepth 1 -type d)"
-	for dir in $dirs; do
-		log "Copying $dir"
-		execute rm -rf $to/$dir
-		execute cp -r $dir $to/$dir
-	done
-	popd
+    from=$1
+    to=$2
+    pushd $from
+    dirs="$(find . -maxdepth 1 -mindepth 1 -type d)"
+    for dir in $dirs; do
+        log "Copying $dir"
+        execute rm -rf $to/$dir
+        execute cp -r $dir $to/$dir
+    done
+    popd
 }
 
 copy_file() {
-	from=$1
-	to=$2
-	name=$(basename $from)
+    from=$1
+    to=$2
+    name=$(basename $from)
 
-	execute rm $to/$name
-	execute cp $from $to/$name
+    execute rm $to/$name
+    execute cp $from $to/$name
 }
 

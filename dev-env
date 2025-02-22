@@ -4,22 +4,22 @@ source util
 
 dry="0"
 while [[ $# -gt 0 ]]; do
-	if [[ "$1" == "--dry" ]]; then
-		dry="1"
-	fi
-	shift
+    if [[ "$1" == "--dry" ]]; then
+        dry="1"
+    fi
+    shift
 done
 
 cd $target/dotfiles
 log "Copying Scripts"
 if [[ "$(uname -s)" == "Darwin" ]]; then
-	scripts="$(find ./scripts -maxdepth 1 -mindepth 1 -perm +111 -type f)"
+    scripts="$(find ./scripts -maxdepth 1 -mindepth 1 -perm +111 -type f)"
 else
-	scripts="$(find ./scripts -maxdepth 1 -mindepth 1 -executable -type f)"
+    scripts="$(find ./scripts -maxdepth 1 -mindepth 1 -executable -type f)"
 fi
 for script in $scripts; do
-	log $script
-	copy_file "$script" "$target/bin"
+    log $script
+    copy_file "$script" "$target/bin"
 done
 
 log "Copying Configs"
