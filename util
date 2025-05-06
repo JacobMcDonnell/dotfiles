@@ -23,14 +23,10 @@ execute() {
 copy_dir() {
     from=$1
     to=$2
-    pushd $from
-    dirs="$(find . -maxdepth 1 -mindepth 1 -type d)"
-    for dir in $dirs; do
-        log "Copying $dir"
-        execute rm -rf $to/$dir
-        execute cp -r $dir $to/$dir
-    done
-    popd
+    name=$(basename $from)
+
+    execute rm -rf $to/$name
+    execute cp -r $from $to/$name
 }
 
 copy_file() {

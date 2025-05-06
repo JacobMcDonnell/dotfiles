@@ -1,3 +1,4 @@
 #!/bin/sh
 
-sudo apt install git tmux zsh golang fzf -y
+sudo apt install build-essential gdb clangd git tmux zsh golang fzf -y
+
