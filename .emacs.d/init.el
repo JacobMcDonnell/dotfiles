@@ -17,7 +17,7 @@
 (defvaralias 'c-basic-offset 'tab-width)
 
 ;; Font
-(set-frame-font "Consolas 16" nil t)
+(set-frame-font "JetBrains Mono 16" nil t)
 
 ;; Relative Line Numbers
 (display-line-numbers-mode)

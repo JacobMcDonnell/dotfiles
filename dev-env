@@ -22,8 +22,13 @@ for script in $scripts; do
     copy_file "$script" "$target/bin"
 done
 
+configs="$(find ./.config -mindepth 1 -maxdepth 1 -type d)"
+for config in $configs; do
+    log $config
+    copy_dir $config "$HOME/.config"
+done
+
 log "Copying Configs"
-copy_dir .config $HOME
 copy_dir .emacs.d $HOME
 copy_file ".config/.profile" $HOME
 copy_file ".config/shells/zsh/.zshrc" $HOME
