@@ -1,4 +1,8 @@
 #!/bin/sh
 
-sudo apt install build-essential gdb clangd git tmux zsh golang fzf -y
+sudo dnf install @development-tools
+
+sudo dnf install @virtualization
+
+sudo dnf install gdb clangd git tmux zsh golang fzf -y
 

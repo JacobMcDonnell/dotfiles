@@ -1,0 +1,75 @@
+#!/bin/sh
+
+BINUTILS="binutils-2.44"
+GCC="gcc-15.1.0"
+GDB="gdb-16.3"
+
+export PREFIX="$HOME/personal"
+export TARGET=aarch64-elf
+
+CORES="$(nproc 2&>/dev/null)"
+
+cd /tmp
+
+sudo dnf install gcc gcc-c++ make bison flex gmp-devel libmpc-devel mpfr-devel texinfo isl-devel -y
+
+rm -rf cross
+mkdir cross
+cd cross
+
+if [[ "$(find . -type d -name "$BINUTILS")" != "./$BINUTILS" ]]
+then
+    wget "https://ftp.gnu.org/gnu/binutils/$BINUTILS.tar.zst"
+    unzstd "$BINUTILS.tar.zst"
+    tar xf "$BINUTILS.tar"
+fi
+
+if [[ "$(find . -type d -name "$GCC")" != "./$GCC" ]]
+then
+    wget "https://ftp.gnu.org/gnu/gcc/$GCC/$GCC.tar.gz"
+    unxz "$GDB.tar.xz"
+    tar xf "$GDB.tar"
+fi
+
+if [[ "$(find . -type d -name "$GDB")" != "./$GDB" ]]
+then
+    wget "https://ftp.gnu.org/gnu/gdb/$GDB.tar.xz"
+    gunzip "$GCC.tar.gz"
+    tar xf "$GCC.tar"
+fi
+
+rm -rf build-binutils
+mkdir build-binutils
+cd build-binutils
+
+../$BINUTILS/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
+make -j $CORES
+make install
+
+cd ..
+
+rm -rf build-gdb
+mkdir build-gdb
+cd build-gdb
+
+../$GDB/configure --target=$TARGET --prefix="$PREFIX" --disable-werror
+make all-gdb -j $CORES
+make install-gdb
+
+cd ..
+
+build-gcc () {
+rm -rf build-gcc
+mkdir build-gcc
+cd build-gcc
+
+../$GCC/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers --disable-hosted-libstdcxx
+make all-gcc -j $CORES
+make all-target-libgcc -j $CORES
+make all-target-libstdc++-v3 -j $CORES
+make install-gcc
+make install-target-libgcc
+make install-target-libstdc++-v3
+
+cd ..
+

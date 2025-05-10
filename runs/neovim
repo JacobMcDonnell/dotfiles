@@ -5,7 +5,9 @@ source $HOME/personal/dotfiles/util
 version="v0.10.2"
 
 git clone -b $version https://github.com/neovim/neovim.git $target/neovim
-sudo apt install ninja-build gettext cmake unzip curl build-essential
+
+sudo dnf -y install ninja-build cmake gcc make gettext curl glibc-gconv-extra
+
 cd $target/neovim
 make CMAKE_BUILD_TYPE=RelWithDebInfo
 make CMAKE_INSTALL_PREFIX=$target install
