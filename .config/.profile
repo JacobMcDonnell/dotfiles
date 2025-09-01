@@ -1,5 +1,5 @@
 export PLAN9=$HOME/personal/plan9
-export PATH=/opt/MaXX/bin:/usr/dt/bin:~/personal/bin:~/.local/bin:$PATH:$HOME/go/bin:$PLAN9/bin
+export PATH="/opt/MaXX/bin:/usr/dt/bin:~/personal/bin:~/.local/bin:$PATH:$HOME/go/bin:$PLAN9/bin"
 
 export EDITOR=nvim
 export HOMEBREW_EDITOR=nvim
@@ -21,6 +21,5 @@ export XDG_DATA_HOME=$HOME/.local/share
 
 # Moving Folder and Files from ~/
 export LESSHISTFILE=-
-export ENV="$XDG_CONFIG_HOME"/shells/ksh/kshrc
 export ZDOTDIR="$XDG_CONFIG_HOME"/shells/zsh
 

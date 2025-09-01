@@ -4,7 +4,6 @@ alias \
 	d="cd ~/Documents" \
 	bk="cd ~/Documents/Books" \
 	dw="cd ~/Downloads" \
-	g="cd ~/Documents/Projects/git" \
-	c="cd ~/.config" \
-	e="cd ~/Documents/Projects/Experiments" \
-	cmpsc="cd /Users/jmm/OneDrive\ -\ The\ Pennsylvania\ State\ University/Semester\ 2/CMPSC132/"
+	p="cd ~/Documents/Projects" \
+	m="cd ~/Documents/musings" \
+	c="cd ~/.config"

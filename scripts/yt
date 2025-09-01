@@ -1,0 +1,35 @@
+#!/bin/sh
+
+YT_DL_PATH="$HOME/Videos/youtube"
+YT_INDEX="$YT_DL_PATH/youtube.txt"
+
+Usage() {
+    printf "Usage: %s [--download-path path] [--index-file path]\n" $(basename $0) > /dev/stderr
+    exit 1
+}
+
+while [[ $# -gt 0 ]];
+do
+    case $1 in
+        --download-path)
+            shift
+            YT_DL_PATH="$1"
+            YT_INDEX="$YT_DL_PATH/youtube.txt"
+            ;;
+        --index-file)
+            shift
+            YT_INDEX="$1"
+            ;;
+        --help)
+            Usage
+            ;;
+        *)
+            printf "Unknown option: %s\n" $1 > /dev/stderr
+            Usage
+            ;;
+    esac
+    shift
+done
+
+parallel "yt-dlp -o \"$YT_DL_PATH/%(title)s.%(ext)s\" --restrict-filenames" ::: $(cat $YT_INDEX)
+
