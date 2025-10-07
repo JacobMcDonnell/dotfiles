@@ -36,3 +36,13 @@ end)
 
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
+-- Knap Keybinds
+-- F5 processes the document once, and refreshes the view
+vim.keymap.set({ 'n', 'v', 'i' },'<leader>kp', function() require("knap").process_once() end)
+
+-- F6 closes the viewer application, and allows settings to be reset
+vim.keymap.set({ 'n', 'v', 'i' },'<leader>ks', function() require("knap").close_viewer() end)
+
+-- F7 toggles the auto-processing on and off
+vim.keymap.set({ 'n', 'v', 'i' },'<leader>ka', function() require("knap").toggle_autopreviewing() end)
+
