@@ -19,7 +19,7 @@ SAVEHIST=100
 HISTSIZE=5000
 setopt prompt_subst
 autoload -U colors && colors
-PROMPT='%{$fg_bold[$shColor]%}$comSym%{$reset_color%} in %{$fg_bold[$shColor]%}%c%{$reset_color%}
+PROMPT='%{$fg_bold[$shColor]%}$comSym%{$reset_color%} in %{$fg_bold[$shColor]%}%c%{$reset_color%} $(ret=$?; [[ $ret != 0 ]] && printf "%s[%d]%s " %{$fg_bold[red]%} $ret %{$reset_color%})
 → '
 source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/plugins/fzf-tab/fzf-tab.zsh
