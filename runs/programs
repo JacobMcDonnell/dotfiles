@@ -1,8 +1,8 @@
 #!/bin/sh
 
-sudo dnf install @development-tools
+sudo dnf install @development-tools -y
 
-sudo dnf install @virtualization
+sudo dnf install @virtualization -y
 
-sudo dnf install gdb clangd git tmux zsh golang fzf -y
+sudo dnf install gdb clangd git tmux zsh neovim golang fzf -y
 
