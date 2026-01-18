@@ -1,8 +1,35 @@
 #!/bin/sh
 
-sudo dnf install @development-tools -y
+DISTRO=$(grep '^NAME=.*$' /etc/os-release | sed 's/NAME=//g')
 
-sudo dnf install @virtualization -y
+fedora-install() {
+    sudo dnf install @development-tools -y
+    sudo dnf install @virtualization -y
+    sudo dnf install gdb clangd git tmux zsh neovim golang fzf -y
+}
 
-sudo dnf install gdb clangd git tmux zsh neovim golang fzf -y
+gentoo-install() {
+    sudo emerge --ask dev-vcs/git app-misc/tmux app-editors/neovim dev-lang/go app-shells/fzf app-shells/zsh
+}
+
+unknown() {
+    printf "Error: Unknown Distro '%s'.\n" $DISTRO > /dev/stderr
+    exit 1
+}
+
+FUNCTION="unknown"
+
+case $DISTRO in
+    Fedora)
+        FUNCTION="fedora-install"
+        ;;
+    Gentoo)
+        FUNCTION="gentoo-install"
+        ;;
+    *)
+        FUNCTION="unknown"
+        ;;
+esac
+
+$FUNCTION
 

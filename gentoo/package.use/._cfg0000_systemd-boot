@@ -1,0 +1,6 @@
+sys-apps/systemd boot
+sys-apps/systemd-utils boot kernel-install
+sys-kernel/installkernel systemd systemd-boot
+# required by sys-kernel/gentoo-kernel-6.12.63::gentoo[-generic-uki,initramfs]
+# required by virtual/dist-kernel-6.12.63::gentoo
+>=sys-kernel/installkernel-63 dracut

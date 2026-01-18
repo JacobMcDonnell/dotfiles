@@ -1,0 +1,8 @@
+sys-apps/systemd boot
+sys-apps/systemd-utils boot 
+# required by kde-plasma/plasma-meta-6.5.4::gentoo
+# required by kde-plasma/plasma-meta (argument)
+>=kde-plasma/kwin-6.5.4-r2 lock
+# required by kde-plasma/plasma-meta-6.5.4::gentoo[X]
+# required by kde-plasma/plasma-meta (argument)
+>=kde-plasma/kwin-x11-6.5.4-r1 lock

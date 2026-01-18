@@ -1,0 +1,4 @@
+kde-plasma/plasma-meta display-manager -X smart -bluetooth systemd rdp
+kde-plasma/kwin lock
+net-misc/freerdp server
+sys-libs/zlib minizip

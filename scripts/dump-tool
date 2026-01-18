@@ -1,0 +1,49 @@
+#!/bin/bash
+
+LEVEL='0'
+PROG_NAME="$(basename $0)"
+XFSDUMP='/usr/bin/xfsdump'
+DESTINATION="/backup"
+SESSION_LABEL="weekly"
+MEDIA_LABEL="root-fs"
+FILESYSTEM="/"
+
+usage() {
+    printf "Usage: %s (--weekly | --daily | --hourly) [--file-system=fs] [--help]\n" $PROG_NAME > /dev/stderr
+}
+
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --weekly)
+            LEVEL='0'
+            SESSION_LABEL="weekly"
+            ;;
+        --daily)
+            LEVEL='1'
+            SESSION_LABEL="daily"
+            ;;
+        --hourly)
+            LEVEL='2'
+            SESSION_LABEL="hourly"
+            ;;
+        --file-system=*)
+            FILESYSTEM=$(echo $1 | sed "s|--file-system=||g")
+            ;;
+        --help)
+            usage
+            exit 1
+            ;;
+        *)
+            printf "Error: Unknown flag '%s'\n" $1 > /dev/stderr
+            usage
+            exit 1
+            ;;
+    esac
+
+    shift
+done
+
+DESTINATION="$DESTINATION/backup-$(date +'%Y-%m-%d').$LEVEL.dump"
+
+$XFSDUMP -l $LEVEL -L $SESSION_LABEL  -M $MEDIA_LABEL -f $DESTINATION $FILESYSTEM
+
