@@ -9,7 +9,32 @@ fedora-install() {
 }
 
 gentoo-install() {
-    sudo emerge --ask dev-vcs/git app-misc/tmux app-editors/neovim dev-lang/go app-shells/fzf app-shells/zsh
+    PACKAGES=(dev-vcs/git               \
+        app-misc/tmux                   \
+        app-editors/neovim              \
+        dev-lang/go                     \
+        app-shells/fzf                  \
+        app-shells/zsh                  \
+        kde-plasma/plasma-meta          \
+        kde-apps/kdecore-meta           \
+        x11-themes/windowmaker-themes   \
+        x11-wm/windowmaker              \
+        www-client/firefox              \
+        sys-fs/xfsdump                  \
+        x11-terms/ghostty               \
+        x11-terms/ghostty-terminfo      \
+        sys-process/htop                \
+        sys-process/btop                \
+        gnustep-base/gnustep-back-cairo \
+        gnustep-base/gnustep-back-xlib  \
+        gnustep-base/gnustep-base       \
+        gnustep-base/gnustep-gui        \
+        gnustep-base/gnustep-updater)
+
+    for PACKAGE in ${PACKAGES[*]};
+    do
+        sudo emerge --ask $PACKAGE
+    done
 }
 
 unknown() {
