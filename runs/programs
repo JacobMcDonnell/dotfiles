@@ -29,7 +29,8 @@ gentoo-install() {
         gnustep-base/gnustep-back-xlib  \
         gnustep-base/gnustep-base       \
         gnustep-base/gnustep-gui        \
-        gnustep-base/gnustep-updater)
+        gnustep-base/gnustep-updater    \
+        mail-client/thunderbird)
 
     for PACKAGE in ${PACKAGES[*]};
     do
