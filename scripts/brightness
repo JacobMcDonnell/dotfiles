@@ -1,0 +1,45 @@
+#!/bin/bash
+
+DDC_UTIL=$(which ddcutil)
+STEP="10"
+FUNCTION="$DDC_UTIL setvcp 10"
+PROG_NAME="$(basename $0)"
+
+usage() {
+    printf "Usage: %s (-d | --decrease=NUM | -i | --increase=NUM)\n" $PROG_NAME > /dev/stderr
+}
+
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        -d)
+            FUNCTION="$FUNCTION -"
+            ;;
+        -i)
+            FUNCTION="$FUNCTION +"
+            ;;
+        --decrease=*)
+            FUNCTION="$FUNCTION -"
+            STEP=$(echo $1 | sed "s/--decrease=//g")
+            ;;
+        --increase=*)
+            FUNCTION="$FUNCTION +"
+            STEP=$(echo $1 | sed "s/--increase=//g")
+            ;;
+        --help)
+            usage
+            exit 1
+            ;;
+        *)
+            printf "Error: Unknown Flag '%s'.\n" $1 > /dev/stderr
+            usage
+            exit 1
+            ;;
+    esac
+
+    shift
+done
+
+FUNCTION="$FUNCTION $STEP"
+
+$FUNCTION
+
