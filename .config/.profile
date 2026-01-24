@@ -19,6 +19,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 
+# For Git Signing with GPG
+export GPG_TTY=$(tty)
+
 # Moving Folder and Files from ~/
 export LESSHISTFILE=-
 export ZDOTDIR="$XDG_CONFIG_HOME"/shells/zsh
