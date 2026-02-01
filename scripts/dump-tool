@@ -7,9 +7,59 @@ DESTINATION="/backup"
 SESSION_LABEL="weekly"
 MEDIA_LABEL="root-fs"
 FILESYSTEM="/"
+ONE_SHOT=""
 
 usage() {
-    printf "Usage: %s (--weekly | --daily | --hourly) [--file-system=fs] [--help]\n" $PROG_NAME > /dev/stderr
+    printf "Usage: %s [--one-shot] (--weekly | --daily | --hourly) [--file-system=fs] [--help]\n" $PROG_NAME > /dev/stderr
+}
+
+one_shot_weekly() {
+    FOUND=""
+    TIME=$(date +'%F')
+    if [[ "$(date +'%a')" == 'Sat' ]];
+    then
+        for FILE in $DESTINATION/backup-*.0.dump;
+        do
+            if [[ $(stat -c '%w' $FILE | awk '{print $1}') == $TIME ]];
+            then
+                FOUND=$FILE
+                break
+            fi
+        done
+
+        if [[ -z $FOUND ]];
+        then
+            LEVEL='0'
+            SESSION_LABEL="weekly"
+            dump
+        fi
+    fi
+}
+
+one_shot_daily() {
+    FOUND=""
+    TIME=$(date +'%F')
+
+    for FILE in $DESTINATION/backup-*.1.dump;
+    do
+        if [[ $(stat -c '%w' $FILE | awk '{print $1}') == $TIME ]];
+        then
+            FOUND=$FILE
+            break
+        fi
+    done
+
+    if [[ -z $FOUND ]];
+    then
+        LEVEL='1'
+        SESSION_LABEL="daily"
+        dump
+    fi
+}
+
+dump() {
+    DESTINATION_FILE="$DESTINATION/backup-$(date +'%Y-%m-%d-%H_%M_%S').$LEVEL.dump"
+    $XFSDUMP -l $LEVEL -L $SESSION_LABEL  -M $MEDIA_LABEL -f $DESTINATION_FILE $FILESYSTEM
 }
 
 while [[ $# -gt 0 ]]; do
@@ -29,6 +79,9 @@ while [[ $# -gt 0 ]]; do
         --file-system=*)
             FILESYSTEM=$(echo $1 | sed "s|--file-system=||g")
             ;;
+        --one-shot)
+            ONE_SHOT='1'
+            ;;
         --help)
             usage
             exit 1
@@ -43,7 +96,11 @@ while [[ $# -gt 0 ]]; do
     shift
 done
 
-DESTINATION="$DESTINATION/backup-$(date +'%Y-%m-%d-%H_%M_%S').$LEVEL.dump"
-
-$XFSDUMP -l $LEVEL -L $SESSION_LABEL  -M $MEDIA_LABEL -f $DESTINATION $FILESYSTEM
+if [[ -z $ONE_SHOT ]];
+then
+    dump
+else
+    one_shot_weekly
+    one_shot_daily
+fi
 
