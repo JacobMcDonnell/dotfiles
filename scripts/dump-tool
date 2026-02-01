@@ -43,7 +43,7 @@ while [[ $# -gt 0 ]]; do
     shift
 done
 
-DESTINATION="$DESTINATION/backup-$(date +'%Y-%m-%d').$LEVEL.dump"
+DESTINATION="$DESTINATION/backup-$(date +'%Y-%m-%d-%H_%M_%S').$LEVEL.dump"
 
 $XFSDUMP -l $LEVEL -L $SESSION_LABEL  -M $MEDIA_LABEL -f $DESTINATION $FILESYSTEM
 
