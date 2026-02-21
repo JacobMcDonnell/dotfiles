@@ -8,10 +8,18 @@ export HOMEBREW_EDITOR=nvim
 export shColor=green
 export OS="$(uname -s)"
 if [[ $OS == "Darwin" ]]; then
-	export comSym=
-	eval "$(/opt/homebrew/bin/brew shellenv)"
-elif [[ $OS == "Linux" ]]; then
-	export comSym=λ
+    export comSym=''
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ $OS == 'Linux' ]]; then
+    export comSym='λ'
+elif [[ $OS == 'SunOS' ]]; then
+    export comSym='Σ'
+elif [[ $OS == 'FreeBSD' ]]; then
+    export comSym='Φ'
+elif [[ $OS == 'OpenBSD' ]]; then
+    export comSym='Ω'
+elif [[ $OS == 'NetBSD' ]]; then
+    export comSym='μ'
 fi
 
 # Setting up XDG Dirs
