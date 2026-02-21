@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# OpenBSD does not have the -G flag
+alias la="ls -Ah"
+alias ls="ls -h"
+alais l="ls -lAh"
+

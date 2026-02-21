@@ -1,0 +1,22 @@
+#!/bin/sh
+
+cdl () { cd "${@}" && ls ;}
+mkc () { mkdir "${@}" && cd "${@}" ;}
+
+color_wrap() {
+    printf "%s%s%s" %{$fg_bold[$1]%} $2 %{$reset_color%}
+}
+
+git_good() {
+    REPO="$(git config --get remote.origin.url 2>/dev/null | sed -n -E 's|.*/(.*)\.git|\1|p' | tr -d '\n' )"
+    BRANCH="$(git branch 2>/dev/null | sed -n -E 's/\* (.*)/\1/p' | tr -d '\n')"
+    [[ -n $BRANCH ]] && color_wrap cyan "[$REPO::$BRANCH] "
+}
+
+error_code() {
+    if [[ $1 != 0 ]];
+    then
+        color_wrap red "["$1"]"
+    fi
+}
+

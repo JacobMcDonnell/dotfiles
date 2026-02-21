@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Linux has --color
+alias la="ls -Ah --color"
+alias ls="ls -h --color"
+alias l="ls -lAh --color"
+

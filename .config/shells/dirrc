@@ -1,9 +1,0 @@
-#!/bin/sh
-alias \
-	b="cd ~/.local/bin" \
-	d="cd ~/Documents" \
-	bk="cd ~/Documents/Books" \
-	dw="cd ~/Downloads" \
-	p="cd ~/Documents/Projects" \
-	m="cd ~/Documents/musings" \
-	c="cd ~/.config"

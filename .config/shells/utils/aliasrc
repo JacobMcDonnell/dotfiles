@@ -1,0 +1,22 @@
+#!/bin/sh
+
+alias cp="cp -v"
+alias rm="rm -v"
+alias mv="mv -v"
+alias vim="nvim"
+alias ..="cd .."
+alias ...="cd ../.."
+alias .3="cd ../../.."
+alias .4="cd ../../../../"
+alias .5="cd ../../../../.."
+alias zshup="source $HOME/.config/shells/zsh/.zshrc"
+alias gc="git clone"
+alias gu="git add -u"
+alias ga="git commit -a"
+alias gp="git push"
+alias m="micro"
+alias v="nvim"
+alias python="python3.10"
+alias pip="pip3.10"
+alias lf="lfub"
+
