@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 # This script is stolen from The Primeagen
 # https://github.com/ThePrimeagen/.dotfiles/

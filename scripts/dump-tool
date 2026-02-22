@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 LEVEL='0'
 PROG_NAME="$(basename $0)"

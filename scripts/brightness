@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 DDC_UTIL=$(which ddcutil)
 STEP="10"
