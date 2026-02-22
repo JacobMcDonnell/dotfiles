@@ -1,6 +1,0 @@
-#!/bin/zsh
-
-source $HOME/personal/dotfiles/util
-
-git clone git@github.com:JacobMcDonnell/notes.git $target/notes
-
