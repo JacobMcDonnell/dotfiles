@@ -18,9 +18,10 @@ require("lazy").setup({
     { "nvim-treesitter/nvim-treesitter", tag = 'v0.10.0', build = ":TSUpdate" },
     { "mbbill/undotree" },
     { "ThePrimeagen/harpoon", branch = "harpoon2", dependencies = { 'nvim-lua/plenary.nvim' } },
-    {'neovim/nvim-lspconfig'},
+    { 'neovim/nvim-lspconfig' },
     { "sainnhe/everforest" },
-    {"Civitasv/cmake-tools.nvim"},
-    {"frabjous/knap"},
+    { "Civitasv/cmake-tools.nvim" },
+    { "frabjous/knap" },
+    { "rktjmp/hotpot.nvim" },
 })
 
