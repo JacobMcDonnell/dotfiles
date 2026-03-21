@@ -48,7 +48,8 @@
 (vim.api.nvim_create_autocmd [:BufWritePre]
                              {:command "%s/\\s\\+$//e" :pattern ["*"]})
 
-(vim.cmd.colorscheme :everforest)
-
+;; (vim.cmd.colorscheme :everforest)
+;; (vim.cmd "set background=dark")
+(vim.cmd.colorscheme :bluloco)
 (vim.cmd "set background=dark")
 

@@ -20,6 +20,8 @@ require("lazy").setup({
     { "ThePrimeagen/harpoon", branch = "harpoon2", dependencies = { 'nvim-lua/plenary.nvim' } },
     { 'neovim/nvim-lspconfig' },
     { "sainnhe/everforest" },
+    { "NLKNguyen/papercolor-theme" },
+    { 'uloco/bluloco.nvim', lazy = false, priority = 1000, dependencies = { 'rktjmp/lush.nvim' }, },
     { "Civitasv/cmake-tools.nvim" },
     { "frabjous/knap" },
     { "rktjmp/hotpot.nvim" },
