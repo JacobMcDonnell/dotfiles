@@ -24,6 +24,14 @@
 
 (vim.keymap.set :n :<C-l> :<C-w>l)
 
+(vim.keymap.set :n :<leader>t vim.cmd.terminal)
+
+(vim.keymap.set :n :<leader>% vim.cmd.vsplit)
+
+(vim.keymap.set :n "<leader>\"" vim.cmd.split)
+
+(vim.keymap.set :t :<C-e> "<C-\\><C-n>")
+
 (local ts-builtin (require :telescope.builtin))
 
 (vim.keymap.set :n :<leader>ff ts-builtin.find_files {})
@@ -54,4 +62,3 @@
 (vim.keymap.set :n :<leader>ka
                 (fn []
                   ((. (require :knap) :toggle_autopreviewing))))
-
