@@ -23,5 +23,6 @@ require("lazy").setup({
     { "Civitasv/cmake-tools.nvim" },
     { "frabjous/knap" },
     { "rktjmp/hotpot.nvim" },
+    { "willothy/flatten.nvim", config = true, lazy = false, priority = 1001, },
 })
 
