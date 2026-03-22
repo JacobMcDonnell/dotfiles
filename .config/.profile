@@ -34,3 +34,7 @@ export GPG_TTY=$(tty)
 export LESSHISTFILE=-
 export ZDOTDIR="$XDG_CONFIG_HOME"/shells/zsh
 
+export NVIM_COLORSCHEME='bluloco'
+export NVIM_BACKGROUND='dark'
+
+

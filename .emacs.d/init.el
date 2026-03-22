@@ -53,6 +53,7 @@
 (define-key evil-normal-state-map (kbd "<leader>%") 'split-window-right)
 (define-key evil-normal-state-map (kbd "<leader>\"") 'split-window-below)
 (define-key evil-normal-state-map (kbd "<leader>t") 'ansi-term)
+(define-key evil-normal-state-map (kbd "<leader>ff") 'find-file)
 (define-key evil-normal-state-map (kbd "C-l") 'windmove-right)
 (define-key evil-normal-state-map (kbd "C-h") 'windmove-left)
 (define-key evil-normal-state-map (kbd "C-j") 'windmove-down)
