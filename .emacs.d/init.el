@@ -8,6 +8,8 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
+(setq column-number-mode t)
+(setopt display-fill-column-indicator-column 120)
 
 ;; Prevent Extraneous Tabs
 (setq-default tab-width 4)
@@ -35,9 +37,22 @@
 ;;   :config
 ;;   (load-theme 'acme t))
 
+(use-package vterm
+    :ensure t)
+
+(unless (package-installed-p 'magit)
+  (package-install 'magit))
+
 ;; Download Evil
 (unless (package-installed-p 'evil)
     (package-install 'evil))
+
+(unless (package-installed-p 'evil-collection)
+  (package-install 'evil-collection))
+
+(setq evil-want-keybinding nil)
+
+(evil-collection-init)
 
 ;; Enable Evil
 (use-package evil
@@ -52,7 +67,7 @@
 (define-key evil-normal-state-map (kbd "<leader>w") 'save-buffer)
 (define-key evil-normal-state-map (kbd "<leader>%") 'split-window-right)
 (define-key evil-normal-state-map (kbd "<leader>\"") 'split-window-below)
-(define-key evil-normal-state-map (kbd "<leader>t") 'ansi-term)
+(define-key evil-normal-state-map (kbd "<leader>t") 'vterm)
 (define-key evil-normal-state-map (kbd "<leader>ff") 'find-file)
 (define-key evil-normal-state-map (kbd "C-l") 'windmove-right)
 (define-key evil-normal-state-map (kbd "C-h") 'windmove-left)
@@ -96,8 +111,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(acme-theme base16-theme company evil lsp-mode tree-sitter-langs)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
