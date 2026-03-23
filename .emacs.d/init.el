@@ -10,6 +10,8 @@
 (menu-bar-mode -1)
 (setq column-number-mode t)
 (setopt display-fill-column-indicator-column 120)
+(setq indent-tabs-mode nil)
+(setq tab-width 4)
 
 ;; Prevent Extraneous Tabs
 (setq-default tab-width 4)
