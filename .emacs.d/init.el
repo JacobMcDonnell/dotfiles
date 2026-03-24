@@ -24,6 +24,13 @@
 (display-line-numbers-mode)
 (setq-default display-line-numbers 'relative)
 
+(defun remove-trailing-whitespace-before-save-hook ()
+  (progn
+    (if (not (string-match ".*makefile.*" (message "%s" major-mode)))
+        (untabify (point-min) (point-max)))
+    (delete-trailing-whitespace)))
+(add-hook 'before-save-hook 'remove-trailing-whitespace-before-save-hook)
+
 ;; Set up package.el to work with MELPA
 (require 'package)
 (add-to-list 'package-archives
@@ -54,8 +61,6 @@
 
 (setq evil-want-keybinding nil)
 
-(evil-collection-init)
-
 ;; Enable Evil
 (use-package evil
     :init      ;; tweak evil's configuration before loading it
@@ -64,6 +69,12 @@
           evil-vsplit-window-right t
           evil-split-window-below t)
     (evil-mode))
+
+(use-package evil-collection
+  :after evil
+  :ensure t
+  :config
+  (evil-collection-init))
 
 (evil-set-leader 'normal (kbd "SPC"))
 (define-key evil-normal-state-map (kbd "<leader>w") 'save-buffer)
