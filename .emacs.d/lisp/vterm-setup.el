@@ -1,6 +1,8 @@
 (use-package vterm
     :ensure t)
 
+(setq vterm-kill-buffer-on-exit t)
+
 (set-face-attribute 'vterm-color-black          nil :foreground "#171421" :background "#171421")
 (set-face-attribute 'vterm-color-red            nil :foreground "#C01C28" :background "#C01C28")
 (set-face-attribute 'vterm-color-green          nil :foreground "#26A269" :background "#26A269")
@@ -19,4 +21,3 @@
 (set-face-attribute 'vterm-color-bright-white   nil :foreground "#FFFFFF" :background "#FFFFFF")
 
 (provide 'vterm-setup)
-
