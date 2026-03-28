@@ -1,6 +1,13 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'naysayer t)
 
+(setq backup-directory-alist '(("." . "~/.cache/emacs-backup"))
+    backup-by-copying t
+    version-control t
+    delete-old-versions t
+    kept-new-versions 20
+    kept-old-versions 5)
+
 ;; window
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
 (add-to-list 'default-frame-alist '(ns-appearance . dark))
@@ -10,11 +17,10 @@
 (menu-bar-mode -1)
 (setq column-number-mode t)
 (setopt display-fill-column-indicator-column 120)
-(setq indent-tabs-mode nil)
-(setq tab-width 4)
 
 ;; Prevent Extraneous Tabs
-(setq-default tab-width 4)
+(setq indent-tabs-mode nil)
+(setq tab-width 4)
 (defvaralias 'c-basic-offset 'tab-width)
 
 ;; Font
