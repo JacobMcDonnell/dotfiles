@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ -z "$(stat "$(namespace)/font")" ]];
+then
+    fontsrv &
+fi
+
+$PLAN9/bin/acme -f /mnt/font/JetBrainsMonoNL-Regular/14a/font
+
