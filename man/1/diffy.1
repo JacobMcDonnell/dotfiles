@@ -1,0 +1,20 @@
+.Dd April 6, 2026
+.Dt DIFFY 1
+.Os
+.Sh NAME
+.Nm diffy
+.Nd a unified diff colorizer
+.Sh SYNOPSIS
+.Nm
+.Op Ar file
+.Sh DESCRIPTION
+.Nm
+will read a unified diff, as standard input or as a file, and print the ANSI Escape Codes to colorize the output. When
+an input line starts with a '+' character, the line will be green. When an input line starts with a '-' character, the
+line will be red. All other lines will be normal color.
+.Sh EXIT STATUS
+.Ex -std
+.Sh SEE ALSO
+.Xr diff 1
+and
+.Xr awk 1

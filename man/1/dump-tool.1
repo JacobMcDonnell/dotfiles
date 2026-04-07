@@ -1,0 +1,48 @@
+.Dd April 6, 2026
+.Dt DUMP-TOOL 1
+.Os
+.Sh NAME
+.Nm dump-tool
+.Nd A script for automating XFS filesystem dumps.
+.Sh SYNOPSIS
+.Nm
+.Op --one-shot
+.Op --file-system=fs
+.Op --help
+.Op --weekly
+.Nm
+.Op --one-shot
+.Op --file-system=fs
+.Op --help
+.Op --daily
+.Nm
+.Op --one-shot
+.Op --file-system=fs
+.Op --help
+.Op --hourly
+.Sh DESCRIPTION
+.Nm
+is a tool for automating and simplifying XFS filesystem dumps.
+.Pp
+The output files will be written to the /backup
+directory. The name format for dump files is backup-YYYY-MM-DD-HH_MM_SS.LEVEL.dump, where level is the xfsdump level. An
+example would be backup-2026-04-06-21_00_00.2.dump for an hourly dump taken at 9:00:00 pm on April 6th 2026.
+.Pp
+.Bl -tag -width Ds
+.It Fl -one-shot
+This will check for an existing dump for the current week & day.
+.It Fl -weekly
+This will create a weekly dump. A weekly dump is a level 0 dump for xfsdump.
+.It Fl -daily
+This will create an hourly dump. A weekly dump is a level 1 dump for xfsdump.
+.It Fl -hourly
+This will create an hourly dump. A weekly dump is a level 2 dump for xfsdump.
+.It Fl -help
+This will print a help message.
+.It Fl -file-system=fs
+This will set the path of the XFS filesystem to backup. The default is /.
+.El
+.Sh EXIT STATUS
+.Ex -std
+.Sh SEE ALSO
+.Xr xfsdump 1
