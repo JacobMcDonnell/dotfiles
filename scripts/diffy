@@ -1,0 +1,6 @@
+#!/usr/bin/env -S awk -f
+
+/^\+/ { print "\x1b[32;m"$0"\x1b[0;m" }
+/^\-/ { print "\x1b[31;m"$0"\x1b[0;m" }
+/^[^\+\-]/ { print }
+
