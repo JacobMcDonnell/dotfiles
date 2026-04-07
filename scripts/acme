@@ -5,5 +5,14 @@ then
     fontsrv &
 fi
 
-$PLAN9/bin/acme -f /mnt/font/JetBrainsMonoNL-Regular/14a/font
+case "$(uname -s)" in
+    Darwin)
+        FONT="/mnt/font/JetBrainsMonoNL-Regular/14a/font"
+        ;;
+    *)
+        FONT="/mnt/font/JetBrainsMono-Regular/12a/font"
+        ;;
+esac
+
+"$PLAN9/bin/acme" -f "$FONT"
 
