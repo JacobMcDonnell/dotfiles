@@ -9,14 +9,24 @@ import (
 	"slices"
 )
 
-type InstallPair struct {
+type CommandPair struct {
 	Program string
-	Args []string
+	Args    []string
+}
+
+type Source struct {
+	Type    string
+	Target  string
+	Repo    string
+	Dir     string
+	Command CommandPair
 }
 
 type Programs struct {
-	OS       map[string]InstallPair
+	OS       map[string]CommandPair
 	Programs []map[string]string
+	Vcs      map[string]CommandPair
+	Sources  []Source
 }
 
 func ParsePrograms(path string) (*Programs, error) {
@@ -53,15 +63,51 @@ func (p *Programs) Install(osName string) error {
 		n++
 	}
 
-	return Install(installPair, programs[:n])
+	installPair.Args = slices.Concat(installPair.Args, programs[:n])
+	return RunCommand(installPair)
 }
 
-func Install(installCmd InstallPair, programs []string) error {
-	installCmd.Args = slices.Concat(installCmd.Args, programs)
+func (p *Programs) Build() error {
+	for _, source := range p.Sources {
+		clone, ok := p.Vcs[source.Type]
+		if !ok {
+			return fmt.Errorf("Unsupported VCS \"%s\"", source.Type)
+		}
 
-	fmt.Println(installCmd.Program, installCmd.Args)
+		err := Build(clone, source)
+		if err != nil {
+			return err
+		}
+	}
 
-	cmd := exec.Command(installCmd.Program, installCmd.Args...)
+	return nil
+}
+
+func Build(clone CommandPair, source Source) error {
+	err := os.Chdir(os.ExpandEnv(source.Target))
+	if err != nil {
+		return err
+	}
+
+	clone.Args = append(clone.Args, source.Repo)
+
+	err = RunCommand(clone)
+	if err != nil {
+		return err
+	}
+
+	err = os.Chdir(os.ExpandEnv(source.Dir))
+	if err != nil {
+		return err
+	}
+
+	return RunCommand(source.Command)
+}
+
+func RunCommand(command CommandPair) error {
+	fmt.Println(command.Program, command.Args)
+
+	cmd := exec.Command(command.Program, command.Args...)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 

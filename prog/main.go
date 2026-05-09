@@ -24,5 +24,11 @@ func main() {
 		os.Exit(-1)
 	}
 
+	err = programs.Build()
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: %s\n", err)
+		os.Exit(-1)
+	}
+
 	fmt.Println("Done.")
 }

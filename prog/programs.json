@@ -82,5 +82,23 @@
         {
             "Fedora" : "clangd"
         }
+    ],
+    "vcs" : {
+        "git" : {
+            "program" : "git",
+            "args": [ "clone" ]
+        }
+    },
+    "sources" : [
+        {
+            "type" : "git",
+            "target" : "$HOME/personal",
+            "repo" : "https://github.com/9fans/plan9port.git",
+            "dir" : "plan9port",
+            "command" : {
+                "program" : "./INSTALL",
+                "args": []
+            }
+        }
     ]
 }
