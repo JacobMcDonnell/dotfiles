@@ -1,0 +1,86 @@
+{
+    "os" : {
+        "Darwin" : {
+            "program" : "brew",
+            "args" : [ "install" ]
+        },
+        "Fedora" : {
+            "program" : "dnf",
+            "args" : [ "install", "-y" ]
+        },
+        "Gentoo" : {
+            "program" : "emerge",
+            "args" : [ "--ask" ]
+        },
+        "Debian" : {
+            "program" : "apt",
+            "args" : [ "install", "-y"]
+        }
+    },
+    "programs" : [
+        {
+            "Gentoo" : "dev-vcs/git",
+            "default" : "git"
+        },
+        {
+            "Gentoo" : "app-editors/neovim",
+            "default" : "neovim"
+        },
+        {
+            "Gentoo" : "app-misc/tmux",
+            "default" : "tmux"
+        },
+        {
+            "Gentoo" : "app-shells/fzf",
+            "default" : "fzf"
+        },
+        {
+            "Gentoo" : "app-shells/zsh",
+            "default" : "zsh"
+        },
+        {
+            "Gentoo" : "kde-plasma/plasma-meta"
+        },
+        {
+            "Gentoo" : "kde-apps/kdecore-meta"
+        },
+        {
+            "Gentoo" : "x11-wm/windowmaker"
+        },
+        {
+            "Gentoo" : "x11-themes/windowmaker-themes"
+        },
+        {
+            "Gentoo" : "www-client/firefox"
+        },
+        {
+            "Gentoo" : "sys-fs/xfsdump"
+        },
+        {
+            "Gentoo" : "x11-terms/ghostty"
+        },
+        {
+            "Gentoo" : "sys-process/htop",
+            "default" : "htop"
+        },
+        {
+            "Gentoo" : "sys-process/btop",
+            "default" : "btop"
+        },
+        {
+            "Gentoo" : "dev-lang/go",
+            "Fedora" : "golang",
+            "default" : "go"
+        },
+        {
+            "Fedora" : "@development-tools",
+            "Debian" : "build-essential"
+        },
+        {
+            "default" : "gdb"
+        },
+        {
+            "Fedora" : "clangd"
+        }
+    ]
+}
