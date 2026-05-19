@@ -25,7 +25,6 @@ require("lazy").setup({
     { 'uloco/bluloco.nvim', lazy = false, priority = 1000, dependencies = { 'rktjmp/lush.nvim' }, },
     { "Civitasv/cmake-tools.nvim" },
     { "frabjous/knap" },
-    { "rktjmp/hotpot.nvim" },
     { "willothy/flatten.nvim", config = true, lazy = false, priority = 1001, },
 })
 
