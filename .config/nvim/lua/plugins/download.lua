@@ -21,6 +21,7 @@ require("lazy").setup({
     { 'neovim/nvim-lspconfig' },
     { "sainnhe/everforest" },
     { "NLKNguyen/papercolor-theme" },
+    { "NLKNguyen/papercolor-theme" },
     { 'uloco/bluloco.nvim', lazy = false, priority = 1000, dependencies = { 'rktjmp/lush.nvim' }, },
     { "Civitasv/cmake-tools.nvim" },
     { "frabjous/knap" },
