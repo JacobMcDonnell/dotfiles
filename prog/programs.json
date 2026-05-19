@@ -87,6 +87,10 @@
         "git" : {
             "program" : "git",
             "args": [ "clone" ]
+        },
+        "wget" : {
+            "program" : "wget",
+            "args" : []
         }
     },
     "sources" : [
@@ -98,6 +102,16 @@
             "command" : {
                 "program" : "./INSTALL",
                 "args": []
+            }
+        },
+        {
+            "type" : "wget",
+            "target" : "$HOME/personal/bin",
+            "repo" : "https://fennel-lang.org/downloads/fennel-1.6.1",
+            "dir" : "$HOME/personal/bin",
+            "command" : {
+                "program" : "chmod",
+                "args" : ["+x", "fennel-1.6.1"]
             }
         }
     ]
