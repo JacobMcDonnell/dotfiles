@@ -6,4 +6,5 @@ alias dw="cd ~/Downloads"
 alias p="cd ~/Projects"
 alias m="cd ~/Documents/musings"
 alias c="cd ~/.config"
+alias t="cd ~/tmp"
 
