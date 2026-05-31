@@ -28,6 +28,9 @@ for config in $configs; do
     copy_dir $config "$HOME/.config"
 done
 
+log "Building NVIM Configuration"
+execute make -C "$HOME/.config/nvim" -j "$(nproc)"
+
 log "Copying Configs"
 copy_dir .emacs.d $HOME
 copy_file ".config/.profile" $HOME

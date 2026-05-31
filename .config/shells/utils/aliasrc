@@ -19,5 +19,5 @@ alias v="nvim"
 alias python="python3.10"
 alias pip="pip3.10"
 alias lf="lfub"
-alias gr="cd $(git rev-parse --show-toplevel)"
+alias gr='cd $(git rev-parse --show-toplevel)'
 

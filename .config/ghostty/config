@@ -1,3 +1,28 @@
-theme = BlulocoDark
-font-family = "JetBrains Mono"
+# Themes Settings
+theme = night-owl-light
+
+# Font Settings
+font-family = "JetBrains Mono NL Regular"
 font-size = 14
+font-feature = -calt
+
+# Keybind Remaps
+## Tab Switching
+keybind = command+shift+1=goto_tab:1
+keybind = command+shift+2=goto_tab:2
+keybind = command+shift+3=goto_tab:3
+keybind = command+shift+4=goto_tab:4
+keybind = command+shift+5=goto_tab:5
+keybind = command+shift+6=goto_tab:6
+keybind = command+shift+7=goto_tab:7
+keybind = command+shift+8=goto_tab:8
+keybind = command+shift+9=goto_tab:9
+
+## Split Remaps
+keybind = option+shift+5=new_split:right
+keybind = option+shift+'=new_split:down
+keybind = command+l=goto_split:right
+keybind = command+h=goto_split:left
+keybind = command+j=goto_split:down
+keybind = command+k=goto_split:up
+

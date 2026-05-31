@@ -35,7 +35,7 @@ export LESSHISTFILE=-
 export ZDOTDIR="$XDG_CONFIG_HOME"/shells/zsh
 
 export NVIM_COLORSCHEME='bluloco'
-export NVIM_BACKGROUND='dark'
+export NVIM_BACKGROUND='light'
 
 if [[ -d "$HOME/.profiles.d" ]];
 then
