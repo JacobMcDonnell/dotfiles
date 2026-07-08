@@ -1,4 +1,4 @@
-export PLAN9=$HOME/personal/plan9
+export PLAN9="$HOME/personal/plan9"
 export PATH="$HOME/personal/bin:$HOME/.local/bin:$PATH:$HOME/go/bin:$PLAN9/bin"
 
 export EDITOR=nvim
@@ -7,25 +7,35 @@ export HOMEBREW_EDITOR=nvim
 # Shell settings
 export shColor=green
 export OS="$(uname -s)"
-if [[ $OS == "Darwin" ]]; then
-    export comSym=''
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-elif [[ $OS == 'Linux' ]]; then
-    export comSym='λ'
-elif [[ $OS == 'SunOS' ]]; then
-    export comSym='Σ'
-elif [[ $OS == 'FreeBSD' ]]; then
-    export comSym='Φ'
-elif [[ $OS == 'OpenBSD' ]]; then
-    export comSym='Ω'
-elif [[ $OS == 'NetBSD' ]]; then
-    export comSym='μ'
-fi
+case "$OS" in
+    'Darwin')
+        export comSym=''
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+        ;;
+    'Linux')
+        export comSym='λ'
+        ;;
+    'SunOS')
+        export comSym='Σ'
+        ;;
+    'FreeBSD')
+        export comSym='Φ'
+        ;;
+    'OpenBSD')
+        export comSym='Ω'
+        ;;
+    'NetBSD')
+        export comSym='μ'
+        ;;
+    *)
+        export comSym='%'
+        ;;
+esac
 
 # Setting up XDG Dirs
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_CACHE_HOME=$HOME/.cache
-export XDG_DATA_HOME=$HOME/.local/share
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
 
 # For Git Signing with GPG
 export GPG_TTY=$(tty)
@@ -44,4 +54,11 @@ then
         source "$PROFILE"
     done
 fi
+
+export COPYRIGHT_COMMENT=$(cat <<EOF
+Copyright (c) <YEARS> Jacob McDonnell
+
+SPDX-License-Identifier: BSD-2-Clause
+EOF
+)
 

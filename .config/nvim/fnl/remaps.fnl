@@ -62,3 +62,7 @@
 (vim.keymap.set :n :<leader>ka
                 (fn []
                   ((. (require :knap) :toggle_autopreviewing))))
+
+(local copyright_comment (require :copyright))
+(vim.keymap.set :n "<leader>cr" copyright_comment)
+

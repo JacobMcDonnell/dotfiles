@@ -1,11 +1,12 @@
 FENNEL = fennel
-FFLAGS = 
+FFLAGS =
 SRCS   = fnl/set.fnl \
          fnl/plugins/knap.fnl \
          fnl/plugins/harpoon.fnl \
          fnl/plugins/treesitter.fnl \
          fnl/plugins/init.fnl \
          fnl/plugins/lsp.fnl \
+         fnl/copyright.fnl \
          fnl/remaps.fnl
 LUA    = $(patsubst fnl/%.fnl, lua/%.lua, $(SRCS))
 
