@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - 'v*'
+
+jobs:
+  secret-scan:
+    name: Secret Scanner Trufflehog
+    uses: JacobMcDonnell/workflows/.forgejo/workflows/secret-scan.yml@main
