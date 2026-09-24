@@ -23,7 +23,6 @@ require("lazy").setup({
     { "NLKNguyen/papercolor-theme" },
     { 'uloco/bluloco.nvim', lazy = false, priority = 1000, dependencies = { 'rktjmp/lush.nvim' }, },
     { "Civitasv/cmake-tools.nvim" },
-    { "frabjous/knap" },
     { "willothy/flatten.nvim", config = true, lazy = false, priority = 1001, },
 })
 

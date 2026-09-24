@@ -51,18 +51,6 @@
 
 (vim.keymap.set :n :<leader>u vim.cmd.UndotreeToggle)
 
-(vim.keymap.set :n :<leader>kp
-                (fn []
-                  ((. (require :knap) :process_once))))
-
-(vim.keymap.set :n :<leader>ks
-                (fn []
-                  ((. (require :knap) :close_viewer))))
-
-(vim.keymap.set :n :<leader>ka
-                (fn []
-                  ((. (require :knap) :toggle_autopreviewing))))
-
 (local copyright_comment (require :copyright))
 (vim.keymap.set :n "<leader>cr" copyright_comment)
 

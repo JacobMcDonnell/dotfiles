@@ -1,7 +1,6 @@
 FENNEL = fennel
 FFLAGS =
 SRCS   = fnl/set.fnl \
-         fnl/plugins/knap.fnl \
          fnl/plugins/harpoon.fnl \
          fnl/plugins/treesitter.fnl \
          fnl/plugins/init.fnl \

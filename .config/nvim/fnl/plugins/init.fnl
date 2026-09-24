@@ -4,7 +4,5 @@
 
 (require :plugins.lsp)
 
-(require :plugins.knap)
-
 (require :plugins.harpoon)
 
