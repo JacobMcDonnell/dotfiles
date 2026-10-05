@@ -1,5 +1,5 @@
 export PLAN9="$HOME/personal/plan9"
-export PATH="$HOME/personal/bin:$HOME/.local/bin:$PATH:$HOME/go/bin:$PLAN9/bin"
+export PATH="/opt/vis/bin:$HOME/personal/bin:$HOME/.local/bin:$PATH:$HOME/go/bin:$PLAN9/bin"
 
 export EDITOR=nvim
 export HOMEBREW_EDITOR=nvim
