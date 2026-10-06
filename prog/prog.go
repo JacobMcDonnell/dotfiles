@@ -19,7 +19,7 @@ type Source struct {
 	Target  string
 	Repo    string
 	Dir     string
-	Command CommandPair
+	Command []CommandPair
 }
 
 type Programs struct {
@@ -101,7 +101,12 @@ func Build(clone CommandPair, source Source) error {
 		return err
 	}
 
-	return RunCommand(source.Command)
+	for _, cmd := range source.Command {
+		if err := RunCommand(cmd); err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 func RunCommand(command CommandPair) error {

@@ -5,70 +5,23 @@
             "args" : [ "install" ]
         },
         "Fedora" : {
-            "program" : "dnf",
-            "args" : [ "install", "-y" ]
-        },
-        "Gentoo" : {
-            "program" : "emerge",
-            "args" : [ "--ask" ]
+            "program" : "sudo",
+            "args" : [ "dnf", "install", "-y" ]
         },
         "Debian" : {
-            "program" : "apt",
-            "args" : [ "install", "-y"]
+            "program" : "sudo",
+            "args" : [ "apt", "install", "-y"]
         }
     },
     "programs" : [
+        { "default" : "git" },
+        { "default" : "neovim" },
+        { "default" : "tmux" },
+        { "default" : "fzf" },
+        { "default" : "zsh" },
+        { "default" : "htop" },
+        { "default" : "btop" },
         {
-            "Gentoo" : "dev-vcs/git",
-            "default" : "git"
-        },
-        {
-            "Gentoo" : "app-editors/neovim",
-            "default" : "neovim"
-        },
-        {
-            "Gentoo" : "app-misc/tmux",
-            "default" : "tmux"
-        },
-        {
-            "Gentoo" : "app-shells/fzf",
-            "default" : "fzf"
-        },
-        {
-            "Gentoo" : "app-shells/zsh",
-            "default" : "zsh"
-        },
-        {
-            "Gentoo" : "kde-plasma/plasma-meta"
-        },
-        {
-            "Gentoo" : "kde-apps/kdecore-meta"
-        },
-        {
-            "Gentoo" : "x11-wm/windowmaker"
-        },
-        {
-            "Gentoo" : "x11-themes/windowmaker-themes"
-        },
-        {
-            "Gentoo" : "www-client/firefox"
-        },
-        {
-            "Gentoo" : "sys-fs/xfsdump"
-        },
-        {
-            "Gentoo" : "x11-terms/ghostty"
-        },
-        {
-            "Gentoo" : "sys-process/htop",
-            "default" : "htop"
-        },
-        {
-            "Gentoo" : "sys-process/btop",
-            "default" : "btop"
-        },
-        {
-            "Gentoo" : "dev-lang/go",
             "Fedora" : "golang",
             "default" : "go"
         },
@@ -81,6 +34,21 @@
         },
         {
             "Fedora" : "clangd"
+        },
+        {
+            "Fedora" : "lua",
+            "Debian" : "lua",
+            "Darwin" : "lua"
+        },
+        {
+            "Fedora" : "lua-lpeg",
+            "Debian" : "lua-lpeg-dev",
+            "Darwin" : "lpeg"
+        },
+        {
+            "Fedora" : "tre",
+            "Debian" : "libtre-dev",
+            "Darwin" : "tre"
         }
     ],
     "vcs" : {
@@ -99,20 +67,20 @@
             "target" : "$HOME/personal",
             "repo" : "https://github.com/9fans/plan9port.git",
             "dir" : "plan9port",
-            "command" : {
-                "program" : "./INSTALL",
-                "args": []
-            }
+            "command" : [
+                { "program" : "./INSTALL", "args": [] }
+            ]
         },
         {
-            "type" : "wget",
-            "target" : "$HOME/personal/bin",
-            "repo" : "https://fennel-lang.org/downloads/fennel-1.6.1",
-            "dir" : "$HOME/personal/bin",
-            "command" : {
-                "program" : "chmod",
-                "args" : ["+x", "fennel-1.6.1"]
-            }
+            "type" : "git",
+            "target" : "$HOME/Downloads",
+            "repo" : "https://github.com/martanne/vis.git",
+            "dir" : "vis",
+            "command" : [
+                { "program" : "./configure", "args" : [ "--prefix=/opt/vis", "--disable-lpeg-static" ] },
+                { "program" : "make", "args" : [] },
+                { "program" : "sudo", "args" : [ "make", "install" ] }
+            ]
         }
     ]
 }
