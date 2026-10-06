@@ -16,13 +16,11 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     { 'nvim-telescope/telescope.nvim', dependencies = { 'nvim-lua/plenary.nvim' } },
     { "nvim-treesitter/nvim-treesitter", tag = 'v0.10.0', build = ":TSUpdate" },
-    { "mbbill/undotree" },
     { "ThePrimeagen/harpoon", branch = "harpoon2", dependencies = { 'nvim-lua/plenary.nvim' } },
     { 'neovim/nvim-lspconfig' },
     { "sainnhe/everforest" },
     { "NLKNguyen/papercolor-theme" },
     { 'uloco/bluloco.nvim', lazy = false, priority = 1000, dependencies = { 'rktjmp/lush.nvim' }, },
     { "Civitasv/cmake-tools.nvim" },
-    { "willothy/flatten.nvim", config = true, lazy = false, priority = 1001, },
 })
 
