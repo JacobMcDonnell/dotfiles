@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+DIR="$1"
+
+if [ -z "$EDITOR" ];
+then
+    if [ -n "$(which nvim)" ];
+    then
+        EDITOR="nvim"
+    elif [ -n "$(which vim)" ];
+    then
+        EDITOR="vim"
+    else
+        EDITOR="vi"
+    fi
+fi
+
+if [ -n "$DIR" ];
+then
+    pushd "$DIR" 2>&1 >/dev/null || exit 1
+fi
+
+FILE="$(fzf)"
+if [ -n "$FILE" ];
+then
+    "$EDITOR" "$FILE"
+fi
+
+if [ -n "$DIR" ];
+then
+    popd 2>&1 >/dev/null || exit 1
+fi
+

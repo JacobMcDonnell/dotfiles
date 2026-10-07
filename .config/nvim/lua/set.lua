@@ -18,6 +18,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "120"
 vim.opt.mouse = "a"
 vim.opt.list = true
+vim.opt.termguicolors = true
 
 vim.opt.listchars = {leadmultispace = "·", nbsp = "␣", tab = "» ", trail = "·"}
 
@@ -31,7 +32,7 @@ if (colorscheme == nil) then
 end
 
 vim.cmd.colorscheme(colorscheme)
-    
+
 local background = os.getenv("NVIM_BACKGROUND")
 
 if (background == nil) then

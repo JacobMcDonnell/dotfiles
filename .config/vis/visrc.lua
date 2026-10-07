@@ -9,14 +9,15 @@ end)
 vis.events.subscribe(vis.events.WIN_OPEN, function(win)
     win.options.tabwidth = 4
     win.options.relativenumbers = true
-    win.options.showspaces = true
+    win.options.showspaces = false
     win.options.showtabs = true
-    win.options.expandtab = true
+    win.options.expandtab = false
+    win.options.colorcolumn = 120
     vis:map(vis.modes.VISUAL, " y", '"+y"')
     vis:map(vis.modes.NORMAL, " P", '"+P"')
 
-    if win.syntax == 'makefile' or win.syntax == 'go' then
-        win.options.expandtab = false
+    if win.syntax == 'python' then
+        win.options.expandtab = true
     end
 end)
 
