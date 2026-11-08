@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Download Evil
 (unless (package-installed-p 'evil)
     (package-install 'evil))

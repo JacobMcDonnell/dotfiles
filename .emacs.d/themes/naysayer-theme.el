@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;;; naysayer-theme.el --- The naysayer color theme
 
 ;; Author: Nick Aversano <nickav@users.noreply.github.com>
@@ -137,7 +139,7 @@
     ;; better compatibility with default DOOM mode-line
    `(error ((t (:foreground unspecified :weight normal))))
    `(doom-modeline-project-dir ((t (:foreground unspecified :weight bold))))
-   
+
    ;; js2-mode
    `(js2-function-call ((t (:inherit (font-lock-function-name-face)))))
    `(js2-function-param ((t (:foreground ,text))))

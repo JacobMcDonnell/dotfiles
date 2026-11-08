@@ -1,3 +1,9 @@
+;; -*- lexical-binding: t; -*-
+
+(setq custom-file "~/.emacs.d/custom-file.el")
+
+(setq inhibit-splash-screen t)
+
 ;; Set ~/.cache/emacs-backup as the backup directory instead of the current
 ;; working directory.
 (setq backup-directory-alist '(("." . "~/.cache/emacs-backup"))
@@ -32,8 +38,9 @@
 ;; Remove whitespace at the end of lines and change tabs to 4 spaces
 (defun remove-trailing-whitespace-before-save-hook ()
   (progn
-    (if (not (string-match ".*makefile.*" (message "%s" major-mode)))
-        (untabify (point-min) (point-max)))
+    (let ((m (message "%s" major-mode)))
+        (if (and (not (string-match ".*makefile.*" m)) (not (string-match ".*Go.*" m)))
+            (untabify (point-min) (point-max))))
     (delete-trailing-whitespace)))
 (add-hook 'before-save-hook 'remove-trailing-whitespace-before-save-hook)
 
