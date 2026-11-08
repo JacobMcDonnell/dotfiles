@@ -11,7 +11,7 @@
     (require 'vterm-setup))
 (require 'evil-setup)
 (require 'tree-sitter-setup)
-;; (require 'magit-setup)
+(require 'magit-setup)
 ;; (when (eq (getenv "EMACS_IGNORE_LSP") nil)
 ;;     (require 'lsp-setup))
 
