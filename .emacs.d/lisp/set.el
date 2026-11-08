@@ -22,6 +22,7 @@
 (menu-bar-mode -1)
 (setq column-number-mode t)
 (setopt display-fill-column-indicator-column 120)
+(add-hook 'prog-mode-hook #'display-fill-column-indicator-mode)
 
 ;; Prevent Extraneous Tabs
 (setq indent-tabs-mode nil)
