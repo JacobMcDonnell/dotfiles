@@ -28,6 +28,8 @@
 (setq indent-tabs-mode nil)
 (setq tab-width 4)
 (defvaralias 'c-basic-offset 'tab-width)
+(setq-default indent-tabs-mode nil)
+(setq-default c-basic-offset 4)
 
 ;; Font
 (set-frame-font "JetBrains Mono 14" nil t)

@@ -1,7 +1,10 @@
 ;; -*- lexical-binding: t; -*-
 (require 'comp)
-(setq native-comp-driver-options
-    (cons "-mmacosx-version-min=15" native-comp-driver-options))
+
+
+(when (eq system-type 'darwin)
+    (setq native-comp-driver-options
+        (cons "-mmacosx-version-min=15" native-comp-driver-options)))
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (require 'set)
