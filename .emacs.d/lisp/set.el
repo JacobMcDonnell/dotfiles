@@ -47,4 +47,9 @@
     (delete-trailing-whitespace)))
 (add-hook 'before-save-hook 'remove-trailing-whitespace-before-save-hook)
 
+;; Importing simpc-mode
+(require 'simpc-mode)
+;; Automatically enabling simpc-mode on files with extensions like .h, .c, .cpp, .hpp
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+
 (provide 'set)

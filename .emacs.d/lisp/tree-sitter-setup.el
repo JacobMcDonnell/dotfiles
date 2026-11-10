@@ -40,4 +40,6 @@
     ;; Automatically associate .typ files with the tree-sitter mode
     (add-to-list 'auto-mode-alist '("\\.typ\\'" . typst-ts-mode)))
 
-
+(use-package odin-mode
+  :mode "\\.odin\\'"
+  :vc (:url "https://github.com/mattt-b/odin-mode"))
