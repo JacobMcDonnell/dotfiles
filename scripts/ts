@@ -1,4 +1,8 @@
 #!/bin/sh
 
-"$EDITOR" $(igrep -fls "$(gum input --placeholder 'Search Pattern')" | awk 'BEGIN{FS=":"} {print "+"$2 " " $1}')
+FILE=$(igrep -fls "$(gum input --placeholder 'Search Pattern')" | awk 'BEGIN{FS=":"} {print "+"$2 " " $1}')
+
+if test -n "$FILE"; then
+    "$EDITOR" $FILE
+fi
 
