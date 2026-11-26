@@ -99,6 +99,13 @@
             "repo" : "mcdonnell.dev/ntp-ping/cmd/ntp-ping@latest",
             "dir" : "/tmp",
             "command" : []
+        },
+        {
+            "type" : "go",
+            "target" : "/tmp",
+            "repo" : "charm.land/gum/v2@latest",
+            "dir" : "/tmp",
+            "command" : []
         }
     ]
 }

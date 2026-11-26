@@ -2,7 +2,8 @@
 
 name="${0##*/}"
 use_fzf=0
-grep_flags='-rEl'
+grep_flags='-rE'
+lines=0
 
 usage() {
     cat <<EOF
@@ -17,10 +18,11 @@ search() {
     grep "$grep_flags" -e "$pattern" -- "$dir"
 }
 
-while getopts "hfs" opt; do
+while getopts "hfsl" opt; do
     case "$opt" in
         f) use_fzf=1 ;;
         s) grep_flags="${grep_flags}s" ;;
+        l) lines=1; grep_flags="${grep_flags}Hn" ;;
         h|*) usage; exit 1 ;;
     esac
 done
@@ -30,6 +32,10 @@ shift $((OPTIND - 1))
 pattern="$1"
 dir="${2:-$PWD}"
 dir="$(realpath "$dir")"
+
+if test $lines -eq 0; then
+    grep_flags="${grep_flags}l"
+fi
 
 if test -z "$pattern"; then
     printf "%s: error: Pattern required.\n" "$name"
