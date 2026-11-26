@@ -1,0 +1,45 @@
+#!/bin/sh
+
+name="${0##*/}"
+use_fzf=0
+grep_flags='-rEl'
+
+usage() {
+    cat <<EOF
+usage: $name [OPTIONS] pattern [path]
+  -h    Print this help message.
+  -f    Pipe output to fzf.
+  -s    Silence Errors.
+EOF
+}
+
+search() {
+    grep "$grep_flags" -e "$pattern" -- "$dir"
+}
+
+while getopts "hfs" opt; do
+    case "$opt" in
+        f) use_fzf=1 ;;
+        s) grep_flags="${grep_flags}s" ;;
+        h|*) usage; exit 1 ;;
+    esac
+done
+
+shift $((OPTIND - 1))
+
+pattern="$1"
+dir="${2:-$PWD}"
+dir="$(realpath "$dir")"
+
+if test -z "$pattern"; then
+    printf "%s: error: Pattern required.\n" "$name"
+    usage
+    exit 1
+fi
+
+if test $use_fzf -eq 1; then
+    search | fzf
+else
+    search
+fi
+
