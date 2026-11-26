@@ -1,7 +1,3 @@
-# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-#   exec tmux
-# fi
-
 source ~/.zprofile
 export SHELLDIR="$XDG_CONFIG_HOME/shells"
 export ZSH="$SHELLDIR/zsh"
@@ -29,6 +25,8 @@ setopt prompt_subst
 autoload -U colors && colors
 PROMPT='%{$fg_bold[$shColor]%}$comSym%{$reset_color%} in %{$fg_bold[$shColor]%}%~%{$reset_color%} $(ret=$?; git_good ; error_code $ret)
 → '
-source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $ZSH/plugins/fzf-tab/fzf-tab.zsh
+
+if which fzf 2>&1 >/dev/null; then
+    source $ZSH/plugins/fzf-tab/fzf-tab.zsh
+fi
 
