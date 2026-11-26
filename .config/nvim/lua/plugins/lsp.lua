@@ -1,3 +1,7 @@
+vim.pack.add({
+    { src = "https://github.com/neovim/nvim-lspconfig", name = "nvim-lspconfig", },
+})
+
 vim.lsp.config('rust_analyzer', {
   cmd = { 'rust-analyzer' },
   filetypes = { 'rust' },
