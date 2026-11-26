@@ -1,3 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env -S curl -K
 
-curl https://icanhazip.com
+url = "https://icanhazip.com"
+request = "GET"

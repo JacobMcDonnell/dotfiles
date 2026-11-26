@@ -1,40 +1,39 @@
-#!/usr/bin/env zsh
+#!/bin/sh
 
-set -o shwordsplit
-
-target="$HOME/personal"
+target="${target:-$HOME/personal}"
+dry="${dry:-0}"
 
 log() {
-    if [[ $dry == "1" ]]; then
-        echo "[DRY_RUN]: $@"
+    if [ "$dry" = "1" ]; then
+        echo "[DRY_RUN]: $*"
     else
         echo "$@"
     fi
 }
 
 execute() {
-    log "execute $@"
-    if [[ $dry == "1" ]]; then
+    log "execute $*"
+    if [ "$dry" = "1" ]; then
         return
     fi
     "$@"
 }
 
 copy_dir() {
-    from=$1
-    to=$2
-    name=$(basename $from)
+    from="$1"
+    to="$2"
+    name="$(basename "$from")"
 
-    execute rm -rf $to/$name
-    execute cp -r $from $to/$name
+    execute rm -rf "$to/$name"
+    execute cp -r "$from" "$to/$name"
 }
 
 copy_file() {
-    from=$1
-    to=$2
-    name=$(basename $from)
+    from="$1"
+    to="$2"
+    name="$(basename "$from")"
 
-    execute rm $to/$name
-    execute cp $from $to/$name
+    execute rm "$to/$name"
+    execute cp "$from" "$to/$name"
 }
 

@@ -4,11 +4,11 @@ YT_DL_PATH="$HOME/Videos/youtube"
 YT_INDEX="$YT_DL_PATH/youtube.txt"
 
 Usage() {
-    printf "Usage: %s [--download-path path] [--index-file path]\n" $(basename $0) > /dev/stderr
+    printf "Usage: %s [--download-path path] [--index-file path]\n" "$(basename "$0")" >&2
     exit 1
 }
 
-while [[ $# -gt 0 ]];
+while [ $# -gt 0 ];
 do
     case $1 in
         --download-path)
@@ -24,12 +24,12 @@ do
             Usage
             ;;
         *)
-            printf "Unknown option: %s\n" $1 > /dev/stderr
+            printf "Unknown option: %s\n" "$1" >&2
             Usage
             ;;
     esac
     shift
 done
 
-parallel "yt-dlp -o \"$YT_DL_PATH/%(title)s.%(ext)s\" --restrict-filenames" ::: $(cat $YT_INDEX)
+parallel "yt-dlp -o \"$YT_DL_PATH/%(title)s.%(ext)s\" --restrict-filenames" ::: "$(cat "$YT_INDEX")"
 

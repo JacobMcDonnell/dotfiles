@@ -1,5 +1,10 @@
 #!/bin/sh
 
-[ -z "$1" ] && words="$(< /dev/stdin)" || words=$1
-echo $words | sed "s/ /\n/g"
+if test -z "$1"; then
+    words="$(cat)"
+else
+    words="$1"
+fi
+
+echo "$words" | sed "s/ /\n/g"
 
