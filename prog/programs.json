@@ -54,11 +54,15 @@
     "vcs" : {
         "git" : {
             "program" : "git",
-            "args": [ "clone" ]
+            "args" : [ "clone" ]
         },
         "wget" : {
             "program" : "wget",
             "args" : []
+        },
+        "go" : {
+            "program" : "go",
+            "args" : [ "install" ]
         }
     },
     "sources" : [
@@ -81,6 +85,20 @@
                 { "program" : "make", "args" : [] },
                 { "program" : "sudo", "args" : [ "make", "install" ] }
             ]
+        },
+        {
+            "type" : "go",
+            "target" : "/tmp",
+            "repo" : "mcdonnell.dev/sizeof@latest",
+            "dir" : "/tmp",
+            "command" : []
+        },
+        {
+            "type" : "go",
+            "target" : "/tmp",
+            "repo" : "mcdonnell.dev/ntp-ping/cmd/ntp-ping@latest",
+            "dir" : "/tmp",
+            "command" : []
         }
     ]
 }
