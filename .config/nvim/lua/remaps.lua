@@ -17,16 +17,6 @@ vim.keymap.set("n", "<leader>%", vim.cmd.vsplit)
 vim.keymap.set("n", "<leader>\",", vim.cmd.split)
 vim.keymap.set("t", "<C-e>", "<C-\\><C-n>")
 
-local ts_builtin = require("telescope.builtin")
-
-vim.keymap.set("n", "<leader>ff", ts_builtin.find_files, {})
-vim.keymap.set("n", "<leader>fp", ts_builtin.git_files, {})
-
-local function _search_()
-    return ts_builtin.grep_string({search = vim.fn.input("Grep > ")})
-end
-vim.keymap.set("n", "<leader>ps", _search_)
-
 local harpoon = require("harpoon")
 
 local function _harpoon_list_()

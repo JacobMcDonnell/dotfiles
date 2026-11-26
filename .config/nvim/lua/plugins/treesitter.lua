@@ -1,9 +1,13 @@
-require("nvim-treesitter.configs").setup({
-    auto_install = true, 
-    ensure_installed = {"c"}, 
-    highlight = {
-        enable = true, 
-        additional_vim_regex_highlighting = false
-    }, 
-    sync_install = false
+vim.pack.add({
+  {
+    src = "https://github.com/nvim-treesitter/nvim-treesitter",
+    name = "nvim-treesitter",
+  },
 })
+
+require("nvim-treesitter").setup {
+  -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
+  install_dir = vim.fn.stdpath("data") .. "/site"
+}
+
+require("nvim-treesitter").install { "rust", "go", "c", "cpp", "odin" }
