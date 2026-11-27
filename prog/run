@@ -1,0 +1,16 @@
+#!/bin/sh
+
+os="$(uname -s)"
+arch="$(uname -m)"
+
+if test "$os" = "Linux"; then
+    . /etc/os-release
+    rest=${ID#?}
+    first=${ID%"$rest"}
+    name="$(printf '%s' "$first" | tr '[:lower:]' '[:upper:]')$rest"
+else
+    name="$os"
+fi
+
+./bootstrap/prog-"$arch"-"$os" -n "$name" -p programs.json
+
