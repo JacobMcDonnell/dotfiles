@@ -51,7 +51,7 @@ if [[ -d "$HOME/.profiles.d" ]];
 then
     for PROFILE in "$HOME"/.profiles.d/*.profile;
     do
-        source "$PROFILE"
+        . "$PROFILE"
     done
 fi
 
